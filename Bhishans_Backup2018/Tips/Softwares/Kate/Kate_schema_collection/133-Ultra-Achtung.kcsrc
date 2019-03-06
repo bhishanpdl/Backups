@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=133-Ultra-Achtung
+activeBackground=255,195,11
+activeBlend=55,63,77
+activeForeground=0,0,0
+activeTitleBtnBg=255,255,255
+alternateBackground=173,173,173
+background=255,195,11
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=5,5,5
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=255,208,24
+inactiveBlend=30,30,30
+inactiveForeground=27,27,27
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=164,131,33
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=183,183,183
+windowForeground=0,0,0

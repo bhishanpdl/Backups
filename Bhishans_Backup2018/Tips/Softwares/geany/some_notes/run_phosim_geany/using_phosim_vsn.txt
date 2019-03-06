@@ -1,0 +1,30 @@
+# Author    : Bhishan Poudel
+# Author    : Bhishan Poudel
+# Date      : Jun 09, 2016
+
+using phosim
+==================
+
+
+execute_command instanceCatalog_location -c background_file -o output_folder
+
+
+./phosim Binyang/instanceCatalog -c examples/nobackground -o output
+
+
+~/phosim/phosim/./phosim Binyang/instanceCatalog -c examples/nobackground -o output
+
+
+~/phosim/phosim/./phosim Binyang/catalog1.mycat -c examples/catalog1.bkg -o output
+
+
+~/phosim/phosim/./phosim Binyang/catalog1.mycat -c Binyang/catalog1.bkg -o output
+
+
+~/phosim/phosim/./phosim catalog1.mycat -c catalog1.bkg -o catalog1_out
+
+
+cd ~/phosim/phosim ;./phosim catalog1.mycat -c catalog1.bkg -o catalog1_out
+
+
+cd ~/phosim/phosim ;rmdir catalogs/%e_out; mkdir catalogs/%e_out;./phosim catalogs/%e.mycat -c catalogs/%e.bkg -o catalogs/%e_out

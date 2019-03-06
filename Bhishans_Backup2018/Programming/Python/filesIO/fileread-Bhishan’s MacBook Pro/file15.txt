@@ -1,0 +1,7 @@
+most used commands
+====================
+delete trial_2 and 90_trial2 folders and run code each time:
+
+
+
+python jedimaster.py physics_settings/config

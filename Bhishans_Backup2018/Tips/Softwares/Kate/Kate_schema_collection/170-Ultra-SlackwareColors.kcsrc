@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=170-Ultra-SlackwareColors
+activeBackground=83,105,179
+activeBlend=55,63,77
+activeForeground=3,3,5
+activeTitleBtnBg=255,255,255
+alternateBackground=230,230,230
+background=83,105,179
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=4,5,6
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=83,105,179
+inactiveBlend=30,30,30
+inactiveForeground=197,197,197
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=83,117,150
+selectBackground=83,105,179
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=220,220,220
+windowForeground=22,22,22

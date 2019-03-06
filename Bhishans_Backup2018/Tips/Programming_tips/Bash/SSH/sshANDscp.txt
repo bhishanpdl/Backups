@@ -1,0 +1,52 @@
+To copy whole folder Homework and its subdirectories from helios
+=================================================================
+
+
+scp -r poudel@helios.phy.ohiou.edu:/home/poudel/Homework .
+
+
+To copy only some assignments
+===================================================================
+scp poudel@helios.phy.ohiou.edu:/home/poudel/Homework/assign1.tar .
+
+
+
+
+
+ssh = secure shell
+scp = secure copy
+
+to connect to remote using ssh
+===============================
+
+ssh user@host
+eg.
+ssh poudel@helios.phy.ohiou.edu
+press enter
+type ls
+now our local machine is helios
+to exit out of helios: type exit
+
+
+
+scp
+=======================================================================
+from local to remote
+
+cd to that directory
+
+scp Sourcefile user@host:dirname/TargetFile
+
+scp -r Sourcedirname user@host:dirname/Targetdir
+
+scp assign1.tar poudel@helios.phy.ohiou.edu:/Homework/assign1.tar
+
+scp try.txt poudel@helios.phy.ohiou.edu:try.txt
+
+
+eg. 
+whoami
+mkdir tryfolder
+ls
+
+scp -r tryfolder poudel@helios.phy.ohiou.edu:tryfolder

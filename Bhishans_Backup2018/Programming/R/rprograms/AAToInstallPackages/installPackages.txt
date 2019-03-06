@@ -1,0 +1,26 @@
+Bhishan Poudel
+jan 17, 2016
+
+To install R packages in ubuntu
+==================================
+
+Note: do not install packages from Rstudio or other ide's
+      install from terminal
+      
+1. type R in the terminal
+2. install.packages('readr',dependencies=TRUE)
+
+  note: we get installation error:
+  	No package 'libcurl' found
+  	
+  it also gives suggestions:
+  	Try installing:
+    * deb: libcurl4-openssl-dev (Debian, Ubuntu, etc)
+    * 
+3. sudo su 
+   apt-get install libcurl4-openssl-dev
+   
+4. then do the usual process
+    install.packages('readr',dependencies=TRUE)
+    
+5. now it is installed

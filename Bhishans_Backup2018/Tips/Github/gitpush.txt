@@ -1,0 +1,51 @@
+//ref: https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
+//note: <remote> is origin 
+
+some commands
+=====================
+
+git push <remote> --all
+git push <remote> --force
+git push <remote> --tags
+
+
+
+
+pushing in github
+=================
+git remote add origin git@github.com:username/reponame.git
+then,
+git push origin master,
+after the first push, we can type
+git push
+
+
+
+If you have a branch named serverfix that you want to work on
+===============================================================
+git push origin serverfix
+
+The next time one of your collaborators fetches from the server, 
+they will get a reference to where the server’s version of 
+serverfix is under the remote branch origin/serverfix:
+
+
+It’s important to note that when you do a fetch that brings down
+ new remote-tracking branches, you don’t automatically have local, 
+ editable copies of them. In other words, in this case, you don’t 
+ have a new serverfix branch – you only have an origin/serverfix 
+ pointer that you can’t modify.
+
+To merge this work into your current working branch, you can run 
+git merge origin/serverfix. If you want your own serverfix branch 
+that you can work on, you can base it off your remote-tracking branch:
+
+$ git checkout -b serverfix origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+Switched to a new branch 'serverfix'
+
+This gives you a local branch that you can work on that starts where 
+origin/serverfix is.
+
+
+

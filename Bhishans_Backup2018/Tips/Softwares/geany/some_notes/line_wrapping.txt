@@ -1,0 +1,8 @@
+# Author  : Bhishan Poudel
+# Date    : May 19, 2016
+
+Line wrapping in geany
+===============================================================================
+edit > preference > editor > features > line wrapping
+then,
+document > line wrapping

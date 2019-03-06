@@ -1,0 +1,3 @@
+Ctrl D: Used to terminate input or exit the terminal or shell
+Ctrl Z: Used to suspend foreground processes
+Ctrl C: Used to kill foreground processes

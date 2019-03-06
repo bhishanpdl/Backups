@@ -1,0 +1,48 @@
+to enable numlock on lock screen
+we have to edit lightdm.config file
+
+1........................................ 
+first locate the file to edit
+locate 50-unity-greeter.conf
+
+the output is:
+	/usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
+	
+2.............................................
+ now install numlockx and edit config file
+
+	sudo apt-get update
+	sudo apt-get install numlockx
+	gksu gedit /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
+	
+	(note: we may have to install gksudo)
+	
+3........................................................
+then install lightdm-gtk-greeter
+sudo apt-get install lightdm-gtk-greeter
+	
+4............................
+this opens a notepad, and add this line to end
+greeter-setup-script=/usr/bin/numlockx on
+
+5...................................
+ this is temporary solution which is updated when unity-greeter is upgraded
+ so, edit the permanent file:
+ 	sudo gedit /usr/share/lightdm/lightdm.conf.d/50-guest-wrapper.conf
+ 
+ then, add this line to end of file
+ greeter-setup-script=/usr/bin/numlockx on
+ 
+6...........................
+Alternate method, create .conf file inside /etc/
+
+sudo touch /etc/lightdm/lightdm.conf.d/separate.conf
+sudo gedit /etc/lightdm/lightdm.conf.d/separate.conf
+
+then, add these two lines
+[SeatDefaults]
+greeter-setup-script=/usr/bin/numlockx on
+
+
+ 	
+ 	

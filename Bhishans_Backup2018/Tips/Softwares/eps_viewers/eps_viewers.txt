@@ -1,0 +1,13 @@
+Bhishan Poudel
+Feb 16, 2016
+
+To view eps file in MacOS
+===========================
+
+1. Preview.app   (in-built)
+2. Skim          (free and simple app)
+3. Inkspace      (free, can edit eps file, not simple)
+4. Scribus       (free, can edit eps file, not simple)
+
+
+Imagemagic - complicated to install, requires latest Xcode, also mac > 10.5

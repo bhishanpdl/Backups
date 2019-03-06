@@ -1,0 +1,16 @@
+1. copy
+
+from
+/Users/poudel/Copy/Programming/C/cprograms/try/driver1.c
+
+to 
+/Users/poudel/Copy/Programming/C/cprograms/try2
+
+
+method1: ( -i command asks y or n if file is being overwritten)
+
+cp -i /Users/poudel/Copy/Programming/C/cprograms/try/driver1.c /Users/poudel/Copy/Programming/C/cprograms/try2
+
+method2: when we are in the same directory and pasting in parent directory
+
+cp fn1.c ../try2

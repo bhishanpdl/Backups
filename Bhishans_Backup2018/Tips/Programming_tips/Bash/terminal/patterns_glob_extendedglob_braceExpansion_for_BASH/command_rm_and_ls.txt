@@ -1,0 +1,62 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 16, 2016
+# Ref     : http://mywiki.wooledge.org/BashGuide/Patterns
+
+Patterns in BASH ( globs, extended globs, brace expansion)
+===============================================================================
+
+1. Glob Patterns
+*: Matches any string, including the null string. 
+?: Matches any single character.
+[...]: Matches any one of the enclosed characters.
+
+2. Extended Glob patterns
+
+?(list): Matches zero or one occurrence of the given patterns.
+*(list): Matches zero or more occurrences of the given patterns.
++(list): Matches one or more occurrences of the given patterns.
+@(list): Matches one of the given patterns.
+!(list): Matches anything but the given patterns.
+
+
+3.  Brace Expansion
+
+
+order: Capital letters bracket,caret,underscore,quote Small letters
+echo th{e,a}n given then than
+echo {0..9} gives 0 1 2  9
+echo {b..Z} gives b a ` _ ^ ]  [ Z
+
+echo {W..c} gives W X Y Z [  ] ^ _ ` a b c
+
+
+for permutation of 0,1 to 0-9
+echo {0,1}{0..9} = 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19
+
+
+4.
+filename with leading whitespace:
+touch " a white space"; ls
+ls \ a*
+rm \ a*
+
+
+
+
+
+ 
+touch res{0,1,19,2,4,666,9}; ls
+
+delete except res0
+====================
+ls res[0-9]*
+ls res[0-9]* | grep -v "res0"
+rm res[0-9]* | grep -v "res0"
+
+
+
+
+touch res{0-10}  gives res0-10.txt (only one file)
+touch res{0,1,2,3,4}; ls
+ls res[0-4]
+rm res[0-4]

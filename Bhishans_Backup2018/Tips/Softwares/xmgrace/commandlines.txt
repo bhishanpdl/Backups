@@ -1,0 +1,9 @@
+Bhishan Poudel
+Jan 31, 2016
+
+Command line access to grace
+=============================
+
+eg. 1 plot 3rd column vs 1st column
+
+xmgrace -block 5v.dat -bxy 1:3

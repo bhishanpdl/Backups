@@ -1,0 +1,6 @@
+# Date: July 12, 2017 Wed (Stony Brook DESC Conference)
+
+To install gsl library
+=======================
+sudo port install gsl
+

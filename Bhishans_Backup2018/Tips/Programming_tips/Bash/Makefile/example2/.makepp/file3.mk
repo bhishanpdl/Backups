@@ -1,0 +1,15 @@
+INCLUDE_PATHS=lib/usr/local/lib/usr/lib/libsys/usr/local/include/usr/includeuser/usr/local/include/usr/include
+IMPLICIT_TARGETS=file3
+COMMAND=gcc file3.c -o file3
+META_DEPS=/usr/bin/gccfile3.csysstdio.h
+SORTED_DEPS=file3.c/usr/bin/gcc/usr/include/stdio.h
+INCLUDE_SFXS=lib.la.so.sa.a.sl
+BUILD_SIGNATURE=1439513913,8551
+SIG_METHOD_IMPLICIT=1
+DEP_SIGS=R+01HbzIaMJh1NNoeaXPCw1431629673,7758881424883218,31639
+SIGNATURE=1439513913,8551
+CWD=.
+IMPLICIT_DEPS=
+ARCH=x86_64-linux-gnu-thread-multi
+SIG_METHOD_NAME=C
+END=

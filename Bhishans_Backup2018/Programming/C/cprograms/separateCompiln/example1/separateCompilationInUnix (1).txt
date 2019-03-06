@@ -1,0 +1,14 @@
+1. how to do separate compilation in unix
+
+step 1: compiling the module:
+
+gcc -Wall -c main.c	  //gcc compiles main.c and makes executable main.o
+gcc -Wall -c functions.c
+gcc -Wall -c functions.h
+
+step 2: linking all the modules to the main program:
+gcc -o main main.o functions.o 	//gcc links all them to main.o
+
+step 3: running the executable
+./main
+

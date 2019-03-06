@@ -1,0 +1,28 @@
+# Author    : Bhishan Poudel
+# Date      : Jul 04, 2017 Tue
+
+
+RST examples
+##=======================================================================
+
+
+File guide.rst
+============
+
+>>> 3 + 3
+4
+
+
+Then make doctest fails. Since it runs the code with triple chevrons.
+Drawback: it also print triple chevrons, so that it is difficult to copy paste.
+
+
+Method 2
+=======
+.. testcode::
+    print("hi!")
+    
+.. testoutput::
+    hi!
+    
+

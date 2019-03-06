@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=097-Ultra-BioGenesis
+activeBackground=124,121,142
+activeBlend=55,63,77
+activeForeground=192,193,197
+activeTitleBtnBg=255,255,255
+alternateBackground=31,46,106
+background=124,121,142
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=0
+foreground=2,2,3
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=124,124,124
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=35,103,239
+selectBackground=21,48,138
+selectForeground=218,231,253
+shadeSortColumn=true
+visitedLinkColor=29,66,188
+windowBackground=32,48,111
+windowForeground=232,232,232

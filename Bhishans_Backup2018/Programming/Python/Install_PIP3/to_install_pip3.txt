@@ -1,0 +1,17 @@
+Date: July 5, 2017
+Author: Bhishan Poudel
+
+Topic: To install pip and pip3 on MacOS Sierra
+===============================================
+
+Go to the link:
+https://bootstrap.pypa.io/get-pip.py
+
+Copy the content to get-pip.py
+Sudo -H python get-pip.py
+
+This will install pip and pip3 at a same time.
+
+Caveats:
+If we download above file and install it does not work, just
+copy and paste the contents.

@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=098-Ultra-Oceania
+activeBackground=37,108,180
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=38,111,184
+background=35,104,172
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=235,235,235
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=35,104,172
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=7,176,249
+selectBackground=32,95,158
+selectForeground=239,255,245
+shadeSortColumn=true
+visitedLinkColor=0,29,125
+windowBackground=35,104,172
+windowForeground=0,0,0

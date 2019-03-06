@@ -1,0 +1,452 @@
+# This file is used by Flex Tool Bar to create buttons on your Tool Bar.
+# For more information how to use this package and create your own buttons,
+#   read the documentation on https://atom.io/packages/flex-tool-bar
+
+[
+
+  #
+  # # toolbar icon
+  # {
+  #   type: "button"
+  #   icon: "code-working"
+  #   iconset: "ion"
+  #   callback: "flex-tool-bar:edit-config-file"
+  #   tooltip: "Edit Tool Bar"
+  # }
+
+
+  # toolbar icon
+  {
+    type: "button"
+    icon: "gear"
+    iconset: "fa"
+    callback: "flex-tool-bar:edit-config-file"
+    tooltip: "Edit Tool Bar"
+  }
+
+  # toolbar icon
+  {
+    type: "button"
+    icon: "italic"
+    iconset: "fa"
+    callback: "insert-timestamp:DateT"
+    tooltip: "insert-timestamp"
+  }
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "search"
+    iconset: "fa"
+    callback: 'find-and-replace:show'
+    tooltip: "Find"
+  }
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "columns"
+    iconset: "fa"
+    callback: 'pane:split-right'
+    tooltip: 'Split screen - Horizontally'
+  }
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "arrow-right-c"
+    iconset: "ion"
+    callback: 'window:move-active-item-to-pane-on-right'
+    tooltip: 'Move pane to right window'
+  }
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "arrow-left-c"
+    iconset: "ion"
+    callback: 'window:move-active-item-to-pane-on-left'
+    tooltip: 'Move pane to left window'
+  }
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "ios-arrow-right"
+    iconset: "ion"
+    callback: 'pane:split-right-and-copy-active-item'
+    tooltip: 'Split and move right'
+  }
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "ios-close"
+    iconset: "ion"
+    callback: 'pane:close'
+    tooltip: 'Pane Close'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "save"
+    iconset: "fa"
+    callback: 'window:save-all'
+    tooltip: 'Save All'
+  }
+
+
+
+  # toolbar icon
+  {
+      type: "spacer"
+  }
+  {
+      type: "button"
+      icon: "star"
+      iconset: "ion"
+      callback: 'python-autopep8:format'
+      tooltip: 'Autopep8 Format'
+  }
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "play"
+    iconset: "ion"
+    callback: 'script:run'
+    tooltip: 'Run script'
+  }
+
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "stop"
+    iconset: "ion"
+    callback: 'script:kill-process'
+    tooltip: 'Stop script'
+  }
+
+
+
+  # toolbar icon
+  {
+      type: "button"
+      icon: "android-menu"
+      iconset: "ion"
+      callback: "'atom-alignment:alignMultiple'"
+      tooltip: "Align Multiple"
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "level-down"
+    iconset: "fa"
+    callback: 'editor:fold-current-row'
+    tooltip: 'Code Fold'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "level-up"
+    iconset: "fa"
+    callback: 'editor:unfold-current-row'
+    tooltip: 'Code Unfold'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "android-arrow-dropdown"
+    iconset: "ion"
+    callback: 'editor:fold-all'
+    tooltip: 'Code Fold All'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "android-arrow-dropup"
+    iconset: "ion"
+    callback: 'editor:unfold-all'
+    tooltip: 'Code Unfold All'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "refresh"
+    iconset: "ion"
+    callback: 'latex:clean'
+    tooltip: 'Latex Clean'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "social-github"
+    iconset: "ion"
+    callback: 'git-control:toggle'
+    tooltip: 'Git Control'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "social-octocat"
+    iconset: "ion"
+    callback: 'open-on-github:file'
+    tooltip: 'Open on Github'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "arrow-up-c"
+    iconset: "ion"
+    callback: 'git-plus:add-and-commit'
+    tooltip: 'Add and Commit'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "ios-cloud-upload"
+    iconset: "ion"
+    callback: 'git-plus:push'
+    tooltip: 'Git Push'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "document"
+    iconset: "ion"
+    callback: 'git-plus:add-all-and-commit'
+    tooltip: 'Add All And Commit'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "ios-cloud-download"
+    iconset: "ion"
+    callback: 'git-plus:pull'
+    tooltip: 'Git Pull'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "merge"
+    iconset: "ion"
+    callback: 'merge-conflicts:detect'
+    tooltip: 'Merge Conflicts'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "map"
+    iconset: "ion"
+    callback: 'git-time-machine:toggle'
+    tooltip: 'git-time-machine'
+  }
+
+
+  # toolbar icon
+  {
+    type: "button"
+    icon: "code-working"
+    iconset: "ion"
+    callback: "open-terminal-here:open"
+    tooltip: "External Terminal"
+  }
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "terminal"
+    iconset: "fa"
+    callback: 'term3:open'
+    tooltip: 'Terminal in New Tab'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "question"
+    iconset: "fa"
+    callback: 'ask-stack:ask-question'
+    tooltip: 'Ask Stackoverflow'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "indent"
+    iconset: "fa"
+    callback: 'command-palette:toggle'
+    tooltip: 'Toggle Command Palette'
+  }
+
+
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "android-color-palette"
+    iconset: "ion"
+    callback: 'minimap:toggle'
+    tooltip: 'Toggle Minimap'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "social-markdown"
+    iconset: "ion"
+    callback: 'markdown-preview-plus:toggle'
+    tooltip: 'Markdonw Preview'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "eye"
+    iconset: "ion"
+    callback: 'symbols-tree-view:toggle'
+    tooltip: 'Toggle Symbols Tree View'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "toggle"
+    iconset: "ion"
+    callback: 'tree-view:toggle'
+    tooltip: 'Toggle Tree View'
+  }
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "android-notifications-off"
+    iconset: "ion"
+    callback: 'spell-check:toggle'
+    tooltip: 'Toggle Spell Check'
+  }
+
+  # toolbar icon
+  {
+    type: "spacer"
+  }
+  {
+    type: "button"
+    icon: "settings"
+    iconset: "ion"
+    callback: 'settings-view:open'
+    tooltip: 'Open Settings View'
+  }
+
+]

@@ -1,0 +1,58 @@
+# Author    : Bhishan Poudel
+# Date      : May 28, 2016
+# Ref       : https://wiki.geany.org/howtos/sorted_keyboard_shortcuts
+
+Keyboard shortcuts in geany
+==============================
+
+home		start of line
+F2		editor
+F4		VTE
+F6		scribble
+
+ctrl r		reload file
+ctrl n		new file
+ctrl s		save
+ctrl b          moves to nearest brace,parenthesis
+ctrl h		replace
+ctll d 		duplicate current line
+ctrl k		delete current line
+ctrl alt u	toggle upper lower case
+
+ctrl up/down 	paragraph up/down
+ctrl rt/lt	right/left word
+
+ctrl shf x	cut current line
+ctrl sht del	Delete to line end
+ctrl sht l	current line center of view
+
+alt shf w 	select current word
+alt shf l       select current line
+alt shf p 	select current paragraph
+
+
+
+
+
+
+
+
+
+
+    ctrl alt u	ctrl up/down	ctrl rt/left	ctrl shf del
+    ctrl sht x	alt shf w	alt shf l	alt shf p
+    ctrl r	ctrl n		ctrl b 		ctrl h
+    ctrl d	ctrl k		home		F2 F4 F6
+
+
+
+
+
+
+
+
+
+
+
+
+

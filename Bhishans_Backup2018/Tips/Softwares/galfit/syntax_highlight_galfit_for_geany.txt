@@ -1,0 +1,109 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 14, 2016
+
+# Useful links:
+https://unix.stackexchange.com/questions/98157/customising-markdown-syntax-highlighting-in-geany
+
+
+To apply the syntax highlighting for galfit files (.gal) in geany text editor
+===============================================================================
+
+1. Edit the file filetype extension.
+Tools > Configuration Files > filetype_extensions.conf
+
+
+
+and paste this:
+
+[Extensions]
+Galfit=*.gal;
+
+[Groups]
+Script=Galfit;
+
+
+example:
+http://www.geany.org/manual/#lexer-filetype
+
+
+2. create this file, if doesnot exist (file definitions)
+cd filedefs; ls
+
+#if there is no Gnuplot.conf like below
+touch ~/.config/geany/filedefs/filetypes.Galfit.conf; ls
+
+
+ Then, paste this code snippet:
+
+
+# Author  : Bhishan Poudel
+# Date    : Mar 14, 2016
+# Version : 1.0
+
+
+[styling]
+default=default
+comment=comment_line
+stringdq=string_1
+stringlq=string_2
+stringrq=string_2
+function=keyword_1
+variable=string_1,bold
+label=label
+userdefined=keyword_2,bold
+sectiondef=keyword_1
+subsectiondef=keyword_1
+ifdefinedef=keyword_1
+macrodef=keyword_1
+stringvar=string_1
+number=number_1
+sectiongroup=keyword_1
+pageex=keyword_1
+functiondef=keyword_1
+commentbox=comment
+
+
+[keywords]
+# all items must be in one line
+variables=0 1 2 3 4 5 6 7 8 9
+functions=
+lables=10
+userdefined=sersic nuker expdisk devauc expdisk edgedisk moffat ferrer gaussian king psf sky powerlaw log radial
+
+
+[lexer_properties]
+nsis.uservars=1
+nsis.ignorecase=1
+
+
+[settings]
+# default extension used when saving files
+extension=gal
+
+# single comments, like # in this file
+comment_single=#
+# multiline comments
+#comment_open=
+#comment_close=
+
+
+# This setting works only for single line comments
+comment_use_indent=true
+
+# context action command (please see Geany's main documentation for details)
+context_action_cmd=
+
+# lexer filetype should be an existing lexer that does not use lexer_filetype itself
+lexer_filetype=NSIS
+
+
+[build-menu]
+EX_00_LB=Execute
+EX_00_CM=rm fit.log; galfit %e.gal; rm galfit.0*; open fit.log
+EX_00_WD=
+FT_00_LB=
+FT_00_CM=
+FT_00_WD=
+FT_02_LB=
+FT_02_CM=
+FT_02_WD=

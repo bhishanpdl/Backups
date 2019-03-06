@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=dartsky-LE
+activeBackground=39,40,42
+activeBlend=88,88,88
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=35,35,35
+background=55,57,60
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=10
+foreground=255,255,255
+frame=0,0,0
+handle=0,0,0
+inactiveBackground=55,57,60
+inactiveBlend=170,170,170
+inactiveForeground=255,255,255
+inactiveFrame=0,0,0
+inactiveHandle=0,0,0
+inactiveTitleBtnBg=170,170,170
+linkColor=74,128,190
+selectBackground=195,195,195
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=104,139,175
+windowBackground=23,23,23
+windowForeground=255,255,255

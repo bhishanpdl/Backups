@@ -1,0 +1,31 @@
+# Author    : Bhishan Poudel
+# Date      : 2016-06-09
+
+Phosim syntax highlighting for geany
+======================================
+
+1. edit filetype extension file
+open ~/.config/geany/
+open ~/.config/geany/filetype_extensions.conf
+
+2. it should look like:
+[Extensions]
+Gnuplot=*.gp;*.gnu;*.plt;
+Galfit=*.gal;
+Phosim=*.mycat;
+Python=*.py;*.pyc;*.ipy;*.pcat;*.icat;
+[Groups]
+Script=Gnuplot;Galfit;Phosim;Python
+
+
+3.
+Then Tools> configuration files > filetype configurations > scripting
+        language > filetype.python
+
+
+Add following words in
+[Keywords]
+
+primary = words_already_there Words_after_this_are_for_Phosim_pcat_files Unrefracted_RA_deg Unrefracted_Dec_deg Unrefracted_Azimuth Unrefracted_Altitude Slalib_date Opsim_moondec Opsim_rotskypos Opsim_rottelpos Opsim_moondec Opsim_moonra Opsim_expmjd Opsim_moonalt Opsim_sunalt Opsim_filter Opsim_dist2moon Opsim_moonphase Opsim_obshistid Opsim_rawseeing SIM_SEED SIM_MINSOURCE SIM_TELCONFIG  SIM_CAMCONFIG SIM_VISTIME SIM_NSNAP object
+
+identifiers=words_already_there none

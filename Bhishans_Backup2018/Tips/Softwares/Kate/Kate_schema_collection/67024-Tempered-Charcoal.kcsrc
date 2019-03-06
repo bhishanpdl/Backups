@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=Tempered-Charcoal
+activeBackground=255,182,23
+activeBlend=247,124,0
+activeForeground=255,255,255
+activeTitleBtnBg=148,132,26
+alternateBackground=69,69,69
+background=74,74,74
+buttonBackground=122,122,122
+buttonForeground=255,255,255
+contrast=8
+foreground=255,255,255
+frame=66,103,148
+handle=66,103,148
+inactiveBackground=148,148,148
+inactiveBlend=164,164,164
+inactiveForeground=85,85,85
+inactiveFrame=66,103,148
+inactiveHandle=118,118,118
+inactiveTitleBtnBg=66,103,148
+linkColor=255,196,0
+selectBackground=111,197,255
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=216,216,216
+windowBackground=41,41,41
+windowForeground=228,228,228

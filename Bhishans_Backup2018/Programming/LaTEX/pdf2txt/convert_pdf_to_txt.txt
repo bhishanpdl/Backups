@@ -1,0 +1,3 @@
+pdf2ps filename.pdf
+ps2ascii filename.ps > filename.txt
+

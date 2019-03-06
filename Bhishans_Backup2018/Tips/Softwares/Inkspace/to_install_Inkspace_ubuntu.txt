@@ -1,0 +1,25 @@
+Bhishan Poudel
+Feb 18, 2016
+
+# Ref: https://launchpad.net/~inkscape.dev/+archive/ubuntu/stable
+
+To install Inkspace in ubuntu wily
+======================================
+1. first add the ppa:
+
+To find ppa go to this website:
+https://launchpad.net/~inkscape.dev/+archive/ubuntu/stable
+
+click Technical details of ppa
+choose ubuntu version
+copy the ppa
+
+
+open synaptic package manager from dock (press superkey )
+Settings > Other Softwares > Add
+deb http://ppa.launchpad.net/inkscape.dev/stable/ubuntu wily main
+
+2. Install the program using Software center
+open software center
+search Inkspace
+more info, check all options and install it.

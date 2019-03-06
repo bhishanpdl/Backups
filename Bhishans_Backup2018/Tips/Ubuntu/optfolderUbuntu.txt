@@ -1,0 +1,24 @@
+bhishan tips
+============
+topic: /opt folder in linux
+
+1.to open this folder
+nautilus /opt
+
+2.to move file from /opt to /Downloads
+e.g copy file eclipse.tar.gz
+
+mv eclipse.tar.gz /Downloads
+
+3. to move file from Downloads to opt
+let file name be 
+eclipse-cpp-mars-R-linux-gtk-x86_64.tar.gz
+and there is also a folder called eclipse
+
+go to Downloads directory
+type sudo mv eclipse-   then press tab
+give one space 
+/opt/
+
+mv eclipse-cpp-mars-R-linux-gtk-x86_64.tar.gz /opt/
+

@@ -1,0 +1,10 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 13, 2016
+
+
+===============================================================================
+To add subtitle for youtube video
+
+1. install the add on Subtitles For YouTube
+2. download the srt file
+3. drag and drop srt file to youtube

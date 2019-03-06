@@ -1,0 +1,31 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 18, 2016
+# Ref     : https://stackoverflow.com/questions/453236/how-to-set-my-default-shell-on-mac
+
+
+To change the default shell for macos
+===============================================================================
+chsh -s /bin/bash
+
+to check all shells
+===================
+cat /etc/shells
+
+output is:
+/bin/bash
+/bin/csh
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+
+
+to check current shell
+========================
+echo $SHELL
+
+
+to change shell in geany
+========================
+right click the shell
+preferece    change shell

@@ -1,0 +1,16 @@
+vim basics
+===========
+
+1. to open txt file using vim editor
+vi file_name  (e.g. vi vim.txt)
+
+this will show contents of the file
+
+2. to go back to termial type
+:wq! then press enter
+
+3. vim arrow keys
+H = Left	L = right
+J = down	K = up 
+
+enter = go dowto the eb fo tne :h

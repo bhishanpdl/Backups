@@ -1,0 +1,10 @@
+example to use sed (stream editer)
+=======================================
+
+
+
+!Extracting first 1000 xvalues: sed -n '1,1000 p' xvalues.dat > xvalues1.dat     (add 3 to last value)
+!                               sed -n '1003,2002 p' xvalues.dat > xvalues2.dat  
+!                               sed -n '2005,3004 p' xvalues.dat > xvalues3.dat
+!                               sed -n '3007,4006 p' xvalues.dat > xvalues4.dat
+

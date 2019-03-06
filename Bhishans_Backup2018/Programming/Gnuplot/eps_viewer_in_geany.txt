@@ -1,0 +1,17 @@
+Bhishan Poudel
+Feb 16, 2016
+
+To view eps file in geany text editor while using gnuplot (using Skim eps viewer app)
+=======================================================================================
+
+install skim eps viewer app in /Users/Applications/
+add the path variable to this app:
+   inside .cshrc add this line
+   setenv PATH "${PATH}:/Applications/Skim.app/Contents/MacOS/"
+
+in geany: open a gnuplot file
+          Build > Set Build Commands > View eps File      Skim %e.eps
+
+
+# note: %f is file, %e is filename without extension
+

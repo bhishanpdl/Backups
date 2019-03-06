@@ -1,0 +1,6 @@
+ref: http://matplotlib.org/users/installing.html
+
+
+to install
+=============
+sudo apt-get install python-matplotlib

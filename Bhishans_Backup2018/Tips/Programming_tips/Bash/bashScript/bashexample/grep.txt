@@ -1,0 +1,37 @@
+to give output of terminal to a text file
+==========================================
+
+example:
+
+1. write the output (erases earlier contents)
+
+echo "hello world" > temp.txt
+echo "hello bob  " >> temp.txt  ( appends to it)
+
+2. cat and grep command
+cat = shows the whole text
+grep "something_in_the_file" file_name
+	= shows only those lines 
+	
+	example: we have a file sample.dat
+kris, firefighter, east naples
+jose, firefighter, east naples
+john, driver, east naples
+matt, lieutenant, east naples
+frank, firefighter, north naples
+tom, lieutenant, north naples
+bob, driver, new york
+
+
+we want to see all the firefighters
+=====================================
+grep "firefighter" sample.dat
+grep "fire" sample.dat
+grep "fire" sample.dat | sort -u
+
+we want to only name of drivers
+================================
+grep "driver" sample.dat | cut -d\, -f1
+		note: -d is delimiter and \, is comma
+		note: f1 first word before comma,
+			  f2 second word

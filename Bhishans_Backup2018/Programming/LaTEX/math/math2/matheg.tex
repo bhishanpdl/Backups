@@ -1,0 +1,52 @@
+%Author: Bhishan Poudel
+% Date : Aug, 2015
+% cmd  : latex poudel1.tex 
+% cmd  : xdvi poudel1.dvi 
+% cmd  : dvipdf poudel1.dvi
+
+
+\documentclass[12pt]{article}
+\usepackage{amsmath} % for equation*
+
+%some useful newcommands
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\beqa}{\begin{eqnarray}}
+\newcommand{\eeqa}{\end{eqnarray}}
+\newcommand{\beqan}{\begin{eqnarray*}}
+\newcommand{\eeqan}{\end{eqnarray*}}
+
+% some useful newcommands
+\newcommand{\nl}{\nonumber \\}
+\newcommand{\no}{\nonumber}
+\newcommand{\ul}{\underline}
+\newcommand{\ol}{\overline}
+
+\begin{document}
+
+\section{example}
+	\beqa
+	\label{eq1}
+	z &=& x + iy\\
+	\label{eq2}
+	z &=& re^{i \phi}  \no\\   % do not number this equation
+	z &=& r cos(\phi) + r sin(\phi)\\
+	\sqrt{z} &=& \sqrt{r} cos(\phi/2) + \sqrt{r}  sin(\phi/2)
+	\eeqa
+
+
+\section{ example}
+
+	Thus for all real numbers $x$ we have
+	\begin{equation*}
+    x\le|x|\quad\text{and}\quad x\ge|x|
+	\end{equation*}
+	
+	and so
+	\begin{equation*}
+    x\le|x|\quad\text{for all $x$ in $R$}.
+	\end{equation*}
+
+
+
+\end{document}

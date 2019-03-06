@@ -1,0 +1,14 @@
+Author: Bhishan Poudel
+Date  : Dec 8, 2016
+
+Topic: Spell check pacakage in atom editor
+==========================================
+
+
+Atom Packages > spell-check > Settings > Grammars > "I have these"
+source.asciidoc, source.gfm, text.git-commit, text.plain, text.plain.null-grammar, text.tex.latex
+
+
+problem:
+it works for hello, hello.gal
+don't work: hello.txt (and, of course, hello.py, hello.c etc)

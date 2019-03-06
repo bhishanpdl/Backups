@@ -1,0 +1,47 @@
+
+     Atom Keybindings for Mac
+    ==========================
+    cmd a        : select all
+    cmd b        : find currently opened files
+    cmd f        : find in current file
+    cmd i        : script run
+    cmd l        : select line
+    cmd n        : new file in project (may not be in current directory)
+    cmd p        : files in first project
+    cmd r        : search for symbols (variables)
+    cmd t        : fuzzy find files of first project
+    cmd /        : toggle line comments
+    cmd \        : toggle tree view
+
+    cmd ,        : open configuration editor
+    cmd ]        : indent selected text
+    cmd up       : move to top of file
+    cmd left     : move to first char of line
+
+    ctrl a       : move to beginning of line ( e is end)
+    ctrl m       : find matching bracket
+    ctrl g       : go to line
+    ctrl right   : go to next DESKTOP
+
+    cmd shf f    : find in first project
+    cdm shf p    : open command palette (i have F6 for this)
+    cmd shf d    : duplicate line
+    cmd shf ]    : go to right tab
+    cmd shf left : select first char of line
+
+    cmd opt rt   : go to right tab
+    cmd alt s    : save all files
+
+    cmd ctr m    : select inside brackets
+    cmd ctr up   : move line up
+    cmd ctr f    : full screen toggle
+    cmd ctr z    : toggle fullscreen distraction free zen package
+
+    ctr shf k    : delete line
+    ctr shf l    : select grammaar
+    ctr alt e    : (python) select inside string
+    ctr alt c    : (latex) clean
+
+    # Mac commands
+    cmd shf 4    : screenshot of selected area
+    ctrl  left   : go to next desktop

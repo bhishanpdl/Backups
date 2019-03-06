@@ -1,0 +1,18 @@
+//ref : https://stackoverflow.com/questions/2177391/allocating-memory-for-a-structure-in-c
+
+
+
+
+My favorite:
+
+#include <stdlib.h>
+
+struct st *x = malloc(sizeof *x); 
+
+Note that:
+
+    x must be a pointer
+    no cast is required
+    include appropriate header
+
+

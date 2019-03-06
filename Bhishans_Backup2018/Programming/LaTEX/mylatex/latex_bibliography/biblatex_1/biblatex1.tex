@@ -1,0 +1,39 @@
+% Ref: https://www.sharelatex.com/learn/Biblatex_bibliography_styles
+% Ref: https://tex.stackexchange.com/questions/5091/what-to-% biblatex is better than natlibdo-to-switch-to-biblatex
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes} % Recommended
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{Gravity.bib,weinberg.bib,schneider.bib, microlensing.bib}
+\usepackage[nottoc]{tocbibind}  % to add references in the table of contents
+\usepackage{hyperref}             % for hyperlink
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta, urlcolor=cyan, bookmarks=true }
+\usepackage{url}
+
+
+
+\title{biblatex Examples}
+\author{Bhishan Poudel}
+\date{Apr 19, 2016}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+
+\section{biblatex example}
+Note that biblatex is better than natlib.\\
+Reference using cite gives \cite{key}.\\
+Reference using parencite gives \parencite{key}.\\
+Reference using textcite gives \textcite{key}.\\
+
+\section{Changes from natbib to biblatex}
+You also need to replace citep with parencite and citet with textcite. There might be other similar minor changes.
+
+\newpage
+\nocite{*}
+\printbibliography
+\end{document}

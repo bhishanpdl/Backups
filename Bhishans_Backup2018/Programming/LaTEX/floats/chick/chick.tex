@@ -1,0 +1,159 @@
+% topic: latex template for homework
+
+% cmd  : clear; latex chick.tex  (Note: it will create 3 extra files log,aux and dvi )
+% cmd  : clear; xdvi chick.dvi
+% cmd  : clear; dvipdf chick.dvi
+
+% cmd  : ctrl D if problem occurs
+% NOTE : look at end for description of figure in LATEX.
+
+
+\documentclass[14pt]{article}
+\textheight 655pt
+\textwidth 16.5cm
+\hoffset -1.8cm  \voffset -1.7cm 
+
+\usepackage{graphicx,subfigure}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{fixltx2e}
+\usepackage{xcolor}
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bfig}{\begin{figure}}
+\newcommand{\efig}{\end{figure}}
+\newcommand{\beqa}{\begin{eqnarray}}
+\newcommand{\eeqa}{\end{eqnarray}}
+\newcommand{\beqan}{\begin{eqnarray*}}
+\newcommand{\eeqan}{\end{eqnarray*}}
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+\newcommand{\bfl}{\begin{flushleft}}
+\newcommand{\efl}{\end{flushleft}}
+\newcommand{\btab}{\begin{tabular}}
+\newcommand{\etab}{\end{tabular}}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+\newcommand{\bdes}{\begin{description}}
+\newcommand{\edes}{\end{description}}
+\newcommand{\bdm}{\begin{displaymath}}
+\newcommand{\edm}{\end{displaymath}}
+\newcommand {\IR} [1]{\textcolor{red}{#1}}
+
+
+% Creating Title for the assesment
+
+\title{Assignment 2}
+\author{Bhishan Poudel}
+\date{Sep, 2015}
+% Don't forget to use \maketitle below \begin{document}
+
+\begin{document}
+\maketitle
+
+
+
+\section{Section 1}
+This is a sample text.
+\clearpage
+
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.7]{chick}
+\caption{fig.1}
+\end{figure}
+
+
+
+\section{Section 2}
+
+\setlength{\unitlength}{0.8cm}
+\begin{picture}(6,5)
+\put(3.5,0.4){$\displaystyle
+s:=\frac{a+b+c}{2}$}
+\put(1,1){\includegraphics[
+  width=2cm,height=2cm]{chick.eps} }
+\end{picture}
+
+
+\section{Section 3}
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.5, angle=180]{chick}
+\caption{fig.1}
+\end{figure}
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\includegraphics[attr1=val1, attr2=val2, ..., attrn=valn]{imagename}
+%\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+%	width=xx 			Specify the preferred width of the imported image to xx.
+%						NB. Only specifying either width or height will scale the 
+%						image while maintaining the aspect ratio.
+%	height=xx 			Specify the preferred height of the imported image to xx.
+%	keepaspectratio 	This can be set to either true or false. When true, it 
+%						will scale the image according to both height and width, 
+%						but will not distort the image, so that neither width nor height are exceeded.
+%	scale=xx 			Scales the image by the desired scale factor. 
+%						e.g, 0.5 to reduce by half, or 2 to double.
+%	angle=xx 			This option can rotate the image by xx degrees (counter-clockwise)
+%	trim=l b r t 		This option will crop the imported image by l from the left, 
+%						b from the bottom, r from the right, and t from the top. 
+%						Where l, b, r and t are lengths.
+%	clip 				For the trim option to work, you must set clip=true.
+%	page=x 				If the image file is a pdf file with multiple pages, 
+%						this parameter allows you to use a different page than the first.
+%	resolution=x 		Specify image resolution in dpi
+
+%	\includegraphics[width=\linewidth]{chick}
+%	\includegraphics[width=\textwidth]{chick}
+%	\includegraphics[height=\textheight]{chick}
+%	\includegraphics[scale=0.5, angle=180]{chick}
+%	\includegraphics[trim = 10mm 80mm 20mm 5mm, clip, width=3cm]{chick}
+
+%	Float placement specifiers
+%	=============================
+
+%    ! indicates that some restrictions should be ignored
+%    h indicates that the float is allowed to be placed inline
+%    t indicates that the float is allowed to go into a top area
+%    b indicates that the float is allowed to go into a bottom area
+%    p indicates the the float is allowed to go on a float page or column area
+
+%	
+%    If the specifier contains a !, the algorithm will ignore any restrictions 
+%    related either to the number of floats that can be put into an area or the 
+%    max size an area can occupy. Otherwise the restrictions defined by the parameters apply.
+%    
+%    As a next step it will check if h has been specified.
+%    If so, it will try to place the float right where it was encountered. 
+%    If this works, i.e., if there is enough space, 
+%    then it will be placed and processing of that floats ends.
+%    
+%    If not, it will look next for t and if that has been specified it will try 
+%    to place the float in the top area. If there is no restriction that prevents 
+%    it then the float is placed and processing stops.
+%    
+%    If not it will finally check if b is present and, if so, it will try to place 
+%    the float into the bottom area 
+%    (again obeying any restrictions that apply if ! wasn't given).
+%    If that doesn't work either or is not permitted because the specifier wasn't 
+%    given the float is added to the holding queue.
+%    
+%    A p specifier (if present) is not used during the above process. 
+%    It will only be looked at when the holding queue is being emptied at the next page boundary.
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+\documentclass[parskip]{scrartcl}
+\usepackage[margin=10mm,a6paper]{geometry}
+\usepackage{tikz}
+\usepackage{lipsum}
+
+\begin{document}
+    
+    \foreach \x in {1,2,3,4}
+    { \lipsum[\x]
+        \includegraphics[scale=1]{pic\x.png}
+        \clearpage
+    }
+    
+\end{document}

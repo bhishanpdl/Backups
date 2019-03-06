@@ -1,0 +1,39 @@
+%cmd: latex greek.tex 
+%cmd : xdvi greek.dvi
+
+
+\documentclass{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polutonikogreek,english]{babel}
+
+\renewcommand*{\textgreek}[1]{%
+  \foreignlanguage{greek}{#1}%
+}
+
+\begin{document}
+
+This is english
+\textgreek{Τηις ις γρεεκ}
+This is english again.
+
+
+
+\begin{verbatim}
+The two packages address different problems.
+
+    inputenc allows the user to input accented characters directly from the keyboard;
+
+    fontenc is oriented to output, that is, what fonts to use for printing characters.
+
+The two packages are not connected, though it is best to call fontenc first and then inputenc.
+
+With \usepackage[T1]{fontenc} you choose an output font encoding that has support for the accented characters used by the most widespread European languages (German, French, Italian, Polish and others), which is important because otherwise TeX would not correctly hyphenate words containing accented letters.
+
+With \usepackage[<encoding>]{inputenc} you can directly input accented and other characters. What's important is that <encoding> matches the encoding with which the file has been written and this depends on your operating system and the settings of your text editor.
+
+
+\end{verbatim}
+
+\end{document}

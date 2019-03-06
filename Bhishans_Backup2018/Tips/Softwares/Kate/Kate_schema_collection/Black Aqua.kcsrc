@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=Black Aqua
+activeBackground=45,45,45
+activeBlend=45,45,45
+activeForeground=157,157,157
+activeTitleBtnBg=62,62,62
+alternateBackground=64,121,145
+background=45,45,45
+buttonBackground=40,106,168
+buttonForeground=230,230,230
+contrast=7
+foreground=233,233,233
+frame=40,40,40
+handle=238,238,238
+inactiveBackground=45,45,45
+inactiveBlend=45,45,45
+inactiveForeground=157,157,157
+inactiveFrame=132,132,132
+inactiveHandle=238,238,238
+inactiveTitleBtnBg=73,73,73
+linkColor=157,157,157
+selectBackground=40,40,40
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=157,157,157
+windowBackground=0,0,0
+windowForeground=233,233,233

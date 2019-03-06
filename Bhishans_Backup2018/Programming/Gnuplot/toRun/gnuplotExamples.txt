@@ -1,0 +1,19 @@
+Bhishan Poudel
+Oct 30, 2015
+
+gnuplot examples in Mac OS
+=====================================
+
+open terminal
+open xterm
+type gnuplot
+type set terminal xterm
+
+eg1. type plot sin(x)
+
+eg2. load 'abc.gp'  # it will create abc.eps file
+
+#note: the image may appear rotated in lated pdf
+# we may add: [scale=0.6,angle=270] {bhishan.eps}
+ in the includegraphics commmand
+

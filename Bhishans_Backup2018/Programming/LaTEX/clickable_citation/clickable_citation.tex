@@ -1,0 +1,28 @@
+\documentclass{scrbook}
+
+\usepackage[style=verbose]{biblatex}
+
+\usepackage{hyperref}
+
+\usepackage{filecontents}
+
+\begin{filecontents}{\jobname.bib}
+@misc{A01,
+  author = {Author, A.},
+  year = {2001},
+  title = {Alpha},
+  url = {http://tex.stackexchange.com/questions/4420/best-way-to-start-using-latex-tex},
+}
+\end{filecontents}
+
+\addbibresource{\jobname.bib}
+
+\begin{document}
+
+\chapter{Chapter 1}
+
+Some text \autocite{A01}.
+
+\printbibliography
+
+\end{document}

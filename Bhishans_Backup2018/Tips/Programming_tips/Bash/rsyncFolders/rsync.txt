@@ -1,0 +1,36 @@
+bhishan tips on remote sync
+==========================
+
+ref   : http://www.thegeekstuff.com/2010/09/rsync-command-examples/
+syntax: rsync options source destination
+
+most used options:
+
+    -v : verbose
+    -r : copies data recursively (but don’t preserve
+         timestamps and permission while transferring data
+    -a : archive mode, archive mode allows copying files
+         recursively and it also preserves
+         symbolic links, file permissions, user & group
+         ownerships and timestamps
+    -z : compress file data
+    -h : human-readable, output numbers in a human-readable format
+    -u : update and skip files that are newer on the receiver
+    -i : itemize-changes, to see changes in the terminal
+    -c : skip based on checksum, not mod-time&size
+
+note:
+ --dry-run	perform trial run with no change (same as -n)
+ --progess 	will show progress % on the terminal
+ --include 'R*' --exclude '*'	     
+ 	   	 all files and directories
+	   	starting with R and excludes all others
+	  
+--delete	if a file or directory exists in dest not in sourece
+	    	it will be deleted
+ --max-size='200Mb'  	will sync less than this
+ --remove-source-files 	will remove source files
+--exclude-from 'textfilename.txt' source/ destination/
+--existing     update only existing files on target, not create new files
+
+example: rsync -avzu --progess source destination

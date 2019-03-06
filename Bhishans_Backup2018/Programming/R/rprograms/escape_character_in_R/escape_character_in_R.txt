@@ -1,0 +1,7 @@
+# Author    : Bhishan Poudel
+# Date      : May 26, 2016
+
+escape characters in R
+========================
+
+$ = \\$

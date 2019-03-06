@@ -1,0 +1,111 @@
+# @Author: Bhishan Poudel <poudel>
+# @Date:   17-Oct-2016 14:10
+# @Last modified by:   poudel
+# @Last modified time: 09-Nov-2016 10:11
+
+
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+#
+# F5 is line sort.
+#
+#
+#
+'atom-text-editor':
+  'cmd-alt-s': 'spell-check:toggle'
+
+'atom-text-editor[data-grammar="source python"]':
+  'ctrl-alt-s': 'python-autopep8:format'
+
+
+# For atom-mac-terminal ( open current file in external terminal)
+'atom-text-editor':
+  'ctrl-shift-T': 'atom-mac-terminal:open'
+
+#  Script run command
+#  script stop script ctrl c for mac, ctrl q for linux
+'.platform-darwin atom-text-editor':
+  'F5': 'script:run'
+
+'.platform-darwin atom-text-editor':
+  'cmd-x': 'run:script'
+
+# command pallette
+'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
+  'F6': 'command-palette:toggle'
+
+#  git plus add one file
+'.platform-darwin atom-text-editor':
+  'shift-cmd-A': 'git-plus:add'
+
+#  git plus add one file
+'.platform-darwin atom-text-editor':
+  'shift-cmd-b': 'git-plus:add-all'
+
+# git plus commit
+'.platform-darwin':
+  'shift-cmd-C': 'git-plus:commit'
+
+# git plus commit
+'atom-text-editor':
+  'cmd-shift-U': 'git-plus:diff'
+
+# git plus commit
+'atom-text-editor':
+  'cmd-g-p': 'git-plus:diff'
+
+# search symbols(variables) in the open project
+'.platform-darwin':
+  'shift-cmd-R': 'symbols-view:toggle-project-symbols'
+
+# select text inside bracket
+'.platform-darwin atom-text-editor':
+  'ctrl-cmd-m': 'bracket-matcher:select-inside-brackets'
+
+# select inside string
+'atom-workspace':
+  'ctrl-alt-e': 'python-tools:select-all-string'
+
+# latex preview
+'atom-workspace, atom-workspace atom-text-editor':
+  'ctrl-shift-X': 'markdown-preview-plus:toggle-render-latex'
+
+# latex clean
+'atom-text-editor[data-grammar~="latex"]':
+  'ctrl-alt-c': 'latex:clean'
+
+# first save a template from a file,
+# then we can use this keybinding to create new template,
+# basically this is just copying the template.
+'atom-workspace':
+  'ctrl-alt-n': 'file-templates:new-file'

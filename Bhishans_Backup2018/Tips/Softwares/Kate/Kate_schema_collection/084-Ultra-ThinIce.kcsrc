@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=084-Ultra-ThinIce
+activeBackground=230,230,230
+activeBlend=55,63,77
+activeForeground=0,0,0
+activeTitleBtnBg=255,255,255
+alternateBackground=237,237,237
+background=230,230,230
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=39,112,151
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=230,230,230
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=12,1,1
+selectBackground=43,124,167
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=52,20,15
+windowBackground=255,255,255
+windowForeground=5,5,5

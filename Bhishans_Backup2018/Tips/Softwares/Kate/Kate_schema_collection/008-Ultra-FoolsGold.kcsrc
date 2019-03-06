@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=008-Ultra-FoolsGold
+activeBackground=146,136,25
+activeBlend=55,63,77
+activeForeground=20,20,20
+activeTitleBtnBg=255,255,255
+alternateBackground=226,232,198
+background=149,139,25
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=5,5,5
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=149,139,25
+inactiveBlend=30,30,30
+inactiveForeground=22,22,22
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=6,6,6
+selectBackground=135,126,23
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=26,26,26
+windowBackground=221,227,194
+windowForeground=0,0,0

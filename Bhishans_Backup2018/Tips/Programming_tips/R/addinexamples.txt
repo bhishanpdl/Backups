@@ -1,0 +1,76 @@
+Bhishan Poudel
+Jan 19, 2016
+
+addins in rstudio
+================================================================================
+
+to install:
+	go to terminal,load r, install.packages('addinexamples',dependencies=TRUE)
+	we will get error, but install required dependencies, reinstall addinexamples
+	
+	
+where is the package addinexamples in installed?
+================================================================================
+sudo find / -type d -name "addinexamples"
+
+answer is:
+/home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/
+
+cd /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/
+
+to see addins (dcf is debian configuratin file)
+================================================================================
+gedit /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/rstudio/addins.dcf
+
+to create extra addins
+================================================================================
+e.g. addin called shebang
+
+1. first edit addins.dcf and add another addin
+gedit /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/rstudio/addins.dcf
+
+2. give two newlines and paste this
+Name: shebang
+Description: Inserts some lines of text at the cursor position.
+Binding: shebang
+Interactive: false
+
+3. then create a file called shebang.r inside addinexamples/R/
+gedit /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/R/shebang.r
+
+3. now, go to ~/.Rprofile
+gedit ~/.Rprofile
+
+4. copy and paste that function
+
+#' Insert \%in\%.
+#'
+#' Call this function as an addin to insert \code{ \%in\% } at the cursor position.
+#'
+#' @export
+shebang <- function() {
+rstudioapi::insertText("#!/usr/bin/Rscript \n")
+rstudioapi::insertText("# Bhishan Poudel \n")
+rstudioapi::insertText("#  \n")
+rstudioapi::insertText("\n\n")
+rstudioapi::insertText("# setting working directory  \n")
+rstudioapi::insertText("set_default_wd()  \n")
+}
+
+5. that's it! voila!
+
+
+######### example addin ###################################################### 
+#' Insert \%in\%.
+#'
+#' Call this function as an addin to insert \code{ \%in\% } at the cursor position.
+#'
+#' @export
+insertInAddin <- function() {
+rstudioapi::insertText(" %in% ")
+}
+#########################################################3
+
+
+
+

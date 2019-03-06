@@ -1,0 +1,7 @@
+gnuplot 'name_of_macro_file'
+
+eg. 
+gnuplot 'plot1.gp'
+gnuplot 'plot1.sh'
+gnuplot 'plot1.plt'
+gnuplot 'plot1.gnu' etc

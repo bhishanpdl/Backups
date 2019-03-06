@@ -1,0 +1,15 @@
+IMPLICIT_DEPS=
+SIGNATURE=1439513890,8551
+CWD=.
+ARCH=x86_64-linux-gnu-thread-multi
+META_DEPS=/usr/bin/gccfile2.csysstdio.h
+SORTED_DEPS=file2.c/usr/bin/gcc/usr/include/stdio.h
+INCLUDE_PATHS=lib/usr/local/lib/usr/lib/libsys/usr/local/include/usr/includeuser/usr/local/include/usr/include
+DEP_SIGS=WM9k39iLyTwJIBPa9KJNIg1431629673,7758881424883218,31639
+SIG_METHOD_NAME=C
+COMMAND=gcc file2.c -o file2
+IMPLICIT_TARGETS=file2
+SIG_METHOD_IMPLICIT=1
+INCLUDE_SFXS=lib.la.so.sa.a.sl
+BUILD_SIGNATURE=1439513890,8551
+END=

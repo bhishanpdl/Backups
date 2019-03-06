@@ -1,0 +1,19 @@
+Bhishan Poudel
+Jan 11, 2016
+
+error: 
+========
+An error occurred while creating a new file.
+permission denied
+
+
+solution
+=========
+change ownership of  ~/.local/share/jupyter
+
+go to home
+type ctrl h
+go inside local/share/jupyter
+right click properties
+change properties
+

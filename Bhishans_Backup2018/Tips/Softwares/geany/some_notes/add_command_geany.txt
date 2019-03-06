@@ -1,0 +1,20 @@
+Bhishan Poudel
+Feb 16, 2016
+
+To add additional commands to Mac
+=====================================
+
+e.g. 1   to add geany command
+We don't see contents inside Geany.app if we doulbe click it , but we can see
+inside it.
+
+let's say we instal geany in user account, then paste this inside ~/.cshrc
+
+alias geany '/Users/poudel/Applications/Geany.app/Contents/MacOS/geany'
+
+
+e.g. 2 to add command ds9
+==========================
+paste this inside ~/.cshrc
+
+alias ds9 '/Applications/ds9.app/Contents/MacOS/ds9 &'

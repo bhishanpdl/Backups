@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=125-Ultra-Redemption
+activeBackground=128,128,198
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=230,230,230
+background=114,114,183
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=1,1,1
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=120,120,193
+inactiveBlend=30,30,30
+inactiveForeground=235,235,235
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=117,78,185
+selectBackground=187,187,187
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=220,220,220
+windowForeground=22,22,22

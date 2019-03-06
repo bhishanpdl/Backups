@@ -1,0 +1,59 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 14, 2017 Wed
+
+Topic: To install nbextensions in jupyter-notebook
+========================================
+
+
+1. download extensions as zip file from
+https://github.com/ipython-contrib/jupyter_contrib_nbextensions
+
+2. unzip and copy the folder
+(copy the whole folder nbextensions)
+
+
+From:
+~/Downloads/jupyter_contrib_nbextensions-master/src/jupyter_contrib_nbextensions/nbextensions
+
+To:
+/Users/poudel/.ipython/nbextensions
+
+For Linux
+go to downloaded nbextensions folder.
+sudo -H cp -r * /usr/share/jupyter/nbextension
+
+FIND location:
+==============
+locate nbextensions
+/usr/local/share/jupyter/nbextensions
+
+BUT, Copy extensions to ./jupyter/
+
+
+
+3. To enable/disable extensions
+First install configuration manager:
+
+sudo -H pip3 install jupyter_nbextensions_configurator
+sudo -H jupyter nbextensions_configurator enable --user
+
+Then,
+http://localhost:8888/tree#nbextensions_configurator
+
+Or,
+sudo -H jupyter nbextension enable codefolding/main
+sudo -H jupyter nbextension enable ruler/main
+sudo -H jupyter nbextension enable collapsible_headings/main
+sudo -H jupyter nbextension enable toc2/main
+sudo -H jupyter nbextension enable python-markdown/main
+sudo -H jupyter nbextension enable search-replace/main
+
+a) Table of contents (2) settings
+choose: Add a Table of Contents cell at the top of the notebook
+choose: Display toc window/sidebar at startup
+
+Note: If we click horizontal lines icon below Snippets it will give
+floating contents.
+
+b) Collapsible Headings
+add first two options.

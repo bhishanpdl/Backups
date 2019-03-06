@@ -1,0 +1,19 @@
+		MAC SHORTCUTS
+
+1. shutdown = cmd opt ctrl eject
+2. apps	= cmd shft a
+3. inside browser,(send mail) = cmd shf i
+4. delete right = ctrl d
+5. dictionary = cmd ctrl d
+6. screenshot window = cmd shft 4 space
+7. minimize window = cmd opt m
+8. direct quit current app = cmd opt shf esc (3 seconds)
+9. cmd space = spotlight
+10. cmd shf h = user directory
+11. cmd n = all my files
+11. cmd shf n = new folder
+12. 
+
+
+select multiple files: clickOneFile alt shft clickLastFile
+delete               : cmd delete

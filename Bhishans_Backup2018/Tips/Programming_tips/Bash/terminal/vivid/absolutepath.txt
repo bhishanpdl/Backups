@@ -1,0 +1,15 @@
+bhishan tips:
+=================
+
+absolute path:
+
+cd /home/bhishan/Copy/Tips/terminal
+
+relative path:
+
+now we are at this path
+. is equal to this path
+
+there is a subfolder deletelines in this path
+
+cd deletelines    is relative path

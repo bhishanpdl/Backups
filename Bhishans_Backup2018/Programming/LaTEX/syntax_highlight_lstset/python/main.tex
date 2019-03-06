@@ -1,0 +1,94 @@
+%%% Research Diary - Entry
+%%% 
+\documentclass[11pt,letterpaper]{article}
+%\newcommand{\workingDate}{\textsc{2016 $|$ March $|$ }}
+\newcommand{\workingDate}{\textsc{2016 $|$ March}}
+\newcommand{\userName}{Bhishan Poudel}
+\newcommand{\institution}{Ohio University}
+\usepackage{researchdiary_png}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{subfigure}
+% To add your univeristy logo to the upper right, simply
+% upload a file named "logo.png" using the files menu above.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\univlogo
+
+\title{Research Diary - Example Entry}
+
+{\Huge March 31}\\[5mm]
+
+
+\definecolor{mygray}{gray}{0.97}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\lstset{
+	language=python,
+	backgroundcolor=\color{mygray},
+	frame=single,
+	rulecolor=\color{black},
+	keywordstyle=\color{blue},
+	commentstyle=\color{mygreen}}
+\begin{lstlisting}[language=python]
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Author  : Bhishan Poudel
+# Date    : Mar 26, 2016
+
+# Polynomial : p[0] * x**n + p[1] * x**(n-1) + ... + p[n-1]*x + p[n]
+# Coeffs     : p0,p1,p2,...pn
+
+# Program : solve x*3 -50x^2 + 185x - 924.5 = 0
+
+# Imports
+import numpy as np
+
+# scriptE = 0
+# To solve x^2 - 9.245 x + 18.5 = 0
+coeff = [1, -9.245, 18.5]
+print("for scriptE = 0")
+print(np.roots(coeff))
+
+
+# scriptE = -0.02
+# To solve scriptE * x^3 + x^2 -9.245x + 18.49 = 0
+coeff = [-0.03, 1, -9.245, 18.49]
+print("\nfor scriptE = -0.02")
+print(np.roots(coeff))
+
+
+# scriptE = 0.03
+coeff = [0.03, 1, -9.245, 18.49]
+print("\nfor scriptE = 0.03")
+print(np.roots(coeff))
+
+# scriptE = 0.025
+coeff = [0.025, 1, -9.245, 18.49]
+print("\nfor scriptE = 0.025")
+print(np.roots(coeff))
+
+# scriptE = 0.045
+coeff = [0.045, 1, -9.245, 18.49]
+print("\nfor scriptE = 0.045")
+print(np.roots(coeff))
+
+
+#for scriptE = 0
+#[ 6.31587127  2.92912873]
+
+#for scriptE = -0.02
+#[ 18.41942521  12.16281345   2.75109468]
+
+#for scriptE = 0.03
+#[-41.18015683   4.5764082    3.2704153 ]
+
+#for scriptE = 0.025
+#[-48.02144629   4.83803695   3.18340934]
+
+#for scriptE = 0.045
+#[-29.62518188+0.j           3.70147983+0.41064467j   3.70147983-0.41064467j]
+
+\end{lstlisting}
+
+\end{document}

@@ -1,0 +1,10 @@
+Topic: jupyter notebook config files
+Author: Bhishan Poudel
+Date  : July 1, 2017
+Ref : http://jupyter-notebook.readthedocs.io/en/latest/config.html
+
+1. To create config file
+jupyter notebook --generate-config
+
+This will create or does nothing to the file:
+~/.jupyter/jupyter_notebook_config.py

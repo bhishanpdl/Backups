@@ -1,0 +1,29 @@
+to delete files using terminal
+=============================
+NOTE: ALWAYS USE ls and rm -i before rm
+
+rm file1 file2
+rm -rf dir1 dir2
+
+rm *             all files
+rm -i *          interactive delete all files
+
+rm *.doc
+rm z*
+
+rm z???      question mark wildcard exactly
+            matches 3 characters here
+            eg zaaa z123 z56o
+            
+rm *.?
+rm *.???
+
+rm *[ABC]*   one or many of the capital 
+             letters A,B,C
+             
+             
+rm *.[ch]*   a.c a.cat a.h a.html
+
+rm images[0-9][0-9].png   images0 images99
+
+

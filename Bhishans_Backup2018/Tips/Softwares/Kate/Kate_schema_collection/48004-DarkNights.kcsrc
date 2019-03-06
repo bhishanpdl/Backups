@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=DarkNights
+activeBackground=29,63,98
+activeBlend=57,77,98
+activeForeground=255,255,255
+activeTitleBtnBg=0,0,0
+alternateBackground=240,240,240
+background=229,229,229
+buttonBackground=158,158,158
+buttonForeground=253,253,253
+contrast=7
+foreground=20,20,20
+frame=239,239,239
+handle=239,239,239
+inactiveBackground=50,50,50
+inactiveBlend=50,50,50
+inactiveForeground=221,221,221
+inactiveFrame=239,239,239
+inactiveHandle=239,239,239
+inactiveTitleBtnBg=220,220,220
+linkColor=0,0,238
+selectBackground=124,168,213
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=82,24,139
+windowBackground=255,255,255
+windowForeground=0,0,0

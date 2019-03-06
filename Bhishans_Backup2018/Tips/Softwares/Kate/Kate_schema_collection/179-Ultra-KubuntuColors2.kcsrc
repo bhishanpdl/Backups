@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=179-Ultra-KubuntuColors2
+activeBackground=12,12,12
+activeBlend=55,63,77
+activeForeground=253,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=230,230,230
+background=0,20,132
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=246,255,247
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=61,107,167
+inactiveBlend=30,30,30
+inactiveForeground=185,185,185
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=83,117,150
+selectBackground=0,101,189
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=251,249,242
+windowForeground=22,22,22

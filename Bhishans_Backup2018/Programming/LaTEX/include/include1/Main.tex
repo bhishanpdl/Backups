@@ -1,0 +1,15 @@
+\documentclass{report}
+\usepackage[nokeyprefix]{refstyle}
+\usepackage{varioref}
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+    \externaldocument[A-]{App-A}
+    \externaldocument[B-]{App-B}
+\begin{document}
+\chapter{First}
+\begin{equation}
+  E = m c^2
+  \label{eq:Einst}
+\end{equation}
+In \eqref[s]{eq:Einst} and \eqref*[xr=A-, vref]{eq:e} ...
+\end{document}

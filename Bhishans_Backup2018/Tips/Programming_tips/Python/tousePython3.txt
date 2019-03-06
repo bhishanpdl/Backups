@@ -1,0 +1,8 @@
+add the shebang line
+#!/bin/env python3
+
+or,
+#!python3
+
+instead of
+#!/bin/env python

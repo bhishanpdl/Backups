@@ -1,0 +1,13 @@
+background			#0c1021
+current line		#131727
+highlighted line	#ff0000
+text				#8b636c
+comment				#aeaeae
+math				#61ce3c
+latex command		#8da6ce
+structure			#fadd2d
+verbatim/graphics	#e6a252
+todo				#ff6400
+graphic keywords	#f47bda
+graphic numbers		#660066	
+

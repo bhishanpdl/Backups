@@ -1,0 +1,9 @@
+http://askubuntu.com/questions/157629/how-to-prevent-computer-from-automatically-sleeping-and-or-hibernating
+
+1. system setting > power
+2. suspend no suspend
+   lid close do nothing
+
+3. click on screen brightness
+   uncheck dim screen to save power
+   lock turn off

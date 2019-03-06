@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=081-Ultra-PurpleTentacleStrikesBack
+activeBackground=111,45,98
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=104,42,92
+background=111,45,98
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=111,45,98
+inactiveBlend=30,30,30
+inactiveForeground=204,204,204
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=75,31,66
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=111,45,98
+windowForeground=255,255,255

@@ -1,0 +1,26 @@
+[Color Scheme]
+Name=comix-light
+activeBackground=135,155,174
+activeBlend=112,128,144
+activeForeground=255,255,255
+activeTitleBtnBg=195,195,195
+alternateBackground=238,246,255
+background=238,238,238
+buttonBackground=255,234,176
+buttonForeground=0,0,0
+contrast=4
+foreground=0,0,0
+frame=238,238,238
+handle=238,238,238
+inactiveBackground=129,136,144
+inactiveBlend=102,108,114
+inactiveForeground=204,204,204
+inactiveFrame=238,238,238
+inactiveHandle=238,238,238
+inactiveTitleBtnBg=195,195,195
+linkColor=0,0,192
+selectBackground=255,255,155
+selectForeground=0,0,0
+visitedLinkColor=128,0,128
+windowBackground=255,255,255
+windowForeground=0,0,0

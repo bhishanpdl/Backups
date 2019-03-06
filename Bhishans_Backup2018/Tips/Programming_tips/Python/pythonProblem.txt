@@ -1,0 +1,25 @@
+# ImportError: No module named site
+=======================================
+
+#look environment
+env
+
+# chech if you see PYTHONHOME  and PYTHONPATH
+
+# if you see them unset them
+
+unsetenv PYTHONHOME
+unsetenv PYTHONPATH
+
+
+# that's it, check again env variables
+env
+
+# now, we dont see any PYTHONHOME,PYTHONPATH variables.
+
+
+# to check: type python ( it will show python console)
+# to exit that: exit() or ctrl d
+
+
+

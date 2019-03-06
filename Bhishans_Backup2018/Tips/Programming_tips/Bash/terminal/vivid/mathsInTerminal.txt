@@ -1,0 +1,22 @@
+Maths in terminal:
+=====================
+step 1: invoke the calculator: type bc
+
+step 2: then do the maths
+
+step 3: to quit:
+quit
+
+
+method 2:
+
+echo "10000-9000" | bc
+
+or,
+expr 100 \* 4   # Be careful doing multiplication as if you don't escape your
+                # * the shell may try and interpret it as a wildcard.
+
+method 3: if we have root access
+sudo apt-get install apcalc   ( install calc)
+
+calc 5+2 ( gives 7)

@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=116-Ultra-Emerald
+activeBackground=63,185,126
+activeBlend=55,63,77
+activeForeground=0,0,0
+activeTitleBtnBg=255,255,255
+alternateBackground=230,230,230
+background=63,185,126
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=1,1,1
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=76,198,139
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=117,78,185
+selectBackground=178,178,178
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=220,220,220
+windowForeground=22,22,22

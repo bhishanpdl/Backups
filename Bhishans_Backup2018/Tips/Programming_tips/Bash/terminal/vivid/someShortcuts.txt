@@ -1,0 +1,54 @@
+
+			TERMINAL COMMANDS:
+
+Ctrl + A	Beginning of line ( Ctrl E is end )
+Ctrl + L        Clears the Screen, similar to the clear 
+Ctrl + U 	Clears the line before the cursor position. 
+Ctrl + H 	Same as backspace
+Ctrl + R 	Let’s you search through previously used commands
+Ctrl + C 	Kill whatever you are running
+Ctrl + D 	Exit the current shell
+Ctrl + Z 	Puts whatever you are running into a suspended
+Ctrl + W 	Delete the word before the cursor
+Ctrl + K 	Clear the line after the cursor
+Ctrl + R	Search command history
+Ctrl + T 	Swap the last two characters before the cursor
+Esc  + B	Jump between commands ( also ESC F)
+Esc + T 	Swap the last two words before the cursor
+Alt + F 	Move cursor forward one word on the current line
+Alt + B 	Move cursor backward one word on the current line
+Tab 		Auto-complete files and folder names
+cd -		Last working directory
+!cat		Last command using cat
+!cat:p		See last command using cat
+cd!$		Goes inside directory just created
+^nano^nano	Find first nano and replace with nano
+mkdir{1,2,3}	Creates three directories
+history | grep nano	 Shows history of nano commands
+
+
+cat 	= Concatenate and print (display) the content of files
+dc 	= Desk calculator exec =execute a command file = determine file type
+grep 	= Search file(s) for lines that match a given pattern
+gzip 	= Compress or decompress files
+history = Show history say = listen sound locate = find files
+less	= Display one screen at a time ( or, more)
+look 	= Display line beginning with given string
+pbcopy	= Copy/paste data from clipboard (pbpaste)
+pkill 	= Kill process ps = process status 
+df 	= Display free disk image
+diff 	= Display the differences between two files
+dirname = Convert a full pathname to just a path
+dirs  	= Display list of remembered directories
+kill 	= Kill a process by PID
+killall = Kill process by name
+awk 	= Aho, Kernighan and Weinberger	
+
+tar     = Tape Archiver      sed     = stream editor  bash   = Bourne-Again Shell
+id      = print id	     info    = help info      jobs   = active jobs list
+whatis 	= search word 	     whereis = search 	      which  = search 
+l       = long list	     ll      = long list      mdfind = spotlight search
+who     = user 		     whoami  = user	      lpr    = print
+mkdir   = make directory     mdfind  = sptlit search  passwd = change password
+
+

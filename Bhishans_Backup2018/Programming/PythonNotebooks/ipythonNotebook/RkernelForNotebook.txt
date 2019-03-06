@@ -1,0 +1,24 @@
+Bhishan Poudel
+Jan 11,2016
+
+ref: http://www.r-bloggers.com/r-kernel-in-jupyter-notebook-3/
+
+to install IRkernel in ipython3 notebook 
+=========================================
+1. install the zmq library:
+	sudo apt-get install libzmq3-dev python-zmq
+	
+2. install r-packages
+R (this will open R console)
+
+install.packages(c('rzmq','repr','IRkernel','IRdisplay'),dependencies=TRUE,repos = c('http://irkernel.github.io/',getOption('repos')),type = 'source')
+
+IRkernel::installspec()
+
+3. then, quit R:
+	quit()
+	
+4. ipython3 notebook 
+   then, we can see R kernel in the notebook
+
+

@@ -1,0 +1,33 @@
+to install R packages
+======================
+
+Bhishan Poudel
+Jan 7, 2016
+
+example to install package "Rcmdr"
+======================================================
+go to R console (type R, or open R console program)
+install.packages("Rcmdr", dependencies=TRUE)
+
+to load,
+require(Rcmdr)
+
+note: we may have to install further dependencies for Mac OS, install them
+then, require(Rcmdr)
+
+
+in the script, to load library plyr and use its function arrange
+==================================================================
+library(plyr)
+arrange(df, size, weight)         # Use arrange from plyr package
+
+
+
+
+
+
+install packages in MacOS
+=========================
+R  (go to R console)
+install.package('FITSio')      install fitsio package 
+

@@ -1,0 +1,6 @@
+# starting parameters for the fitting 
+a = 40
+tau = 15
+phi = -0.5
+T = 15
+theta0 = 10

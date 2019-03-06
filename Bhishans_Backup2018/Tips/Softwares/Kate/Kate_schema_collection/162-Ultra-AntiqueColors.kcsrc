@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=162-Ultra-AntiqueColors
+activeBackground=0,0,0
+activeBlend=20,29,20
+activeForeground=172,165,157
+activeTitleBtnBg=255,255,255
+alternateBackground=199,186,171
+background=105,105,105
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=241,243,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=0,0,0
+inactiveBlend=30,30,30
+inactiveForeground=70,120,37
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=118,103,4
+selectBackground=11,21,22
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,247
+windowBackground=205,192,176
+windowForeground=0,0,0

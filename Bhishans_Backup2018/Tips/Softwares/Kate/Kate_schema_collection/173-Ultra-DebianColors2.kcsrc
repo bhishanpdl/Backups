@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=173-Ultra-DebianColors2
+activeBackground=36,36,36
+activeBlend=55,63,77
+activeForeground=253,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=218,208,189
+background=0,0,0
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=124,124,124
+inactiveBlend=30,30,30
+inactiveForeground=185,185,185
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=83,117,150
+selectBackground=214,39,102
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=209,199,181
+windowForeground=22,22,22

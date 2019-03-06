@@ -1,0 +1,16 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 11, 2016
+
+To run .ipynb files ( ipython notebook files)
+==================================================
+
+cd to that directory
+open terminal
+ipython notebook my_notebook.ipynb & ( this will open code in a browser)
+
+
+to find working directory
+==========================
+import os
+os.getcwd()
+

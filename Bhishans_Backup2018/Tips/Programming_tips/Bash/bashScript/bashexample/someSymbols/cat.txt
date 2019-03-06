@@ -1,0 +1,10 @@
+cat operator in bash
+=======================
+cat -
+now type something
+it will be echoed in the terminal
+ctrl D to end input
+
+eg.2
+echo "whatever" | cat -
+#output: whatever

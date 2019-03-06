@@ -1,0 +1,42 @@
+% Author         : Bhishan Poudel
+% Date           : Apr 19, 2016
+% Ref            : https://www.sharelatex.com/learn/Wrapping_text_around_figures
+
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx,subfigure}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{hyperref}             % for hyperlink
+
+\title{Wrapping text around figures}
+\author{Bhishan Poudel}
+\date{\today}
+\author{Bhishan Poudel}
+\begin{document}
+
+\title{}
+\tableofcontents
+\listoffigures
+
+\section{Wrap figures}
+The position parameter has eight possible values -
+\begin{verbatim}
+r 	R 	right side of the text
+l 	L 	left side of the text
+i 	I 	inside edge–near the binding (in a twoside document)
+o 	O 	outside edge–far from the binding
+\end{verbatim}
+
+The uppercase version allows the figure to float. The lowercase version means exactly here.
+
+Here is an example -
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{images/a.eps}
+  \end{center}
+  \caption{fig:Graph}
+\end{wrapfigure}
+
+\end{document}

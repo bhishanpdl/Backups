@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=Dark-Style
+activeBackground=0,0,0
+activeBlend=0,0,0
+activeForeground=250,250,250
+activeTitleBtnBg=0,0,0
+alternateBackground=96,96,96
+background=14,15,19
+buttonBackground=0,0,0
+buttonForeground=255,255,255
+contrast=0
+foreground=255,255,255
+frame=50,50,50
+handle=67,67,67
+inactiveBackground=0,0,0
+inactiveBlend=0,0,0
+inactiveForeground=255,255,255
+inactiveFrame=50,50,50
+inactiveHandle=50,50,50
+inactiveTitleBtnBg=118,92,93
+linkColor=207,219,245
+selectBackground=0,0,0
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=92,78,114
+windowBackground=14,14,14
+windowForeground=168,172,178

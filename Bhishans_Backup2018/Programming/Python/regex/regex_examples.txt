@@ -1,0 +1,63 @@
+Date: oct 30, 2016
+
+Regex examples
+===============
+1. delete letters after @
+cat infile.txt | cut -d "@" -f1 > output.txt
+
+sed 's/@.*//' infile.txt > output.txt
+
+awk -F'@' '{print $1}' infile.txt
+
+
+2. regex search in atom
+original string:
+$400 is for matt who lives in room 20.
+
+find:
+\$([0-9]+)
+
+replace: Dollar 400
+
+
+Test string:
+$400 is for matt who lives in room 20.
+
+cmd l   selects the line
+cmd f  opens find menu
+
+Choose finding options: regex, case sensitive, within current selection
+black is selected
+blue is unselected.
+
+all the matched words are highlighted
+and numbers of results is shown
+
+type: \$\d*   in the find section.
+replace: Dollar 400
+
+
+example2
+=========
+gi|323508378|emb|CBQ68249.1| related to carbon source-regulated protein (putative arabinase) [Sporisorium reilianum SRZ2]
+
+needed: CBQ68249.1_Sporisorium reilianum
+
+regex:
+^(.*\|){3}(.*)\|.*\[(\S+\s\S+).*\]$
+
+replace: $2_$3
+
+
+try:
+CBQ68249.1_Sporisorium reilianum
+
+CBQ68249.1_Sporisorium reilianum
+
+
+
+
+description:
+gi|     ^(.*\|)
+323508378
+|emb|CBQ68249.1| related to carbon source-regulated protein (putative arabinase) [Sporisorium reilianum SRZ2]

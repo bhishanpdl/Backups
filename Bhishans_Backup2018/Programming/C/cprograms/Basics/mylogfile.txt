@@ -1,0 +1,12 @@
+Script started on Mon Jul 27 15:55:43 2015
+[simplici:C/cprograms/Basics] poudel% ls
+a.out		basics.c~	bhishan.txt	mylogfile.txt	typescript
+basics.c	basics.txt	multipleLIne.c	somefile.txt
+[simplici:C/cprograms/Basics] poudel% pwd
+/Users/poudel/Copy/Programming/C/cprograms/Basics
+[simplici:C/cprograms/Basics] poudel% gcc basics.c
+[simplici:C/cprograms/Basics] poudel% ./a.lu[K[Kout
+hello world
+[simplici:C/cprograms/Basics] poudel% ^Dexit
+
+Script done on Mon Jul 27 15:56:06 2015

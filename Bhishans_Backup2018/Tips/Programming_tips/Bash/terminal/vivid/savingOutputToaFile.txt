@@ -1,0 +1,18 @@
+to save terminal output in a file
+==================================
+someCommand > someFile.txt      creates and overwrites
+someCommand >> someFile.txt     appends
+someCommand &> someFile.txt     also writes stderr
+omeCommand &>> someFile.txt     apends stderr
+
+
+using tee
+==========
+
+command | tee dirname/outputfile.txt          creates and overwrites
+command 2>&1 | tee dirname/outputfile.txt     catches stderr
+command |& tee dirname/outputfile.txt         prints output as well as saves
+
+
+example:
+clear; gfortran -o qn1 qn1.f95 && ./qn1 |& tee qn1.dat

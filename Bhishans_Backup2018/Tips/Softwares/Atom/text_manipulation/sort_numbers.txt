@@ -1,0 +1,23 @@
+Author: Bhishan Poudel
+Date  : Nov 15, 2016
+
+To sort lines in alphabetical order
+==================================
+
+example1:
+606w_res1.fits
+f606w_res14.fits
+f606w_res15.fits
+f606w_res16.fits
+f606w_res18.fits
+f606w_res19.fits
+
+select all
+search using regex  f606w_res(\d*).fits  or,  .*res(\d*).*
+replace using regex $1
+
+we will get numbers
+then sort them naturally
+we could set keymap alt shf e  for natural sorting
+select all again
+cmd j will take all in one line.

@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=026-Ultra-WildFlower
+activeBackground=122,167,45
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=239,239,239
+background=122,167,45
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,253,249
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=122,167,45
+inactiveBlend=30,30,30
+inactiveForeground=48,52,43
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=12,1,1
+selectBackground=133,99,167
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=52,20,15
+windowBackground=255,255,255
+windowForeground=5,5,5

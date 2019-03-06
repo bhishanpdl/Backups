@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1435522896 source:c:\users\poudel\copy\programming\c\programs\codeblocks\bhishan3\function2.c
+	"function2.h"
+	<math.h>
+
+1435522492 c:\users\poudel\copy\programming\c\programs\codeblocks\bhishan3\function2.h
+
+1435523023 source:c:\users\poudel\copy\programming\c\programs\codeblocks\bhishan3\main.c
+	"stdio.h"
+	<stdio.h>
+	<math.h>
+	"function1.h"
+	"function2.h"
+
+1435522921 c:\users\poudel\copy\programming\c\programs\codeblocks\bhishan3\function1.h
+

@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=161-Ultra-Marshland2
+activeBackground=97,82,49
+activeBlend=55,63,77
+activeForeground=0,0,0
+activeTitleBtnBg=255,255,255
+alternateBackground=149,163,143
+background=100,95,25
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=190,190,190
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=87,74,46
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=189,199,0
+selectBackground=136,153,142
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=143,156,137
+windowForeground=22,22,22

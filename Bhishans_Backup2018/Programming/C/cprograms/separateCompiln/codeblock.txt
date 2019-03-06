@@ -1,0 +1,4 @@
+workspace 	view>manager
+save etc 	view>toolbars>main
+build and run	view>toolbars>compilers
+logs		view>logs

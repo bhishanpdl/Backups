@@ -1,0 +1,16 @@
+1.
+2.
+3. python packages  numpy matplotlib psutil pyfits
+4. texmaker (software center)
+5. gnuplot  (software center, may be we need to add a PPA)
+
+
+images
+=======
+gThumb
+gimp
+
+
+research
+==========
+ds9  (software center)

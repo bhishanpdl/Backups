@@ -1,0 +1,1 @@
+git pull is just a combination of fetch and merge.

@@ -1,0 +1,37 @@
+# Author    : Bhishan Poudel
+# Date      : Jul 06, 2017 Thu
+# Version   : 1.0
+# File: ~/.config/geany/filedefs/filetypes.restructuredtext
+
+[styling]
+function=type
+variable=keyword_1,bold
+label=string
+userdefined=keyword_1,bold
+     
+
+[keywords]
+functions=toctree automodulue contents automodule
+variables=depth maxdepth  
+lables=note warning todo seealso
+userdefined=
+
+[lexer_properties]
+nsis.uservars=1
+nsis.ignorecase=0
+
+
+[settings]
+# default extension used when saving files
+extension=rst
+
+# single comments, like # in this file
+comment_single=..\s
+comment_use_indent=true
+lexer_filetype=NSIS
+
+
+[build-menu]
+EX_00_LB=_Execute
+EX_00_CM=pandoc -o %e.pdf %f && open %e.pdf
+EX_00_WD=

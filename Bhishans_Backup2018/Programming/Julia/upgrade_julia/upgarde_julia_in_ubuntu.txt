@@ -1,0 +1,14 @@
+Upgrade Julia in ubuntu
+------------------------
+method 1
+==========
+1. go to synaptic manager
+2. uninstall julia common
+3. upgrade julia 0.4.5 , it will upgrade to 0.5.0
+
+method 2 (did not worked, i got error)
+=========================================
+sudo add-apt-repository ppa:staticfloat/juliareleases
+sudo add-apt-repository ppa:staticfloat/julia-deps
+sudo apt-get update
+sudo apt-get install julia

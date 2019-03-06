@@ -1,0 +1,82 @@
+to download all the fits files from a website
+===============================================
+wget -r -l1 -nd --no-clobber -A.fits http://www.het.brown.edu/people/ian/Doug/stamps/
+
+-r = recursively download every files on the web
+-l = level 1 means level1
+-A = --accept=fits  (only download this type)
+-nd= don't create a directory structure, just download 
+		all the files into this directory.
+--no-clobber = do not overwrite
+
+
+note: http://www.het.brown.edu/people/ian/Doug/stamps/
+this website has a lot of fits files.
+
+flags:
+-A pdf,ps,djvu,tex,gz,ppt,mp4,avi,zip,rar (Accept these all)
+-R html,htm,asp,php  (Remove these)
+-X "search*,forum*"  (exclude specific areas)
+
+example2
+=========
+
+
+To filter for specific file extensions:
+
+wget -A pdf,jpg -m -p -E -k -K -np http://site/path/
+
+Or, if you prefer long option names:
+
+    wget --accept pdf,jpg --mirror --progress --adjust-extension 
+    --convert-links --backup-converted --no-parent http://site/path/
+
+This will mirror the site, but the files without jpg or 
+pdf extension will be automatically removed.
+================================================================================
+example3  pdf
+wget -r -A "*.pdf" "http://yourWebsite.net/"
+
+wget -r -A "*.pdf" "http://www.phy.ohiou.edu/~elster/phys5071/hw2014/"
+
+wget -r -A "*.pdf" "https://olimex.wordpress.com/2014/06/12/collection-of-51-free-e-books-for-python-programming/"
+
+wget -r -A "*.pdf" "http://fragilep.people.cofc.edu/teaching/phys412_intro.html"
+
+wget -r -A "*.pdf" "http://www.blau.itp.unibe.ch/GREX/hs11.html"
+
+
+example 4
+wget -r -A "*.tar" "http://www.phy.ohiou.edu/~elster/phys5071/hw2014/"
+
+wget -r -A "*.jpg" "http://www.phy.ohiou.edu/prakash/Class%20Day%202016_04_08/P4080063.html"
+
+================================================================================
+
+
+#example2
+===========
+
+wget -r -l1 -nd --no-clobber -A.f90 https://www.ma.utexas.edu/CNA/NMC5/nmc5-fortran90.html
+
+# example to download mp3
+=============================
+
+wget -r -l2 -nd --no-clobber -A.mp3 http://mp3lio.co/nai-nabhannu-la-3
+
+#example 3 fortran files
+wget -r -l2 -nd --no-clobber -A.f90 http://ww2.odu.edu/~agodunov/computing/programs/
+wget -r -l2 -nd --no-clobber -A.f http://ww2.odu.edu/~agodunov/computing/programs/
+wget -r -l2 -nd --no-clobber -A.ini http://ww2.odu.edu/~agodunov/computing/programs/
+wget -r -l2 -nd --no-clobber -A.for http://ww2.odu.edu/~agodunov/computing/programs/
+
+# example 4 to download datasets
+===================================
+sudo wget -r -l2 -nd --no-clobber -A dat,txt,csv,tsv http://astrostatistics.psu.edu/MSMA/datasets/index.html
+
+Download to given folder (-P path/to/download)
+================================================
+sudo wget -P ~/Downloads -r -l2 -nd --no-clobber -A tsv http://astrostatistics.psu.edu/MSMA/datasets/index.html
+
+
+

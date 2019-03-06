@@ -1,0 +1,30 @@
+Bhishan Poudel
+Feb 18, 2016
+
+To view images as like gif
+=============================
+note: install imagemagic
+
+animate *.png
+
+To create gif using imagemagic
+=================================
+convert -delay 10 -loop 0 *.png animation.gif
+or,
+convert -delay 10 -loop 0 *.pgm animation.gif
+
+to give background
+====================
+convert -delay 10 -loop 0 frame*.png -background white -flatten animated.gif
+
+animate converted.gif
+
+
+To convert many pgm files to png
+=================================
+convert *.pgm *.png
+
+
+To create gif from many png files
+==================================
+http://gifmaker.me/

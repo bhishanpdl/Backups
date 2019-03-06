@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=156-Ultra-GhostInTheMachine2
+activeBackground=0,0,0
+activeBlend=93,106,130
+activeForeground=99,95,90
+activeTitleBtnBg=255,255,255
+alternateBackground=4,4,4
+background=20,29,20
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=241,243,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=4,8,19
+inactiveBlend=30,30,30
+inactiveForeground=51,58,61
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,222,8
+selectBackground=11,21,22
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,247
+windowBackground=0,0,0
+windowForeground=255,255,255

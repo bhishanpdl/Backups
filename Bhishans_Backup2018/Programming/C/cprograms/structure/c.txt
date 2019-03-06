@@ -1,0 +1,36 @@
+34012 Philip Morris Lisbon Milan 01
+id_num = "34012"
+Name = "Philip"
+Departure = "Morris"
+Arrival = "Lisbon"
+Day = "Mi"
+21092 John Peter Smith Paris Amsterdam 03
+id_num = "21092"
+Name = "John"
+Departure = "Peter"
+Arrival = "Smith"
+Day = "Pa"
+32467 Ann Mary Baptist Madrid Frankfurt 21
+id_num = "32467"
+Name = "Ann"
+Departure = "Mary"
+Arrival = "Baptist"
+Day = "Ma"
+45201 Marian Silver Budapest Roma 02
+id_num = "45201"
+Name = "Marian"
+Departure = "Silver"
+Arrival = "Budapest"
+Day = "Ro"
+42506 Michaelangelo Marks Berlin New York 30
+id_num = "42506"
+Name = "Michaelangelo"
+Departure = "Marks"
+Arrival = "Berlin"
+Day = "Ne"
+12345 Bob Wilson Stuttgart Copenhagen07
+id_num = "12345"
+Name = "Bob"
+Departure = "Wilson"
+Arrival = "Stuttgart"
+Day = "Co"

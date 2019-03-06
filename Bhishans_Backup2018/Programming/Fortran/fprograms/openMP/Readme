@@ -1,0 +1,7 @@
+
+Sunstudio12 manual:   download.orable.com/docs/cd/E19205-01/819-5270/
+
+set environment  
+
+bash:  export OMP_NUM_THREADS=4
+csh :  OMP_NUM_THREADS=4

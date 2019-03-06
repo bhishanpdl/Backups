@@ -1,0 +1,45 @@
+# Author    : Bhishan Poudel
+# Date      : Aug 15, 2016
+ 
+ 
+ 
+To INSTALL fftw3:
+==========================
+ * cd ~/Applications/fftw3
+
+ * sudo -H ./configure --enable-float --enable-sse --enable-threads --enable-mpi
+ * sudo -H make
+ * sudo -H make install
+ 
+ 
+Note:
+==================
+
+--enable-float        # for double precision  to use: -fft23
+--enable-sse          # for single precision  to use: -fftw3f
+--enable-long-double  # for long double
+
+  # The configure script will halt with an error message if long double is 
+    the same size as double on your machine/compiler.
+  # it gave error for macos
+  
+--enable-quad-precision  # for quadruple precision  __float128
+
+  # configure: error: conflicting precisions specified
+  # for macos
+  
+--enable-threads
+--enable-openmp
+
+--enable-mpi
+  # configure: error: could not find mpi library for --enable-mpi
+  # solution: first install mpi with following flags:
+  sudo -H ./configure CC=gcc CXX=g++ F77=gfortran FC=gfortran --prefix=/usr/local
+
+
+##=============================================================================
+precisions:
+fftw3 precision double
+fftw3f  single precision
+fftw3l long double precision
+

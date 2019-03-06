@@ -1,0 +1,13 @@
+Bhishan Poudel
+Feb 16, 2016
+
+To display date and time in top bar in ubuntu
+===============================================================================
+if not installed, install indicator date time from the software center
+
+
+install an app called dconf Editor
+sudo apt-get install dconf-tools
+
+then:
+com > canonical > indicator > datetime

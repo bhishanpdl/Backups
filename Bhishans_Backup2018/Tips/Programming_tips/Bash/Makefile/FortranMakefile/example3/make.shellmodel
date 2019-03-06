@@ -1,0 +1,17 @@
+COM = -c
+
+.SUFFIXES = .o .f .f90
+
+OBJ = shellmodel.o dgeev.o
+
+LIBDIR = /usr/local/lib
+
+#--------------------------------------------------------
+shellmodel: $(OBJ)
+	f95 -o shellmodel $(OBJ) -L$(LIBDIR) -llapack_LINUX -lblas_LINUX
+
+shellmodel.o : shellmodel.f90
+	f95 $(COM) shellmodel.f90
+
+dgeev.o : dgeev.f
+	f95 $(COM) dgeev.f

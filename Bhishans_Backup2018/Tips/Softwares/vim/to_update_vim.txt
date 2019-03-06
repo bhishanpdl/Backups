@@ -1,0 +1,51 @@
+# Topic     : To update vim from 7.3 to 8.0 in macos
+
+# Author    : Bhishan Poudel
+# Date      : Jul 23, 2017 Sun
+# Ref       : 
+https://stackoverflow.com/questions/7211820/update-built-in-vim-on-mac-os-x
+https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8
+
+
+
+
+
+
+##=======================================================================
+## Steps to Update vim in macos
+##=======================================================================
+
+
+sudo mkdir -p /opt/local/bin
+echo 'PATH=/opt/local/bin:$PATH' >> ~/.bash_profile
+source ~/.bash_profile
+
+cd ~/Applications
+git clone https://github.com/vim/vim.git
+cd vim
+
+sudo -H ./configure --prefix=/opt/local --enable-multibyte --enable-gui=auto --with-features=huge --enable-cscope --with-compiledby="Bhishan" --enable-python3interp=yes
+
+
+sudo make distclean; sudo -H make && sudo -H make install
+
+
+vim --version | head -n 2
+which vim
+
+
+
+Warnings:
+==========
+Note: In the file manager for vim "Vundle" i.e. Vim Bundle, when we 
+install the plugin YouCompleteMe it requires vim > 7.4.
+
+Even if I updated vim to 8.0 it gives me this error.
+YouCompleteMe unavailable: requires Vim compiled with Python (2.6+ or 3.3+) supp
+ort.
+
+Just don't install that plugin.
+
+Examples
+=========
+:python import sys; print(sys.version)   # gives the vim python version

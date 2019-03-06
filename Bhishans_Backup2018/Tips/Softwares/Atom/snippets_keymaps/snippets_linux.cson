@@ -1,0 +1,282 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+#  After installing project manager, ctrl alt p for settings, then type
+#  install, click install packages and themes, go to settings,
+#  search language-python we see scope sourc.python
+# Alternative, If toolbar activated, just click settings, and do same thing.
+#
+'.source.python':
+    'Header':
+        'prefix': 'xhdr'
+        'body': '#!/usr/bin/env python3\n# -*- coding: utf-8 -*-$0'
+
+    'import multiprocessing':
+        'prefix': 'mp'
+        'body': 'mp=import multiprocessing as mp'
+
+    'import numpy':
+        'prefix': 'xnp'
+        'body': 'import numpy as np'
+
+    'import pandas':
+        'prefix': 'xpd'
+        'body': 'import pandas as pd'
+
+    'import scipy':
+        'prefix': 'xsp'
+        'body': 'import scipy as sp'
+
+    'import astropy':
+        'prefix': 'xap'
+        'body': 'import astropy.io'
+
+    'import matplotlib.pyplot':
+        'prefix': 'xplt'
+        'body': 'import matplotlib.pyplot as plt'
+
+    'import astropy fits':
+        'prefix': 'xfits'
+        'body': 'from astropy.io import fits'
+
+    'import astropy fits getheader':
+        'prefix': 'xgetheader'
+        'body': 'from astropy.io.fits import getheader'
+
+    'import astropy fits getval':
+        'prefix': 'xgetval'
+        'body': 'from astropy.io.fits import getval'
+
+    'import astropy fits getdata':
+        'prefix': 'xgetdata'
+        'body': 'from astropy.io.fits import getdata'
+
+    'print with format':
+        'prefix': 'xprf'
+        'body': 'print(\'\{\} \{\} \{\}\'.format(\'$1\', \'$2\', \'$3\'))$0'
+
+
+    'print ':
+        'prefix': 'xpr'
+        'body': 'print($0)'
+
+    'print newling':
+        'prefix': 'xprn'
+        'body': 'print("\\\\n")'
+
+    'numpy arange for integers':
+        'prefix': 'xarange'
+        'body': 'np.arange($1, $2, step = $3) $0'
+
+    'read columns of file using numpy':
+        'prefix': 'xreadfile'
+        'body': 'infile = "$1"\nx = np.genfromtxt(infile, delimiter=None, usecols=(0),\\\n                  dtype=str, unpack=True)\ny = np.genfromtxt(infile, delimiter=None, usecols=(1),\\\n                  dtype=float, unpack=True)\n$0'
+
+    'fileread using pandas':
+        'prefix': 'xfilereadpd'
+        'body': 'infile = "$1"\ncolnames = ["col0", "col1"]\ndf = pd.read_csv(infile, sep="\s+", header=None, skiprows=0,\n                 comment="#", names=colnames, usecols=(0, 1))\n\nprint("\{\} \{\} \{\}".format("input file header: \\n", df.head(), "\\n"))$0'
+
+    'time taken to run program':
+        'prefix': 'xtime'
+        'body': 'import time\n\n# beginning time\nprogram_begin_time = time.time()\nbegin_ctime        = time.ctime()\n\n\n# print the time taken\nprogram_end_time = time.time()\nend_ctime        = time.ctime()\nseconds          = program_end_time - program_begin_time\nm, s             = divmod(seconds, 60)\nh, m             = divmod(m, 60)\nd, h             = divmod(h, 24)\nprint("\\nBegin time: ", begin_ctime)\nprint("End   time: ",  end_ctime, \\n")\nprint("Time taken: \{0: .0f\} days, \{1: .0f\} hours,\\\n      \{2: .0f\} minutes, \{3: f\} seconds.".format(d, h, m, s))\n'
+
+    'function':
+        'prefix': 'def'
+        'body': 'def $1($2):\n    """$3"""\n    $4\n    return ${5:None}$0'
+
+    'fn with args':
+        'prefix': 'deff'
+        'body': 'def $1($2):\n    """$3\n\n    Args:\n        $4: $5\n\n    Returns: $6\n \n    """\n    $7\n    return ${8:None}$0'
+
+
+    'print':
+        'prefix': 'pr'
+        'body': 'print($1)\n$0'
+
+    'docstring':
+        'prefix': 'doc'
+        'body': '"""$1"""$0'
+
+    'def main':
+        'prefix': 'main'
+        'body': 'def main():\n    """Run main function."""\n    $1\n\nif __name__ == "__main__":\n    main()$0'
+
+    'def main with time':
+        'prefix': 'maint'
+        'body': 'def main():\n    """Run main function."""\n    $1\n\nif __name__ == "__main__":\n    import time\n\n    # beginning time\n    program_begin_time = time.time()\n    begin_ctime        = time.ctime()\n\n    #  Run the main program\n    main()\n\n    # print the time taken\n    program_end_time = time.time()\n    end_ctime        = time.ctime()\n    seconds          = program_end_time - program_begin_time\n    m, s             = divmod(seconds, 60)\n    h, m             = divmod(m, 60)\n    d, h             = divmod(h, 24)\n    print("\\nBegin time: ", begin_ctime)\n    print("End   time: ", end_ctime, "\\\\n")\n    print("Time taken: \{0: .0f\} days, \{1: .0f\} hours, \\\\\n      \{2: .0f\} minutes, \{3: f\} seconds.".format(d, h, m, s))\n$0'
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+
+#  SNIPPETS FOR JULIA
+'.source.julia':
+    'Header':
+        'prefix': 'xhdr'
+        'body': '#!/usr/bin/env julia\n# Author      : Bhishan Poudel; Physics PhD Student, Ohio University\n# Date        : $1\n# Last update : $2\n# Est time    : $3\n#\n$0'
+
+    # standard snippets
+
+    'println':
+        'prefix': 'println'
+        'body': 'println($1)\n$0'
+
+    'finally':
+        'prefix': 'xfinally'
+        'body': 'finally\n    $1\n$0'
+
+    'throw':
+        'prefix': 'xthrow'
+        'body': 'throw\n    $1\n$0'
+
+    'error':
+        'prefix': 'xerror'
+        'body': 'error("${1}")\n$0'
+
+    'warn':
+        'prefix': 'xwarn'
+        'body': 'warn("${1}")\n$0'
+
+    'info':
+        'prefix': 'xinfo'
+        'body': 'info("${1}")\n$0'
+
+    #  Bhishan's snippets
+    'print':
+        'prefix': 'xpr'
+        'body': 'println("$1 = ", $2)$0'
+
+
+    'pritln newline':
+        'prefix': 'xprn'
+        'body': 'println("\\\\n")$0'
+
+
+    'pritln("\ntype_here")':
+        'prefix': 'xprs'
+        'body': 'println("\\\\n$1")$0\n'
+
+    '@print ':
+        'prefix': 'xprr'
+        'body': '@printf "\\\\n $1  = %f" $0'
+
+    'for':
+        'prefix': 'xfor'
+        'body': 'for i in $1\n    $2\nend\n$0'
+
+    'while':
+        'prefix': 'xwhile'
+        'body': 'while $1\n    $2\nend\n$0'
+
+    'xife':
+        'prefix': 'if else'
+        'body': 'if $1\n    \nelse\n    $2\n\nend\n$0'
+
+    'ternart operator':
+        'prefix': 'tern'
+        'body': '$1 ? $2 : ${3:nothing}$0'
+
+
+    'using module':
+        'prefix': 'xuse'
+        'body': 'using $1\n$0'
+
+    'multiline comment':
+        'prefix': '#='
+        'body': '#=\n$1\n=#\n$0'
+
+    'try/catch':
+        'prefix': 'xtry'
+        'body': 'try\n    ${1:try_block}\ncatch e\n    $2\nend\n$0'
+
+
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+    '':
+        'prefix': 'x'
+        'body': ''
+
+
+#  SNIPPETS FOR TXt
+'.text.plain':
+    'header':
+        'prefix': 'h'
+        'body': 'Author: Bhishan Poudel\nDate  : $1, 2016\n\n$0'
+
+    'header2':
+        'prefix': 'hh'
+        'body': 'Author: Bhishan Poudel\nDate  : $1, 2016\n\nTopic: $2\n=============================\n\n$0'

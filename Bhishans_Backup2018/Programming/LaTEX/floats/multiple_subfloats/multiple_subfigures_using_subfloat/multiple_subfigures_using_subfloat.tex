@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{float}
+\usepackage[caption = false]{subfig}
+\usepackage[final]{graphicx}
+
+
+\begin{document}
+
+%%%%%%%%%%%% Multiple subfloats in a single figure%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\subfloat[fig 1]{\includegraphics[width = 3in]{images/a.eps}} 
+\subfloat[fig 2]{\includegraphics[width = 3in]{images/b.eps}} \\   
+\subfloat[fig 3]{\includegraphics[width = 3in]{images/c.eps}}
+\subfloat[fig 4]{\includegraphics[width = 3in]{images/d.eps}} 
+\caption{usepackage float and environment  subfloat[fig 1] \{includegraphics[width = 3in]\{images/a.eps\}\}  }
+\label{plot1}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}

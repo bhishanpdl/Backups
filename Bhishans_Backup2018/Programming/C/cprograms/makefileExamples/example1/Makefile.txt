@@ -1,0 +1,15 @@
+# exec is the first target
+# compile is second targe
+# we can use space backslash for line break
+
+
+# exec is the first target
+
+exec: \
+compile
+	./source
+
+compile: \
+source.c
+	echo "compiling"
+	gcc source.c -o source

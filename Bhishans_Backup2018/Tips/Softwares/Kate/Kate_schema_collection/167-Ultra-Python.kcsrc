@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=167-Ultra-Python
+activeBackground=11,97,167
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=218,184,89
+background=11,97,167
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,253,249
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=11,97,167
+inactiveBlend=30,30,30
+inactiveForeground=218,218,218
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=12,1,1
+selectBackground=197,166,80
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=52,20,15
+windowBackground=223,188,91
+windowForeground=5,5,5

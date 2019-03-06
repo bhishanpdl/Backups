@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=204-Ultra-MonochromeVGA
+activeBackground=200,200,200
+activeBlend=213,213,213
+activeForeground=0,0,0
+activeTitleBtnBg=213,213,213
+alternateBackground=203,203,203
+background=200,200,200
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=6,6,6
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=12,14,18
+inactiveBlend=30,30,30
+inactiveForeground=213,213,213
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=1,1,0
+selectBackground=200,200,200
+selectForeground=93,94,93
+shadeSortColumn=true
+visitedLinkColor=1,1,0
+windowBackground=213,213,213
+windowForeground=1,1,0

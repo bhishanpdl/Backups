@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=032-Ultra-Peace
+activeBackground=80,120,157
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=242,248,255
+background=80,120,157
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=10,30,40
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=77,115,151
+inactiveBlend=30,30,30
+inactiveForeground=52,52,52
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=12,1,1
+selectBackground=80,120,157
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=52,20,15
+windowBackground=255,255,255
+windowForeground=5,5,5

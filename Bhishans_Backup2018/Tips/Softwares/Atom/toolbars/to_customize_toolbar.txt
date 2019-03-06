@@ -1,0 +1,23 @@
+Date: Nov 3, 2016 9:40 pm
+
+To customize atom toolbar
+===========================
+1. first install
+tool-bar
+flex-tool-bar
+awesome-tool-bar
+
+Edit toolbar.cson from toolbar icon just created.
+open ~/.atom/toolbar.cson
+
+flex-tool-bar does not need to restart Atom.
+
+3. available icons
+To find available icons go to:
+open ~/.atom/packages/tool-bar/iconsets
+
+we see 6 packages:
+devicon, foundation, ionicons, font-awesome, icomoon, mdi
+
+example:
+iconicons/_ionicons-variables.less

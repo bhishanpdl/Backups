@@ -1,0 +1,10 @@
+Bhishan Poudel
+Jan 20, 2016
+
+to run RScript in geany text editor
+====================================
+open a *.r file in geany
+
+Build> Set Build Commands
+
+Execute:  Rscript %e.r      Rscript %e.R

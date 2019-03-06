@@ -1,0 +1,23 @@
+# Author  : Bhishan Poudel
+# Date    : Apr 07, 2016
+# Topic   : Kile configuration
+# Ref     : http://askubuntu.com/questions/223295/kile-missing-settings-dialog-after-update-to-kubuntu-12-10/226095#226095
+
+===============================================================================
+Problem: Settings menu doesnot have configuration options
+
+Solution: remove kileui.rc file from user location
+
+
+cd ~/.kde/share/apps/kile/
+open .
+mkdir backup_for_kileui
+mv kileui.rc ./backup_for_kileui/
+
+i.e.
+ls ~/.kde/share/apps/kile/
+rm ~/.kde/share/apps/kile/kileui.rc
+then, restart kile.
+customize the toolbar if you want.
+
+update: now it shows configure menus

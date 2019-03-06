@@ -1,0 +1,10 @@
+bhishan tips:
+==============
+
+1. if there is whitespace in name of the folder we can open it like this:
+
+example: we have a folder inside /home/Copy/Try
+called hello world (hello whitespace world)
+to go inside it
+
+cd hello\ world    ( backslash whitespace) ( or just hit the tab)

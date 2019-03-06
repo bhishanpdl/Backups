@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=065-Ultra-Nirvana
+activeBackground=74,84,103
+activeBlend=74,84,103
+activeForeground=168,168,168
+activeTitleBtnBg=255,255,255
+alternateBackground=74,84,103
+background=74,84,103
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=197,197,197
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=74,84,103
+inactiveBlend=74,84,103
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=55,63,77
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=74,84,103
+windowForeground=255,255,255

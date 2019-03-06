@@ -1,0 +1,12 @@
+display only lines from 5 to 10 in terminal
+==============================================
+
+cat -n filename | grep -A5 '\b5\b'
+
+eg.
+cat -n someShortcuts.txt | grep -A5 '\b5\b'
+
+
+
+It means search for 5th line and 
+show the following 5 lines

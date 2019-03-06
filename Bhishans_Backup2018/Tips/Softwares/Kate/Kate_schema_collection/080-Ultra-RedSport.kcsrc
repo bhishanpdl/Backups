@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=080-Ultra-RedSport
+activeBackground=155,28,0
+activeBlend=146,130,103
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=140,125,99
+background=155,28,0
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=178,33,0
+inactiveBlend=30,30,30
+inactiveForeground=255,255,255
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=207,14,14
+selectBackground=115,104,31
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=172,67,51
+windowBackground=146,130,103
+windowForeground=5,5,5

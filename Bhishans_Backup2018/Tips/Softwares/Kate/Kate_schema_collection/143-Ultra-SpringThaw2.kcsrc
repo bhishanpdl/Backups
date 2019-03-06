@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=143-Ultra-SpringThaw2
+activeBackground=207,214,230
+activeBlend=55,63,77
+activeForeground=48,48,48
+activeTitleBtnBg=255,255,255
+alternateBackground=255,255,255
+background=190,197,212
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=40,40,40
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=103,103,103
+inactiveBlend=30,30,30
+inactiveForeground=15,15,15
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=160,168,0
+selectBackground=144,220,183
+selectForeground=41,41,41
+shadeSortColumn=true
+visitedLinkColor=28,168,0
+windowBackground=255,255,255
+windowForeground=5,5,5

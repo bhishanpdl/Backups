@@ -1,0 +1,9 @@
+to open a program in gedit terminal
+=====================================
+	
+1. open a program in gedit(e.g., c program)
+2. type cd 
+3. drag the file below it
+4. click on the terminal
+5. delete last and first parts  (ctrl e for end, ctrl a for start)
+ 

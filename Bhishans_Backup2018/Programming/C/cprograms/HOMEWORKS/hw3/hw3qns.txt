@@ -1,0 +1,16 @@
+Develop .l (I program that .isks tor the user's height, weight and age (integer). and then
+computes clothing sizes according to the l'm‘muias:
+o Hat Size a weight in potmtls divided by height in inches multiplied by 2.9
+0 Jacket Size (chest in size) a height times weight divided by 288 and than adlusted
+by adding 1/8 of an inch for each 10 years over age 30. (Note that adjustment only
+takes place after a [all 10 years. So, there is no adjustment for ages 30 through 39, but
+[/8 o/an inch is added [or age 40)
+o Waist (in inches) = weight divided by 5.7 and then adjusted by adding 1/10 ofan
+inch for each 2 years over age 28. (Note that the adjustment only takes place after a
+full Zyears So, there is no adjustmentfor age 29. but 1/10 ofan inch is addedfor age
+30)
+Use functions for each calculation. Your program should allow the user to repeat this
+calculation as often as the user wishes! That means. functions are invoked within a loop!
+[2] Develop a C program that lets the user to choose one geometric object of his or her
+choice and then initiates appropriate user interactions, computes and displays the Volume
+and Surface Area as the output.

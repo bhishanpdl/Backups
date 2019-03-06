@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=002-Ultra-Catalyst
+activeBackground=179,151,74
+activeBlend=83,176,21
+activeForeground=0,0,0
+activeTitleBtnBg=0,0,0
+alternateBackground=249,249,249
+background=179,151,74
+buttonBackground=193,224,90
+buttonForeground=255,255,255
+contrast=10
+foreground=255,255,255
+frame=117,200,72
+handle=117,200,72
+inactiveBackground=179,151,74
+inactiveBlend=0,0,0
+inactiveForeground=27,27,27
+inactiveFrame=117,200,72
+inactiveHandle=131,200,35
+inactiveTitleBtnBg=0,0,0
+linkColor=0,128,240
+selectBackground=146,192,93
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=145,240,104
+windowBackground=255,255,255
+windowForeground=0,0,0

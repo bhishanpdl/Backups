@@ -1,0 +1,38 @@
+# compiler,library,optional flags
+FC = f95
+LIB = -llapack
+LIBDIR = /usr/local/lib
+FCFLAGS = -xopenmp=parallel
+
+
+# execute the program and clean it
+default: all
+	./dminv_test
+	rm -f *.o *~ dminv_test .mod fort.8
+
+
+# main programs
+PROGRAMS = dminv_test
+
+# program depends on other programs (something.o)
+dminv_test: dminv.o print_matrix.o
+
+# "make" builds all
+all: $(PROGRAMS)
+
+
+%: %.o
+	$(FC) $(FCFLAGS) -o $@ $^ $(LDFLAGS) -L$(LIBDIR)  $(LIB)
+
+
+%.o: %.f90
+	$(FC) $(FCFLAGS) -c $< -L$(LIBDIR)  $(LIB)
+
+# Utility targets
+.PHONY: clean
+
+clean:
+	rm -f *.o *.mod *.MOD fort.8
+	rm -f *~ $(PROGRAMS)
+
+

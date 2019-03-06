@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{xspace}
+
+\makeatletter
+\newcommand{\etc}{%
+  \mbox{etc}\@ifnextchar.{}{.\@\xspace}%
+}
+
+\newcommand{\ie}{i.e.,\xspace}
+%\newcommand{\ie}{i.e.\@\xspace}
+\makeatother
+
+
+\begin{document}\noindent
+
+    \noindent
+    Outside of math mode \verb|\etc| works now at the end of sentences!
+
+    \noindent
+    You should eat more fruit, \ie apples, bananas, \etc. Next sentence.
+
+    \noindent
+    You should eat more fruit, i.e., apples, bananas, \etc but also tomatoes.
+
+\end{document}

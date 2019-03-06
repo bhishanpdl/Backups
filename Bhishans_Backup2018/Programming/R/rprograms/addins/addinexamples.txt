@@ -1,0 +1,90 @@
+Bhishan Poudel
+Jan 19, 2016
+
+addins in rstudio
+================================================================================
+
+to install:
+	go to terminal,load r, install.packages('addinexamples',dependencies=TRUE)
+	we will get error, but install required dependencies, reinstall addinexamples
+
+
+where is the package addinexamples in installed?
+================================================================================
+sudo find / -type d -name "addinexamples"
+
+answer is:
+/home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/
+
+cd /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/
+
+to see addins (dcf is debian configuratin file)
+================================================================================
+gedit /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/rstudio/addins.dcf
+
+to create extra addins
+================================================================================
+e.g. addin called shebang
+
+1. first edit addins.dcf and add another addin
+geany /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/rstudio/addins.dcf
+
+2. give two newlines and paste this
+Name: Bhihsan
+Description: Inserts some lines of text at the cursor position.
+Binding: Shebang
+Interactive: false
+
+3. Then create a file called Bhishan.r inside addinexamples/R/
+cd /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/R/; ls
+touch Bhishan.r; geany Bhishan.r
+
+if it already exists:
+geany /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/R/Bhishan.r
+
+4. copy and paste this function
+
+#' Insert some commands
+#'
+#' Call the function Bhishan at the cursor position.
+#'
+#' @export
+Bhishan <- function() {
+rstudioapi::insertText("#!/usr/bin/Rscript \n")
+rstudioapi::insertText("\n")
+rstudioapi::insertText("# Author : Bhishan Poudel \n")
+rstudioapi::insertText("# Date   : \n")
+rstudioapi::insertText("# Program: \n\n")
+rstudioapi::insertText("# Set the working directory  \n")
+rstudioapi::insertText("this.dir <- dirname(parent.frame(2)$ofile) \n")
+rstudioapi::insertText("setwd(this.dir)  \n\n")
+}
+
+4. now, go to ~/.Rprofile
+geany ~/.Rprofile
+copy and paste above code
+
+5. Restart Rstudio.
+
+where is .RData ?
+====================
+Go to Rstudio
+Tools > Global Options  (we may see ~)
+or,
+Open Rstudio we see at the bottom : [Workspace loaded from ~/.RData]
+
+
+######### example addin ######################################################
+#' Insert \%in\%.
+#'
+#' Call this function as an addin to insert \code{ \%in\% } at the cursor position.
+#'
+#' @export
+insertInAddin <- function() {
+rstudioapi::insertText(" %in% ")
+}
+#########################################################3
+
+
+
+

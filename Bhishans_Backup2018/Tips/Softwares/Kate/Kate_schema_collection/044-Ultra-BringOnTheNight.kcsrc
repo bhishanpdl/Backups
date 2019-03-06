@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=044-Ultra-BringOnTheNight
+activeBackground=0,0,0
+activeBlend=0,0,0
+activeForeground=124,124,124
+activeTitleBtnBg=255,255,255
+alternateBackground=6,6,6
+background=0,0,0
+buttonBackground=0,0,0
+buttonForeground=255,255,255
+contrast=0
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=0,0,0
+inactiveBlend=0,0,0
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=43,43,42
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=0,0,0
+windowForeground=255,255,255

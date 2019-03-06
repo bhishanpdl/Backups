@@ -1,0 +1,29 @@
+1.
+create a file called foo.tex
+2. go to any text editor and write some
+latex format text
+eg.
+\documentclass{article}
+
+\begin{document}
+Hello world!
+\end{document}
+
+3. open the terminal
+latex filename.tex
+we can see hello.aux and hello.log files created
+
+4. to see the output
+xdvi he(hit tab)  or,
+xdvi hello.dvi
+
+5. edit the tex file in gedit, then again:
+latex hello.tex 
+xdvi hello.dvi
+
+6. to edit multiple times
+latex hello.tex ; clear
+xdvi hello.dvi ; clear
+
+then press up arrow key twice each times
+

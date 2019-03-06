@@ -1,0 +1,72 @@
+# terms
+target: dependency ( separated by spaces)
+	command ( separated by tab)
+
+
+
+If there are lots of source files and only some
+of them have been changed, comiling all the source
+files is not time efficient, so we use a makefile.
+
+make file will know whether the source code is changed
+or not and hence the recompilation in needed or not.
+
+1. to create a makefile:
+emacs Makefile & or,
+gedit Makefile &
+
+2. a make file has targets eg. exec: and compile:
+   default is first target eg. exec:
+  this means when we type make it will be executed.
+ it we give arguments it will redirect to compile target.
+
+3.exec:
+  compile:
+	gcc source.c -o source 
+
+compile target is supposed to execute this command
+ gcc source.c -o source
+
+4. dependency of this compilation is source.c
+   dependency and target name should be same line thats
+   why we give a space and backslash
+
+   exec:
+   compile: \
+   source.c
+	gcc source.c -o source
+
+  still now make doesnot know when source.c was compiled.
+  so we create a file : touch source.c
+  touch will also update time stamp
+  then source.c and compile will be compared
+
+5.  exec:
+   compile: \
+   source.c
+	here we can add additional commands if we want
+	echo "compiling"
+	gcc source.c -o source
+
+6. now to make:
+   if we type make without any arguments it will
+   try to execute exec: 
+   and now there is nothing.
+
+7. if we type make compile it will compile the source code
+
+8. type ls -l to see time stamp
+   again type: make compile
+   output: make: 'compile' is upto date
+
+9. we can also add execution command
+
+ exec: \
+ compile
+	./source
+ compile: \
+ source.c
+	echo "compiling"
+	gcc source.c -o source
+
+

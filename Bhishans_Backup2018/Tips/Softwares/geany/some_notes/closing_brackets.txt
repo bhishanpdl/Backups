@@ -1,0 +1,7 @@
+# Author    : Bhishan Poudel
+# Date      : May 29, 2016
+
+autocomplete closing brackets in geany
+======================================
+
+preferences> editor > completions

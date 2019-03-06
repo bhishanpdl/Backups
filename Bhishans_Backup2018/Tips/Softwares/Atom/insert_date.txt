@@ -1,0 +1,15 @@
+Author: Bhishan Poudel
+Date  : Thu Feb 23, 2017
+
+Topic:
+=============================
+
+
+package: date
+
+format:
+Thu Feb 23, 2017
+DDD MMM D, YYYY
+
+keyboard shortcut: ctrl shf d
+Thu Feb 23, 2017

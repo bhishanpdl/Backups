@@ -1,0 +1,7 @@
+trial folder abc in the home
+=============================
+/home/bhishan/abc
+
+211GB drive:
+=============
+/media/bhishan/50E4CA6BE4CA5340

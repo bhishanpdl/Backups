@@ -1,0 +1,31 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 08, 2017 Thu
+
+Build commands to run scripts in geany
+=======================================
+
+1. latex
+
+latex for ps: latex %e.tex; dvipdf %e.dvi; bibtex %e; latex %e.tex; latex %e.tex; rm -f %e.aux; rm -f %e.bbl; rm -f %e.blg; rm -f %e.log; rm -f %e.out; rm -f *.bak ; rm -r %e.dvi; find . -name *eps-converted* -type f -exec rm -r {} + ; open %e.pdf
+
+LATEX ==> PDF: pdflatex --file-line-error-style "%f"
+
+bibtex: bibtex "%e"
+
+
+
+execute: pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm -f  %e.aux; rm -r  %e.bbl; rm -f %e.blg; rm -f %e.log; rm -f %e.out;  rm -f %e.toc; open %e.pdf
+
+view pdf : open %e.pdf
+
+
+2. C program
+ compile: gcc gcc -Wall -c "%f"
+ build: gcc -Wall -o "%e" "%f" -L /Users/poudel/Applications/cfitsio/lib -I
+ /Users/poudel/Applications/cfitsio/include  -lcfitsio -lm -lfftw3f -framework vecLib
+
+ Lint: cppcheck --language=c --enable=warning,style --template=gcc "%f"
+
+ Execute: clear; gcc -Wall %f -L /Users/poudel/Applications/cfitsio/lib -I
+ /Users/poudel/Applications/cfitsio/include  -lcfitsio -lm  -framework vecLib ;
+ ./a.out; rm -f a.out

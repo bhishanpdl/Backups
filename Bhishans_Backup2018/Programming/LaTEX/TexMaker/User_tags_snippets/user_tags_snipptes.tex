@@ -1,0 +1,67 @@
+% Author : Bhishan Poudel
+% Date   : Apr 19, 2016
+% Ref    : https://www.youtube.com/watch?v=UxCx78bgCTY
+% Ref    : http://www.xm1math.net/texmaker/doc.html#SECTION33
+
+\documentclass[10 pt, a4paper] {article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx,subfigure}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{hyperref}
+
+\title{User tags in Texmaker}
+\author{Bhishan Poudel}
+\date{\today}
+\author{Bhishan Poudel}
+\begin{document}
+
+\maketitle{}
+%\tableofcontents
+%\listoffigures
+To make user defined tags in Texmaker.
+\begin{verbatim}
+Click on User icon on left panel (looks like man)\\
+Right click on the empty space.\\
+Item: parenth
+Latex Content: $ \left( @ \right) $ 
+Keyboard Trigger: par
+click ok
+
+Then, we can see user command parenth on the User
+interface at left hand side.
+
+To use: click it. or type   :par and press right arrrow  
+\end{verbatim}
+$ \left( x +1 \right) $ 
+
+
+\begin{verbatim}
+4.4 Personals tags ans tools
+
+Texmaker allows you to insert your own tags (shortcuts : Shift+F1...Shift+F10). 
+These tags are defined with the "User - User Tags" menu.
+Notes :
+
+    If the code of the menu is "%environment", Texmaker will directly insert:
+    \begin{environment }
+    •
+    \end{environment }
+    and the cursor will jump directly to the "•" field.
+    You can also define an unlimited number of tags via the "User" panel in the "structure view" :
+     just right-click on this panel to add or remove an item.
+    All theses tags can be included in the document by clicking on an item in the panel or directly
+     with the keyboard trigger ":foo" + key right.
+    All the "@" characters in the code are automatically replaced by "•" place holders in the
+     editor and the cursor will jump directly to the first "•" field (if some text has been
+      selected in the editor before, the first "•" field will be replaced automatically by the
+       selected text).
+    Note : @@ will be replaced by the @ character in the editor (and not by a double placeholder)
+    
+
+You can also launch your own commands (shortcuts : Alt+Shift+F1...Alt+Shift+F5). These commands are
+ defined with the "User - User Commands" menu and can be launched via the toolbar ("Run" button) .
+ 
+\end{verbatim}
+
+\end{document}

@@ -1,0 +1,6 @@
+# Author    : Bhishan Poudel
+# Date      : May 28, 2016
+
+checking ubuntu version
+===========================
+lsb_release -a      # Ubuntu 15.10 wily

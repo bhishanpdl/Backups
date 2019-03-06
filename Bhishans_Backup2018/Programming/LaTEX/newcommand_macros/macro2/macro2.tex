@@ -1,0 +1,36 @@
+\documentclass{article} 
+ 
+\begin{document}
+
+Examples of macros in latex.\\
+
+
+
+\newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}
+ 
+To save some time when writing too many expressions 
+with exponents is by defining a new command to make simpler:
+ 
+\[ \plusbinomial{x}{y} \]
+ 
+And even the exponent can be changed
+ 
+\[ \plusbinomial[4]{y}{y} \]
+
+\begin{verbatim}
+Let's analyse the syntax of the line \newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}:
+
+\plusbinomial
+    This is the name of the new command. 
+
+[3]
+    The number of parameters the command will take, in this case 3. 
+
+[2]
+    Is the default value for the first parameter. This is what makes the first parameter optional, if not passed it will use this default value. 
+
+(#2 + #3)^#1
+    This is what the command does. In this case it will put the second and third parameters in a "binomial format" to the power represented by the first parameter. 
+\end{verbatim}
+
+\end{document}

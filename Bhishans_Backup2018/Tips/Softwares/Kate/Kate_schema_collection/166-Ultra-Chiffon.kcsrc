@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=166-Ultra-Chiffon
+activeBackground=205,201,165
+activeBlend=20,29,20
+activeForeground=71,68,65
+activeTitleBtnBg=255,255,255
+alternateBackground=236,222,203
+background=205,201,165
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=9,10,10
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=205,201,165
+inactiveBlend=30,30,30
+inactiveForeground=70,120,37
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=118,103,4
+selectBackground=11,21,22
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=17,17,16
+windowBackground=250,235,215
+windowForeground=0,0,0

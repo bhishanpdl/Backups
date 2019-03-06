@@ -1,0 +1,12 @@
+nano text editor
+=============================
+1. go to terminal and type nano temp.txt
+( it will create text file temp.txt in the same
+directory)
+
+2. to exit
+ctrl x
+y
+enter
+
+3. 

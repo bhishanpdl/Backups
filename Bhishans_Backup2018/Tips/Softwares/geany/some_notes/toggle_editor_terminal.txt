@@ -1,0 +1,7 @@
+# Author  : Bhishan Poudel
+# Date    : May 19, 2016
+
+Toggle editor and terminal in geany
+===============================================================================
+F2 = editor
+F4 = terminal

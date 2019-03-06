@@ -1,0 +1,8 @@
+Because it is expensive to draw, you typically will not want matplotlib 
+to redraw a figure many times in a script such as the following:
+
+plot([1,2,3])            # draw here ?
+xlabel('time')           # and here ?
+ylabel('volts')          # and here ?
+title('a simple plot')   # and here ?
+show()

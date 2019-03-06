@@ -1,0 +1,28 @@
+bhishan tips:
+how to delete certain line numbers using terminal
+
+1. open the file directory in the terminal
+e.g. cd Copy/Tips/deletelines
+
+2. type ls to see the text file
+
+3. 
+to delete given line numbers in original text type this
+to delete lines 5-10 and 12 inclusive.
+
+sed -i.bak -e '5,10d;12d' text_name
+
+to see only trimmed text in terminal type
+ 
+sed -e '5,10d;12d' text_name
+
+
+5. notes:
+this will deltete lines 5-10 and 12 inclusive.
+to delete line num 5   d is delete
+
+sed -i.bak -e '5d' text_name
+
+to delete line 10 to end
+sed -i.bak -e '5,$d' text_name
+

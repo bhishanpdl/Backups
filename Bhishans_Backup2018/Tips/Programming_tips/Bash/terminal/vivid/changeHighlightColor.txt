@@ -1,0 +1,14 @@
+to change colors that appers in linux terminal
+=================================================
+
+1. terminal > edit > profile preferences > colors >
+
+2. change background color to gray, if you like.
+
+3. Palette, choose custom,
+   then, lets see what colors are there in the terminal:
+   cd Softwares; ls
+   
+   then, click on the Palette and replace the colors
+   you can see instant change on the colors in the terminal. 
+   

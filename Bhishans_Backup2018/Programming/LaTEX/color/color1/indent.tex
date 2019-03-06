@@ -1,0 +1,151 @@
+
+%cmd: clear; latex indent.tex
+%cmd: clear; xdvi indent.dvi
+
+% colors : white, black, red, green, blue, cyan, magenta, yellow.
+% dvips color names:
+
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+
+\usepackage{verbatim} % for formatting verbatim
+\usepackage{alltt}  % for formatting
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+
+\newcommand{\comment}[1]{}  % for commenting \comment{This is a long comment }
+
+%\usepackage{color}
+
+\title{Assignment 1}
+\author{Bhishan Poudel}
+\date{August 2015}
+
+\begin{document}
+
+
+\setlength\parindent{24pt}
+
+I am writing my Thesis report using LaTeX, I need to add indentation because 
+every thing is right but only thing is every new paragraph is starting at 
+initial stage but I need to add some indentation. 
+
+
+\begin{itemize}
+    \item This is the first line \\ %line with dot
+          This is the second line   %line without dot 
+    \item Next line with dot
+\end{itemize}
+
+
+
+
+\begin{center}
+Example 1: The following paragraph (given in quotes) is an 
+example of Center Alignment using the center environment. 
+ 
+``LaTeX is a document preparation system and document markup 
+language. LaTeX uses the TeX typesetting program for formatting 
+its output, and is itself written in the TeX macro language. 
+LaTeX is not the name of a particular editing program, but 
+refers to the encoding or tagging conventions that are used 
+in LaTeX documents".
+\end{center}
+
+This is the text in first paragraph. This is the text in first 
+paragraph. This is the text in first paragraph. \par
+This is the text in second paragraph. This is the text in second 
+paragraph. This is the text in second paragraph.
+
+
+
+
+\begin{flushleft}
+``LaTeX is a document preparation system and document markup 
+language. LaTeX uses the TeX typesetting program for formatting 
+its output, and is itself written in the TeX macro language. 
+LaTeX is not the name of a particular editing program, but refers 
+to the encoding or tagging conventions that are used in LaTeX documents".
+\end{flushleft}
+
+\setlength{\parindent}{10ex}
+This is the text in first paragraph. This is the text in first 
+paragraph. This is the text in first paragraph. \par
+\noindent %The next paragraph is not indented
+This is the text in second paragraph. This is the text in second 
+paragraph. This is the text in second paragraph.
+
+
+
+
+\begin{verbatim}
+The verbatim environment
+  simply reproduces every
+ character you input,
+including all  s p a c e s!
+Verbatim doesnot allow other commands
+but alltt allows
+\end{verbatim}
+
+
+\begin{alltt}
+Verbatim extended with the ability
+to use normal commands.  Therefore, it
+is possible to \emph{emphasize} words in
+this environment, for example.
+\end{alltt}
+
+
+This is another
+\begin{comment}
+rather stupid,
+but helpful
+\end{comment}
+example for embedding
+comments in your document.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+%	Remember to add \usepackage{alltt} to your preamble to use it though! 
+%	Within the alltt environment, you can use the command \normalfont to 
+%	get back the normal font. To write equations within the alltt enviroment, 
+%	you can use \( and \) to enclose them, instead of the usual $.
+
+%	When using \textbf{} inside the alltt enviroment, note that the standard 
+%	font has no bold TT font. Txtfonts has bold fonts: just add 
+%	\renewcommand{\ttdefault}{txtt} after \usepackage{alltt}.
+
+%	If you just want to introduce a short verbatim phrase, you don't need to 
+%	use the whole environment, but you have the \verb command:
+
+
+%	Paragraph indention is controled by the parameter \parindent. 
+%	In most document classes it is set to a positive value so you 
+%	should see indentations. If this is not the case you can set 
+%	this parameter in the document preamble to whatever value you wish, 
+%	e.g.
+
+%	\setlength\parindent{24pt}
+
+%	Of course, a requirement is that you mark up your paragraphs: 
+%	a paragraph ends by either a blank line or by the command \par. 
+%	If you instead just used \\you have directed LaTeX to start a new 
+%	line but not a new paragraph.
+

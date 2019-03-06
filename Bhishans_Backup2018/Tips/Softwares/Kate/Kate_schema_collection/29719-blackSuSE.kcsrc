@@ -1,0 +1,26 @@
+[Color Scheme]
+Name=blackSuSE
+activeBackground=92,92,92
+activeBlend=92,92,92
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=56,56,56
+background=0,0,0
+buttonBackground=92,92,92
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=19,136,93
+handle=19,136,93
+inactiveBackground=178,178,178
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,207,64
+selectBackground=16,107,39
+selectForeground=255,255,255
+visitedLinkColor=255,207,64
+windowBackground=122,122,122
+windowForeground=255,255,255

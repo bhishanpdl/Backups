@@ -1,0 +1,11 @@
+# Author    : Bhishan Poudel
+# Date      : May 24, 2016
+
+Auto bracket completion in geany
+===============================================================================
+Tools > Plugin Manager > mark on Auto-close
+
+Edit > Plugin Preference > Auto close
+
+
+voila!

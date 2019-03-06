@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=FutureTech GreyBlue
+activeBackground=115,117,113
+activeBlend=115,117,113
+activeForeground=99,172,255
+activeTitleBtnBg=174,178,195
+alternateBackground=142,144,139
+background=136,138,133
+buttonBackground=136,138,133
+buttonForeground=255,255,255
+contrast=10
+foreground=255,255,255
+frame=183,193,205
+handle=183,193,205
+inactiveBackground=81,82,79
+inactiveBlend=81,82,79
+inactiveForeground=102,161,224
+inactiveFrame=183,193,205
+inactiveHandle=183,193,205
+inactiveTitleBtnBg=174,178,195
+linkColor=0,0,198
+selectBackground=68,130,255
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=184,0,3
+windowBackground=151,153,148
+windowForeground=255,255,255

@@ -1,0 +1,4 @@
+python tips:
+
+1. designed by Guido Van Rossum in 1991 24 years ago.
+stable release 3.4.3

@@ -1,0 +1,45 @@
+Bhishan Poudel
+Jan 13, 2016
+
+method 1 (using indent)
+===============================
+
+1. first install indent
+sudo apt-get install indent
+
+
+2. then use it!
+indent -linux -l120 -i4 -nut programName.c
+
+3. reload the file
+
+
+method 2 (using astyle)
+=======================
+download from http://astyle.sourceforge.net/
+put it inside Softwares folder
+untar it, cd to astyle/build/gcc, then make it 
+
+or,
+sudo apt-get install astyle
+
+
+Usage:
+======
+// astyle -A1 -Y example.c
+
+options: 
+--indent-switches  or, -S
+--indent-col1-comments / -Y
+--delete-empty-lines / -xe   Do not use THIS
+--fill-empty-lines / -E
+--align-pointer=name   / -k3   note: char* pointer  becomes char *pointer
+--align-reference=name   / -W3 note: char & pointer  becomes char &pointer
+--add-one-line-brackets / -J   For only single line
+--keep-one-line-blocks / -O    good
+--keep-one-line-statements / -o 
+
+
+to use:   astyle --style=allman sourceFile1.c soureFile2.c etc
+// astyle -h
+//http://astyle.sourceforge.net/astyle.html#_Usage

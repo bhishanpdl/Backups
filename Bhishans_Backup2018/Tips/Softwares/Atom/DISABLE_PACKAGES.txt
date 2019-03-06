@@ -1,0 +1,15 @@
+Disable or uninstall and do note add opening time:
+==================================================
+ink,julia-clinet,juno   # NOT NEEDED, scipt is sufficient
+open-in-browser    # good for only html
+browser-plus       # gives installation error
+comment-timestamp  # not needed
+markdown-toolbar   # NEVER INSTALL THIS, gives very bad error
+script-runner      # not required
+project-manager    # this is for git users
+markdown pdf       # has dependencies on tree-view and markdown-preview.
+                   # does not indent lists, it is not good
+markdown-themeable-pdf # needs markdown-pdf
+markdown toc       # not needed
+to-do show         # don't need now
+tidy-markdown      # THIS WILL CAUSE PROBLEM for Script-runner

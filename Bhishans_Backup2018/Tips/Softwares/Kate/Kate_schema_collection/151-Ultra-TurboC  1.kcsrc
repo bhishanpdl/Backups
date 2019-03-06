@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=151-Ultra-TurboC++1
+activeBackground=37,68,171
+activeBlend=55,63,77
+activeForeground=189,197,176
+activeTitleBtnBg=255,255,255
+alternateBackground=35,64,161
+background=24,55,157
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=241,243,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=37,68,171
+inactiveBlend=30,30,30
+inactiveForeground=164,172,13
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,222,8
+selectBackground=144,36,41
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,247
+windowBackground=37,68,171
+windowForeground=255,255,255

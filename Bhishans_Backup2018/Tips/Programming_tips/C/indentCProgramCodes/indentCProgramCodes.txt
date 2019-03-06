@@ -1,0 +1,8 @@
+1. first install indent
+sudo apt-get install indent
+
+
+2. then use it!
+indent -linux -l120 -i4 -nut programName.c
+
+3. reload the file

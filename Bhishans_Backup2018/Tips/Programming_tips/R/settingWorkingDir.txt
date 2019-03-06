@@ -1,0 +1,28 @@
+Bhishan Poudel
+Jan 19, 2016
+
+To set the current directory as working directory
+====================================================
+put this function in ~/.Rprofile
+
+# Function to set the current directory as the working directory
+set_default_wd <- function(wd = getwd(), overwrite = FALSE) {
+text <- paste0(
+'local({ setwd("', wd, '") })')
+##
+if (Sys.info()["sysname"] == "Windows") {
+write(
+text,
+file = paste0(Sys.getenv("HOME"), "\\.Rprofile"),
+append = !overwrite)
+} else {
+write(
+text,
+file = paste0(Sys.getenv("HOME"), "/.Rprofile"),
+append = !overwrite)
+}
+}
+
+
+# to invoke the function
+set_default_wd()

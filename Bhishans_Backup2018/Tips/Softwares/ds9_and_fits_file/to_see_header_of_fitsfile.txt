@@ -1,0 +1,11 @@
+hexdump -e '"%_ad\t" 80/1 "%_p" "\n"' astlimits.fits  | less
+
+create an alias for this
+open ~/.bashrc
+
+add this line
+alias fitsheader=$'hexdump -e \'"%_ad\t" 80/1 "%_p" "\n"\''
+source ~/.bashrc
+
+then,
+fitsheader gal.fits | less

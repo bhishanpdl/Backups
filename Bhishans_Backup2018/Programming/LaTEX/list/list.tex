@@ -1,0 +1,181 @@
+% topic: latex template for homework
+
+% cmd  : clear; latex item.tex  (Note: it will create 3 extra files log,aux and dvi )
+% cmd  : clear; xdvi item.dvi
+% cmd  : clear; dvipdf item.dvi
+
+\documentclass[14pt]{article}
+\usepackage{enumitem}
+\usepackage[ampersand]{easylist}
+\usepackage{amsmath,amssymb}
+
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Code 		Description
+%	\alph 		Lowercase letter (a, b, c, ...)
+%	\Alph 		Uppercase letter (A, B, C, ...)
+%	\arabic 	Arabic number (1, 2, 3, ...)
+%	\roman 		Lowercase Roman numeral (i, ii, iii, ...)
+%	\Roman 		Uppercase Roman numeral (I, II, III, ...) 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Creating Title for the assesment
+
+\title{ List in Latex }
+\author{Bhishan Poudel}
+\date{Sep, 2015}
+% Don't forget to use \maketitle below \begin{document}
+
+\begin{document}
+\maketitle
+
+
+
+\section{Section 1 : itemize}
+\begin{itemize}            % list_types are: itemize,enumerate & description
+  \item The first item
+  \item The second item
+  \item The third etc \ldots
+\end{itemize}
+
+
+\section{Section 2: enumerate}
+
+\begin{enumerate}
+  \item The first item
+  \item The second item
+  \item The third etc \ldots
+\end{enumerate}
+
+
+\section {Section 3: description}
+
+\begin{description}
+  \item[First] The first item
+  \item[Second] The second item
+  \item[Third] The third etc \ldots
+\end{description}
+
+
+\section{Section 4: description with hfill}
+\begin{description}
+  \item[First] \hfill \\  % here we must use \hfill instead of \\
+  The first item
+  \item[Second] \hfill \\
+  The second item
+  \item[Third] \hfill \\
+  The third etc \ldots
+\end{description}
+
+
+\section{Section 5: Nested list}
+LaTeX will happily allow you to insert a list environment into an existing one 
+(up to a depth of four, if you need more than four, use the easylist package). 
+Simply begin the appropriate environment at the desired point within the 
+current list. Latex will sort out the layout and any numbering for you.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{enumerate}
+   \item First level item
+   \item First level item
+   \begin{enumerate}
+     \item Second level item
+     \item Second level item
+     \item Second level item etc \ldots
+     \begin{enumerate}
+       \item Third level item
+       \item Third level item
+       \begin{enumerate}
+         \item Fourth level item
+         \item Fourth level item
+       \end{enumerate}
+     \end{enumerate}
+   \end{enumerate}
+ \end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Section 6: enumerate making bold}
+\begin{verbatim}
+\bfseries makes it bold, Exercise is the text and \arabic* 
+inserts the counter followed by a colon (:) which is treated as text again.
+
+\end{verbatim}
+\begin{enumerate}[label=\bfseries Exercise \arabic*:]
+  \item 5 + 7 = 12
+  \item 9 + 1 = 10
+  \item 2 * 2 = 4
+\end{enumerate}
+
+
+\section{Section 7 : usepackage easylist}
+\begin{verbatim}
+Available styles:
+
+    tractatus
+    checklist - All items have empty check boxes next to them
+    booktoc - Approximately the format used by the table of contents of the book class
+    articletoc - Approximately the format used by the table of contents of the article class
+    enumerate - The default
+    itemize
+\end{verbatim}
+\begin{easylist}[enumerate]
+%\ListProperties(Style2*=,Numbers=a,Numbers1=R,FinalMark={)})
+%\ListProperties(Style3=\color{red},Numbers=a,Numbers1=R,FinalMark={)})
+
+& Main item~:
+&& Sub item.
+&& Another sub item.
+\end{easylist}
+
+
+\section{Section 8: easylist customize bullet,circle,etc}
+
+
+\begin{easylist}
+\ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=-- ,
+Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )
+% custom listing
+& Blah
+& Blah
+&& \color{red}Blah
+&&& Blah
+&&&& Blah
+&&&&& Blah
+\end{easylist}
+
+\section{Section 9: easylist customize star}
+
+\newcommand\myitemize{\ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=$\star$ )}
+\newcommand\myenumerate{\ListProperties(Space=2\baselineskip)}
+
+\begin{easylist} \myitemize
+& Blah
+&& blah
+\end{easylist}
+
+\section{Section 10: Always put easylist inside activate and deactivate closure}
+\Activate
+\begin{easylist}
+& blah
+\end{easylist}
+\Deactivate
+
+\section{Section 11: Enumerate custom with square bracket needs ENUMITEM}
+\begin{enumerate}[label={[\arabic*]}]  %usepackage{enumitem}
+  \item First item
+  \item Second item
+  \item \ldots
+  \item Last item
+\end{enumerate}
+
+
+
+
+\end{document}
+
+

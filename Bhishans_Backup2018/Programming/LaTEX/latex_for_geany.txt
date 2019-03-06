@@ -1,0 +1,8 @@
+# Author  : Bhishan Poudel
+# Date    : Apr 06, 2016
+# Topic   : Latex for geany
+
+===============================================================================
+Build > Set Build Commands > Execute Commands
+
+Execute : latex %f; dvipdfmx %e.dvi; rm %e.aux; rm %e.dvi; rm %e.log; okular %e.pdf

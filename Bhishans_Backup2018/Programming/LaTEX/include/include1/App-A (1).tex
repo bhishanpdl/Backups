@@ -1,0 +1,22 @@
+%compile and make pdf
+% F2 and F5 in textmaker
+
+
+\documentclass{report}
+\usepackage[nokeyprefix]{refstyle}
+\usepackage{varioref}
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+  \externaldocument[Main-]{Main}
+
+\begin{document}
+\appendix
+\setcounter{chapter}{0}
+\setcounter{page}{50}
+\chapter{First}
+\begin{equation}
+  \mathrm{e}^{i\pi}-1 = 0
+  \label{eq:e}
+\end{equation}
+In \eqref[s,xr=Main-,vref]{eq:Einst} and \eqref*{eq:e} ...
+\end{document}

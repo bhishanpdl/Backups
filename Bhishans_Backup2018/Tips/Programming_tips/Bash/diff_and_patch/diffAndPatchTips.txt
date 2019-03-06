@@ -1,0 +1,29 @@
+to create a file
+==================
+touch a.txt b.txt
+
+
+to open them
+=============
+
+open a.txt b.txt
+
+
+write somthing in them
+========================
+type somthing
+
+
+
+write differences to a new file
+=================================
+diff a.txt b.txt > changes.patch
+
+
+make file b.txt same as a.txt
+===============================
+
+patch b.txt changes.patch
+
+
+

@@ -1,0 +1,7 @@
+Bhishan Poudel
+Jan 14, 2016
+
+to install geany in ubuntu 15
+==============================
+go to software center
+search geany, click more, install with all add ons

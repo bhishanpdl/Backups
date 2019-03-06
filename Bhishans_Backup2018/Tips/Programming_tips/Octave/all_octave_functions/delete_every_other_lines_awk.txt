@@ -1,0 +1,44 @@
+# Author    : Bhishan Poudel
+# Date      : May 29, 2016
+# Ref       : https://stackoverflow.com/questions/9894986/how-can-i-delete-every-xth-line-in-a-text-file
+
+
+delete every other lines
+==============================
+
+Remove every other line:
+awk 'NR % 2 == 0' file > newfile
+awk 'NR % 2 == 0' a.txt > aa.txt
+
+
+Remove every 10th line:
+awk 'NR % 10 != 0' file > newfile
+
+The NR variable in awk is the line number.
+Anything outside of { } in awk is a conditional,
+and the default action is to print.
+Whenever line number is a multiple of 2, print the line
+
+
+
+You could possibly do it with sed, e.g.
+
+sed -n -e 'p;N;d;' file # print every other line, starting with line 1
+If you have GNU sed it's pretty easy
+
+sed -n -e '0~10p' file # print every 10th line
+sed -n -e '1~2p' file # print every other line starting with line 1
+sed -n -e '0~2p' file # print every other line starting with line 2
+
+
+sed -n -e 'p;N;d;' try.txt
+
+non gnu sed or gnu sed
+==========================
+sed -n 'g;n;p' file
+
+
+gnu sed
+=========
+seq 10 | sed '0~2d' # delete every 2nd line
+

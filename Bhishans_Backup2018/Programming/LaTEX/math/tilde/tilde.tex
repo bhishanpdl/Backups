@@ -1,0 +1,18 @@
+% Author : Bhishan Poudel
+% Date   : Apr 11, 2016
+% Ref    : https://tex.stackexchange.com/questions/102604/add-a-comment-on-top-of-equal-and-approximate-symbols
+
+\documentclass[preview]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\newcommand{\approxtext}[1]{\ensuremath{\stackrel{\text{#1}}{\approx}}}
+\newcommand\defeq{\stackrel{\smash{\scriptscriptstyle\mathrm{def}}}{=}}
+
+\begin{document}
+    $\displaystyle
+        A \stackrel{\text{text}}{\approx} B
+    $, 
+    $\displaystyle
+        A \approxtext{test} B
+    $
+\end{document}

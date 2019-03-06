@@ -1,0 +1,30 @@
+1. split view
+
+Window > Editor Tabs > Split Vertically or Unsplit All
+
+2. comment a block
+select the block
+Code > comment with line comment  (to uncomment do same)
+
+3. default line numbers on mac os pycharm 4.0 PyCharm-->Preferences-->Editor-->General-->Appearance-->checkbox: "Show line numbers" 
+
+4. to show line numbers
+view > Active Editor > Show line numbers
+
+5. to show terminal Alt F12
+view > tool windows > terminal
+
+6. to install plugins (eg c/c++)
+file>setting>plugins>browse repositories
+
+7. to change keyboard shortcut for run
+file>setting>keymap>search run then edit
+i made it F10
+
+note: first click run... (alt shf f10), then choose your filename, u will see output.
+
+
+shortcuts
+ctrl shft g 	= google
+alt y 		= synonyms
+

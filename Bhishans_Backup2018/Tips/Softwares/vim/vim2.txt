@@ -1,0 +1,38 @@
+vim basics
+===========
+
+1. to open txt file using vim editor
+vi file_name  (e.g. vi vim.txt)
+
+this will show contents of the file
+
+2. to go back to termial type
+:wq! then press enter
+
+3. vim arrow keys
+H = Left	L = right
+J = down	K = up 
+5L = five characters right
+w  = forward a word
+b  = backward a word
+$  = end of the file
+ctrl F = one page up
+ctrl B = one page down
+
+enter = go down
+esc   = go back to command mode
+:12   = go to line 12
+
+to edit the text
+=================
+1. first go to command mode 
+esc
+:12   ( moves you to the line number 12)
+use hjkl or w,b to go to that word
+x = delete forward character
+X = delete backward characters
+dw = delete forward word
+db = delete backward word
+dd = delte entire line
+u  = undo
+:e!  = undo all the last editings

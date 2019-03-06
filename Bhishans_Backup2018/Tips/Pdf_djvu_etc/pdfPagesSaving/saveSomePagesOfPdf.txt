@@ -1,0 +1,10 @@
+Bhishan Poudel
+Nov 3,2015
+
+to save some pages of pdf file (using Google Chrome)
+=======================================================
+ref: http://www.wikihow.com/Extract-Pages-from-a-PDF-Document-to-Create-a-New-PDF-Document#Use_Google_Chrome_sub
+
+
+open the document in chrome
+file > print > pages (correct it) > change > save as pdf > save.

@@ -1,0 +1,13 @@
+to install termcolor
+======================
+
+first download the module:
+https://pypi.python.org/pypi/termcolor
+
+to install:
+sudo su 
+python setup.py install 
+
+
+to test
+python example_termcolor.py

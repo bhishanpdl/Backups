@@ -1,0 +1,46 @@
+ref: https://unix.stackexchange.com/questions/71171/how-to-remove-files-which-do-not-end-with-c
+
+ref: https://superuser.com/questions/529854/how-to-delete-all-files-in-a-directory-except-some
+
+
+delete except some files
+=========================
+for C-program:
+================
+find . -maxdepth 1 ! -name "*.c" ! -name "*.h" ! -name "*.txt" ! -name "makefile" ! -name "*.fits" ! -name "*.pdf" ! -name "*.dat" -type f -exec ls {} \;
+
+
+find . -maxdepth 1 ! -name "*.c" ! -name "*.h" ! -name "*.txt" ! -name "makefile" ! -name "*.fits" ! -name "*.pdf" ! -name "*.dat" -type f -exec rm -rf {} \;
+
+
+
+
+for FORTRAN
+============
+
+find . -maxdepth 1 ! -name "*.f90" ! -name "*.txt" ! -name "makefile" ! -name "*.pdf" ! -name "*.agr" ! -name "*.eps" ! -name "*.dat" -type f -exec ls {} \;
+
+
+
+find . -maxdepth 1 ! -name "*.f90" ! -name "*.txt" ! -name "makefile" ! -name "*.pdf" ! -name "*.agr" ! -name "*.eps" ! -name "*.dat" -type f -exec rm -rf {} \;
+
+Description:
+=============
+
+find .              # look in the pwd (. means pwd)
+-maxdepth 1         # do not go to subdirectory ( we can make -maxdepth 2 or 3 etc)
+! -name "*.c"       # do not delete anything.c files 
+! -name "*.h"
+! -name "*.fit"
+! -name "*.fits" 
+! -name "*.txt"
+! -name "*.pdf"
+! -name "*.agr"
+! -name "*.eps"
+! -name "*.dat"
+! -name "makefile" 
+-type f 
+-exec rm -rf {} \;  # less portable option is -delete
+
+
+

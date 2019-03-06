@@ -1,0 +1,8 @@
+to  delete lines having certain pattern
+=========================================
+a.txt                         our old file
+touch agood.txt               create new file
+
+grep -i indef a.txt            -i = ignore-case works for indef or INDEF
+
+grep -vi indef a.txt > agood.txt

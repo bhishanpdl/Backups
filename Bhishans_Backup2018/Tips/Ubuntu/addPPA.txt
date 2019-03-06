@@ -1,0 +1,13 @@
+to add a PPA
+===============
+
+open software center
+edit > Other Softwares > Add
+
+example for gnuplot
+ppa:gladky-anton/precise-backports
+
+to install 
+==============
+restart software center
+now type gnuplot in software center, install it

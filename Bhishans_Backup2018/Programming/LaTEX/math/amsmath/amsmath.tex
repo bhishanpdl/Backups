@@ -1,0 +1,72 @@
+% ref  : https://www.sharelatex.com/learn/Aligning_equations_with_amsmath
+
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+
+\title{amsmath package}
+\author{Bhishan Poudel}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents{}
+
+\section{Section 1}
+
+	You have to wrap you equation in the equation environment 
+	if you want it to be numbered, use equation* 
+	(with an asterisk) otherwise. Inside the equation environment 
+	use the split environment to split the equations into smaller 
+	pieces, these smaller pieces will be aligned accordingly. 
+	The double backslash works as a newline character. 
+	Use the ampersand character \&, to set the points 
+	where the equations are vertically aligned.
+
+
+\begin{equation*} \label{eq1}
+\begin{split}
+A &= \frac{\pi r^2}{2} \\
+ &= \frac{1}{2} \pi r^2
+\end{split}
+\end{equation*}
+
+\section{Writing a single equation}
+\begin{equation} \label{eu_eqn}
+e^{\pi i} - 1 = 0
+\end{equation}
+ 
+The beautiful equation \ref{eu_eqn} is known as the Euler equation.
+
+\section{Displaying long equations}
+\begin{multline*}
+p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
+- 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
+\end{multline*}
+
+\section{Aligning several equations}
+\begin{align} 
+2x - 5y &=  8 \\ 
+3x + 9y &=  -12
+\end{align}
+
+\section{Aligning multiple equations}
+\begin{align*}
+x&=y           &  w &=z              &  a&=b+c\\
+2x&=-y         &  3w&=\frac{1}{2}z   &  a&=b\\
+-4 + 5x&=2+y   &  w+2&=-1+w          &  ab&=cb
+\end{align*}
+
+\section{Grouping and centering equations }
+\begin{gather*} 
+2x - 5y =  8 \\ 
+3x^2 + 9y =  3a + c
+\end{gather*}
+
+
+
+
+
+\end{document}

@@ -1,0 +1,68 @@
+% Author : Bhishan Poudel
+% Date   : Apr 11, 2016
+% Ref    : https://tex.stackexchange.com/questions/172736/place-parentheses-around-a-cross-reference
+\documentclass{article}
+\usepackage{amsmath} % for eqref
+% reference within parenthesis
+\let\oldref\ref
+\renewcommand{\ref}[1]{(\oldref{#1})}
+
+% for customized autoref for hyperref
+\usepackage{hyperref}
+\def\equationautorefname~#1\null{Eq. (#1)\null}
+
+% Creating Title
+\title{Cross Reference in Latex}
+\author{Bhishan Poudel}
+\date{Apr 11, 2016}
+
+%%***************************** document begins *****************************%%
+\begin{document}
+\maketitle
+\tableofcontents
+\listoffigures
+\clearpage
+
+\section{Reference inside parenthesis}\label{sec:testlabel}
+We always compile twice to see the reference number.\\
+Always put label under the caption of the figure.\\
+Always give the prefix to the labels.\\
+Referencing tags: \\
+ch: 	chapter \\
+sec: 	section\\
+subsec: 	subsection\\
+fig: 	figure\\
+tab: 	table\\
+eq: 	equation\\
+lst: 	code listing\\
+itm: 	enumerated list item\\
+alg: 	algorithm\\
+app: 	appendix subsection\\
+
+Method 1: using newcommand\\
+Reference: \ref{sec:testlabel} \\
+
+Method 2: using amsmath eqref\\
+Reference: \eqref{sec:testlabel} \\
+
+\section{Formulae}
+\label{sec:Formulae}
+
+Here is an example showing how to reference formulae:\\
+
+\begin{equation} \label{eq:solve}
+x^2 - 5 x + 6 = 0
+\end{equation}
+
+\begin{equation}
+x_1 = \frac{5 + \sqrt{25 - 4 \times 6}}{2} = 3
+\end{equation}
+
+\begin{equation}
+x_2 = \frac{5 - \sqrt{25 - 4 \times 6}}{2} = 2
+\end{equation}
+
+and so we have solved equation~\autoref{eq:solve}.
+
+
+\end{document}

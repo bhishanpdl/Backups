@@ -1,0 +1,7 @@
+Bhishan Poudel
+Feb 18, 2016
+
+To install turtle module for python 2
+=======================================
+
+sudo pip install physicalturtle

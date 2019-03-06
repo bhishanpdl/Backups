@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=045-Ultra-DarkOceanClassic
+activeBackground=55,63,77
+activeBlend=0,35,67
+activeForeground=177,177,177
+activeTitleBtnBg=255,255,255
+alternateBackground=25,35,48
+background=55,63,77
+buttonBackground=17,17,17
+buttonForeground=255,255,255
+contrast=7
+foreground=140,140,140
+frame=0,0,133
+handle=0,0,133
+inactiveBackground=30,30,30
+inactiveBlend=30,30,30
+inactiveForeground=200,200,200
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=184,184,184
+selectBackground=2,41,57
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=110,110,110
+windowBackground=29,38,41
+windowForeground=167,167,167

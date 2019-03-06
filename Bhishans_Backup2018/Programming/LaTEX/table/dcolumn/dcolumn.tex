@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{dcolumn}
+
+\begin{document}
+
+\section{Aligning columns at decimal points using dcolumn}
+
+\ldots
+\newcolumntype{d}[1]{D{.}{\cdot}{#1} }
+%the argument for d specifies the maximum number of decimal places
+\begin{tabular}{l r c d{1} }
+Left&Right&Center&\mathrm{Decimal}\\
+1&2&3&4\\
+11&22&33&44\\
+1.1&2.2&3.3&4.4\\
+\end{tabular}
+\end{document}

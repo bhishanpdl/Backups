@@ -1,0 +1,38 @@
+Author: Bhishan Poudel
+Date:  Nov 3, 2017
+# Ref: https://stackoverflow.com/questions/3860112/multiple-github-accounts-on-the-same-computer
+
+To login to another github account from same computer
+======================================================
+1. Delete old .ssh folder
+rm -r ~/.ssh
+
+2. Create ssh id for main github account
+ssh-keygen -t rsa -b 4096 -C "bhishantryphysics@gmail.com"
+
+3. rename id files
+cd ~/.ssh
+mv id_rsa github-mainuser
+mv id_rsa.pub github-mainuser.pub
+
+4. Create another id
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/github-otheruser
+
+5. copy and paste otherid rsa files to second github account
+pbcopy < ~/.ssh/github-otheruser.pub
+
+6. Clone a repos from second github account
+Clone: https://github.com/bpJedisim/jsim_v2_z0.5.git
+Use: bpJedisim/jsim_v2_z0.5.git
+
+cd tmp; mkcd tmp
+git clone github.com-otheruser:bpJedisim/jsim_v2_z05.git
+
+
+git config user.name "bpJedisim"
+git config user.email "bhishanpdl3@gmail.com"
+
+echo hello > hello.txt
+git add .
+git commit -m "first commit"
+git push origin master

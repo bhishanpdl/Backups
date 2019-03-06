@@ -1,0 +1,94 @@
+\documentclass[11pt,a4paper,english]{article}
+\usepackage{babel}
+\usepackage{amssymb}
+\usepackage{graphicx,subfigure}
+\usepackage[export]{adjustbox}    % for positioning figure
+\usepackage{textcomp}
+\usepackage{fixltx2e}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+% Creating Title for the assessment
+
+\title{Assignment 5}
+\author{Bhishan Poudel}
+\date{\today}
+
+% begin of document
+\begin{document}
+\maketitle
+\tableofcontents
+\listoffigures
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Question 2}
+The given integrals are:
+\begin{displaymath}
+I = \int_{-1}^{1} \!\! \sqrt{1-x^2}\,dx 
+\end{displaymath}
+and,\\
+
+\begin{displaymath}
+I = \int_{-1}^{1} \!\! {sin^2 \theta}\,d\theta
+\end{displaymath}
+The exact value $=\Pi/2 = 0.157079632679E+01$\\
+
+
+\section{Question 3: Plank's black body radiation}
+
+\subsection{part a: Gauss-Laguerre}
+
+The given integral is :\\
+
+	\begin{equation}
+	  \frac{q^2}{2\mu} \Psi_{nl}(q) \\
+	+ \frac{2}{\pi} \int_{0}^{\infty} \!\! P_{l}(cos\theta) V(q,q')\,d(cos\theta) \\
+	 = E_n\Psi_{nl}(q)
+	\end{equation}    
+\begin{displaymath}
+I = \int_0^\infty \!\! \frac{x^3}{e^{x} -1}\,dx
+\end{displaymath}
+Comparing to the standard format for generalized Gauss-Laguerre quadrature:\\
+
+\begin{displaymath}
+I = \int_0^\infty \!\! e^{-x}x^{\alpha}\ \!f(x)\,dx 
+\end{displaymath}
+we get:
+$\alpha = 3 $ and \\
+
+\begin{displaymath}
+f(x) = \frac{1}{1-e^{-x}} 
+\end{displaymath}
+
+
+\subsection{part b: Gauss-Legendre}
+
+$x=\tan\frac{pi*y}{2}$ \\
+Then, I calculated the value of f(y) for the integral of the form:\\
+\begin{displaymath}
+I = \int_0^1 \! \!f(y)\,dy 
+\end{displaymath}
+
+
+\section{Question 4}
+
+\begin{displaymath}
+I = \int_1^{1000} \quad \frac{sin(x)}{x}\,dx
+\end{displaymath}
+We have to solve numerically the integral:\\
+\begin{displaymath}
+I = \int_1^{100} \quad \frac{sin(40x)}{x}\,dx
+\end{displaymath}
+So, I substituted $y=40x$, then, I got the integral:\\
+\begin{displaymath}
+I = \int_{40}^{4000} \quad \frac{sin(y)}{y}\,dy
+\end{displaymath}
+The exact solution is : $Si(4000)-Si(40)$\\
+Where Sine integral 'Si' is an entire function defined as:\\
+\begin{displaymath}
+Si(z) = \int_{0}^{z} \quad \frac{sin(t)}{t}\,dt
+\end{displaymath}
+
+
+\end{document}
+

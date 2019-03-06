@@ -1,0 +1,15 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 08, 2017 Thu
+
+Using markdown in geany
+==========================
+
+1. Disable auto strip spaces tab in line end
+Preferences > Files > Strip trailing spaces and tabs
+
+the last two spaces in a line in markdown works as new line.
+
+2. To get pdf from markdown file
+pandoc --template=mytemplate.latex -o %e.pdf %e.md; open %e.pdf
+
+note that pandoc should be installed in the computer for this.

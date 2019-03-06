@@ -1,0 +1,78 @@
+Bhishan Poudel
+Nov 3, 2015
+
+ref: http://en.flossmanuals.net/command-line/ch019_command-history/
+The three most useful modifiers are: *, !^, and !$, which are 
+shortcuts for all, first, and last arguments respectively.
+
+some commands about history using terminal
+==========================================
+
+1. replace all argument after the command (!*)
+================================================================================
+tooch a.txt
+touch !*
+
+rm a.txt
+
+2. replace the first argument (!^)
+================================================================================
+touch a.txt b.txt
+rm !^  ( equivalent to rm a.txt)
+
+3. replace the last argument (!$)
+================================================================================
+
+touch a.txt b.txt 
+rm !$
+
+4. reverse the arguments (!$ !^)
+================================================================================
+touch a.txt
+mkdir temp
+mv a.txt temp/a.txt
+
+BUT WE WANT TO COPY NOT MOVE:
+
+cp !$ !^
+
+note: rm ./temp/a.txt
+note: ls ./temp/
+
+5. replace string of  immediate last command
+================================================================================ 
+
+wc file1 : note wc = word count  (lines, words, characters)
+^1^2     (= wc fil2)  ( for file3 do: ^2^3)
+
+next example
+=============
+rm file1
+rm !$:s/1/2/    !$ is last command, s is substitute
+
+next example
+=============
+touch file11.txt
+^11^22
+
+touch fiel1.txt
+^el^le
+
+note: touch file1.txt file2.txt
+note: rm -f file1.txt file2.txt
+note: rm -f file* (everything starting with file)
+
+6. search by matching string
+================================================================================
+press ctrl r,  then type the letter, then enter
+
+7. command from history
+================================================================================
+history   ( shows command with number)
+
+!504 (command number 504)
+!-4 ( 4th last command)
+
+
+
+

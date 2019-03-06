@@ -1,0 +1,32 @@
+Bhishan Poudel
+Feb 16, 2016
+
+To see hidden files in Mac
+============================
+
+go to terminal
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
+
+to hide hidden files
+=====================
+defaults write com.apple.finder AppleShowAllFiles NO
+killall Finder
+
+
+Now, go to file manager, we can see all the hidden files
+
+
+
+See hidden files in the terminal
+=================================
+ls -a
+
+
+
+To hide a directory
+=====================
+
+chflags hidden directory/path
+
+chflags nohidden directory/path

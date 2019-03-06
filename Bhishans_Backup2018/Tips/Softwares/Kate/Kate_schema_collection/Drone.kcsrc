@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=Drone
+activeBackground=24,28,31
+activeBlend=56,66,73
+activeForeground=117,200,255
+activeTitleBtnBg=174,178,195
+alternateBackground=74,87,97
+background=56,66,73
+buttonBackground=52,61,68
+buttonForeground=117,200,255
+contrast=10
+foreground=117,200,255
+frame=183,193,205
+handle=183,193,205
+inactiveBackground=56,66,73
+inactiveBlend=56,66,73
+inactiveForeground=101,139,160
+inactiveFrame=183,193,205
+inactiveHandle=183,193,205
+inactiveTitleBtnBg=174,178,195
+linkColor=57,132,198
+selectBackground=40,106,198
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=184,97,110
+windowBackground=68,80,89
+windowForeground=117,200,255

@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=058-Ultra-NightVision
+activeBackground=31,0,0
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=84,84,84
+background=31,0,0
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=200,143,21
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=30,30,30
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,199,13
+selectBackground=57,50,35
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=172,144,51
+windowBackground=90,90,90
+windowForeground=5,5,5

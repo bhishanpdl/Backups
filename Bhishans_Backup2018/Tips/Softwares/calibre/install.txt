@@ -1,0 +1,21 @@
+#bhishan tips to install calibre on ubuntu
+# source : http://calibre-ebook.com/download_linux
+
+
+1. there is calibre on software center
+   but its terribly old and buggy, dont install it
+
+2. go to terminal and get root access
+sudo su
+
+
+3. install calibre
+Binary install
+calibre has a binary install that 
+supports both 32 and 64 versions and all
+dependencies:
+
+sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+
+
+

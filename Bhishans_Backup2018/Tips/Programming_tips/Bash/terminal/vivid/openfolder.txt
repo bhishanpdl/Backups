@@ -1,0 +1,4 @@
+type cd
+drag the directory to the terminal
+click on the terminal
+click enter

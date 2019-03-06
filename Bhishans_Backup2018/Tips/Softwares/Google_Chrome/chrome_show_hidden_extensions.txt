@@ -1,0 +1,8 @@
+Author: Bhishan Poudel
+Date  : July 5, 2017
+
+Topic: To show all the extensions in Google Chrome
+=====================================================
+
+Go to right cornor of chorme extension bar and click : button.
+Right click the extension, and choose keep in menubar.

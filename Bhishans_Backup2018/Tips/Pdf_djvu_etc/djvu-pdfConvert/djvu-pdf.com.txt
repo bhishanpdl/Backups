@@ -1,0 +1,7 @@
+to convert text djvu to text pdf
+=================================
+go to djvu-pdf.com
+upload the pdf
+choose searchable pdf option
+click ocr is on
+convert it.

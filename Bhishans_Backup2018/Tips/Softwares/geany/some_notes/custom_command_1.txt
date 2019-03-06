@@ -1,0 +1,20 @@
+# Author  : Bhishan Poudel
+# Date    : Apr 13, 2016
+# Topic   : Adding custom command in geany
+
+===============================================================================
+edit>format > send selection to > 1 is firefox
+preferences > keybindings > send to custom command 1  is ctrl 1
+
+
+
+www.youtube.com    # ctrl 1 (this selection) gives errors and paste write here.  (custom command 1 is firefox in genay)
+
+https://www.youtube.com/
+
+
+try.txt
+
+xdg-open www.youtube.com &  # does not work
+firefox www.youtube.com &   # works with error on terminal
+xdg-open https://www.youtube.com/ &  # works with error on terminal

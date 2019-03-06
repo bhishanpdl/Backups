@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=129-Ultra-OldDisplay2
+activeBackground=96,126,185
+activeBlend=55,63,77
+activeForeground=0,0,0
+activeTitleBtnBg=255,255,255
+alternateBackground=10,172,51
+background=96,126,185
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=214,214,214
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=96,126,185
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=4,97,185
+selectBackground=115,199,136
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=74,165,76
+windowForeground=22,22,22

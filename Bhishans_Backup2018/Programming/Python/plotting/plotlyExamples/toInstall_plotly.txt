@@ -1,0 +1,15 @@
+# Author  : Bhishan Poudel
+# Date    : Feb 23, 2016
+
+To install plotly for python2 and python3
+===============================================================================
+
+1. Add the repository in package manager (wily is for ubuntu 15)
+deb http://us.archive.ubuntu.com/ubuntu wily main universe
+
+sudo apt-get update
+
+sudo apt-get install python3-plotly
+
+
+2. note: if synaptic manager, spyder etc are open, close them during installation.

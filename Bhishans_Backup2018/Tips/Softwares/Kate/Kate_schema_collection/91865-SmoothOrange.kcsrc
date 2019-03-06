@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=SmoothOrange
+activeBackground=52,52,52
+activeBlend=255,255,255
+activeForeground=255,255,255
+activeTitleBtnBg=147,96,41
+alternateBackground=96,96,96
+background=44,44,44
+buttonBackground=25,25,25
+buttonForeground=250,249,248
+contrast=10
+foreground=255,255,255
+frame=50,50,50
+handle=67,67,67
+inactiveBackground=50,50,50
+inactiveBlend=28,28,28
+inactiveForeground=175,174,174
+inactiveFrame=50,50,50
+inactiveHandle=50,50,50
+inactiveTitleBtnBg=0,0,0
+linkColor=179,117,50
+selectBackground=234,115,18
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=124,81,35
+windowBackground=24,24,24
+windowForeground=255,255,255

@@ -1,0 +1,4 @@
+in1.fits in1.fits out1.fits
+in2.fits in2.fits out2.fits
+in3.fits in3.fits out3.fits
+in4.fits in4.fits out4.fits

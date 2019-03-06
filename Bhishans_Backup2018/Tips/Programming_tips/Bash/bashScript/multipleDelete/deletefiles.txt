@@ -1,0 +1,41 @@
+deletes all non-hidden files in that 
+dir (and subdirs)
+
+rm -rf /some/path/*
+
+2. deletes all hidden files in that 
+dir (but not subdirs) 
+and also gives the error/warning:
+
+rm -rf /some/path/.*
+
+3. to delete recursively all dir and subdirs
+   including .dir and ..dir (eg .local)
+   
+eg1
+====
+rm -rf /some/path/    first delet whole path
+mkdir /some/path/     then create if needed
+
+eg2
+===
+rm -rf /some/path/.* 2> /dev/null
+
+eg3
+===
+rm -f ..?* .[!.]* *
+
+eg4
+====
+find . -name . -o -prune -exec rm -- {} + 
+
+less portable:
+find . -name . -o -prune -ls
+find . -name . -o -prune -delete
+find . -mindepth 1 -maxdepth 1 -delete
+
+here min depth is for only same dir 
+
+eg 5
+====
+find yourdirectory -mindepth 1 -delete

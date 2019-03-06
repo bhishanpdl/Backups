@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=012-Ultra-Dawn
+activeBackground=66,73,83
+activeBlend=95,103,111
+activeForeground=177,177,177
+activeTitleBtnBg=255,255,255
+alternateBackground=247,247,247
+background=68,76,86
+buttonBackground=113,120,129
+buttonForeground=255,255,255
+contrast=10
+foreground=179,179,179
+frame=32,46,62
+handle=55,56,50
+inactiveBackground=42,47,53
+inactiveBlend=30,30,30
+inactiveForeground=200,200,200
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=129,141,119
+selectBackground=100,109,117
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=110,110,110
+windowBackground=253,253,253
+windowForeground=8,8,8

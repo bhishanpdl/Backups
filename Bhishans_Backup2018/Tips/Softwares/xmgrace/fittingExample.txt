@@ -1,0 +1,18 @@
+non-linear fit using xmgrace
+=============================
+
+import the data in xmgrace
+data>transformation>non-linear fitting
+select data set
+
+Formula 
+y=a0*exp(-a1*(x^(1.0/a2)))
+
+parameters 3  tolerance 0.01 iteration 40
+
+
+this will gives fitting curve.
+
+for example, 
+load 5v.dat as block data and fit x= col 2 vs y=col3
+

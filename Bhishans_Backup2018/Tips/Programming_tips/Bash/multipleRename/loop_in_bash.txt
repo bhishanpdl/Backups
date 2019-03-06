@@ -1,0 +1,23 @@
+# Author  : Bhishan Poudel
+# Date    : May 18, 2016
+# Ref     : http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-7.html
+
+Loop in bash
+===============================================================================
+        #!/bin/bash
+        for i in `seq 1 10`;
+        do
+                echo $i
+        done
+
+for i in 'seq 1 10'; do echo $i done
+
+===============================================================================
+While sample
+
+          #!/bin/bash
+         COUNTER=0
+         while [  $COUNTER -lt 10 ]; do
+             echo The counter is $COUNTER
+             let COUNTER=COUNTER+1
+         done

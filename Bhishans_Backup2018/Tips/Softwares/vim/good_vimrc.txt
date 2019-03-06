@@ -1,0 +1,57 @@
+"Date: Feb 4, 2017
+"https://dougblack.io/words/a-good-vimrc.html
+
+"colors
+colorscheme badwolf         " awesome colorscheme
+syntax enable           " enable syntax processing
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set expandtab       " tabs are spaces
+
+"UI Config
+"set cursorline          " highlight current line
+set number              " show line numbers
+set showcmd             " show command in bottom bar
+filetype indent on      " load filetype-specific indent files
+set wildmenu            " visual autocomplete for command menu
+                        "for instance, run :e ~/.vim<TAB>?
+set lazyredraw          " redraw only when we need to.
+set showmatch           " highlight matching [{()}]
+
+"Searching
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+" turn off search highlight
+" nnoremap <leader><space> :nohlsearch<CR>
+
+
+"Folding
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+set foldmethod=indent   " fold based on indent level
+
+
+"Movement
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" $/^ doesn't do anything (overwrite default $, controversial)
+nnoremap $ <nop>
+nnoremap ^ <nop>
+
+" highlight last inserted text
+nnoremap gV `[v`]
+
+"Flagging Unnecessary Whitespace
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+"The best plugin for Python auto-complete is 
+Bundle 'Valloric/YouCompleteMe'
+
+

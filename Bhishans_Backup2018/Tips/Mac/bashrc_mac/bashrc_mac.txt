@@ -1,0 +1,590 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 18, 2016
+# File    : bash profile
+# source  : source ~/.bashrc
+
+
+##=============================================================================
+# ls 
+##==============================================================================
+alias ls='ls -GFh'
+alias la='ls -Al'       # show hidden files
+alias lsz='ls -lSr'     # sort by size
+alias lu='ls -lur'	# sort by access time   
+alias lr='ls -lR'       # recursive ls
+alias lt='ls -ltr'      # sort by date
+alias lm='ls -al |more' # pipe through 'more'
+alias ll='ls -la'
+alias l.='ls -d -G .*'
+
+
+
+
+
+##=============================================================================
+# cd
+##==============================================================================
+alias cdp='clear; cd ~/phosim'
+alias cdd='clear; cd ~/Dropbox'
+alias cdr='clear; cd ~/Research'
+alias cdex='clear; cd ~/Research/extreme_red_blue_psf/'
+alias cddwn='clear; cd ~/Downloads'
+alias cdpsf='clear; cd ~/Research/psf_creation'
+alias cdjedi='clear; cd ~/jedisim'
+alias cdj='clear; cd ~/jedisim'
+alias cdpy='cd ~/Dropbox/Programming/python/'
+alias cdas='cd ~/Dropbox/2016_Fall/Stellar_Astrophysics/'
+alias cdt='cd ~/Dropbox/Tips/'
+alias cdi='cd ~/Research/imcat_analysis_for_jedisim_outputs'
+alias cdgal='cd ~/Research/imcat_analysis_for_jedisim_outputs/galshear'
+
+alias .2='cd ../'
+alias .3='cd ../../'
+alias .4='cd ../../../'
+alias .5='cd ../../../../'
+alias .6='cd ../../../../../'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
+
+
+
+
+##=============================================================================
+# cp
+##==============================================================================
+alias cpb='cp -v ~/.bashrc ~/Dropbox/latest/bashrc_mac.txt'
+alias cpj='cp -v ~/jedisim/jedimaster.py ~/Dropbox/latest/jedimaster.py'
+alias cpjed='cp -v ~/jedisim/jedimaster.py ~/Dropbox/latest/jedimaster.py'
+alias cpr='cp -v ~/jedisim/run_jedimaster.py ~/Dropbox/latest/run_jedimaster.py'
+alias cprun='cp -v ~/jedisim/run_jedimaster.py ~/Dropbox/latest/run_jedimaster.py'
+alias cps='cp -v ~/.config/geany/snippets.conf ~/Dropbox/latest/snippets_mac.conf'
+alias cpsni='cp -v ~/.config/geany/snippets.conf ~/Dropbox/latest/snippets.conf'
+alias cppy='cp -v ~/.config/geany/filedefs/filetypes.python ~/Dropbox/latest/'
+alias cdpar='cd ~/Dropbox/Programming/python/parallel_programming'
+alias cdparmp='cd ~/Dropbox/Programming/python/parallel_programming/multiprocessing'
+alias cdparjob='cd ~/Dropbox/Programming/python/parallel_programming/joblib'
+
+
+
+
+
+
+##=============================================================================
+## open
+##==============================================================================
+alias oepn='open'
+alias openb='open ~/.bashrc'
+alias opencron='open ~/bin/mycrontab.sh'
+alias openb2='open ~/Dropbox/latest/bashrc_mac.txt; open ~/Dropbox/latest/bashrc_linux.txt &'
+alias opens2='open ~/Dropbox/latest/snippets_mac.conf; open ~/Dropbox/latest/snippets_linux.conf &'
+alias geanys='/Applications/Geany.app/Contents/MacOS/geany ~/.config/geany/snippets.conf &'
+alias geanyp='/Applications/Geany.app/Contents/MacOS/geany ~/.config/geany/filedefs/filetypes.python &'
+alias geanypy='/Applications/Geany.app/Contents/MacOS/geany ~/.config/geany/filedefs/filetypes.python &'
+alias formula='open ~/Dropbox/Programming/python/math_formulas.py &'
+alias openmd='open ~/temp/a.md'
+alias opentxt='open ~/temp/a.txt'
+alias openpy='open ~/temp/a.py'
+alias openc='open ~/temp/a.c'
+
+
+
+
+
+##==============================================================================
+# clear 
+##==============================================================================
+alias c='clear'
+alias cls='clear; ls'
+
+
+
+##=============================================================================
+# programs
+##==============================================================================
+alias ipyn='ipython3 notebook'
+alias r='R'
+alias py='python3'
+alias py2='python3'
+alias py3='python3'
+alias gf='gfortran'
+alias gff='gfortran -Wall'
+alias xg='xgterm &'
+alias xgterm='xgterm &'
+##=============================================================================
+
+
+
+
+##==============================================================================
+# Personnal Aliases
+##==============================================================================
+alias ss='source ~/.bashrc'
+alias mkdir='mkdir -p'
+alias rmr='rm -rv'
+alias h='history'
+alias j='jobs -l'
+alias which='type -all'
+alias path='echo -e ${PATH//:/\\n}'
+alias print='/usr/bin/lp -o nobanner -d $LPDEST'   # Assumes LPDEST is defined
+alias pjet='enscript -h -G -fCourier9 -d $LPDEST'  # Pretty-print using enscript
+alias background='xv -root -quit -max -rmode 5'    # Put a picture in the background
+
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+#alias du='du -kh'
+#alias df='df -kTh'
+
+
+
+
+
+
+
+##==============================================================================
+# additional paths for MAC
+##==============================================================================
+export PATH=$PATH:/opt/local/bin
+export PATH=$PATH:~/imcat/bin/OSX
+export PATH=$PATH:~/imcat/bin/scripts
+export PATH=$PATH:~/phosim
+export PATH=$PATH:~/Applications
+export PATH=$PATH:/usr/local/octave/3.8.0/bin
+export PATH=$PATH:/Applications/Geany.app/Contents/MacOS/
+export PATH=$PATH:/Applications/ds9.app/Contents/MacOS/
+export PATH=$PATH:~/bin
+
+alias ds9='/Applications/ds9.app/Contents/MacOS/ds9'
+alias geany='/Applications/Geany.app/Contents/MacOS/geany'
+alias firefox="/Users/poudel/Applications/Firefox.app/Contents/MacOS/firefox"
+
+
+
+
+
+
+
+
+
+
+
+
+
+##=============================================================================
+## Aliases for git
+# Ref: http://gitimmersion.com/lab_11.html
+##==============================================================================
+# git add
+alias ga='git add '
+alias gau='git add --update'
+
+# git branch
+alias gb='git branch'
+alias gba='git branch -a'
+
+# git clone and commit
+alias gcl='git clone'
+alias gcm='git commit -m '     # gc is ghostscript command
+alias gcva='git commit -v -a'
+
+# git checkout
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gcot='git checkout -t'
+alias gcotb='git checkout --track -b'
+alias gco='git checkout '
+
+# git diff
+alias gd='git diff'
+alias gdm='git diff | /Applications/Geany.app/Contents/MacOS/geany'
+
+#gitk
+alias gk='gitk --all&'
+
+# git log
+alias glog='git log --oneline --decorate'
+alias glogp='git log --pretty=format:"%h %s" --graph'
+
+# git pull
+alias gpl='git pull'
+alias gpull='git pull'
+
+# git push
+alias gp='git push origin master'
+alias gall='git add --ignore-removal && git commit -m "Added all files updated" && git push origin master'
+
+# git status
+#alias gs='git status '  # gs is ghostscript command
+alias gst='git status'
+
+# gitx
+alias gx='gitx --all'
+##==============================================================================
+
+
+
+##==============================================================================
+## git auto completion
+## this also works
+##==============================================================================
+# Make sure you actually have those aliases defined, of course.
+alias g="git"
+alias gco="git checkout"
+alias gm="git merge"
+alias gpl="git pull"
+
+# Git branch bash completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+
+  # Add git completion to aliases
+  __git_complete g __git_main
+  __git_complete gco _git_checkout
+  __git_complete gm __git_merge
+  __git_complete gpl _git_pull
+fi
+
+
+
+# git auto completion
+if [ -x /usr/local/git/bin/git ]; then
+    source ~/.git-completion.bash
+fi
+
+
+# github add,commit,push fuction
+function gps () {
+
+    git add .
+    git commit -m "$*"
+    git push origin master
+
+}
+
+
+
+
+
+
+##==============================================================================
+## Always run these commands at startup
+##==============================================================================
+crontab ~/bin/mycrontab.sh
+printf '\033c'
+unset MAILCHECK
+
+
+##==============================================================================
+# mac special
+# mac finder is not working good
+##==============================================================================
+alias kf='killall Finder'
+
+
+
+
+##******************************************************************************
+##******************************************************************************
+##==============================================================================
+# Terminal Prompt color
+##==============================================================================
+# attributes: 00=none, 01=bold, 04=underscore, 05=blink, 07=reverse, 08=concealed.
+# foreground: 30=black, 31=red, 32=green, 33=yellow, 34=blue, 35=magenta, 36=cyan, 37=white.
+# background: 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 
+
+# foreground colors: 30-37 or 90-97 or  38;5;0 to 38;5;255
+# background colors: 49=default, 40-47 or 100-107 or 48;5;0 to 48;5;255
+
+# Color	Foreground	Background
+# Black	    30	               40
+# Red	    31	               41
+# Green	    32	               42
+# Yellow	33	               43
+# Blue	    34	               44
+# Magenta	35	               45
+# Cyan	    36	               46
+# White	    37	               47
+
+#\d – Current date
+#\t – Current time
+#\h – Host name
+#\# – Command number
+#\u – User name
+#\W – Current working directory (i.e: Desktop/)
+#\w – Current working directory, full path (i.e: /Users/Admin/Desktop)
+# \e[m  - reset colors
+
+# yellow  blue
+# poudel@Dropbox$
+#PS1='\[\e[0;33m\]\u@\[\e[0;34m\]\W\[\e[0m\]\$ '
+
+
+#PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\$ '
+#export PS1="\[\033[01;33m\][$USER@$HOSTNAME]\[\033[0;00m\] \[\033[01;32m\]\w\\$\[\033[0;00m\] "
+#PS1='\n\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;34m\]\w\[\e[0m\]\$ '
+#PS1='\n\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;34m\]\w\[\e[0m\]\$ '
+PS1='\n\[\e[0;35m\]\t::\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;34m\]\w\[\e[0m\]\$ '
+
+
+
+##==============================================================================
+## Files and directories colors
+##==============================================================================
+
+
+## colored terminal example 2
+#export CLICOLOR=1
+#export LSCOLORS=GxFxCxDxBxegedabagaced  # best
+#export LSCOLORS=ExFxBxDxCxegedabagacad
+
+
+#The default is “exfxcxdxbxegedabagacad”, i.e. blue fore-
+#ground and default background for regular directories,
+#black foreground and red background for setuid executa-
+#bles, etc. 
+
+
+## Aug 10, 2016
+## For terminal colors
+## Ref: http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
+# default colors:
+# ex  : directory  dx=yellow cx = green
+# fx  # symbolic link
+# cx  # socket
+# dx  # pipe
+# bx  # executables
+# eg  # block special
+# ed  # character special
+# ab  # executable with setuid bit set
+# ag  # executable with setgid bit set
+# ac  # directory writable to others, with sticky bit
+# ad  # directory wirtable to others, without sticky bit
+#
+
+# a black  ax = black or brown
+# b red
+# c green
+# d brown  dx = yellow
+# e blue
+# f magenta
+# g cyan
+# h light grey
+# A bold black, usually shows up as dark grey
+# B bold red
+# C bold green
+# D bold brown, usually shows up as yellow
+# E bold blue
+# F bold magenta
+# G bold cyan
+# H bold light grey; looks like bright white
+# x default foreground or background
+export CLICOLOR=1 
+export LSCOLORS=dxcxexdxaxegedabagacad
+#export LSCOLORS=dx     cx     ex    dx     bx    eg   ed    ab    ag    ac    ad
+#                brown  green  blue  brown  red   blue blue  black black black black
+#                dir    sym    sock  pipe   exe    blck  char exe2  exe3  dir2 dir3  
+
+
+
+
+
+
+
+
+
+##==============================================================================
+## grep colors
+## example: echo hello there | blue_grep ll | yellow_grep ere
+## example: echo hello there | mgrep ll | cgrep ere
+##==============================================================================
+alias grep='grep --color=always'
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;35'
+alias grey_grep="GREP_COLOR='1;30' grep --color=always"
+alias red_grep="GREP_COLOR='1;31' grep --color=always"
+alias green_grep="GREP_COLOR='1;32' grep --color=always"
+alias yellow_grep="GREP_COLOR='1;33' grep --color=always"
+alias blue_grep="GREP_COLOR='1;34' grep --color=always"
+alias magenta_grep="GREP_COLOR='1;35' grep --color=always"
+alias cyan_grep="GREP_COLOR='1;36' grep --color=always"
+alias white_grep="GREP_COLOR='1;37' grep --color=always"
+alias ygrep="GREP_COLOR='1;33' grep --color=always"
+alias mgrep="GREP_COLOR='1;35' grep --color=always"
+alias cygrep="GREP_COLOR='1;36' grep --color=always"
+alias egrep='egrep -G'
+alias fgrep='fgrep -G'
+
+
+#===============================================================================
+# for imcat
+##==============================================================================    
+# added Aug 19, 2016
+# imcat environmental variables
+export DYLD_LIBRARY_PATH="/usr/local/lib:/usr/lib:/usr/local/lib/pgplot:/usr/local/opt/readline/lib:$DYLD_LIBRARY_PATH"
+export PGPLOT_DEV=/xs
+export PGPLOT_DIR=/usr/local/lib/pgplot
+export IMCATDIR=/Users/poudel/imcat
+export CC=gcc
+export ARCH=OSX
+export IMCATCONVERTNANS=
+export IMCATSWAPFITSBYTES=
+
+
+
+
+
+##==============================================================================
+## for python
+##==============================================================================
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/share/python:$PATH
+
+
+##==============================================================================
+## for python module tables needed by another module pyne (need to install hdf5)
+##==============================================================================
+export HDF5_DIR=/usr/bin/hdf5
+
+
+
+##==============================================================================
+##==============================================================================
+##==============================================================================
+## Custom functions
+##==============================================================================
+# added Aug 19, 2016
+# sort files and folders in increasing order for mac
+function sort_up {
+    du -sk * | sort -g | awk '{ numBytes = $1 * 1024; numUnits = split("B K M G T P", unit); num = numBytes; iUnit = 0; while(num >= 1024 && iUnit + 1 < numUnits) { num = num / 1024; iUnit++; } $1 = sprintf( ((num == 0) ? "%6d%s " : "%6.1f%s "), num, unit[iUnit + 1]); print $0; }'
+    }
+
+
+
+
+# mkdir, cd into it
+function mkcd () {
+     mkdir -p $1
+     cd $1
+ }
+
+
+
+
+# touch a file then open it
+function topen () {
+     touch "$1" && open "$1"
+ }
+
+
+
+
+
+# extract files
+function extract()      # Handy Extract Program
+{
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)   tar xvjf $1     ;;
+            *.tar.gz)    tar xvzf $1     ;;
+            *.bz2)       bunzip2 $1      ;;
+            *.rar)       unrar x $1      ;;
+            *.gz)        gunzip $1       ;;
+            *.tar)       tar xvf $1      ;;
+            *.tbz2)      tar xvjf $1     ;;
+            *.tgz)       tar xvzf $1     ;;
+            *.zip)       unzip $1        ;;
+            *.Z)         uncompress $1   ;;
+            *.7z)        7z x $1         ;;
+            *)           echo "'$1' cannot be extracted via >extract<" ;;
+        esac
+    else
+        echo "'$1' is not a valid file!"
+    fi
+}
+
+
+
+
+
+
+# Creates an archive (*.tar.gz) from given directory.
+function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
+
+
+
+
+
+# Create a ZIP archive of a file or folder.
+function makezip() { zip -r "${1%%/}.zip" "$1" ; }
+
+
+
+
+
+
+# Make your directories and files access rights sane.
+function sanitize() { chmod -R u=rwX,g=rX,o= "$@" ;}
+
+
+function bk () {
+    for file in "$@"; do
+        local new=${file}.$(date '+%Y%m%d')
+        while [[ -f $new ]]; do
+            new+="~";
+        done;
+        printf "copying '%s' to '%s'\n" "$file" "$new";
+        \cp -ip "$file" "$new";
+    done
+}
+
+function bkp () {
+    for file in "$@"; do
+        local new=~/Backup/${file}.$(date '+%Y%m%d')
+        while [[ -f $new ]]; do
+            new+="~";
+        done;
+        printf "copying '%s' to '%s'\n" "$file" "$new";
+        \cp -ip "$file" "$new";
+    done
+}
+
+
+
+
+
+
+
+
+
+
+
+
+# uptime
+function myuptime () {
+  uptime | awk '{ print "Uptime:", $3, $4, $5 }' | sed 's/,//g'
+  return;
+}
+
+
+
+
+# extract pdf pages
+# usage: pdfextr input.pdf input_pages_2_4 2 4  # creates input_pages_2_4.pdf
+#                $1        $2              $3 $4
+function pdfextr() {
+  echo "Chapter $2"
+  pdftk A=$1 cat A$3-$4 output $2.pdf
+  echo "Splitting pdf file $1 from page $3 to page $4 to create $2.pdf"
+}
+
+
+
+
+
+
+

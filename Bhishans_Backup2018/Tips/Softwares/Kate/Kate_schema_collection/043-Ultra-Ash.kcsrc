@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=043-Ultra-Ash
+activeBackground=76,80,87
+activeBlend=93,97,106
+activeForeground=177,177,177
+activeTitleBtnBg=255,255,255
+alternateBackground=91,96,104
+background=76,80,87
+buttonBackground=33,33,33
+buttonForeground=255,255,255
+contrast=0
+foreground=162,162,162
+frame=0,0,0
+handle=0,0,0
+inactiveBackground=76,80,87
+inactiveBlend=30,30,30
+inactiveForeground=200,200,200
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=184,184,184
+selectBackground=94,99,108
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=110,110,110
+windowBackground=85,89,97
+windowForeground=167,167,167

@@ -1,0 +1,43 @@
+Bhishan Poudel
+Jan 11, 2016
+
+ref: https://stackoverflow.com/questions/18901185/ipython-notebook-save-location
+
+
+
+
+to change ipython3 notebook default downloads
+===============================================
+ipython locate   it gives: /Users/poudel/.ipython
+
+go inside this hidden folder, we can see profile_default
+go inside it.
+if there is not ipython_notebook_config.py, create it like this:
+ipython profile create  (this will create ipython_config.py file with everythig commented out)
+
+then, add this things:
+# The directory to use for notebooks.
+c.NotebookManager.notebook_dir = u'/path/to/your/notebooks'
+
+# The directory to use for notebooks.
+c.FileNotebookManager.notebook_dir = u'/path/to/your/notebooks'
+
+eg. for ubuntu: /home/bhishan/Copy/PythonNotebooks
+
+
+
+
+checking:
+===========
+go to terminal: ipython3 notebook 
+new> python3 > type something as save it and rename it > we can see somethin.ipynb
+
+installing Rkernel for notebook
+====================================
+install.packages(c('rzmq','repr','IRkernel','IRdisplay'),dependencies=TRUE,repos = c('http://irkernel.github.io/',  
+getOption('repos')),
+type = 'source')
+
+
+
+

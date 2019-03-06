@@ -1,0 +1,29 @@
+Date: oct 30, 2016
+
+Regex examples
+===============
+1. example 1
+first go to this website to check your regex
+https://www.debuggex.com/
+
+string to change:
+alert: "\f101";
+alert-circled: "\f100";
+android-add: "\f2c7";
+
+cmd f  opens the find and replace pane,
+uncomment .* so that we can see regex search is highlighted.
+select all the string
+find: (.*):.*
+replace: $1
+
+
+2. regex search in atom
+original string:
+$400 is for matt who lives in room 20.
+
+find: \$([0-9]+)
+replace: Dollar 400
+
+3. cmd l  select line
+   cmd j  join lines (hit repeateadly)

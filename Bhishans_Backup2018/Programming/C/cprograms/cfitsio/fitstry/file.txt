@@ -1,0 +1,2 @@
+in1.fits
+in2.fits

@@ -1,0 +1,36 @@
+# Topic     : To install and use snippets in vim
+#
+# Author    : Bhishan Poudel
+# Date      : Jul 23, 2017 Sun
+# Refs:
+https://github.com/honza/vim-snippets
+
+1. Make sure that Vundle is installed
+
+
+2. Put following code in ~/.vimrc
+
+" ******************************************************************************
+" ====================== Code snippets completion   ============================
+" ******************************************************************************
+set rtp+=~/.vim
+Plugin 'SirVer/ultisnips' " Autocomplete snippets
+let g:UltiSnipsExpandTrigger="<tab>"               " expandtrigger
+let g:UltiSnipsJumpForwardTrigger="<tab>"          " advance to next tabstop
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"       " reverse to previous tabstop
+
+3. For example create a file ~/.vim/UltiSnips/markdown.snippets with contents
+
+snippet fmatter
+---
+title: ${1:Meet UltiSnips}
+date: ${2:`date +%Y-%m-%d`}
+tags: $3
+---
+# $1
+$0
+endsnippet
+
+
+
+4. To use open a.md, type fmatter and hit the tab key.

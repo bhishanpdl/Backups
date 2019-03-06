@@ -1,0 +1,6 @@
+\psi_{n}(x) = \xy   \0   \sn  \N  (x)
+
+explanation: \x begins greek letters and y is equivalent to psi
+              \0 takes back to Roman 
+              \s begins subscript
+              \N takes back to normal

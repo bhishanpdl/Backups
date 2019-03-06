@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=203-Ultra-Chromatic2
+activeBackground=137,128,121
+activeBlend=55,63,77
+activeForeground=253,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=109,113,108
+background=104,108,103
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=27,27,26
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=124,124,124
+inactiveBlend=30,30,30
+inactiveForeground=185,185,185
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=232,240,248
+selectBackground=0,0,0
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=227,227,220
+windowBackground=117,121,116
+windowForeground=255,255,255

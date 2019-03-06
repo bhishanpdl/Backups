@@ -1,0 +1,12 @@
+Bhishan Poudel
+Jan 30, 2016
+
+multiline Comment in geany
+==============================
+
+ctrl E        note: it inserts #~   (hash tilde one space)
+
+
+to make only #    (hash and one space)
+======================================
+edit>preference>Editor  Comment toggle marker  replace ~ by spacebar

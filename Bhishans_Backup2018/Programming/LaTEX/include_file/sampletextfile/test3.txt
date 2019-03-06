@@ -1,0 +1,2 @@
+This is the sample file to be opened by okular.
+It is not opened by Texmaker pdf viewer.

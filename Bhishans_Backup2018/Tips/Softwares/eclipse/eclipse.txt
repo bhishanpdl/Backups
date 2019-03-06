@@ -1,0 +1,20 @@
+bhishan tips
+==========
+topic: eclipse for ubuntu 14.04 64 bit
+
+
+note:
+1. file:
+Eclipse for Parallel Application Developers 
+website:
+http://www.eclipse.org/downloads/?osType=linux
+comment:
+this has error in unzippig the code
+
+
+to install
+==========
+i tried two versions viz. parrel and c/c++
+both of them gave error
+truncation gzip error
+

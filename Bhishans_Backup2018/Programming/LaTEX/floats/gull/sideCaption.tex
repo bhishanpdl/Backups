@@ -1,0 +1,20 @@
+%cmd: clear; latex sideCaption.tex
+%cmd: clear; xdvi sideCaption.dvi
+
+
+
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{sidecap}
+
+\begin{document}
+
+\begin{SCfigure}
+  \centering
+  \caption{ This is the caption text }
+  \includegraphics[width=0.3\textwidth]%
+    {gull.eps}% picture filename
+\end{SCfigure}
+
+\end{document}

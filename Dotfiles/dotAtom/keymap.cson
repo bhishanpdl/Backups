@@ -1,0 +1,210 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab. (This did not work for me!)
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+#
+#
+# Author: Bhishan Poudel
+# Date: Apr 2, 2016
+# Last Update: Aug 18, 2017 Fri
+'atom-text-editor:not([mini])':
+  # Atom basic tools
+  'shift-enter': 'script:run'
+  'alt-left': 'tree-view:toggle'  # sidebar showing first opened project
+  'cmd-;': 'command-palette:toggle'
+  # Line manipulations
+  'cmd-l': 'editor:select-line'
+  'cmd-d': 'editor:duplicate-lines'
+  'cmd-k': 'editor:delete-line'
+  'cmd-/': 'editor:toggle-line-comments'
+  'cmd-shift-d': 'editor:duplicate-line'
+  'cmd-ctrl-up': 'editor:move-line-up'
+  'cmd-ctrl-down': 'editor:move-line-down'
+  'ctrl-shift-k': 'editor:delete-line'
+  # Bookmarks
+  'cmd-1': 'bookmarks:jump-to-previous-bookmark'
+  'cmd-2': 'bookmarks:toggle-bookmark'
+  'cmd-3': 'bookmarks:jump-to-next-bookmark'
+  'cmd-9': 'bookmarks:view-all'
+  'cmd-0': 'bookmarks:clear-bookmarks'
+  'alt-/': 'advanced-open-file:toggle'
+  'cmd-alt-o': 'advanced-open-file:toggle'
+  # Atom-shell-commands
+  'ctrl-9' : 'atom-shell-commands-config:error-next'
+  'ctrl-10': 'atom-shell-commands-config:error-prev'
+  # Mixed
+  'cmd-alt-s': 'spell-check:toggle'
+  'ctrl-cmd-m': 'bracket-matcher:select-inside-brackets'
+  'ctrl-alt-e': 'python-tools:select-all-string'
+  'alt-cmd-t': 'change-case:title'
+  'ctrl-shift-d': 'date:date'
+  # My custom commands **init.coffee**
+  'ctrl-o ctrl-t': 'custom:open-todo-list'
+  'ctrl-o ctrl-b': 'custom:open-bashrc'
+  'ctrl-o ctrl-p': 'custom:open-pros'
+  'ctrl-o ctrl-q': 'custom:open-prosLog'
+  'ctrl-o ctrl-r': 'custom:open-runjedisim'
+  'ctrl-o ctrl-l': 'custom:open-template-latex'
+  'ctrl-o ctrl-j': 'custom:open-jnb-snippets'
+  # open this package open file under cursor
+  'ctrl-o': 'open-this:here'
+  # expand selection
+  'alt-up': 'expand-region:expand'
+  'alt-down': 'expand-region:shrink'
+  # atom-column-select
+  'alt-shift-up': 'column-select:up'
+  'alt-shift-down': 'column-select:down'
+  # editor SELECTIONS
+  'shift-up': 'editor:select-up'
+  'shift-down': 'editor:select-down'
+  'shift-left': 'editor:select-left'
+  'shift-right': 'editor:select-right'
+  'ctrl-shift-w': 'editor:select-word'
+  # Multiple Selection Above/Below
+  'cmd-shift-up': 'editor:add-selection-above'
+  'cmd-shift-down': 'editor:add-selection-below'
+  'cmd-shift-right': 'editor:select-to-end-of-line'
+  'cmd-shift-left': 'editor:select-to-beginning-of-line'
+  # SPELL -CHECK
+  'alt-shift-s': 'spell-check:toggle'
+  'cmd-shift-t': 'spell-check:correct-misspelling'
+  # sort lines
+  'ctrl-s ctrl-s': 'sort-lines:sort'
+  'ctrl-s ctrl-n': 'sort-lines:natural'
+  'ctrl-s ctrl-u': 'sort-lines:unique'
+  'ctrl-s ctrl-c': 'sort-lines:case-insensitive-sort'
+  'ctrl-s ctrl-r': 'sort-lines:reverse-sort'
+  # Sequential Number (multiple click, or cmd-shifit-up) after that
+  # ctrl alt 0, then type 0 gives 0 1 2
+  # typing 5+2 gives 5,7,9 etc
+  'ctrl-alt-0': 'sequential-number:open'
+  # bracket matcher
+  'ctrl-m': 'bracket-matcher:go-to-matching-bracket'
+  'alt-shift-m': 'bracket-matcher:select-inside-brackets'
+  'ctrl-backspace': 'bracket-matcher:remove-matching-brackets'
+  # DISABLE autocomplete
+  'ctrl-space': 'autocomplete-plus:activate'
+  'ctrl-esc': 'autocomplete-plus:cancel'
+  # Toggle the things
+  'alt-t alt-h': 'toggle:here'
+  'alt-t alt-q': 'toggle-quotes:toggle'
+  'alt-t alt-s': 'tree-view:toggle'
+  'alt-t alt-t': 'tool-bar:toggle'
+
+
+
+
+
+
+
+############################# Git hub flavored markdown ########################
+# Custom command for markdown files
+# github flavored markdown and others
+'atom-workspace atom-text-editor[data-grammar="source gfm"]':
+  # custom
+  'ctrl-shift-a': 'custom:insert-timestamp'
+  # markdown-preview
+  'ctrl-shift-M': 'markdown-preview:toggle'
+  # markdown-preview-enhanced
+  'ctrl-m alt-p': 'markdown-preview-enhanced:toggle'
+  'ctrl-m alt-t': 'markdown-preview-enhanced:create-toc'
+  'ctrl-m alt-z': 'markdown-preview-enhanced:run-zen-mode'
+  # markdown writer insert
+  'cmd-shift-i': 'markdown-writer:insert-image'
+  'cmd-shift-t': 'markdown-writer:insert-table'
+  'cmd-shift-f': 'markdown-writer:insert-footnote'
+  # markdown writer toggle text format
+  'cmd-b': 'markdown-writer:toggle-bold-text'
+  'cmd-i': 'markdown-writer:toggle-italic-text'
+  'cmd-t': 'markdown-writer:toggle-strikethrough-text'
+  'ctrl-m ctrl-c': 'markdown-writer:toggle-codeblock-text'
+  # markdown writer toggle header
+  'ctrl-m ctrl-1': 'markdown-writer:toggle-h1'
+  'ctrl-m ctrl-2': 'markdown-writer:toggle-h2'
+  'ctrl-m ctrl-3': 'markdown-writer:toggle-h3'
+  'ctrl-m ctrl-3': 'markdown-writer:toggle-h3'
+  'ctrl-m ctrl-4': 'markdown-writer:toggle-h4'
+  'ctrl-m ctrl-5': 'markdown-writer:toggle-h5'
+  # markdown writer jump
+  'ctrl-m ctrl-p': 'markdown-writer:jump-to-previous-heading'
+  'ctrl-m ctrl-n': 'markdown-writer:jump-to-next-heading'
+  'alt-m alt-p': 'markdown-writer:jump-to-previous-table'
+  'alt-m alt-n': 'markdown-writer:jump-to-next-table'
+  'ctrl-m ctrl-r': 'markdown-writer:jump-to-reference-definition'
+  'ctrl-m ctrl-t': 'markdown-writer:jump-to-next-table'
+  # markdown writer open link in browser
+  'ctrl-m ctrl-o': 'markdown-writer:open-link-in-browser'
+  'alt-m alt-l': 'markdown-writer:correct-order-list-numbers'
+  'shift-enter': 'markdown-preview-enhanced:run-code-chunk'
+
+############################# Text markdown ##################
+'atom-workspace atom-text-editor[data-grammar="text md"]':
+  # custom
+  'ctrl-shift-a': 'custom:insert-timestamp'
+  # markdown-preview
+  'ctrl-shift-M': 'markdown-preview:toggle'
+  # markdown toc
+  'ctrl-shift-t': 'markdown-toc:create'
+  'ctrl-shift-d': 'markdown-toc:delete'
+  'ctrl-shift-u': 'markdown-toc:update'
+  # markdown writer insert
+  'cmd-shift-i': 'markdown-writer:insert-image'
+  'cmd-shift-t': 'markdown-writer:insert-table'
+  'cmd-shift-f': 'markdown-writer:insert-footnote'
+  # markdown writer toggle text format
+  'cmd-b': 'markdown-writer:toggle-bold-text'
+  'cmd-i': 'markdown-writer:toggle-italic-text'
+  'cmd-t': 'markdown-writer:toggle-strikethrough-text'
+  'cmd-m cmd-d': 'markdown-writer:toggle-codeblock-text'
+  # markdown writer toggle header
+  'alt-m alt-1': 'markdown-writer:toggle-h1'
+  'alt-m alt-2': 'markdown-writer:toggle-h2'
+  'alt-m alt-3': 'markdown-writer:toggle-h3'
+  'alt-m alt-3': 'markdown-writer:toggle-h3'
+  'alt-m alt-4': 'markdown-writer:toggle-h4'
+  'alt-m alt-5': 'markdown-writer:toggle-h5'
+  # markdown writer jump
+  'cmd-j cmd-p': 'markdown-writer:jump-to-previous-heading'
+  'cmd-j cmd-n': 'markdown-writer:jump-to-next-heading'
+  'ctrl-j cmd-p': 'markdown-writer:jump-to-previous-table'
+  'ctrl-j cmd-n': 'markdown-writer:jump-to-next-table'
+  'cmd-j cmd-r': 'markdown-writer:jump-to-reference-definition'
+  'cmd-o cmd-c': 'markdown-writer:jump-to-next-table'
+  # markdown writer open link in browser
+  'cmd-ctrl-o': 'markdown-writer:open-link-in-browser'
+  'cmd-ctrl-c': 'markdown-writer:open-cheat-sheet'
+  'cmd-j cmd-o': 'markdown-writer:correct-order-list-numbers'
+  # markdown-preview-enhanced
+  'alt-m alt-p': 'markdown-preview-enhanced:toggle'
+  'alt-m alt-t': 'markdown-preview-enhanced:create-toc'
+  'alt-m alt-z': 'markdown-preview-enhanced:run-zen-mode'
+  # run code chunk
+  'shift-enter': 'markdown-preview-enhanced:run-code-chunk'

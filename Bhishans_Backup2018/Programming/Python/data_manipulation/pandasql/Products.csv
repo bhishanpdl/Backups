@@ -1,0 +1,7 @@
+ProductID	ProductName	SupplierID	CategoryID	Unit	Price
+1	Chais	1	1	10 boxes x 20 bags	18
+2	Chang	1	1	24 - 12 oz bottles	19
+3	Aniseed	1	2	12 - 550 ml bottles	10
+4	Aniseed2	1	2	12 - 550 ml bottles	20
+5	Aniseed3	1	2	12 - 550 ml bottles	30
+6	Aniseed4	1	2	12 - 550 ml bottles	40

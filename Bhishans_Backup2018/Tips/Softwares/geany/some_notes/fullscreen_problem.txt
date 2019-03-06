@@ -1,0 +1,7 @@
+# Author    : Bhishan Poudel
+# Date      : May 30, 2016
+
+sometimes geany becomes like fullscreen and no addtional widgetes(eg. save buttons)
+===================================================================================
+
+view> toggle all additional windows

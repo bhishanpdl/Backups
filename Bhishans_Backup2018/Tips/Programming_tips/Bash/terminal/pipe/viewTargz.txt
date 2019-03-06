@@ -1,0 +1,10 @@
+Bhishan Poudel
+Jan 19, 2016
+
+To use pipe to see the contents inside tar.gz files
+======================================================
+tar tzvf name_of_file.tar.gz | less
+
+eg.
+tar tzvf hello.tar.gz | less
+ctrl z

@@ -1,0 +1,16 @@
+to convert jpg to eps:
+=====================
+convert gull.jpg gull.eps
+
+to compile
+============
+latex gull.tex
+
+to see pdf
+==============
+xdvi gull.dvi
+
+to save as pdf
+===============
+left click and hold and go to File
+save as pdf

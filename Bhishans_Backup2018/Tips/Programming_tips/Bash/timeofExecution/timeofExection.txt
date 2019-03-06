@@ -1,0 +1,6 @@
+to find compilation time using bash command
+============================================
+
+time ./binary_name
+
+eg. time ./a.out

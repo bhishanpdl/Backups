@@ -1,0 +1,5 @@
+to load data of any folder
+=============================
+1. xmgrace
+2. Data > import > ascii
+   select required directory and double click it 

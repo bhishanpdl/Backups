@@ -1,0 +1,4 @@
+good websites to learn gnuplot
+==================================
+
+http://people.duke.edu/~hpgavin/gnuplot.html

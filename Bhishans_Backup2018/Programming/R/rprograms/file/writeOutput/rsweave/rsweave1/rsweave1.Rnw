@@ -1,0 +1,39 @@
+\documentclass{article}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+% This is a comment
+% To compile from shell: (in Rstudio, Tools>Shell)
+% R CMD Sweave rsweave1.Rnw       # this will create .tex file
+% pdflatex rsweave1.tex
+%
+%
+
+ 
+<<chunckName1>>=
+# help("RweaveLatex")
+# this is an R code chunk.  R code goes in here, 
+# between the angle brackets and the at symbol.
+a = 123456
+print(a)
+@
+
+<<options, echo=FALSE, eval=FALSE>>=
+# echo = FALSE doesnot print R syntax in the latex file
+# eval as false doesnot execute R commands
+x <- rnorm(n=100, mean=100, sd=5)
+print(x)
+@
+
+<<fig=TRUE ,echo=FALSE >>=
+x <- rnorm(100)
+y <- rnorm(100)
+plot(x,y)
+@
+
+<<options, echo=FALSE>>=
+mydata <- read.csv("~/Copy/Programming/R/rprograms/file/writeTable/rsweave/rsweave1/a.txt")
+summary(mydata)
+@
+\end{document}
+

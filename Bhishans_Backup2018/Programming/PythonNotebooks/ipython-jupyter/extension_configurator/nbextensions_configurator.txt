@@ -1,0 +1,19 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 12, 2017 Mon
+# Ref       : https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator
+
+# Topic: To add notebook extension manager 
+
+1.
+sudo -H pip3 install jupyter_nbextensions_configurator
+
+2. 
+jupyter nbextensions_configurator enable --user
+
+3.
+restart the running jupyter notebook, if any.
+
+4. 
+go to http://localhost:8888/tree
+
+5. Click on nbextension button

@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=035-Ultra-SettingSun
+activeBackground=184,155,61
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=208,219,238
+background=200,169,67
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=64,64,64
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=200,169,67
+inactiveBlend=30,30,30
+inactiveForeground=22,22,22
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=62,62,62
+selectBackground=55,63,77
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=94,94,94
+windowBackground=213,224,244
+windowForeground=10,10,10

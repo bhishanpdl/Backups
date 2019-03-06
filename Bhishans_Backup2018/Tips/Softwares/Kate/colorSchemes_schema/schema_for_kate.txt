@@ -1,0 +1,12 @@
+Bhishan Poudel
+Feb 15, 2016
+
+schema for kate:
+===================
+website: http://kde-look.org/index.php?xcontentmode=28x74
+
+download schema, unzip, cd there, ./install.sh
+
+method 2
+========
+if we have color schemes, paste it inside  ~/.kde/share/config/kateschemarc

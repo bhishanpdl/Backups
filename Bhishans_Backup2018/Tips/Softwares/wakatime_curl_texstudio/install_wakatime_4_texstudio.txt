@@ -1,0 +1,31 @@
+# Author    : Bhishan Poudel
+# Date      : Jul 21, 2017 Fri
+# Ref: https://curl.haxx.se/download.html
+
+To install wakatime for Texstudio
+=================================
+
+1. First we should update the curl command on mac
+download curl to ~/Applications folder and configure make makeinstall
+
+2. Go to wakatime website and follow instructions
+https://wakatime.com/editors
+
+i.e.
+sudo -H pip install wakatime   (conda isntall fails, there is no package)
+touch ~/.wakatime.cfg
+geany ~/.wakatime.cfg
+
+Paste following items on the wakatime configuration file:
+
+[Settings]
+api_key = Number  (the number is from wakatime website)
+
+3. Curl and install install.py
+Note: downloading the texstudio-wakatime and installing failed. 
+Use curl command.
+
+
+curl -fsSL https://raw.githubusercontent.com/wakatime/texstudio-wakatime/master/install.py | python
+
+4. Testing

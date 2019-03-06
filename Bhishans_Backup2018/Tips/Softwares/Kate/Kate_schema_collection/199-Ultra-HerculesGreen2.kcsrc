@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=199-Ultra-HerculesGreen2
+activeBackground=0,0,0
+activeBlend=66,66,66
+activeForeground=55,255,0
+activeTitleBtnBg=43,255,0
+alternateBackground=0,0,0
+background=52,52,52
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=9,255,0
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=12,14,18
+inactiveBlend=30,30,30
+inactiveForeground=40,185,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=6,248,66
+selectBackground=25,25,25
+selectForeground=89,255,0
+shadeSortColumn=true
+visitedLinkColor=0,227,4
+windowBackground=0,0,0
+windowForeground=56,255,1

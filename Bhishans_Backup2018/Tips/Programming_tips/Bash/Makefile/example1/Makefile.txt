@@ -1,0 +1,10 @@
+# exec is the first target
+
+exec: \
+compile
+	./source
+
+compile: \
+source.c
+	echo "compiling"
+	gcc source.c -o source

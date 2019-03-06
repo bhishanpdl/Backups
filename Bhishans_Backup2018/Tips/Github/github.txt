@@ -1,0 +1,12 @@
+// Git: “please tell me who you are” error
+git init
+git config user.name "someone"
+git config user.email "someone@someplace.com"
+git add *
+git commit -m "Initial commit"
+
+git remote add origin //your github url
+//pull those changes
+git pull origin master
+//now, push your work to your new repo
+git push origin master

@@ -1,0 +1,18 @@
+# all is the first target and its dependency is out
+# all depend on out, out depend on main.o
+# main.o depend on main.c so it will be compiled first
+
+
+all: out
+
+out: main.o functions.o
+	gcc main.o functions.o -o out
+
+main.o: main.c
+	gcc -c main.c
+
+functions.o: functions.c
+	gcc -c functions.c
+
+clean:
+	rm -rf *o main

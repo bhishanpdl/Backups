@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=dust
+activeBackground=138,151,166
+activeBlend=57,56,56
+activeForeground=224,237,255
+activeTitleBtnBg=220,220,220
+alternateBackground=240,232,232
+background=53,52,50
+buttonBackground=76,66,61
+buttonForeground=187,187,187
+contrast=0
+foreground=224,222,219
+frame=195,195,195
+handle=195,195,195
+inactiveBackground=82,89,99
+inactiveBlend=195,195,195
+inactiveForeground=140,152,168
+inactiveFrame=195,195,195
+inactiveHandle=195,195,195
+inactiveTitleBtnBg=220,220,220
+linkColor=80,142,216
+selectBackground=105,77,70
+selectForeground=222,219,215
+shadeSortColumn=true
+visitedLinkColor=142,121,165
+windowBackground=255,247,247
+windowForeground=58,58,56

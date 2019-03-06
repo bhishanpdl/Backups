@@ -1,0 +1,113 @@
+# Author    : Bhishan Poudel
+# Date      : May 04, 2017
+# Texstudio Version: TeXstudio 2.12.4 
+# Ref: https://sourceforge.net/p/texstudio/wiki/Scripts/
+#      https://tex.stackexchange.com/questions/129271/defining-new-shortcuts-in-texstudio
+
+Texstudio Tips
+===============
+
+1. line duplicate
+TexStudio > Preference > Shortcuts > Line operations > Click below 
+Current Shortcut > Press cmd shf d
+
+duplicate line: cmd shf d
+move line up: cmd shf up
+move line dn: cmd shf dn
+
+
+2. Show Line Numbers
+TexStudio > Preference > Show advanced option (at left bottom) 
+> Adv Editor > Check Show line number True.
+
+3. Auto save all files
+
+TexStudio > Preference > Show advanced option (at left bottom) 
+> Adv Editor > Choose auto save.
+
+
+4. Customize Toolbar
+Texstudio > Preference (cmd ,) > Toolbars > Choose only required tools from 
+right to left
+
+New Open saveall build view close closeall undo redo toTitlecasesmart
+pdf/view/goto insertGraphicx find replace line stopCompile CleanAuxfiles
+convert2html inlineMath ConfigrueTexstudio Edit macros OpenTerminal
+
+
+right click on the toolbar, uncheck others and only check custom.
+
+
+5. Add macros (custom snippets)
+Ref: https://tex.stackexchange.com/questions/129271/defining-new-shortcuts-in-texstudio
+Macros > Edit macros > Add > Name = myMacro > Abbrev= $..$ > 
+Choose Type as Normal > Then type in Latex Content > click ok
+
+
+this may be assigned to Shift F1 (fn shift F1).
+To change keybindings:
+Texstudio > Preference > Shortcuts > Macros > Click on Current Shortcuts and change.
+
+example:
+ctr shf h 
+% Author    : Bhishan Poudel
+% Date      : 
+
+
+Bold Macro:  (Choose Script environment)
+abbrev: $..$
+keybindings: ctr shf b
+
+
+%SCRIPT
+txt = cursor.selectedText()
+editor.write("\\underline{"+txt+"}")
+cursor.clearSelection()
+
+
+6. Examples of Macros
+Ref: https://sourceforge.net/p/texstudio/wiki/Scripts/
+Usage:
+%sin(3.1415)=  Then go to macro and click Calculator
+
+Calculator
+=============
+%SCRIPT
+currentLine=editor.text(cursor.lineNumber()); 
+from=currentLine.lastIndexOf("%")+1; 
+to=currentLine.lastIndexOf("="); 
+if (from>=0 && to > from) {
+  toEvaluate = currentLine.substring(from, to);
+  with (Math) { value = eval(toEvaluate);}
+  cursor.eraseLine(); 
+  cursor.insertText(currentLine.substring(0, from)+toEvaluate+"="+value); 
+  cursor.insertLine();
+  cursor.movePosition(1,cursorEnums.Left );
+}
+
+
+Copy filename to clipboard
+============================
+%SCRIPT
+app.clipboard = editor.fileName();
+
+
+Word Complete Snippet
+======================
+trigger:  (xsec)|(xbhi)
+
+word = triggerMatches[0];
+
+//Replacements
+replacements = {
+"xsec" : "section",
+"xbhi" : "Bhishan Poudel \n Ohio University"
+}
+
+// Replace words
+if (word in replacements) {
+    word = replacements[word];
+}
+
+// Output
+editor.write(word + " ")

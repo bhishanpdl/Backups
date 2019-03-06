@@ -1,0 +1,31 @@
+[Ctrl]+[BkSpce] 			Delete the word behind the cursor.
+[Ctrl]+[Del] 				Delete the word ahead of the cursor.
+[Shift]+[Ctrl]+[BkSpce] 	Delete from the cursor to the beginning of the line.
+[Shift]+[Ctrl]+[Del] 		Delete from the cursor to the end of the line.
+[Ctrl]+[D] 					Delete the current line.
+
+moving
+
+[Alt]+[→] 	Move the selected word forward by one word.
+[Alt]+[←] 	Move the selected word backwards by one word.
+[Alt]+[↑] 	Move the selected line up by one line.
+[Alt]+[↓] 	Move the selected line down by one line.
+home		move to the beginning of the line (end is end of line)
+
+
+ctrl U  	upper case ( l is lower and ~ is switch, ctrl z for undo)
+
+ctrl shf L	saves all tabs
+ctrl shf W  close all tabs
+ctrl shf T	reopen last closed tab
+
+ctrl + zoom in
+
+
+hello world, this is just for practice
+this
+is
+practice
+
+delete this line
+

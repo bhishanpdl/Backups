@@ -1,0 +1,9 @@
+source error while running plotting script
+===========================================
+
+to source a file in Rstudio, or other ide's,
+we must write Absolute paths of the file.
+
+eg. '~/Copy/Programming/R/rprograms/plotting/autos.dat'   instead of   'autos.dat'
+
+'~/Copy/Programming/R/rprograms/plotting/plots/autos.eps'   instead of   './plots/autos.eps'

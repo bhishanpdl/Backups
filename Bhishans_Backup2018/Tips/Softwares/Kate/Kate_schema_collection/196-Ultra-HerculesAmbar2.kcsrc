@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=196-Ultra-HerculesAmbar2
+activeBackground=0,0,0
+activeBlend=66,66,66
+activeForeground=255,163,3
+activeTitleBtnBg=255,163,3
+alternateBackground=0,0,0
+background=52,52,52
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,163,3
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=12,14,18
+inactiveBlend=30,30,30
+inactiveForeground=255,163,3
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,163,3
+selectBackground=25,25,25
+selectForeground=255,163,3
+shadeSortColumn=true
+visitedLinkColor=255,163,3
+windowBackground=0,0,0
+windowForeground=255,163,3

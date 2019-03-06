@@ -1,0 +1,140 @@
+Bhishan Poudel
+Jan 19, 2016
+
+addins in rstudio for Mac
+================================================================================	
+quit rstudio
+go to r console in the terminal
+devtools::install_github("rstudio/addinexamples", type = "source")
+
+we get error, we have to install two packages 'digest' and 'Rcpp'
+install.packages("digest", "Rcpp")
+
+we have to choose personal library to install Rcpp, choose it
+(note: it is ~/Library/R/3.3/library )
+
+then, again try to install the package addinexamples with new library path:
+devtools::install_github("rstudio/addinexamples", type = "source", library="~/Library/R/3.2/library")
+
+then, go to rstudio, we can see new addins
+
+
+
+	
+where is the package addinexamples in installed?
+================================================================================
+sudo -H find / -type d -name "addinexamples"        (wait for 4 minutes, maybe!)
+
+answer is:
+/Library/Frameworks/R.framework/Versions/3.3/Resources/library/addinexamples
+
+cd /Library/Frameworks/R.framework/Versions/3.3/Resources/library/addinexamples
+
+
+
+
+to see addins (dcf is debian configuratin file)
+================================================================================
+open /Library/Frameworks/R.framework/Versions/3.3/Resources/library/addinexamples/rstudio/
+
+open addins.dcf with gedit or any other text editor
+
+
+
+open ~/.Rprofile
+
+
+
+
+to create extra addins
+================================================================================
+e.g. addin called Bhishan
+
+1. first edit addins.dcf and add another addin
+
+
+2. give two newlines and paste this
+Name: Bhishan
+Description: Inserts some lines of text at the cursor position.
+Binding: Bhishan
+Interactive: false
+
+3. then create a file called Bhishan.r inside addinexamples/R/
+cd /Library/Frameworks/R.framework/Versions/3.3/Resources/library/addinexamples/R
+ls
+open .
+touch Bhishan.r
+copy and paste the function given at the end of this page
+
+3. now, go to ~/.Rprofile
+geany ~/.Rprofile
+
+4. copy and paste this function inside ~/.Rprofile
+
+#' Insert some commands
+#'
+#' Call the function Bhishan at the cursor position.
+#'
+#' @export
+Bhishan <- function() {
+rstudioapi::insertText("#!/usr/bin/Rscript \n")
+rstudioapi::insertText("\n")
+rstudioapi::insertText("# Author : Bhishan Poudel \n")
+rstudioapi::insertText("# Date   : \n")
+rstudioapi::insertText("# Program: \n\n")
+rstudioapi::insertText("# set working directory  \n")
+rstudioapi::insertText("this.dir <- dirname(parent.frame(2)$ofile) \n")
+rstudioapi::insertText("setwd(this.dir)  \n\n")
+}
+
+########################################################################################
+## example2
+#' Insert some commands
+#'
+#' Call the function Bhishan_plot at the cursor position.
+#'
+#' @export
+Bhishan_plot <- function() {
+rstudioapi::insertText("#!/usr/bin/Rscript \n")
+rstudioapi::insertText("\n")
+rstudioapi::insertText("# Author : Bhishan Poudel \n")
+rstudioapi::insertText("# Date   : \n")
+rstudioapi::insertText("# Program: \n\n")
+rstudioapi::insertText("# Set the working directory  \n")
+rstudioapi::insertText("this.dir <- dirname(parent.frame(2)$ofile) \n")
+rstudioapi::insertText("setwd(this.dir)  \n\n")
+rstudioapi::insertText("# Start device driver to save output\n")
+rstudioapi::insertText("#postscript(file= a.eps, height = 14, width = 8)\n\n\n\n")
+rstudioapi::insertText("# Turn off device driver \n")
+rstudioapi::insertText("#dev.off() \n")
+}
+
+
+5. clear the RData
+   geany ~/Desktop/.RData
+   delete the contens
+   restart Rstudio
+
+######### example addin ###################################################### 
+#' Insert \%in\%.
+#'
+#' Call this function as an addin to insert \code{ \%in\% } at the cursor position.
+#'
+#' @export
+insertInAddin <- function() {
+rstudioapi::insertText(" %in% ")
+}
+#########################################################
+
+6. ERRORS AND LESSONS
+these gives error when I open Rstudio (we can see errors in the R console in Rstudio)
+rstudioapi::insertText("#postscript(file="figure.eps" \n\n")
+rstudioapi::insertText("#postscript(file="" \n\n")
+
+Correction: 
+rstudioapi::insertText("#postscript(file= \n\n\n\n")
+rstudioapi::insertText("#postscript(file= a.eps, height = 14, width = 8)\n\n\n\n")
+rstudioapi::insertText("#postscript(file= 'a.eps', height = 14, width = 8)\n\n\n\n")
+
+
+

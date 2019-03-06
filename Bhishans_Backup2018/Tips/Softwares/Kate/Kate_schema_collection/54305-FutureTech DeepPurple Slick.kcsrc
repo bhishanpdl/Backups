@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=FutureTech DeepPurple Slick
+activeBackground=34,42,63
+activeBlend=34,42,63
+activeForeground=141,194,223
+activeTitleBtnBg=174,178,195
+alternateBackground=44,55,81
+background=34,42,63
+buttonBackground=40,50,74
+buttonForeground=141,194,223
+contrast=10
+foreground=141,194,223
+frame=183,193,205
+handle=183,193,205
+inactiveBackground=26,32,48
+inactiveBlend=26,32,48
+inactiveForeground=101,139,160
+inactiveFrame=183,193,205
+inactiveHandle=183,193,205
+inactiveTitleBtnBg=174,178,195
+linkColor=57,132,198
+selectBackground=141,194,223
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=184,97,110
+windowBackground=40,50,74
+windowForeground=141,194,223

@@ -1,0 +1,2 @@
+# A Circle is a subclass of an Artist, and an axes has an add_artist method.
+

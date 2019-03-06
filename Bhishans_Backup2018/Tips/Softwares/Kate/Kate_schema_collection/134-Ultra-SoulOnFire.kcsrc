@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=134-Ultra-SoulOnFire
+activeBackground=126,13,13
+activeBlend=55,63,77
+activeForeground=189,197,176
+activeTitleBtnBg=255,255,255
+alternateBackground=129,44,48
+background=105,27,31
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=241,243,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=105,27,31
+inactiveBlend=30,30,30
+inactiveForeground=164,172,13
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,222,8
+selectBackground=144,36,41
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,247
+windowBackground=118,40,44
+windowForeground=255,255,255

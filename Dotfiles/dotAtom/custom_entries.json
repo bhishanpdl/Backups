@@ -1,0 +1,188 @@
+[
+  {
+  "type": "button",
+  "tooltip": "Settings",
+  "callback": "application:show-preferences",
+  "icon": "cog",
+  "iconset": "fa"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Find and Replace",
+  "callback": "find-and-replace:show",
+  "icon": "search",
+  "iconset": "fa"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Save All",
+  "callback": "window:save-all",
+  "icon": "save",
+  "iconset": "fa"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Code Fold",
+  "callback": "editor:fold-current-row",
+  "icon": "level-down",
+  "iconset": "fa"
+  },
+  {
+  "type": "button",
+  "tooltip": "Code Fold All",
+  "callback": "editor:fold-all",
+  "icon": "android-arrow-dropdown",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Code Unfold All",
+  "callback": "editor:unfold-all",
+  "icon": "android-arrow-dropup",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Split and move right",
+  "callback": "pane:split-right-and-copy-active-item",
+  "icon": "ios-arrow-right",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Run script",
+  "callback": "script:run",
+  "icon": "play",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Stop script",
+  "callback": "script:kill-process",
+  "icon": "stop",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Preview Markdown",
+  "callback": "markdown-preview-enhanced:toggle",
+  "icon": "ios-color-wand",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Preview reST",
+  "callback": "rst-preview-pandoc:toggle",
+  "icon": "ios-color-wand-outline",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Advanced Open Files",
+  "callback": "advanced-open-file:toggle",
+  "icon": "android-folder-open",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Matching Bracket",
+  "callback": "bracket-matcher:go-to-matching-bracket",
+  "icon": "arrow-move",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Sequential Numbers",
+  "callback": "sequential-number:open",
+  "icon": "calculator",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Toggle Tree-view",
+  "callback": "tree-view:toggle",
+  "icon": "android-radio-button-off",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Git commands",
+  "callback": "git-plus:run",
+  "icon": "social-github",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Add commit and push",
+  "callback": "git-plus:add-and-commit-and-push",
+  "icon": "android-arrow-up",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "All Tabs to Whitespaces",
+  "callback": "whitespace:convert-all-tabs-to-spaces",
+  "icon": "android-expand",
+  "iconset": "ion"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+  "type": "button",
+  "tooltip": "Save Without Trailing Whitespaces",
+  "callback": "whitespace:save-without-trailing-whitespace",
+  "icon": "android-contract",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "Restart atom",
+  "callback": "restart-atom:restart",
+  "icon": "android-sync",
+  "iconset": "ion"
+  },
+  {
+  "type": "button",
+  "tooltip": "External Terminal",
+  "callback": "open-terminal-here:open",
+  "icon": "code-working",
+  "iconset": "ion"
+  }
+]

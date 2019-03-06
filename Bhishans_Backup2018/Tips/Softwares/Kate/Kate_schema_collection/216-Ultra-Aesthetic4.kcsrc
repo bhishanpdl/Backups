@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=216-Ultra-Aesthetic4
+activeBackground=111,103,98
+activeBlend=55,63,77
+activeForeground=155,164,155
+activeTitleBtnBg=255,255,255
+alternateBackground=105,94,93
+background=111,103,98
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=1,1,1
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=80,80,80
+inactiveBlend=30,30,30
+inactiveForeground=100,111,105
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=44,54,53
+selectBackground=164,153,151
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=15,68,0
+windowBackground=111,99,98
+windowForeground=22,22,22

@@ -1,0 +1,66 @@
+terminal commands:
+
+awk 	=find and replace text within files (Aho, Kernighan and Weinberger)
+bash = Bourne-Again SHell
+cal = calender
+cat = Concatenate and print (display) the content of files
+date = date
+dc = desk calculator
+df = display free disk image
+diff = Display the differences between two files
+dirname =   Convert a full pathname to just a path
+dirs  =     Display list of remembered directories 
+exec =execute a command
+file = determine file type
+grep = Search file(s) for lines that match a given pattern
+gzip =     Compress or decompress files
+history = show history
+id = print id
+info = help info
+install = install
+jobs = active jobs list
+kill = kill a process by PID
+killall = kill process by name
+l = long list
+ll = long list
+less = display one screen at a time
+locate = find files
+look = display line beginning with given string
+lpr = print
+ls = list
+man = help manual
+mdfind = spotlight search
+mkdir= make directory
+more = one screen at a time
+mv = move
+nano = text editor
+open = open a file
+passwd = change password
+pbcopy = copy data from clipboard
+pbpaste = paste data from clipboard
+pkill = kill process
+ps = process status
+pwd = print working directory
+rm = remove
+rmdir = remove directory
+say = listen sound
+screencapture = capture screen
+sed = stream editor
+shutdown = shutdown
+tar = Tape ARchiver
+time = show time
+times = show process times
+uptime = uptime
+vi = text editor
+wait = wait a process
+whatis = search word
+whereis = search
+which = search
+who = user
+whoami= user
+!! = run last command again
+
+
+
+
+

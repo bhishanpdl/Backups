@@ -1,0 +1,39 @@
+Date: Nov 30, 2016
+
+1. get addresss of office computer
+==================================
+system preference > sharing >
+check on Remote Login    (default is on)
+double click on it gives the ssh address.
+
+ssh poudel@simplici.phy.ohiou.edu
+ssh poudel@pisces.phy.ohiou.edu
+
+2. get internet protocal (ip)
+==============================
+type ip in google it gives the ip address of the computer
+e.g. 
+simplici = 
+pisces = 132.235.24.92
+
+
+3. copy from simplici to pisces
+=======================================
+scp -r myFolder poudel@pisces:~/myFolder
+
+or,
+ssh 
+scp -r jedisim 132.235.24.92:~/
+
+
+
+4. copy from pisces to simplici
+==============================
+scp 132.235.24.92:~/this_is_pisces.txt ~/tmp/try.txt
+
+
+5. public key
+===========
+pisces id_rsa.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDMk1jzmcg5ut7Z2XvgXOYxQOH3eXPkXn7PLqawYE+e1HIz9fJE4Df/NRmvo2MGR3W//tmvvWk1AJWTltXv2BxUxvOb9n/fl90sB59yik3PAKcyo+KyqfUCVsc++xi603Pt0mAxXVJ7PBHtTwtRaomxD0iHDqwk8dbAu1ahK/GvEw== poudel@pisces.phy.ohiou.edu

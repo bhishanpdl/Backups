@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[dvipsnames]{xcolor}
+
+%Defining colour with different models.
+\definecolor{mypink1}{rgb}{0.858, 0.188, 0.478}
+\definecolor{mypink2}{RGB}{219, 48, 122}
+\definecolor{mypink3}{cmyk}{0, 0.7808, 0.4429, 0.1412}
+\definecolor{mygray}{gray}{0.6}
+\colorlet{LightRubineRed}{RubineRed!70!}
+\colorlet{Mycolor1}{green!10!orange!90!}
+\definecolor{Mycolor2}{HTML}{00F9DE}
+
+%New command used in the table with all available colour names
+\newcommand{\thiscolor}[1]{\texttt{#1} \hfill \fcolorbox{black}{#1}{\hspace{2mm}}}
+
+%This changes the row separation in the table
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+This document present several examples on how to use the \texttt{color} package to change the colour of elements in \LaTeX.
+
+\begin{itemize}
+\item \textcolor{Mycolor1}{First item}
+\item \textcolor{Mycolor2}{Second item}
+\end{itemize}
+
+\noindent
+{\color{LightRubineRed} \rule{\linewidth}{1mm} }
+
+\noindent
+{\color{RubineRed} \rule{\linewidth}{1mm} }
+
+
+Not only blocks, such as environments, can be set to a determined colour, but some \textcolor{red}{special words} too. You can even use your own user-defined colours. Below the same colour with different models:
+
+\begin{enumerate}
+\item \textcolor{mypink1}{Pink with rgb}
+\item \textcolor{mypink2}{Pink with RGB}
+\item \textcolor{mypink3}{Pink with cmyk}
+\item \textcolor{mygray}{Gray with gray}
+\end{enumerate}
+
+The background colour of some text can also be \textcolor{red}{easily} set. For instance, you can change to orange the background of \colorbox{BurntOrange}{this text} and then continue typing.
+
+\clearpage
+
+\begin{center}
+\begin{tabular}{ llll } 
+\thiscolor{Apricot} & \thiscolor{Emerald} & \thiscolor{OliveGreen} & \thiscolor{RubineRed} \\ 
+\thiscolor{Aquamarine} & \thiscolor{ForestGreen} & \thiscolor{Orange} & \thiscolor{Salmon} \\ 
+\thiscolor{Bittersweet} & \thiscolor{Fuchsia} & \thiscolor{OrangeRed} & \thiscolor{SeaGreen}\\ 
+\thiscolor{Black} & \thiscolor{Goldenrod} & \thiscolor{Orchid} & \thiscolor{Sepia}\\ 
+\thiscolor{Blue} & \thiscolor{Gray} & \thiscolor{Peach} & \thiscolor{YellowOrange}\\ 
+\thiscolor{BlueGreen} & \thiscolor{Green} & \thiscolor{Periwinkle} & \thiscolor{SkyBlue}\\ 
+\thiscolor{BlueViolet} & \thiscolor{GreenYellow} & \thiscolor{PineGreen} & \thiscolor{SpringGreen}\\ 
+\thiscolor{BrickRed} & \thiscolor{JungleGreen} & \thiscolor{Plum} & \thiscolor{Tan}\\ 
+\thiscolor{Brown} & \thiscolor{Lavender} & \thiscolor{ProcessBlue} & \thiscolor{TealBlue}\\ 
+\thiscolor{BurntOrange} & \thiscolor{LimeGreen} & \thiscolor{Purple} & \thiscolor{Thistle}\\ 
+\thiscolor{CadetBlue} & \thiscolor{Magenta} & \thiscolor{RawSienna} & \thiscolor{Turquoise}\\ 
+\thiscolor{CarnationPink} & \thiscolor{Mahogany} & \thiscolor{Red} & \thiscolor{Violet}\\ 
+\thiscolor{Cerulean} & \thiscolor{Maroon} & \thiscolor{RedOrange} & \thiscolor{VioletRed}\\ 
+\thiscolor{CornflowerBlue} & \thiscolor{Melon} & \thiscolor{RedViolet} & \thiscolor{White}\\ 
+\thiscolor{Cyan} & \thiscolor{MidnightBlue} & \thiscolor{Rhodamine} & \thiscolor{WildStrawberry}\\ 
+\thiscolor{Dandelion} & \thiscolor{Mulberry} & \thiscolor{RoyalBlue} & \thiscolor{Yellow}\\ 
+\thiscolor{DarkOrchid} & \thiscolor{NavyBlue} & \thiscolor{RoyalPurple} & \thiscolor{YellowGreen}
+\end{tabular}
+\end{center}
+
+\end{document}

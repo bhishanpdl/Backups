@@ -1,0 +1,29 @@
+to open fit or fits file with ds9
+==================================
+source: http://ubuntuforums.org/showthread.php?t=2032083
+
+1) Install Ubuntu Tweak:
+
+sudo add-apt-repository ppa:tualatrix/ppa
+sudo apt-get update
+sudo apt-get install ubuntu-tweak
+
+2) Open it up on the command line, $ ubuntu-tweak
+
+3) Navigate to Admins > File Type Manager and click 'All'. 
+	This may take a moment whilst it scans all your mimetypes.
+
+4) Uncheck 'Only show filetypes with associated applications' at the bottom 
+	(again, may take some time).
+
+5) Click anywhere in the right-hand panel and start typing 'fits' to begin 
+	searching for the 'FITS document' mimetype. Hopefully you should find it.
+
+6) Double click it, and click 'Add' and then your custom command
+
+ [N.B.: If you don't find the FITS mimetype listed, I would recommend installing
+ GIMP as GIMP seems to have the FITS mimetype listed as a format it can open.
+ You can also check the current mimetype of your .fits file by right-clicking
+ it and selecting 'Properties' and then looking at 'Type'.]
+ 
+7) Voila, now right click any fit or fits file, you can see ds9

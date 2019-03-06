@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=Black-Orange
+activeBackground=52,52,52
+activeBlend=255,255,255
+activeForeground=255,255,255
+activeTitleBtnBg=147,96,41
+alternateBackground=96,96,96
+background=50,50,50
+buttonBackground=100,100,100
+buttonForeground=250,249,248
+contrast=0
+foreground=255,255,255
+frame=50,50,50
+handle=67,67,67
+inactiveBackground=50,50,50
+inactiveBlend=50,50,50
+inactiveForeground=250,249,248
+inactiveFrame=50,50,50
+inactiveHandle=50,50,50
+inactiveTitleBtnBg=0,0,0
+linkColor=179,117,50
+selectBackground=147,96,41
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=124,81,35
+windowBackground=75,75,75
+windowForeground=255,255,255

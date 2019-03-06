@@ -1,0 +1,15 @@
+# Author  : Bhishan Poudel
+# Date    : Apr 14, 2016
+
+Addin edit and create new in ubuntu 15.1
+===============================================================================
+cd /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/R/; ls; xdg-open .
+e.g.
+geany /home/bhishan/R/x86_64-pc-linux-gnu-library/3.2/addinexamples/R/Bhishan.r
+geany ~/.Rprofile
+echo " " > ~/.RData; geany ~/.RData
+
+copy and paste edited file to ~/.Rprofile
+we may have to clear .RData from ~/.RData :   echo " " > ~/.RData  # ctrl H to see hidden files in ubuntu
+
+restart Rstudio

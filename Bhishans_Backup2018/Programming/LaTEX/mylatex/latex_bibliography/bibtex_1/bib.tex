@@ -1,0 +1,49 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{url}
+
+%Includes "References" in the table of contents
+\usepackage[nottoc]{tocbibind}
+
+%Title, date an author of the document
+\title{Bibliography management: BibTeX}
+\author{Share\LaTeX}
+
+%Begining of the document
+\begin{document}
+
+\maketitle
+\tableofcontents
+\medskip
+
+\section{First Section}
+This document is an example of BibTeX using in bibliography management. 
+Three items are cited: \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, 
+the Einstein journal paper \cite{einstein}, and the Donald Knuth's 
+website \cite{knuthwebsite}. The \LaTeX\ related items are 
+\cite{latexcompanion,knuthwebsite}. 
+
+\section{Overview}
+Before we get to the commands and facilities provided by Biblatex, we will have
+a look at some of its fundamental concepts. The Biblatex package uses auxiliary
+files in a special way. Most notably, the bbl
+file is used differently and when using
+BibTeX as the backend, there is only one
+bst
+file which implements a structured data
+interface rather than exporting printable data. With LaTeX’s standard bibliographic
+facilities, a document includes any number of citation commands in the document
+body plus
+\textbf{bibliographystyle}
+and
+\textbf{bibliography}
+, usually towards the
+end of the document. The location of the former is arbitrary, the latter marks the
+spot where the list of references is to be printed
+
+\newpage
+\bibliographystyle{plain} % alpha,unsrt, IEEE,plain, nature, abbrv etc.
+\bibliography{sample}
+\end{document}

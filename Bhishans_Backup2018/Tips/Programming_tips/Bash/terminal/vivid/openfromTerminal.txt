@@ -1,0 +1,27 @@
+to open any file from terminal
+================================
+note: xdg = X Desktop Group
+xdg-open path_to_file
+
+eg. xdg-open a.txt
+eg. xdg-open ./a.txt
+
+To find default application:
+=============================
+xdg-mime query default application/pdf          answer is: evince.desktop
+
+
+To change default application from other to evince:
+=====================================================
+xdg-mime default evince.desktop application/pdf
+
+
+Note: we can create an alias for this
+======================================
+alias open='nautilus'           this opens the folder location in file mangager
+alias openit='xdg-open'         this opens the file using default program
+
+Aliter
+================================================================================
+evince a.pdf   		opens and switch to evince, but we cant use terminal until file is closed
+evince a.pdf &      we can work now. ( this opens in background and also switches to it)

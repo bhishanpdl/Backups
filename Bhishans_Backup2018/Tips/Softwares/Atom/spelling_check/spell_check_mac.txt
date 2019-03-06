@@ -1,0 +1,19 @@
+Author: Bhishan Poudel
+Date  : Dec 8, 2016
+
+Topic: Spell check pacakage in Mac using ASPELL
+===============================================
+
+1. download and unzip zip file from:
+http://aspell.net/
+go to latest version
+download and unzip it.
+
+2. configure build and install
+sudo -H ./configure
+sudo -H make
+sudo -H make install
+which aspell
+
+cd ..
+rm -r aspell*

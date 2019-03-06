@@ -1,0 +1,65 @@
+ubuntu errors Nov 28, 2015 Sat
+================
+shows danger sign on top left corner and says something like this:
+The update information is outdated.This may be caused by network 
+problems or may be caused by a repository that is no longer available.
+Please update manually by clicking this icon... 
+
+
+1. when i click on show updates nothing happens.
+
+solution:
+=========
+go dashboard and search "synaptic package manager"
+(hit superkey)
+go to settings>repository> updates   
+click close,
+we get errors:
+
+i got many errors including these two:
+1. Failed to fetch cdrom://Ubuntu 14.04.2 LTS _Trusty Tahr_ -
+2. ppa.launchpad....kile
+
+then,
+1. i uncheck settings>repositories   
+then click Cdrom with Ubuntu 14.04 'Trusty Tahr' button
+2. i unckeck settings>repositories> other softwares>  reload> then uncheck line with kile
+
+3. close synaptic manager
+4. go to warning flag, and click update all
+5. the warning flag disappears.
+
+to solve R program ppa <my.favorite.cran.mirror> (for ubuntu 15, wily)
+====================================================
+sudo gedit /etc/apt/sources.list
+then change:
+        deb https://<my.favorite.cran.mirror>/bin/linux/ubuntu vivid/
+to:
+        deb https://<my.favorite.cran.mirror>/bin/linux/ubuntu wily/
+restart the computer
+
+I again got the error:
+Failed to fetch https://<my.favorite.cran.mirror>/bin/linux/ubuntu/wily/Packages  Could not resolve host: <my.favorite.cran.mirror>
+
+Then, I commented out that ppa
+        
+
+errors on ubuntu 15, jan 10 2016
+==================================
+Failed to fetch https://<my.favorite.cran.mirror>/bin/linux/ubuntu/vivid/Packages  Could not resolve host: <my.favorite.cran.mirror>
+
+Failed to fetch http://ppa.launchpad.net/fsvh/pacifica-icon-theme/ubuntu/dists/wily/main/binary-amd64/Packages  404  Not Found
+
+Failed to fetch http://ppa.launchpad.net/fsvh/pacifica-icon-theme/ubuntu/dists/wily/main/binary-i386/Packages  404  Not Found
+
+Failed to fetch http://ppa.launchpad.net/gladky-anton/precise-backports/ubuntu/dists/wily/main/binary-amd64/Packages  404  Not Found
+
+Failed to fetch http://ppa.launchpad.net/gladky-anton/precise-backports/ubuntu/dists/wily/main/binary-i386/Packages  404  Not Found
+
+Failed to fetch http://ppa.launchpad.net/upubuntu-com/nitrux/ubuntu/dists/wily/main/binary-amd64/Packages  404  Not Found
+
+Failed to fetch http://ppa.launchpad.net/upubuntu-com/nitrux/ubuntu/dists/wily/main/binary-i386/Packages  404  Not Found
+Some index files failed to download. They have been ignored, or old ones used instead.
+ 
+
+

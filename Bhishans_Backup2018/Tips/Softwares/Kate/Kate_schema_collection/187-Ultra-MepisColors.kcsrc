@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=187-Ultra-MepisColors
+activeBackground=12,12,12
+activeBlend=55,63,77
+activeForeground=253,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=144,202,207
+background=0,63,125
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=246,255,247
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=124,124,124
+inactiveBlend=30,30,30
+inactiveForeground=185,185,185
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=83,117,150
+selectBackground=48,94,154
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=149,209,214
+windowForeground=22,22,22

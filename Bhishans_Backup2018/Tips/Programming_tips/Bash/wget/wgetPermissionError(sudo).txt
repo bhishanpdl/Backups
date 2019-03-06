@@ -1,0 +1,3 @@
+if we get permission error in wget
+======================================
+sudo wget options website

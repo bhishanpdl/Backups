@@ -1,0 +1,23 @@
+to change the computer hostname
+===============================
+
+example:
+bhishan@bhishan-HP-Pavilion-dv6-Notebook-PC:~$ 
+username@hostname:working dirctory
+
+username = bhishan
+hostname = bhishan-HP-Pavilion-dv6-Notebook-PC
+~        = non root user
+$        = variable substitution eg. echo $var1
+
+
+to change host name to poudel
+==============================
+gksu gedit /etc/hostname ( change host to poudel)
+gksu gedit /etc/hosts    ( change host to poudel)
+restart the commputer
+
+NOTE:
+to find username             : whoami
+to find all users in the host: who
+to find the host             : hostname

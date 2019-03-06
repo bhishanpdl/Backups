@@ -1,0 +1,10 @@
+Author: Bhishan Poudel
+Date  : Wed Mar 22, 2017
+
+Topic: convert latex bibliography format .ris to .bib
+============================================================
+
+using BibDesk.app
+==================
+open .ris file with bibDesk.app
+File > Save as , then save the .bib file.

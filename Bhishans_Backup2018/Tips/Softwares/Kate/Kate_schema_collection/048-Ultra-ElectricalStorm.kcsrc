@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=048-Ultra-ElectricalStorm
+activeBackground=62,66,71
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=130,137,149
+background=62,66,71
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=62,66,71
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=55,63,77
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=120,126,137
+windowForeground=0,0,0

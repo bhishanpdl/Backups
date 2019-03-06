@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=057-Ultra-SilverLight
+activeBackground=119,136,153
+activeBlend=238,239,242
+activeForeground=255,255,255
+activeTitleBtnBg=220,220,220
+alternateBackground=242,248,255
+background=120,126,137
+buttonBackground=238,238,238
+buttonForeground=237,237,237
+contrast=7
+foreground=0,0,0
+frame=239,239,239
+handle=239,239,239
+inactiveBackground=152,165,178
+inactiveBlend=238,239,242
+inactiveForeground=67,67,67
+inactiveFrame=239,239,239
+inactiveHandle=239,239,239
+inactiveTitleBtnBg=167,181,199
+linkColor=35,73,201
+selectBackground=94,100,118
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=21,92,139
+windowBackground=255,255,255
+windowForeground=0,0,0

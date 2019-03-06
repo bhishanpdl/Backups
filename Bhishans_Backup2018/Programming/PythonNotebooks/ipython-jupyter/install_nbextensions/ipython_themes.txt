@@ -1,0 +1,22 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 14, 2017 Wed
+
+# Topic: Themes in jupyter notebook
+====================================
+Ref: https://github.com/dunovank/jupyter-themes
+
+1. To see themes list
+jt -l
+
+2. To install themes
+Open /Users/poudel/.jupyter/custom/custom.css
+
+Edit this file.
+e.g.
+http://sherifsoliman.com/2016/01/11/theming-ipython-jupyter-notebook/
+
+or,
+https://github.com/powerpak/jupyter-dark-theme
+
+3. DO NOT CHANGE THEME
+It does not look better, updated widgets look blurry and default is best!!

@@ -1,0 +1,2 @@
+blue1.fits red1.fits out1.fits
+blue2.fits red2.fits out2.fits

@@ -1,0 +1,62 @@
+3/usr/bin/makepp
+VERSION2.0.98.35.18.2x86_64-linux-gnu-thread-multi
+LOAD2f56508Makefile273b308/home/bhishan/Copy/Programming/C/cprograms/makefile/example2273b308
+TRY2f56508
+USEdefault rule
+DEPEND2f56508
+UP_TO_DATE2f56508
+RULE_ALT/home/bhishan/Copy/Programming/C/cprograms/makefile/example2/Makefile:12/home/bhishan/Copy/Programming/C/cprograms/makefile/example2/Makefile:62574d98file1273b308
+*** warning: conflicting rules `/home/bhishan/Copy/Programming/C/cprograms/makefile/example2/Makefile:12' and `/home/bhishan/Copy/Programming/C/cprograms/makefile/example2/Makefile:6' for target /home/bhishan/Copy/Programming/C/cprograms/makefile/example2/file1
+LOAD_INCL2574a38makepp_builtin_rules.mk25789a0/usr/share/makepp2f56508
+LOAD_END2f56508
+TRY2574840all273b308
+USEdefault rule
+DEPEND25748402574d982574ed0file2273b3082f8a6a0file3273b308
+TRY2574d98
+USE/home/bhishan/Copy/Programming/C/cprograms/makefile/example2/Makefile:12
+SCAN_INFO2574d98
+LEX_RULE2574d98info not cached
+PARSEgcc file3.c -o file3273b308/home/bhishan/Copy/Programming/C/cprograms/makefile/example2/Makefile:12
+TRY2fa6a80gcc2fa69a8/usr/bin
+USEdefault rule
+DEPEND2fa6a80
+UP_TO_DATE2fa6a80
+TRY2f7bda8file3.c273b308
+USEdefault rule
+DEPEND2f7bda8
+UP_TO_DATE2f7bda8
+SCAN2f7bda8
+INCL2f7bda82fa63c0stdio.h3002da0/usr/include
+TRY2fa63c0
+USEdefault rule
+DEPEND2fa63c0
+UP_TO_DATE2fa63c0
+SCAN_NOT_UNWRITABLE2fa63c0
+DEPEND2574d982f8a6a02f7bda82fa6a802fa63c0
+BUILD_NONE2574d98
+SUCCESS/home/bhishan/Copy/Programming/C/cprograms/makefile/example2/Makefile:122574d982f8a6a0
+*** warning: I attempted to build /home/bhishan/Copy/Programming/C/cprograms/makefile/example2/file1,
+  but after successfully executing the commands, the target does not exist.
+  Perhaps it is a phony target?	 If so, the rule defining it should be modified
+  like this:
+    $(phony file1): dependencies
+	actions
+
+  or you could also declare it as phony like this:
+    .PHONY: file1
+TRY2574ed0
+USE/home/bhishan/Copy/Programming/C/cprograms/makefile/example2/Makefile:9
+SCAN_INFO2574ed0
+CACHED_DEP2fa6a802574ed0
+CACHED_DEP2f7bb08file2.c273b3082574ed0
+TRY2f7bb08
+USEdefault rule
+DEPEND2f7bb08
+UP_TO_DATE2f7bb08
+CACHED_DEP2fa63c02574ed0
+SCAN_CACHED2574ed0
+DEPEND2574ed02f7bb082fa6a802fa63c0
+UP_TO_DATE2574ed0
+SUCCESSdefault rule2574840
+*** warning: There is no rule to build inexistent /home/bhishan/Copy/Programming/C/cprograms/makefile/example2/all
+N_FILES120

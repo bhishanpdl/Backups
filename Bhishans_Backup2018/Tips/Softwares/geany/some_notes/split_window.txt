@@ -1,0 +1,7 @@
+# Author    : Bhishan Poudel
+# Date      : 2016-06-03
+
+To view split window
+======================================
+
+Tools > Split Window > side by side

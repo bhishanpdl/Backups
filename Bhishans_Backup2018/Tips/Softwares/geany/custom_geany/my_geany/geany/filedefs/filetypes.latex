@@ -1,0 +1,16 @@
+[build-menu]
+EX_00_LB=Execute
+EX_00_CM=pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm -f  %e.aux; rm -f  %e.bbl; rm -f %e.blg; rm  -f  %e.log; rm -f  %e.out;  rm -f  %e.toc; open %e.pdf
+EX_00_WD=
+EX_01_LB=View pdf
+EX_01_CM=open %e.pdf
+EX_01_WD=
+FT_00_LB=latex for ps
+FT_00_CM=latex %e.tex; dvipdf %e.dvi; bibtex %e; latex %e.tex; latex %e.tex; rm -f %e.aux; rm -f %e.bbl; rm -f %e.blg; rm -f %e.log; rm -f %e.out; rm -f *.bak ; rm -r %e.dvi; find . -name *eps-converted* -type f -exec rm -r {} + ; open %e.pdf
+FT_00_WD=
+FT_01_LB=LaTeX ==>_PDF
+FT_01_CM=pdflatex --file-line-error-style "%f"
+FT_01_WD=
+FT_02_LB=Bibtex
+FT_02_CM=bibtex "%e"
+FT_02_WD=

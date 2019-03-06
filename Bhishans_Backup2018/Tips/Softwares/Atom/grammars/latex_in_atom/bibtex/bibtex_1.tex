@@ -1,0 +1,28 @@
+% Autho     : Bhishan Poudel
+% Date      : Apr 19, 2016
+% Ref       : https://en.wikipedia.org/wiki/BibTeX
+% Texmaker  : Preference > Quick build > choose option with bibtex
+
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{url}
+
+\begin{document}
+
+\title{Testing bibtex in Texmaker}
+\maketitle
+
+\section{Introduction}
+This is a test cite[\cite{hartle2003gravity}].
+Refer to\cite{abramowitz+stegun}.
+
+\bibliographystyle{plain}
+\bibliography{bibtex_1}
+%\bibliography{mybib1,mybib2,mybib3}
+
+\end{document}

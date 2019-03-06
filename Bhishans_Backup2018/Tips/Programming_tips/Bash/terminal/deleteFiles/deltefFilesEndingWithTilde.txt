@@ -1,0 +1,25 @@
+ref: https://unix.stackexchange.com/questions/71171/how-to-remove-files-which-do-not-end-with-c
+
+
+
+to delete files ending with tilde
+=================================
+
+first check all the files
+ls *.*~
+
+
+then delete the files
+=====================
+rm *.*~
+
+
+to delete recursively
+======================
+
+rm -r *.*~
+
+
+
+
+

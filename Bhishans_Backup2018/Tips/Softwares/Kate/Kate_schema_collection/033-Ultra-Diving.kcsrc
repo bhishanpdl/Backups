@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=033-Ultra-Diving
+activeBackground=44,96,103
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=120,126,137
+background=44,96,103
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=44,96,103
+inactiveBlend=30,30,30
+inactiveForeground=213,213,213
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=58,103,92
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=120,126,137
+windowForeground=1,1,1

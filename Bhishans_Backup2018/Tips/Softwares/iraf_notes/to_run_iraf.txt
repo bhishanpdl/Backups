@@ -1,0 +1,19 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 17, 2016
+# Ref     : http://www.physics.uci.edu/~barth/astro-computing/irafsetup.html
+
+To run iraf
+===============================================================================
+1. open the terminal (alt ctrl t in ubuntu)
+ cd ~/IRAF; xgterm -sb &
+ minimize bash terminal
+ go to xgterm
+ ds9 &
+ minimize ds9
+
+ (if not exist: mkdir iraf)
+ cd iraf
+ cl
+ display image.fits   (note: there should be image.fits in ~/myiraf)
+ hit enter
+ now maximize ds9 we can see the image.fits

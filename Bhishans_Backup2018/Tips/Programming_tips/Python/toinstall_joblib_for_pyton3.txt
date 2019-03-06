@@ -1,0 +1,30 @@
+Bhishan Poudel
+Feb 10, 2016
+
+To install module joblib for python in ubuntu
+===============================================
+sudo apt-get install python3-joblib
+
+
+
+note: if we do not have this ppa, add it
+# wily is for ubuntu 15
+edit and paste this inside the file:   /etc/apt/sources.list
+deb http://us.archive.ubuntu.com/ubuntu wily main universe
+
+
+
+for the Mac
+=============
+
+downlaod source code from github
+https://github.com/joblib/joblib
+
+go to downloads directory
+cdD
+
+install the module using python3
+python3 setup.py install
+
+
+

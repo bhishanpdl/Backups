@@ -1,0 +1,112 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 17, 2016
+# Ref     : http://www.astronomy.ohio-state.edu/~khan/iraf/iraf_step_by_step_installation_64bit
+
+To install iraf on ubuntu wily 64-bit
+===============================================================================
+1. install tcsh and dependencies
+2. install iraf on root directory /iraf/iraf
+3. install x11iraf on folder /iraf/x11iraf
+4. install ds9 and move to /usr/local/bin/
+5. create folder ~/IRAF and run mkiraf
+6. install external packages
+
+step 0: uninstall previous version
+===================================
+1. delete /iraf folder, ~/iraf , ~/IRAF, and ~/.iraf folders
+
+
+step 1: install tcsh and dependencies
+===============================================================================
+sudo apt-get install tcsh libxss1 lib32z1 lib32ncurses5 lib32bz2-1.0 libXmu6:i386
+this gives error lib32zbz2-1.0 cannot be install, so alternatively install other
+sudo apt-get install tcsh libxss1 lib32z1 lib32ncurses5  libbz2-1.0:i386 libXmu6:i386
+
+step 2: install iraf on root directory /iraf/iraf
+===============================================================================
+wget ftp://iraf.noao.edu/iraf/v216/PCIX/iraf.lnux.x86_64.tar.gz   (hit enter for prompts)
+sudo mkdir /iraf
+
+sudo mkdir /iraf/iraf
+
+sudo mv iraf.lnux.x86_64.tar.gz /iraf/iraf/.
+
+cd /iraf/iraf
+
+sudo tar -zxf iraf.lnux.x86_64.tar.gz
+
+sudo rm iraf.lnux.x86_64.tar.gz
+
+sudo ./install
+
+[[Keep hitting Enter for all prompts]]
+
+
+step 3: install x11iraf on folder /iraf/x11iraf
+===============================================================================
+sudo mkdir /iraf/x11iraf
+
+cd /iraf/x11iraf
+
+sudo wget http://iraf.noao.edu/iraf/ftp/iraf/x11iraf/x11iraf-v2.0BETA-bin.linux.tar.gz
+
+sudo tar -zxf x11iraf-v2.0BETA-bin.linux.tar.gz
+
+sudo rm x11iraf-v2.0BETA-bin.linux.tar.gz
+
+sudo ./install
+
+[[Keep hitting Enter for all prompts]]
+
+step 4: install ds9 and move to /usr/local/bin/
+===============================================================================
+sudo wget http://ds9.si.edu/archive/linux64/ds9.linux64.7.2.tar.gz
+
+sudo tar -zxf ds9.linux64.7.2.tar.gz
+
+sudo rm ds9.linux64.7.2.tar.gz
+
+sudo mv ds9 /usr/local/bin/.
+
+step 5: create folder ~/IRAF and run mkiraf
+===============================================================================
+cd
+
+wget http://www.astronomy.ohio-state.edu/~khan/iraf/iraf
+
+sudo chmod u=rwx iraf
+
+mkdir IRAF
+
+cd IRAF
+
+mkiraf
+
+[[Select "xgterm" as your IRAF shell when prompted]]
+
+get out of xgterm and go to bash
+
+N.B.
+----------------------------------------------------------------------------------------------
+
+The command ./iraf from home directory will now launch a complete IRAF session
+containing DS9,
+xgterm and ecl, based in the IRAF direcory. Alternately, start "xgterm'
+(typing xgterm),
+cd into the directory where you did "mkiraf", type "ecl" for enhanced IRAF or
+"cl" for VO IRAF, and "ds9" for standalone DS9 launch.
+
+The following steps show how to add external packages. If you don't need
+extra packages,
+then you are done already.
+
+----------------------------------------------------------------------------------------------
+
+
+step 6: install external packages (this takes about 30 minutes)
+===============================================================================
+cd /iraf/iraf/extern
+sudo ./configure
+sudo make adccdrom ctio cfh12k esowfi mscdb mscred stsdas nfextern optic
+sudo make deitab euv mem0 mtools rvsao song sqiid stecf ucsclris upsqiid xdimsum
+exit

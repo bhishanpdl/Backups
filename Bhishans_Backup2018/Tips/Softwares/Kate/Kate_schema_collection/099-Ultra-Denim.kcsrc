@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=099-Ultra-Denim
+activeBackground=19,57,132
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=129,158,209
+background=19,57,132
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=142,174,230
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=19,57,132
+inactiveBlend=30,30,30
+inactiveForeground=131,161,213
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=19,57,132
+selectBackground=133,163,216
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=129,158,209
+windowForeground=22,22,22

@@ -1,0 +1,26 @@
+[Color Scheme]
+Name=comix-dark
+activeBackground=68,81,64
+activeBlend=50,50,50
+activeForeground=255,255,255
+activeTitleBtnBg=195,195,195
+alternateBackground=53,56,51
+background=50,50,50
+buttonBackground=54,89,44
+buttonForeground=59,167,31
+contrast=10
+foreground=59,167,31
+frame=238,238,238
+handle=238,238,238
+inactiveBackground=73,73,83
+inactiveBlend=50,50,50
+inactiveForeground=204,204,204
+inactiveFrame=238,238,238
+inactiveHandle=238,238,238
+inactiveTitleBtnBg=195,195,195
+linkColor=0,0,192
+selectBackground=129,185,115
+selectForeground=0,0,0
+visitedLinkColor=128,0,128
+windowBackground=48,51,46
+windowForeground=207,233,196

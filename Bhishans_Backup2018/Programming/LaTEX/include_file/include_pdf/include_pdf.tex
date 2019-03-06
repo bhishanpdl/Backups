@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{pdfpages}
+
+
+
+
+\begin{document}
+
+\begin{verbatim}
+To be clear, you need to specify the pages you wish to include, i.e. 
+\includepdf[pages={1,3,5}]{myfile.pdf} would include pages 1, 3, and 5 of the 
+file. To include the entire file, you specify pages={-}, where {-} is a range 
+without the endpoints specified which default to the first and last pages, 
+respectively. 
+The offset option is useful \includepdf[page={-},offset=<offset in x>mm <offset 
+in y>mm]{myfile.pdf}
+\end{verbatim}
+\includepdf[pages={1}]{myfile.pdf}
+% \includepdf[pages=-]{myfile.pdf}  % for all pages
+% \includegraphics{myfile.pdf}
+
+\end{document}

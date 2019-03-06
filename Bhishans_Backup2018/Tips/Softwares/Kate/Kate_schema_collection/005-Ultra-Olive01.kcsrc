@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=005-Ultra-Olive01
+activeBackground=122,138,120
+activeBlend=81,82,73
+activeForeground=191,191,191
+activeTitleBtnBg=220,220,220
+alternateBackground=239,243,224
+background=122,138,120
+buttonBackground=139,143,126
+buttonForeground=202,202,202
+contrast=0
+foreground=0,0,0
+frame=175,180,159
+handle=80,82,72
+inactiveBackground=111,122,99
+inactiveBlend=55,56,50
+inactiveForeground=165,165,165
+inactiveFrame=175,180,159
+inactiveHandle=175,180,159
+inactiveTitleBtnBg=220,220,220
+linkColor=129,160,75
+selectBackground=127,139,113
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=74,116,98
+windowBackground=229,229,229
+windowForeground=0,0,0

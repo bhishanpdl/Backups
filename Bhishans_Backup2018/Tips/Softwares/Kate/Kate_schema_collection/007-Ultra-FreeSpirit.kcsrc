@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=007-Ultra-FreeSpirit
+activeBackground=156,152,175
+activeBlend=169,166,186
+activeForeground=255,255,255
+activeTitleBtnBg=220,220,220
+alternateBackground=255,246,230
+background=156,152,175
+buttonBackground=214,205,187
+buttonForeground=255,255,255
+contrast=0
+foreground=0,0,0
+frame=214,205,187
+handle=214,205,187
+inactiveBackground=156,152,175
+inactiveBlend=214,205,187
+inactiveForeground=214,214,214
+inactiveFrame=214,205,187
+inactiveHandle=214,205,187
+inactiveTitleBtnBg=220,220,220
+linkColor=139,97,93
+selectBackground=140,136,157
+selectForeground=255,255,255
+shadeSortColumn=false
+visitedLinkColor=106,44,15
+windowBackground=255,255,255
+windowForeground=0,0,0

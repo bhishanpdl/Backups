@@ -1,0 +1,26 @@
+Bhishan Poudel
+Feb 15, 2016
+
+To create symlinks (soft links in unix machine) (Symlink is same as Shortcut file/folder)
+===============================================================================
+The general syntax for creating a symbolic link is:
+
+ ln -s target linkname
+
+e.g.
+create a example target file: touch myfile.txt
+write something inside it   : echo "this is example file" >> myfile.txt
+look what is inside it      : cat myfile.txt
+see list of files           : ls -l
+
+create a symlink            : ln -s myfile.txt mylink
+see list again              : ls -l (we can see mylink -> myfile.txt)
+see inside mylink           : cat mylink
+
+
+rename our symlink          : mv mylink mynewlink
+see inside mynewlink        : cat mynewlink
+
+create newfolder            : mkdir newfolder
+copy mynewlink              : cp mynewlink ./newfolder/
+see list                    : ls -l

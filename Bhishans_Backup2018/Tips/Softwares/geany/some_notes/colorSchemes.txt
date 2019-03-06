@@ -1,0 +1,19 @@
+Bhishan Poudel
+Jan 14, 2016
+
+to add color schemes to geany
+==============================
+
+1. download schmes from github:
+http://wiki.geany.org/themes/start
+
+or,
+https://github.com/codebrainz/geany-themes
+
+then,
+2. copy the themes from folder colorschmes to:
+~/.config/geany/colorschemes/
+
+3. restart geany,
+view>change color schemes
+my best is zenburn.

@@ -1,0 +1,11 @@
+To copy whole folder Homework and its subdirectories from helios
+=================================================================
+
+
+scp -r poudel@helios.phy.ohiou.edu:/home/poudel/Homework .
+
+
+To copy only some assignments
+===================================================================
+scp poudel@helios.phy.ohiou.edu:/home/poudel/Homework/assign1.tar .
+

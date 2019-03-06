@@ -1,0 +1,51 @@
+#topic: multiple line comment in terminal
+#source: https://stackoverflow.com/questions/5130847/shell-multiple-commands-in-one-line
+
+
+method 1:
+This executes commands sequentially :
+comand1; comand2
+example:
+
+clear;ls;gcc a.c;./a.out
+
+
+
+method 2:
+AND = && This executes command 2 only if command 1 is successful (no errors)
+success >=0
+failure <0
+
+comand1 && comand2
+
+eg. cp file1 file2 && cp file1 file3 && rm file1
+
+method 3:
+OR = ||  This executes command 2 only if command 1 fails (errors)
+
+comand1 || comand2
+
+
+ps -ef | grep ORA
+
+method 4:
+command1 & command2
+or,
+command1 && command2
+
+the difference is, that with two &s the 
+second command is only executed if the first is successful. 
+
+method 5:
+You can also run multiple commands on a single line via a pipe.
+The pipe takes the output of one command and "pipes" it as input to another command.
+
+########################################################
+To summarize (non-exhaustively) bash's command operators/separators:
+
+    | pipes (pipelines) the standard output (stdout) of one command into the standard input of another one. Note that stderr still goes into its default destination, whatever that happen to be.
+    |&pipes both stdout and stderr of one command into the standard input of another one. Very useful, available in bash version 4 and above.
+    && executes the right-hand command of && only if the previous one succeeded.
+    || executes the right-hand command of || only it the previous one failed.
+    ; executes the right-hand command of ; always regardless whether the previous command succeeded or failed. Unless set -e was previously invoked, which causes bash to fail on an error.
+

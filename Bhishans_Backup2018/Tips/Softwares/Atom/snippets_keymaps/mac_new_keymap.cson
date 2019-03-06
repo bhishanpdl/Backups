@@ -1,0 +1,25 @@
+# @Author: Bhishan Poudel <poudel>
+# @Date:   17-Oct-2016 14:10
+# @Last modified by:   poudel
+# @Last modified time: 09-Nov-2016 10:11
+
+
+#  Bhishan's keymaps
+'atom-text-editor:not([mini])':
+  'f5': 'script:run'
+  'F6': 'command-palette:toggle'
+  'cmd-alt-s': 'spell-check:toggle'
+  'ctrl-alt-s': 'python-autopep8:format'
+  'ctrl-shift-T': 'atom-mac-terminal:open'
+  'cmd-x': 'run:script'
+  'shift-cmd-A': 'git-plus:add'
+  'shift-cmd-b': 'git-plus:add-all'
+  'shift-cmd-C': 'git-plus:commit'
+  'cmd-shift-U': 'git-plus:diff'
+  'cmd-g-p': 'git-plus:diff'
+  'shift-cmd-R': 'symbols-view:toggle-project-symbols'
+  'ctrl-cmd-m': 'bracket-matcher:select-inside-brackets'
+  'ctrl-alt-e': 'python-tools:select-all-string'
+  'ctrl-shift-X': 'markdown-preview-plus:toggle-render-latex'
+  'ctrl-alt-c': 'latex:clean'
+  'ctrl-alt-n': 'file-templates:new-file'

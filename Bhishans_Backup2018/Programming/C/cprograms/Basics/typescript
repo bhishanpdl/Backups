@@ -1,0 +1,9 @@
+Script started on Mon Jul 27 15:53:04 2015
+[simplici:C/cprograms/Basics] poudel% ls
+a.out		basics.c~	bhishan.txt	somefile.txt
+basics.c	basics.txt	multipleLIne.c	typescript
+[simplici:C/cprograms/Basics] poudel% echo "Hello"
+Hello
+[simplici:C/cprograms/Basics] poudel% ^Dexit
+
+Script done on Mon Jul 27 15:53:20 2015

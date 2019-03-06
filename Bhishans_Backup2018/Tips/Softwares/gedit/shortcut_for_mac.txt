@@ -1,0 +1,7 @@
+gedit shortcut for mac
+========================
+
+to create shortcut for open terminal here:
+1. tools>manage external tools > click on Opne terminal here 
+2. press combination on shortcut key > choose output nothing.
+3. restart gedit to see the effect.

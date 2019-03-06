@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=137-Ultra-RoadRage
+activeBackground=181,0,0
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=223,185,82
+background=167,0,0
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,253,249
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=30,30,30
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=12,1,1
+selectBackground=181,0,0
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=52,20,15
+windowBackground=223,188,91
+windowForeground=5,5,5

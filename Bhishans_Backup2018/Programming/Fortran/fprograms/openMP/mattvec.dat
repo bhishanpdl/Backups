@@ -1,0 +1,20 @@
+ # of processors =    4
+ # of threads =    1
+ 
+  m = 10000  n = 14000
+  Execute sequential code 
+ sum in sequential code =   0.700070D+12
+ wtime =   0.17228D+00
+ 
+  Execute parallel code 1 
+ sum in parallel code 2 =   0.700070D+12
+ wtime =   0.16910D+00,   percent improvment =   0.98156D+02
+ 
+  Execute parallel code 2 
+ sum in parallel code 2 =   0.700070D+12
+ wtime =   0.17298D+00,   percent improvment =   0.10041D+03
+ 
+  Execute parallel code 3 
+ sum in parallel code 2 =   0.700070D+12
+ wtime =   0.17275D+00,   percent improvment =   0.10027D+03
+ 

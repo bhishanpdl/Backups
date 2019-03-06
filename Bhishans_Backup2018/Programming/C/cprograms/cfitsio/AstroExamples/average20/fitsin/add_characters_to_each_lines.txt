@@ -1,0 +1,6 @@
+
+# add characters at the beginning of each line using AWK
+awk '{print "add_to_beginning"$0}' file
+
+
+awk '{print "fitsin/"$0}' out.txt > out2.txt; open out2.txt

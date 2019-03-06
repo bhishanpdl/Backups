@@ -1,0 +1,8 @@
+# Author    : Bhishan Poudel
+# Date      : 2016-06-09
+
+snippet for python extra extension pcat (for Phosim instance catalogs)
+===============================================================================
+pcat=Unrefracted_RA_deg 0\nUnrefracted_Dec_deg 0\nUnrefracted_Azimuth 0\nUnrefracted_Altitude 89\nSlalib_date 1994/7/19/0.298822999997\nOpsim_rotskypos 0\nOpsim_rottelpos 0\nOpsim_moondec -90\nOpsim_moonra 180\nOpsim_expmjd 49552.3\nOpsim_moonalt -90\nOpsim_sunalt -90\nOpsim_filter 2\nOpsim_dist2moon 180.0\nOpsim_moonphase 10.0\nOpsim_obshistid 99999999\nOpsim_rawseeing 0.65\nSIM_SEED 1000\nSIM_MINSOURCE 1\nSIM_TELCONFIG 0\nSIM_CAMCONFIG 1\nSIM_VISTIME 15000.0\nSIM_NSNAP 1\nobject 0 0.0 0.0 20 ../sky/sed_flat.txt 0 0 0 0 0 0 fb.fits 0.09 0.0 none
+
+icat=Unrefracted_RA_deg 0\nUnrefracted_Dec_deg 0\nUnrefracted_Azimuth 0\nUnrefracted_Altitude 89\nSlalib_date 1994/7/19/0.298822999997\nOpsim_rotskypos 0\nOpsim_rottelpos 0\nOpsim_moondec -90\nOpsim_moonra 180\nOpsim_expmjd 49552.3\nOpsim_moonalt -90\nOpsim_sunalt -90\nOpsim_filter 2\nOpsim_dist2moon 180.0\nOpsim_moonphase 10.0\nOpsim_obshistid 99999999\nOpsim_rawseeing 0.65\nSIM_SEED 1000\nSIM_MINSOURCE 1\nSIM_TELCONFIG 0\nSIM_CAMCONFIG 1\nSIM_VISTIME 15000.0\nSIM_NSNAP 1\nobject 0 0.0 0.0 20 ../sky/sed_flat.txt 0 0 0 0 0 0 fb.fits 0.09 0.0 none

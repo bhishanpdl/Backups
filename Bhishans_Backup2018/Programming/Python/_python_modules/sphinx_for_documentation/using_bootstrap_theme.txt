@@ -1,0 +1,19 @@
+# Author    : Bhishan Poudel
+# Date      : Jul 11, 2017 Tue
+
+Topic: Using bootstrap theme for sphinx 
+=========================================
+
+1. download and install
+https://github.com/ryan-roemer/sphinx-bootstrap-theme
+
+python setup.py install
+
+
+2. change rst/conf.py (originally source/conf.py)
+import sphinx_bootstrap_theme
+html_theme = 'bootstrap'
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+
+#html_theme_options = {'collapsiblesidebar': True}
+#html_style = 'custom.css'

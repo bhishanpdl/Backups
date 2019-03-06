@@ -1,0 +1,7 @@
+[build-menu]
+EX_00_LB=Execute
+EX_00_CM=pdflatex %e.tex; bibtex %e; pdflatex %e.tex; pdflatex %e.tex; rm %e.aux; rm %e.bbl; rm %e.blg; rm %e.log; rm %e.out; open %e.pdf
+EX_00_WD=
+EX_01_LB=View pdf
+EX_01_CM=open %e.pdf
+EX_01_WD=

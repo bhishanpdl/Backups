@@ -1,0 +1,15 @@
+Note: we dont have "open in terminal" option when we right click a folder in ubuntu
+=========================================================================
+To open the folder in terminal we should install a software:
+
+1.install the package from the universe repositories:
+====================================================
+
+sudo apt-get install nautilus-open-terminal
+
+2. to restart Nautilus
+======================
+
+nautilus -q  
+
+

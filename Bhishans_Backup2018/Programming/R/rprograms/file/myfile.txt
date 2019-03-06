@@ -1,0 +1,6 @@
+subject  sex  scores
+   N  1    M  113311
+   NE 2    F  112231
+   S  3    F  111221
+   W  4    M  011002
+

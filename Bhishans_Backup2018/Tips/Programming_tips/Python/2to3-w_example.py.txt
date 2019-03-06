@@ -1,0 +1,11 @@
+# Bhishan Poudel
+# Feb 8, 2016
+# https://docs.python.org/2/library/2to3.html
+
+To convert python2 to python3
+===============================
+cd to that directory
+2to3 -w example.py
+
+
+2to3 example.py # it shows differences

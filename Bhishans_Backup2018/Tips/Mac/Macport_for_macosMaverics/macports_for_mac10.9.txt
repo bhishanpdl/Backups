@@ -1,0 +1,12 @@
+Bhishan Poudel
+Feb 19, 2016
+
+To install Macports for macos 10.9 Maverics
+===============================================================================
+
+go to website
+https://www.macports.org/install.php
+
+download for OS X 10.9 Mavericks
+
+then install the installer file.

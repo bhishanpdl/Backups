@@ -1,0 +1,4 @@
+to convert non ASCII codes to ASCII codes:
+
+1. select the block of lines
+2. right click > file encoding > US ASCII

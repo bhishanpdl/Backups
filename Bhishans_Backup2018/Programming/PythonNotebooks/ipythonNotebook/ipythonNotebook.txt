@@ -1,0 +1,15 @@
+Bhishan Poudel
+Jan 11, 2016
+
+
+installing ipython notebook
+============================
+sudo -H pip install "ipython[notebook]"
+sudo -H pip install "ipython[notebook]"
+
+sudo -H pip3 install "ipython[notebook]"
+sudo -H pip3 install "ipython[notebook]"
+
+to run ipython notebook
+========================
+type ipython3 notebook in the terminal, we will see new page in web browser

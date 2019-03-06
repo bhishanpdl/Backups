@@ -1,0 +1,9 @@
+to change ubuntu themes
+==========================
+
+install tweak from software center
+
+search theme in the dash menu (super key)
+open tweak tool application
+
+apperance<themes

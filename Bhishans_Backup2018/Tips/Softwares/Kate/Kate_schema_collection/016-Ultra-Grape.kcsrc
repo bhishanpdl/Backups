@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=016-Ultra-Grape
+activeBackground=67,53,71
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=126,104,132
+background=67,53,71
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=67,53,71
+inactiveBlend=30,30,30
+inactiveForeground=193,193,193
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=39,32,41
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=131,108,137
+windowForeground=0,0,0

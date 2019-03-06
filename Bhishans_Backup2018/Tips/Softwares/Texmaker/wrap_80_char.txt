@@ -1,0 +1,7 @@
+# Author  : Bhishan Poudel
+# Date    : Apr 22, 2016
+
+To make sentence lenght 80 characters in Texmaker
+===============================================================================
+select all the text
+User > Run Scripts > hardwordwrap_selection_80col

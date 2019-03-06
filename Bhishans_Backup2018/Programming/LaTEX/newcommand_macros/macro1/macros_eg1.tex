@@ -1,0 +1,17 @@
+\documentclass{article}
+\newcommand{\testIt}[1][A text that can be changed locally\ldots]{The value passed to \texttt{testIt} is : ``#1''.}
+
+
+\begin{document}
+
+% The default behavior.
+\testIt
+
+% Here I would like to change the definition of `\someSpecialText`
+% or anywhere else in the document.
+\testIt[A text that \textit{was} changed locally\ldots]
+
+% The default behavior.
+\testIt
+
+\end{document}

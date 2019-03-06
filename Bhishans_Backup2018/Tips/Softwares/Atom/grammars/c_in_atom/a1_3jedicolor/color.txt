@@ -1,0 +1,1 @@
+in1.fits  in2.fits  output.fits

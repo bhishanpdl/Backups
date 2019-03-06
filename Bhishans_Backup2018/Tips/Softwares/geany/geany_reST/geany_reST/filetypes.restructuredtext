@@ -1,0 +1,64 @@
+# Author  : Bhishan Poudel
+# Date    : June 9, 2016
+# Version : 1.0
+     
+
+[styling]
+# red bad  = error string_eol line_removed
+# red good = string string_2 preprocessor
+# red bold = brace_bad
+#
+# blue    = function line_changed
+# blue bold = keyword_2
+# blue sel  = selection current_line
+#
+# greenish = number line_added
+# greenish bold = keyword
+# greenish bold2 = type
+# 
+# gray = margin_line_number white_space comment comment_doc
+# gray sel = margin_folding indent_guide
+#
+# whitish bold = brace_good
+# yellow sel = marker_search
+# yellow bad = caret
+# complete dark = fold_symbol_highlight
+# nothing = marker_line marker_mark call_tips operator other
+default=default
+comment=comment_line
+function=type
+variable=keyword_1,bold
+label=string
+userdefined=function, bold 
+
+
+[keywords]
+# all items must be in one line
+
+functions=contents toctree automodule
+variables=depth maxdepth
+lables=note warning todo
+userdefined=
+   
+
+[lexer_properties]
+nsis.uservars=1
+nsis.ignorecase=0
+   
+
+[settings]
+extension=rst
+comment_single=..\s
+comment_use_indent=true
+wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+whitespace_chars=\s\t!\"#$%&'()*+,-./:;<=>?@[\\]^`{|}~
+
+# lexer filetype should be an existing lexer that does not use lexer_filetype itself
+mime_type=text/x-markdown
+lexer_filetype=NSIS
+     
+
+[build-menu]
+EX_00_LB=_Execute
+EX_00_CM=pandoc -o %e.pdf %e.rst && open %e.pdf
+EX_00_WD=

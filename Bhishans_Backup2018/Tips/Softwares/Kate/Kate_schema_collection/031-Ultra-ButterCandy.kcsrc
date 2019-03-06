@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=031-Ultra-ButterCandy
+activeBackground=157,81,31
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=194,163,79
+background=144,68,18
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,253,249
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=144,68,18
+inactiveBlend=30,30,30
+inactiveForeground=174,174,174
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=12,1,1
+selectBackground=155,76,40
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=52,20,15
+windowBackground=202,170,82
+windowForeground=5,5,5

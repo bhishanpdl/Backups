@@ -1,0 +1,178 @@
+A. Edit pre installed packages
+===============================
+Note: 77 packages are core packages pre-installed.
+To install from file:
+    apm install --packages-file my_atom_packages.txt
+To save installed packages to file:
+  apm list --installed --bare | grep '^[^@]\+' -o > my_atom_packages.txt
+
+
+a. edit core package autocomplete-plus
+   settings: choose only tab for auto-complete, not the enter
+
+b. for language python
+   settings: select auto indent on paste
+
+B. Install Some Themes
+========================
+a. genesis-ui is the best
+
+C. Disable Some Core Packages
+=============================
+autocomplete-css
+autocomplete-html
+autocomplete-closure
+language-css
+language-go
+language-html
+language-less
+language-make
+language-objective-c
+language-perl
+language-ruby
+language-sass
+language-sql
+language-toml
+language-xml
+language-yaml
+
+D. Edit editor configuration
+==============================
+ctrl sh p (preferences)
+editor setting:
+enable: show indentation guide
+enable: scroll past end
+enable: soft wrap
+tab length: 4
+
+
+
+E. Install Community Packages
+==============================
+script # Atom is incomplete without script
+
+
+example:
+#!/usr/bin/env python3
+print(sys.version)
+
+ctrl shf b gives 2.7 or 3.5 according to shebang.
+
+
+
+F. Python
+=================================
+autocomplete-python
+linter-pep8
+python-autopep8
+python-indent  # automatically indent when enter
+python-jedi
+python-tools needs python-jedi
+python-debugger
+
+# did not worked: python-isort # organize imports
+
+G. Julia
+=================================
+language-julia
+
+ink,julia-clinet,juno   # NOT NEEDED
+script can run julia codes.
+
+H. Markdown
+=================================
+markdown-preview-plus  # do not disable markdown preview, markdown-pdf needs it.
+markdown-writer
+linter-markdown
+toolbar-markdown-writer # left panel toolbar (this is good)
+tidy-markdown # THIS WILL CAUSE PROBLEM for Script-runner
+
+
+I. git
+=================================
+git-plus
+merge-conflicts
+git-time-machine
+git-control
+tree-view-git-status
+tree-view-git-branch
+git-log
+git-diff-details
+git-status
+
+J. Minimap
+=================================
+minimap
+minimap-highlight-selected
+
+J. Terminal
+=================================
+term3 # others are not required even though higher downloads
+
+
+J. Toolbars
+=================================
+browser-plus # flex-tool-bar needs it. (gives error in macos)
+tool-bar # right click go to tool-bar and choose position left
+tool-bar-almighty
+awesome-tool-bar  # needs many packages ask-stack,atom-beautify,recent-finder
+flex-tool-bar
+
+K. Autocomplete
+=========================================
+autocomplete
+autocomplete-modules
+latex-autocomplete
+autocomplete-bibtex
+
+K. Text edit
+=========================================
+highlight-selected
+comment
+insert-timestamp            # not needed in linux
+insert-numerical-series     # not needed in linux
+simple-drag-drop-text
+toggle-quotes
+
+
+
+L. Some Useful Community Packages
+==============================
+
+file-icons
+pandoc-convert
+atom-save-all
+advanced-open-files
+opened-files
+open-recent
+open-in-browser
+synced-sidebar             # it is not working good IDK why?
+recent-files-fuzzy-finder
+
+Latex (Use Texmaker for latex, not atom!)
+===========================================
+Do not install any
+language-latex
+latex
+latexer
+latextools
+pdf-view
+latex-autocomplete
+preview-inline
+
+
+Disable or uninstall and do note add opening time:
+==================================================
+ink,julia-clinet,juno   # NOT NEEDED, scipt is sufficient
+open-in-browser    # good for only html
+browser-plus       # gives installation error
+comment-timestamp  # not needed
+markdown-toolbar   # NEVER INSTALL THIS, gives very bad error
+script-runner      # not required
+project-manager    # this is for git users
+markdown pdf       # has dependencies on tree-view and markdown-preview.
+                   # does not indent lists, it is not good
+markdown-themeable-pdf # needs markdown-pdf
+markdown toc       # not needed
+to-do show         # don't need now
+tidy-markdown      # THIS WILL CAUSE PROBLEM for Script-runner

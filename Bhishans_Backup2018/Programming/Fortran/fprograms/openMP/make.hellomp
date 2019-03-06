@@ -1,0 +1,13 @@
+FFOPTS = -c -xopenmp=parallel
+
+.SUFFIXES: .o .f90
+
+OBJS   = hello.o
+
+#-----------------------------------------------------------------------------------
+
+hello : $(OBJS)
+	f95 -o hello $(OBJS)
+
+hello.o : hello.f90
+	f95 $(FFOPTS) hello.f90

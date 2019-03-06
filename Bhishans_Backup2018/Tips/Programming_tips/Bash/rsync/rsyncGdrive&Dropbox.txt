@@ -1,0 +1,55 @@
+Bhishan Poudel
+Feb 2, 2016
+
+Rsync examples
+==================
+
+copy and delete unmatched file in destination
+================================================
+
+rsync -azv --delete ~/Google\ Drive/2016Spring/Nuclear/NuclearHW ~/Dropbox
+
+rsync -azv --delete ~/Google\ Drive/2016Spring/generalRelativity/GRHomeworks ~/Dropbox
+
+rsync -azv --delete ~/Google\ Drive/Programming/R/rprograms ~/Dropbox
+
+
+
+Crontab examples
+=========================
+method 1: using text file
+
+create a text file eg. mycrontab.txt and cd to that path
+then, crontab mycrontab.txt
+
+
+
+
+
+method 2: using vim editor
+================================================================================
+crontab -e       opens vim editor
+i                insert mode
+copy and paste these lines
+
+*/15 * * * * rsync -azv --delete ~/Google Drive/2016Spring/Nuclear/NuclearHW ~/Dropbox
+
+*/15 * * * * rsync -azv --delete ~/Google Drive/2016Spring/generalRelativity/GRHomeworks ~/Dropbox
+
+*/15 * * * * rsync -azv --delete ~/Google Drive/Programming/R/rprograms ~/Dropbox
+
+
+esc      to go to command mode
+:w       to write the text 
+:q       to quit the vim editor
+
+crontab: installing new crontab      we see this notification in the terminal
+
+To see cron jobs
+===================
+crontab -l
+
+
+To delete all crontab jobs
+============================
+crontab -r

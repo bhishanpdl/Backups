@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=086-Ultra-AClockworkOrange
+activeBackground=199,86,20
+activeBlend=199,86,20
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=255,255,255
+background=199,86,20
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,253,213
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=148,63,14
+inactiveBlend=199,86,20
+inactiveForeground=48,21,5
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,17,17
+selectBackground=248,154,23
+selectForeground=12,12,12
+shadeSortColumn=true
+visitedLinkColor=172,67,51
+windowBackground=255,255,255
+windowForeground=5,5,5

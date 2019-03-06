@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=056-Ultra-SilverSmoke
+activeBackground=102,109,117
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=115,120,131
+background=113,120,129
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=113,120,129
+inactiveBlend=30,30,30
+inactiveForeground=61,61,61
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=111,117,124
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=120,126,137
+windowForeground=255,255,255

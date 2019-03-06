@@ -1,0 +1,10 @@
+problem in office mac computer
+==============================
+when i type python in the terminal it may says:
+ImportError: No module named site
+
+solution:
+unsetenv PYTHONHOME; unsetenv PYTHONPATH
+
+
+

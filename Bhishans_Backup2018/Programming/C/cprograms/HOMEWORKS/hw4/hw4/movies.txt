@@ -1,0 +1,5 @@
+Jurassic_World 		Colin_Trevorrow 	Chris_Pratt  			Action_Adventure 	7.5 	124
+The_Martian 		Ridley_Scott 		Kate_Mara  			Action_Adventure 	5.5 	125
+Spy 			Paul_Feig 		Melissa_McCarthy  		Action_Comedy 		7.6 	125
+Kingsman 		Matthew_Vaughn 		Colin_Firth 			Action_Adventure 	7.9 	129
+Interstellar 		Christopher_Nolan 	Matthew_McConaughey  		Adventure_Sci-Fi 	8.7 	169

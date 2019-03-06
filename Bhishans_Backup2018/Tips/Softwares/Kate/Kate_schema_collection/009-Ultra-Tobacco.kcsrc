@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=009-Ultra-Tobacco
+activeBackground=61,69,60
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=62,69,60
+background=61,69,60
+buttonBackground=0,0,0
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=30,30,30
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=74,116,98
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=49,55,48
+windowForeground=255,255,255

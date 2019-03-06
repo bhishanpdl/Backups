@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1435542403 source:c:\users\poudel\copy\programming\c\programs\separatecompilation\codeblock\marina\sortwarranty.c
+
+1435543682 source:c:\users\poudel\copy\programming\c\programs\separatecompilation\codeblock\marina\marina.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1435542433 source:c:\users\poudel\copy\programming\c\programs\separatecompilation\codeblock\marina\search.c
+
+1435543307 source:c:\users\poudel\copy\programming\c\programs\separatecompilation\codeblock\marina\sortname.c
+

@@ -1,0 +1,6 @@
+to install synaptic manager in ubuntu
+=====================================
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install synaptic
+

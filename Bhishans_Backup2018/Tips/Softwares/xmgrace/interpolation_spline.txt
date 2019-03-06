@@ -1,0 +1,12 @@
+to interpolate the given data
+=============================
+1. load the data, eg. crossX2.dat 
+2. Data > Transformation > Interpolation/Spline
+   choose data set
+   double click it to get start and end values
+   click method, and change to Cubic Spline
+   give values to Start,Stop,and Length
+   click apply and accept.
+   
+   we will see new plot
+   click that plot to see interpolated values

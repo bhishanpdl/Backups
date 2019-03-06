@@ -1,0 +1,6 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 28, 2016
+# Topic   : customizing matplotlibrc (matplotlib options, reason: Overflow error for fill_between in linux)
+
+===============================================================================
+Note: i have created ~/.matplotlib/matplotlibrc  ( i can delete that any time)

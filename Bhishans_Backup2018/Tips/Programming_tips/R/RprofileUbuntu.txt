@@ -1,0 +1,45 @@
+#!/usr/bin/Rscript
+# 
+# Bhishan Poudel
+# Jan 5, 2016
+
+################################################################################
+# Function to set the current directory as the working directory
+set_default_wd <- function(wd = getwd(), overwrite = FALSE) {
+  text <- paste0(
+    'local({ setwd("', wd, '") })')
+  ##
+  if (Sys.info()["sysname"] == "Windows") {
+    write(
+      text,
+      file = paste0(Sys.getenv("HOME"), "\\.Rprofile"),
+      append = !overwrite)
+    } else {
+      write(
+        text,
+        file = paste0(Sys.getenv("HOME"), "/.Rprofile"),
+        append = !overwrite)
+      }
+    }
+################################################################################    
+    
+      # for plotly account
+  Sys.setenv("plotly_username"="bhishanpdl")
+  Sys.setenv("plotly_api_key"="amq1tpxuig")
+  
+################################################################################  
+    # for rstudio addins
+  #' Insert texts.
+  #'
+  #' Call this function as an addin to insert at the cursor position.
+  #'
+  #' @export
+shebang <- function() {
+    rstudioapi::insertText("#!/usr/bin/Rscript \n")
+    rstudioapi::insertText("# Bhishan Poudel \n")
+    rstudioapi::insertText("#  \n")
+    rstudioapi::insertText("\n\n")
+    rstudioapi::insertText("# setting working directory  \n")
+    rstudioapi::insertText("set_default_wd()  \n")
+  }
+################################################################################

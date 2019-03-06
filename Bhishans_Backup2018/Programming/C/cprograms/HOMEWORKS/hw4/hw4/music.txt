@@ -1,0 +1,6 @@
+Counting_Stars  OneRepublic 	5.30 	2.5
+Timber		Pitbull  	7.19 	2.0
+Let_Her_Go	Passenger 	6.45 	3.0
+Dark_Horse	Katy_Perry	7.12 	3.0
+Pompeii		Bastille 	4.14 	2.0
+

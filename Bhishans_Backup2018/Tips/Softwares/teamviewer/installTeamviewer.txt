@@ -1,0 +1,12 @@
+bhishan tips:
+to install teamviewer on ubuntu 14.04 64 bit
+=================================================
+
+1. download tar file from official site
+website: https://www.teamviewer.com/en/download/linux.aspx
+
+download file:   Download deb v10.0.41499 	  	32-Bit / 64-Bit Multiarch
+
+2. go to Downloads
+double click the file
+repair and install

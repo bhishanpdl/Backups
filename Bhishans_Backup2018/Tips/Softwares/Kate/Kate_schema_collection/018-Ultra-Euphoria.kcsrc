@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=018-Ultra-Euphoria
+activeBackground=17,32,168
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=255,255,255
+background=17,32,168
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=17,32,168
+inactiveBlend=30,30,30
+inactiveForeground=15,15,15
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=17,32,168
+selectBackground=31,46,182
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=17,32,168
+windowBackground=255,255,255
+windowForeground=5,5,5

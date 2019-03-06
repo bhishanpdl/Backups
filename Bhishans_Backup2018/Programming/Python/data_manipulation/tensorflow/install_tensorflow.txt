@@ -1,0 +1,33 @@
+Date: May 8, 2017
+To install tensorflow on MacOS 10.9
+=====================================
+Note: 
+Attempt 1:
+(sudo or not) pip3 install -U tensorflow # does not work
+
+Attempt 2:
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.0-py2-none-any.whl
+
+sudo -H pip3 install --upgrade $TF_BINARY_URL
+fails with note that this platform does not support this version.
+
+Correct way:
+=============
+First check the latest version from
+https://www.tensorflow.org/versions/
+
+On May 8, 2017 I found latest version is 1.1
+
+python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.1.0-py3-none-any.whl
+
+
+To see the installed version of tensorflow:
+===========================================
+python -c 'import tensorflow as tf; print(tf.__version__)'
+
+Caveat:
+========
+For some reasons tensorflow is not running in python3 console in my terminal, 
+however, it runs well in geany text editor.
+I am having problems with library statsmodels in jupyter-notebook, so I am 
+discontinuing using it. For now geany is best for me. Atom is good but too heavy, takes infinite time to load and execute and also hangs many times. Just go with geany.

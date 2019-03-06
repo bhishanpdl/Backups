@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=106-Ultra-Krill
+activeBackground=65,87,101
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=72,93,106
+background=60,81,94
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=251,252,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=65,87,101
+inactiveBlend=30,30,30
+inactiveForeground=255,255,255
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=24,227,27
+selectBackground=89,120,139
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=12,167,51
+windowBackground=78,100,114
+windowForeground=255,255,255

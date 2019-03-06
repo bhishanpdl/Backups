@@ -1,0 +1,26 @@
+To install color themes(.xml files) in PyCharm in MacOS
+==================================================
+
+1. download some .xml color theme files for python
+   eg. https://gist.github.com/brianly/1622286
+   download zip
+   it is downloaded into ~/Copy/myDownloads/
+   double click it to unzip
+   copy Solarized Dark.xml to myDownloads
+   
+   rename it as Solarized_Dark.icls           ONLY ICLS FILES ARE USED AS THEMES IN PYCHARM
+   
+   
+2. cd to /Users/poudel/Library/Preferences/PyCharm40/colors
+
+   pwd is /Users/poudel/Library/Preferences/PyCharm40/colors
+
+3. cp theme file to here ( . means here)
+   cp ~/Copy/myDownloads/Solarized_Dark.xml . 
+   
+   
+   
+   
+for linux
+==============
+copy .icls file to ~/.PyCharm10/config/color/

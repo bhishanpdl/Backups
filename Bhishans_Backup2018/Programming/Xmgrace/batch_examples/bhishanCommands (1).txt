@@ -1,0 +1,1 @@
+xmgrace a.dat  -nosafe -hardcopy -printfile "fig.png" -hdevice PNG

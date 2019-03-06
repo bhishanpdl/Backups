@@ -1,0 +1,39 @@
+% Author : Bhishan Poudel
+% Date   : Apr 11, 2016
+% Ref    : https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
+
+
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.5in, right=1.0in}
+\usepackage{flafter} % make sure figures do not appear before their text
+\usepackage{sidecap} % use side captions for floats
+\usepackage{subfig} % subfloats
+
+\title{}
+\author{Bhishan Poudel}
+\date{\today}
+\author{Bhishan Poudel}
+\begin{document}
+
+%\title{}
+%\tableofcontents
+%\listoffigures
+
+\section{Chapter 1}
+
+%%%%%%%%%% figure environment start %%%%%%%%%%%%%%%%%
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale = 0.5]{images/fig1.eps}
+\caption{Deflection of light by a spherical massive body}
+\label{fig1}
+\end{figure}
+%%%%%%%%%% figure environment end %%%%%%%%%%%%%%%%%
+See figure ~\ref{fig1} on page~\pageref{fig1}.\\
+You have to compile your document twice to see the proper output. If you compile it only once, LaTeX will use the older information it collected in previous compilations.
+
+
+\end{document}

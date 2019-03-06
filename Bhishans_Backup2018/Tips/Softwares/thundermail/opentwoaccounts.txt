@@ -1,0 +1,28 @@
+# Bhishan Poudel
+# Date: Nov 29, 2015 Sun
+
+
+open thunder mail
+edit > account settings
+Account actions > add new account
+
+name: bp959314
+email: bp959314@ohio.edu
+ 
+ 
+click on POP3
+click Manual config
+
+now go to ohio email settings page:
+https://www.ohio.edu/oit/email/mobile.cfm
+
+server is outlook.office365.com
+
+change: incoming and outgoing both equal to :
+        outlook.office365.com
+        
+choose: port auto
+
+
+initially it doesnot shows any emails,
+wait some minutes, it will work

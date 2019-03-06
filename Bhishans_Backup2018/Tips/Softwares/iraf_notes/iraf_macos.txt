@@ -1,0 +1,10 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 21, 2016
+
+Iraf installation on macos
+===============================================================================
+I have already downloaded iraf on root directory /
+
+cd /iraf.v2161
+make
+sudo -H ./install

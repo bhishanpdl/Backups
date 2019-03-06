@@ -1,0 +1,6 @@
+to get the current username
+=============================
+1. whoami
+2. echo $(logname) (note: good option)
+3. echo $USER  also, echo HOME
+4. id -un  (note: whoami is not standard)

@@ -1,0 +1,15 @@
+Bhishan Poudel
+Jan 20, 2016
+
+to execute R script in geany text editor
+===============================================
+1. open a r script (eg. hello.r)in geany
+
+2. go to Build> Set Build Commands
+
+3. edit Compile Output file and Last fields
+
+Compile Output file:   Rscript             (type it)
+
+Execute:  Rscript %e.r                      (type Execute and in the box type gnuplot %e.r)
+          Rscript %e.R

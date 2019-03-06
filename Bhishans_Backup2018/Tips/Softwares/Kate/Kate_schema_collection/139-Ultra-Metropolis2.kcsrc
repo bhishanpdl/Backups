@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=139-Ultra-Metropolis2
+activeBackground=36,35,29
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=213,206,213
+background=35,104,172
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=235,235,235
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=124,124,124
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=164,154,141
+selectBackground=157,167,149
+selectForeground=21,26,34
+shadeSortColumn=true
+visitedLinkColor=92,92,89
+windowBackground=213,206,213
+windowForeground=0,0,0

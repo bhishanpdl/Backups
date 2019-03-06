@@ -1,0 +1,103 @@
+# cs means c-Shell
+# rc menas run command
+# to source new aliases:
+# source ~/.cshrc
+
+# how to go to c sh rc
+#======================
+# cd to home directory
+# open terminal, type open .cshrc
+
+
+
+# shortcut for sourcing
+#==============================
+
+alias ss 'source ~/.cshrc'
+
+# programs
+#==============================
+alias py 'python'
+alias gf 'gfortran'
+alias gff 'gfortran -Wall'
+
+#open folders
+#===================
+alias o 'open .'
+alias o.. 'open ..'
+
+
+# open my local folders
+alias dwn 'open ~/Downloads'
+alias mydwn 'open ~/Copy/myDownloads'
+alias ltk 'open ~/Copy/Programming/LaTEX'
+alias dtry 'open ~/Google\ Drive/datatry/jedisim5'
+alias fprog 'open ~/Copy/Programming/Fortran/fprograms'
+alias cprog 'open ~/Copy/Programming/C/cprograms'
+alias pyprog 'open ~/Copy/Programming/Python/pyprograms'
+
+
+# cd to directories
+#=========================
+alias cddwn 'cd ~/Downloads'
+alias cdmydwn 'cd ~/Copy/myDownloads'
+alias cdltk 'cd ~/Copy/Programming/LaTEX'
+alias cddtry 'cd ~/Google\ Drive/datatry/jedisim5'
+alias cdc 'cd ~/Copy/Fall2015/Computn/Homeworks/Bhishan'
+alias cdf 'cd ~/Copy/Programming/Fortran/fprograms'
+alias cdc 'cd ~/Copy/Programming/C/cprograms'
+alias cdr 'cd ~/Copy/Programming/R/rprograms'
+alias cdp 'cd ~/Copy/Programming/Python/pyprograms'
+alias cdpy 'cd ~/Copy/Programming/Python/pyprograms'
+
+
+alias cp 'cp -iv'     # interactive, verbose
+alias rm 'rm -i'      # interactive
+alias mv 'mv -iv'     # interactive, verbose
+alias grep 'grep -i'  # ignore case
+
+# clear and close things
+#================================
+alias c 'clear'
+alias x 'exit'
+alias cls 'clear;ls'
+alias hcl 'history -c; clear'
+alias ll 'ls -alF'
+alias rm 'rm -I'
+alias cp 'cp -I'
+
+# some other aliases
+#==========================
+
+alias h 'history'
+alias bigfive 'find . -type f -exec ls -s {} \; | sort -n -r | head -5'
+
+
+# internet
+alias ggl 'open http://google.com'
+
+
+
+# making directories
+alias md 'mkdir'
+alias pr 'cd -'
+alias rd 'rmdir -i'
+alias rm 'rm -i'
+
+
+# going up directories
+#======================
+alias .. 'cd ..'
+alias ... 'cd ../../'
+alias .... 'cd ../../../'
+alias cd.. 'cd ..'
+alias .. 'cd ..'
+alias ... 'cd ../../../'
+alias .... 'cd ../../../../'
+alias ..... 'cd ../../../../'
+alias .4 'cd ../../../../'
+alias .5 'cd ../../../../..'
+
+#4: Start calculator with math support
+ 
+alias bc 'bc -l'

@@ -1,0 +1,5 @@
+To know how to use sed, you should understand regular expressions
+("regexp" for short). A regular expression is a pattern that is matched
+against a subject string from left to right. Most characters are ordinary:
+they stand for themselves in a pattern, and match the corresponding characters
+in the subject. As a simple example, the pattern

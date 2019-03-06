@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=210-Ultra-AntiqueOrange3
+activeBackground=172,109,74
+activeBlend=55,63,77
+activeForeground=255,246,230
+activeTitleBtnBg=255,255,255
+alternateBackground=159,100,69
+background=220,155,117
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=1,1,1
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=124,124,124
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=239,255,234
+selectBackground=223,187,163
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=172,109,74
+windowForeground=22,22,22

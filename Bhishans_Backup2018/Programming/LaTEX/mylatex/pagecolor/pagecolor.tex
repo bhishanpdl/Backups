@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage{lipsum}% for auto generating text
+\usepackage{afterpage}% for "\afterpage"
+\usepackage{xcolor}
+\usepackage{pagecolor}% With option pagecolor={somecolor or none}
+% you can set a page colour here.
+% "none" is the default, but if \nopagecolor is not available, "white" will be used.
+\begin{document}
+\lipsum[1-12]
+\newpagecolor{yellow}\afterpage{\restorepagecolor}
+\lipsum[22-30]
+\end{document}

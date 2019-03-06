@@ -1,0 +1,23 @@
+# Author    : Bhishan Poudel
+# Date      : Jul 19, 2017 Wed
+
+Numpy update error for python 2.7.5
+======================================
+
+When trying to install pandas on python I got the error.
+
+your numpy version is 1.6.2.
+Please upgrade numpy to >= 1.7.0 to use this pandas version.
+
+But pip2 install -U numpy fails.
+
+
+To get out of this error
+=========================
+Download latest version of python2 (2.7.13) installer file and install it.
+Then python is automatically aliased with pyhton2.7.13.
+
+
+python --version =  Python 2.7.13
+python2 --version = Python 2.7.13
+python3 --version = Python 3.6.2

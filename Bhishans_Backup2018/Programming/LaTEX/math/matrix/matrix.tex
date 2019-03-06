@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Matrices}
+\author{Bhishan Poudel}
+\date{Oct 18, 2015}
+
+\begin{document}
+\maketitle
+
+Example one: pmatrix is for parenthesis\\
+This needs amsmath.
+\begin{verbatim}
+\begin{math} \end{math} or  $ $ or \(  \) are inline math mode.
+\begin{displaymath} \end{displaymath} or  $$ $$ or \[  \] are display math mode.
+
+Suggestion: Using the $$...$$ should be avoided, as it may cause problems, 
+particularly with the AMS-LaTeX macros. Furthermore, should a problem occur, 
+the error messages may not be helpful.
+
+\end{verbatim}
+$$
+\begin{pmatrix}
+a&b\\
+c&d\\
+e&f\\
+\end{pmatrix}
+$$
+
+Example two:\\
+\[
+M=
+  \begin{bmatrix}
+    1 & 2 & 3 & 4 & 5 \\
+    3 & 4 & 5 & 6 & 7
+  \end{bmatrix}
+\]
+
+Example three with fractions:\\
+\[
+M = \begin{pmatrix}
+       \frac{5}{6} & \frac{1}{6} & 0           \\[0.3em]
+       \frac{5}{6} & 0           & \frac{1}{6} \\[0.3em]
+       0           & \frac{5}{6} & \frac{1}{6}
+     \end{pmatrix}
+\]
+
+Exaple four with border:\\
+\[
+M = \bordermatrix{~ & x & y \cr
+                  A & 1 & 0 \cr
+                  B & 0 & 1 \cr}
+\]
+
+\[
+A_{m,n} = 
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{pmatrix}
+\]
+
+Example five:\\
+	The given matrix is :\\
+    \begin{displaymath}
+      A=
+  		\begin{pmatrix}
+    			4 & -2 & 1 \\
+    			3 &  6 & -4 \\
+    			2 &  1 &  8 
+  		\end{pmatrix}
+	\end{displaymath}
+	The inverse of matrix $A$ is:\\
+	\begin{displaymath}
+	 A^{-1} = \frac{1}{263} 	      
+  		\begin{pmatrix}
+    			52 & 17 & 2 \\
+    		   -32 & 30 & 19 \\
+    		   -9  & -8 & 30 
+  		\end{pmatrix}
+	\end{displaymath}
+
+\end{document}

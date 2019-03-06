@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{scalerel}
+
+
+\def\stretchint#1{\vcenter{\hbox{\stretchto[220]{\displaystyle\int}{#1}}}}
+\def\scaleint#1{\vcenter{\hbox{\scaleto[3ex]{\displaystyle\int}{#1}}}}
+\def\bs{\!\!}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\section{Example 1}
+
+
+\def\x{\frac{a}{c}dP}  % define the variable x = a/c dP
+
+\verb|\stretchto| with aspect ratio limit of 2.2\par  % first sentence
+
+\def\bs{\!\!\!\!}      % define variable bs = 4 spaces
+
+\[
+\int_a^b\x                          % first integral (~ is whitespace)
+~~ {\stretchint{7ex}}_{\bs a}^b\x   % second integral
+~~ {\stretchint{9ex}}_{\bs a}^b\x   % third integral
+\]
+\par{}
+
+
+\verb|\scaleto| with width limit of 3ex\par  % third sentence
+\def\bs{\!\!\!\!\!}
+
+\[
+\int_a^b\x ~~ {\scaleint{7ex}}_{\bs a}^b\x ~~ {\scaleint{9ex}}_{\bs a}^b\x
+\]
+
+% example 2
+\section{Example 2}
+$ \mu_{x_{t}} = E(x_{t}) = \int_{a}^{b} $                  % math mode
+\[ \mu_{x_{t}} = E(x_{t}) = \int_{a}^{b} \]                % displaymath mode
+$ \mu_{x_{t}} = E(x_{t}) = {\displaystyle \int_{a}^{b} } $ % both
+
+%% example 3
+\section{Example 3}
+\begin{itemize}
+    \item $ \mu_{x_{t}} = E(x_{t}) = \int_{a}^{b} $
+    \item $ \mu_{x_{t}} = E(x_{t}) = \int\limits_{a}^{b} $ % same
+    \item $ \mu_{x_{t}} = E(x_{t}) = \displaystyle\int_{a}^{b} $
+    \item $ \mu_{x_{t}} = E(x_{t}) = \displaystyle\int\limits_{a}^{b} $ % same
+\end{itemize}
+
+\end{document}

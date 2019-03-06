@@ -1,0 +1,47 @@
+to install library cfitsio in ubuntu 14.04 for 64 bit
+================================================================================
+ref: http://astr.tohoku.ac.jp/~akhlaghi/cfitsiowcslibinstall.html
+
+0. get root access
+sudo su
+
+
+1. download .tar file from this website:
+http://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
+
+
+
+2. create a folder,if necessary, called Software and save inside it
+   untar, and cd to that directory
+DO NOT INSTALL FROM DOWNLOADS, we need it again
+cd home/bhishan/Softwares/
+
+
+./configure --enable-sse2 --prefix=/usr/local --enable-reentrant 
+
+sudo make
+sudo make install
+
+to check the installation
+==================================
+make testprog
+./testprog > testprog.lis
+diff testprog.lis testprog.out
+cmp testprog.fit testprog.std
+
+
+if last two commands give no outputs you are fine to go.
+
+to compile the file
+===============================================
+gcc -o executableName filename.c -O2 -lcfitsio -lm -lpthread
+
+-lcfitsio is MUST
+-lm is optional math library
+-lpthread is for multithreading programs
+
+
+
+
+
+

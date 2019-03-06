@@ -1,0 +1,26 @@
+[Color Scheme]
+Name=NightBlack
+activeBackground=0,0,0
+activeBlend=255,255,255
+activeForeground=255,255,255
+activeTitleBtnBg=0,0,0
+alternateBackground=100,100,100
+background=50,50,50
+buttonBackground=100,100,100
+buttonForeground=250,249,248
+contrast=10
+foreground=255,255,255
+frame=50,50,50
+handle=50,50,50
+inactiveBackground=50,50,50
+inactiveBlend=50,50,50
+inactiveForeground=250,249,248
+inactiveFrame=50,50,50
+inactiveHandle=50,50,50
+inactiveTitleBtnBg=0,31,106
+linkColor=0,0,192
+selectBackground=106,106,106
+selectForeground=255,255,255
+visitedLinkColor=128,0,128
+windowBackground=75,75,75
+windowForeground=255,255,255

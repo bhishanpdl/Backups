@@ -1,0 +1,11 @@
+Bhishan Poudel
+Jan 20, 2016
+
+ipython interactive python interpreter tips
+=============================================
+
+to save the current session
+
+%save filename 1-5 22
+
+saves as filname.py the lines [1] to [5] and line [22]

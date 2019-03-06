@@ -1,0 +1,237 @@
+"*":
+  Zen:
+    gutter: true
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+    fuzzyMatch: true
+  "atom-clock":
+    dateFormat: "MM/DD/YYYY, h:mm a"
+    showTooltip: true
+  "atom-latex":
+    clean_after_build: true
+    file_ext_to_clean: "**/*.aux, **/*.aux.bak, **/*.bbl, **/*.bcf, **/*.blg, **/*.dvi, **/*.fdb_latexmk, **/*.fls, **/*.idx, **/*.idx.bak, **/*.ilg, **/*.ind, **/*.lof, **/*.log, **/*.lol, **/*.lot, **/*.nav, **/*.out, **/*.pdf, **/*.ps, **/*.snm, **/*.synctex.gz, **/*.toc, /**/_minted-{jobname}, /{output_dir}/sage-plots-for-{jobname}.tex, /missfont.log, /texput.log, /texput.aux, *.out, *.aux, *.acn, *.bbl, *.blg, *.fdb_latexmk, *.fls, *.glo, *.lof, *.lot, *.out, *.toc, *.xdy"
+    focus_viewer: true
+    preview_after_build: "View in PDF viewer tab"
+  "atom-shell-commands":
+    commands: [
+      {
+        name: "backup"
+        command: "cp"
+        arguments: [
+          "{FileName}"
+          "/Users/poudel/Dropbox/FileBackups/macpro_{FileNameNoExt}{FileExt}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-2"
+      }
+    ]
+  "atom-ternjs":
+    guess: false
+    snippetsFirst: true
+    sort: false
+    useSnippets: true
+    useSnippetsAndFunction: true
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+    fileBlacklist: [
+      "*.tex"
+    ]
+    minimumWordLength: 2
+  "autocomplete-python":
+    enableTouchBar: true
+    showTooltips: true
+    useKite: false
+  autosave:
+    enabled: true
+  break:
+    macroBreak:
+      duration: 1
+      enableNotifications: false
+    microBreak:
+      amount: 1
+      duration: 1
+      interval: 60
+  core:
+    disabledPackages: [
+      "autocomplete-css"
+      "language-clojure"
+      "language-csharp"
+      "language-css"
+      "language-go"
+      "language-java"
+      "language-javascript"
+      "language-less"
+      "language-mustache"
+      "language-objective-c"
+      "language-php"
+      "language-property-list"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sass"
+      "language-sql"
+      "language-xml"
+      "language-toml"
+      "metrics"
+      "welcome"
+      "markdown-preview"
+      "language-gfm"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "*.bcf"
+      "*.acn"
+      "*.aux"
+      "*.bbl"
+      "*.blg"
+      "*.fdb_latexmk"
+      "*.fls"
+      "*.glo"
+      "*.ist"
+      "*.listing"
+      "*.nav"
+      "*.out"
+      "*.run.xml"
+      "*.snm"
+      "*.toc"
+      "*.vrb"
+      "*.o"
+      "*.pyc"
+      ".synctex.gz"
+      ".bak"
+      ".sav"
+    ]
+    themes: [
+      "pristine-ui"
+      "one-dark-syntax"
+    ]
+  date:
+    dateFormat: "MMM D, YYYY"
+  editor:
+    atomicSoftTabs: false
+    fontSize: 15
+    showIndentGuide: true
+    showInvisibles: true
+    softTabs: false
+    softWrap: true
+  "exception-reporting":
+    userId: "9d1bbcf0-4744-4ee4-8fe2-24c3dddd6d02"
+  "language-markdown": {}
+  latex:
+    cleanPatterns: [
+      "**/*.aux"
+      "**/*.aux.bak"
+      "**/*.bbl"
+      "**/*.bcf"
+      "**/*.blg"
+      "**/*.dvi"
+      "**/*.fdb_latexmk"
+      "**/*.fls"
+      "**/*.idx"
+      "**/*.idx.bak"
+      "**/*.ilg"
+      "**/*.ind"
+      "**/*.lof"
+      "**/*.log"
+      "**/*.lol"
+      "**/*.lot"
+      "**/*.nav"
+      "**/*.out"
+      "**/*.pdf"
+      "**/*.ps"
+      "**/*.snm"
+      "**/*.synctex.gz"
+      "**/*.toc"
+      "/**/_minted-{jobname}"
+      "/{output_dir}/sage-plots-for-{jobname}.tex"
+      "/missfont.log"
+      "/texput.log"
+      "/texput.aux"
+      "*.out"
+      "*.aux"
+      "*.acn"
+      "*.bbl"
+      "*.blg"
+      "*.fdb_latexmk"
+      "*.fls"
+      "*.glo"
+      "*.lof"
+      "*.lot"
+      "*.out"
+      "*.toc"
+      "*.xdy"
+    ]
+    enableShellEscape: true
+    openResultAfterBuild: false
+    openResultInBackground: false
+    opener: "pdf-view"
+    producer: "dvipdf"
+  latexer:
+    autocomplete_environments: false
+  "linter-ui-default":
+    panelHeight: 69
+  "markdown-preview-enhanced":
+    enableExtendedTableSyntax: true
+    enableZenMode: true
+    mathRenderingOption: "MathJax"
+    openPreviewPaneAutomatically: false
+    pandocPath: "/usr/local/bin/pandoc"
+    usePandocParser: true
+  "pdf-view":
+    paneToUseInSynctex: "right"
+  pigments:
+    extendAutocompleteToColorValue: true
+    extendAutocompleteToVariables: true
+    sortPaletteColors: "by color"
+  "preview-inline":
+    imageBasePath: "figures"
+    previewMode: "all"
+  "rst-preview-pandoc":
+    pandocOpts: "-frst -thtml --webtex"
+  script:
+    cwdBehavior: "Directory of the script"
+  "spell-check":
+    addKnownWords: true
+    knownWords: [
+      "Bhishan Poudel"
+    ]
+    localePaths: [
+      "/opt/local/share/hunspell/"
+    ]
+    locales: [
+      "en-US"
+    ]
+  "tool-bar": {}
+  "tool-bar-almighty":
+    custom: "custom_entries.json"
+    override: true
+  "tree-view":
+    focusOnReveal: false
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
+    disableSSLCertVerify: true
+  whitespace:
+    removeTrailingWhitespace: false
+  wordcount:
+    alwaysOn: true
+    ignorecode: true
+    noextension: true
+".bibtex.text":
+  editor:
+    autoIndent: true
+".python.source":
+  editor:
+    autoIndentOnPaste: true
+".restructuredtext.text":
+  editor:
+    showInvisibles: false

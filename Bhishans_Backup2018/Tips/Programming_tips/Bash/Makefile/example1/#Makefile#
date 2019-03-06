@@ -1,0 +1,12 @@
+exec: \
+compile
+	./sourc
+
+compile: \
+source.c
+	gcc source.c -o source exec: \
+
+ compile: \
+ source.c
+	echo "compiling"
+	gcc source.c -o source

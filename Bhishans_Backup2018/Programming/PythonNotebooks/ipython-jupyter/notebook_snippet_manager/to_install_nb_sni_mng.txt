@@ -1,0 +1,16 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 12, 2017 Mon
+# Ref       :
+
+# Topic : To install notebook-snippet-manager extension
+
+1. download js files or git clone them
+2. 
+copy two files:
+list.py
+notebook-snippet-manager.js
+
+to ~/.ipython/nbextensions
+
+
+3. IT DID NOT WORK.

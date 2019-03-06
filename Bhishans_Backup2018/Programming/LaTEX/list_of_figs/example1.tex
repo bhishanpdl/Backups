@@ -1,0 +1,95 @@
+\documentclass[12pt, preprint,letterpaper]{article}
+\usepackage{epsfig}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\graphicspath{ {figures/} }
+%%for list of tables
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@caption}{\csname the#1\endcsname}{\csname fnum@#1\endcsname:}{}{}
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4.5em}} % default for 3rd arg: 2.3em
+\let\l@table\l@figure % as in article.cls
+\makeatother
+%% end list of tables
+
+% Begin of document
+\begin{document}
+\tableofcontents    
+\listoffigures
+\listoftables{}
+\newpage{}
+
+
+
+
+
+%
+%
+%#******************************************************************************
+%#==============================================================================
+%#          Section: 
+%#==============================================================================
+%#******************************************************************************
+%
+%
+\newpage
+\section{section1}\label{sec:}
+
+% fig
+%\begin{figure}[h]
+%\caption{A figure}
+%\centering xyz
+%\end{figure}
+
+
+% table
+%\begin{table}[h]
+%\caption{Some table}
+%\centering abc
+%\end{table}
+
+
+
+
+\begin{table}[h]
+\caption{Some table2}
+\vspace{5mm}
+\centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Start&Finish&Activity\\
+            \hline
+            Sep. 2016& March 2017 &  \\
+            \hline
+            April 2017 & Sep. 2017 &   \\
+            \hline
+            Sep. 2017 & March 2018 & Preparation of manuscripts for publication \\
+            \hline
+            March 2018 & Aug. 2018& Writing and defending the dissertation   \\
+            \hline
+            \end{tabular}
+\end{table}
+
+
+
+
+\section{Future Projects}\label{sec:sec2}
+ \begin{figure}[h!]
+ \centering
+  \includegraphics[width=0.5\textwidth]{convolve.png}
+ \caption{This is caption.}
+ \end{figure}
+\newpage{}
+
+
+
+
+% end document
+\end{document}

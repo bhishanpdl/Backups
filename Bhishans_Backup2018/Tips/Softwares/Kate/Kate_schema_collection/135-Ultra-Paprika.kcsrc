@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=135-Ultra-Paprika
+activeBackground=177,0,0
+activeBlend=130,32,10
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=234,108,36
+background=214,92,22
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=0,0,0
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=214,92,22
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,240,220
+selectBackground=99,0,0
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=231,232,224
+windowBackground=227,105,35
+windowForeground=0,0,0

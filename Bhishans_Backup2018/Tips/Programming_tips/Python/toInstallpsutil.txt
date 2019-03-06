@@ -1,0 +1,27 @@
+# Bhishan Poudel
+# Nov 19, 2015
+
+
+to install psutil in linux 14.6
+================================
+
+1. download latest psutil file from website:
+https://pypi.python.org/pypi/psutil/3.3.0
+
+2. go to donwload directory and untar the file
+
+3. read INSTALL.rst file 
+   sudo su 
+   sudo apt-get install gcc python-dev
+   python setup.py install
+   exit
+   
+4. viola! we are done
+
+to check
+=========
+python
+import psutil
+psutil.cpu_count()
+exit()
+

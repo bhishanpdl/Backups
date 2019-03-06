@@ -1,0 +1,6 @@
+# bhishan tips
+to find which version is installed
+=====================================
+
+python --version
+python 2.7.6

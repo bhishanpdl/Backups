@@ -1,0 +1,32 @@
+to format python source code
+================================
+
+# method 1
+open PyCharm 
+select all ( Ctrl + A )
+then, Ctrl + Alt + L to format all the code selected.
+
+# method 2
+sudo -H pip install autopep8
+autopep8 your_script.py    # dry-run, only print
+autopep8 -i your_script.py # replace content
+
+
+# method 3
+sudo -H pip install yapf
+yapf your_script.py    # dry-run, only print
+yapf -i your_script.py # replace content
+For more information, like formatting configurations, please read the README.rst on 
+https://github.com/google/yapf
+
+# method 4
+sudo -H pip install reindent
+reindent -n badScript.py
+
+
+or, download the file reindent.py and do like this:
+find . -type f -name "*.py" | xargs python reindent.py --nobackup
+
+find . -type f -name "badScript.py" | xargs python reindent.py --nobackup
+
+

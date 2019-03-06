@@ -1,0 +1,43 @@
+# Author    : Bhishan Poudel
+# Date      : Jul 05, 2016
+
+To run markdown:
+=================
+
+USING GEANY:
+pandoc -f markdown -t html %e.md > %e.html; pandoc %e.md -o %e.pdf; echo "output document ==> %e.pdf"
+
+
+md to pdf: pandoc -o %e.html %e.md; open %e.html
+md to html: pandoc --template=mytemplate.latex -o %e.pdf %e.md; open %e.pdf
+
+
+
+
+
+
+
+method2:
+using pandoc
+
+https://github.com/jgm/pandoc/releases/tag/1.17.1
+download osx package
+install it.
+
+check: which pandoc
+
+Then,
+convert md to html:
+pandoc -f markdown -t html README.md > README.html
+
+
+
+method 1:
+install markdown_editor
+sudo -H pip install markdown-editor
+
+
+then,
+$ markdown_edit
+$ markdown_edit README.md
+$ markdown_edit -f readme.html README.md

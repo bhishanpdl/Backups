@@ -1,0 +1,341 @@
+//git tutorial
+//ref: http://www.betterwaytoweb.com/how-to-use-github-a-tutorial-for-beginners/
+//
+//  A remote name, for example, origin
+//  A branch name, for example, master
+// The Three States: Working directory, staging area, and Git directory
+
+
+1. Create a GitHub account, and install Git.
+
+2. Create your user account on your local machine.
+   git config --global user.name "PutYourNameHere"
+   git config --global user.email "PutYour@Email.Here"
+   
+   to check config is already set up:
+   git config --list
+   
+3. Initialize a Repository
+   A repository is just a folder that stores 
+   all of the files associated with a project.
+   Create a new folder on your computer to use 
+   as your project's repository. 
+   In Git Bash, navigate to that folder 
+   using the "cd" command:
+   
+   cd "YourNewFolderHere"
+   ======================
+   git init
+   
+4. create a file in your local repo
+   touch readme.txt
+   
+5. read the status
+   git status
+6. commit the file you just created
+   git commit -m "added a file"
+   here m is message
+   
+7. now go to github website and create a new repo 
+   
+8.  Link your local Git repository with your 
+    GitHub repository
+    
+    git remote add new https://github.com/bhishanpdl/new.git
+    
+9.   Now, you can use this command to verify that 
+    Git recognizes your first repository:
+    
+    git remote -v
+    
+10. At this point, we should be able to push 
+    our files (just the readme.txt file) to 
+    the GitHub repo:
+    
+    git push new master
+    
+11. You can also use the full path to the 
+    remote repository:
+    
+    git push https://github.com/bhishanpdl/.git master
+    
+     then enter username and password
+     
+12. error: ! [rejected] master -> master 
+    (non-fast-forward)   
+    
+    solution:
+    
+
+    git pull https://github.com/bhishanpdl/new.git master
+
+    git push https://github.com/bhishanpdl/new.git master
+    
+13. 
+
+Rename branch using this command
+
+git branch -m [old_branch_name] [new_branch_name]
+
+-m : it rename/move the branch. It there already branch . You will have error.
+
+If there already branch and you want rename with that branch.
+
+ git rename -M [old_branch_name] [new_branch_name]
+
+for more information about help. use this command in terminal
+
+git branch --help 
+
+or
+
+man git branch
+
+14. 
+clone a specific branch
+==========================
+git clone -b my-branch https://git@github.com/username/myproject.git
+ or,
+ git clone -b branch --single-branch git://github/repository.git 
+ 
+15. to push from local to server
+note: we can add all c files as git add *.c
+create a folder in local
+
+git add .
+git commit -m "added a folder"
+git push origin master ( git push to origin from master branch in our local machine)
+
+16. Changing editor eg vim emacs etc
+===================================
+
+git help config
+git config --global core.editor emacs
+
+17. cloning examples
+=======================
+git clone https://github.com/libgit2/libgit2
+
+git clone https://github.com/libgit2/libgit2 mylibgit
+
+18. reading status
+==================
+git stauts -s
+
+git diff --cached
+
+19. to see difference in what is still unstaged
+============================================
+git diff
+
+20. removing files
+===================
+git rm PROJECTS.md
+git rm --cached README
+git rm \*~         ( This command removes all files that end with ~ )
+
+21. to see the history (ie log)
+===================================
+git log
+
+git log -p -2    ( -p shows only diff, -2 is last two entries)
+
+git log --stat   ( to see abbreviated stats)
+
+git log --pretty=oneline  (  In addition, the short, full, and fuller options 
+                            show the output in roughly the same format but with 
+                            less or more information, respectively)
+                            
+git log --pretty=format:"%h - %an, %ar : %s" 
+
+git log --since=2.weeks
+
+
+
+
+
+/*
+
+ Useful options for git log --pretty=format Option 	Description of Output
+
+%H      Commit hash
+%h      Abbreviated commit hash
+%T      Tree hash
+%t      Abbreviated tree hash
+%P      Parent hashes
+%p      Abbreviated parent hashes
+%an     Author name
+%ae     Author e-mail
+%ad     Author date (format respects the --date=option)
+%ar     Author date, relative
+%cn     Committer name
+%ce     Committer email
+%cd     Committer date
+%cr     Committer date, relative
+%s      Subject
+
+*/
+
+/*
+Common options to git log
+=========================
+Option 	            Description
+
+-p              Show the patch introduced with each commit.
+--stat          Show statistics for files modified in each commit.
+--shortstat     Display only the changed/insertions/deletions line from 
+                the --stat command.
+--name-only     Show the list of files modified after the commit information.
+--name-status   Show the list of files affected with added/modified/deleted 
+                information as well.
+--abbrev-commit Show only the first few characters of the SHA-1 checksum 
+                instead of all 40.
+
+--relative-date Display the date in a relative format (for example, 
+                “2 weeks ago”) instead of using the full date format.
+
+--graph         Display an ASCII graph of the branch and merge history 
+                beside the log output.
+
+--pretty        Show commits in an alternate format. Options include 
+                oneline, short, full, fuller, and format 
+                (where you specify your own format).
+
+*/
+
+
+/*
+Options to limit the output of git log
+=======================================
+Option 	        Description
+
+-(n)                Show only the last n commits
+
+--since, --after    Limit the commits to those made after the specified date.
+
+--until, --before   Limit the commits to those made before the specified date.
+
+--author            Only show commits in which the author entry matches 
+                    the specified string.
+
+--committer         Only show commits in which the committer entry matches 
+                    the specified string.
+
+--grep              Only show commits with a commit message containing the string
+
+-S                  Only show commits adding or removing code matching the string
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19. ignoring files
+==================
+$ cat .gitignore
+*.[oa]
+*~
+
+example 2:
+==========
+# no .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in the build/ directory
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory
+doc/**/*.pdf
+
+Ignoring Files
+===============
+
+Often, you’ll have a class of files that you don’t want Git to automatically add 
+or even show you as being untracked. These are generally automatically generated 
+files such as log files or files produced by your build system. In such cases, 
+you can create a file listing patterns to match them named .gitignore. 
+Here is an example .gitignore file:
+
+$ cat .gitignore
+*.[oa]
+*~
+
+The first line tells Git to ignore any files ending in “.o” or “.a” – object 
+and archive files that may be the product of building your code. 
+The second line tells Git to ignore all files that end with a tilde (~), 
+which is used by many text editors such as Emacs to mark temporary files. 
+You may also include a log, tmp, or pid directory; automatically generated documentation; and so on. Setting up a .gitignore file before you get 
+going is generally a good idea so you don’t accidentally commit files 
+that you really don’t want in your Git repository.
+
+The rules for the patterns you can put in the .gitignore file are as follows:
+
+    Blank lines or lines starting with # are ignored.
+
+    Standard glob patterns work.
+
+    You can start patterns with a forward slash (/) to avoid recursivity.
+
+    You can end patterns with a forward slash (/) to specify a directory.
+
+    You can negate a pattern by starting it with an exclamation point (!).
+
+Glob patterns are like simplified regular expressions that shells use. 
+An asterisk (*) matches zero or more characters; [abc] matches any character 
+inside the brackets (in this case a, b, or c); a question mark (?) matches 
+a single character; and brackets enclosing characters separated by a 
+hyphen([0-9]) matches any character between them (in this case 0 through 9). 
+You can also use two asterisks to match nested directories; a/**/z would 
+match a/z, a/b/z, a/b/c/z, and so on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+    
+    
+
+   

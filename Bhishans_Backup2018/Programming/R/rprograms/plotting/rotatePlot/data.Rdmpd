@@ -1,0 +1,5 @@
+data <-
+structure(list(subject = 1:4, sex = structure(c(2L, 1L, 1L, 2L
+), .Label = c("F", "M"), class = "factor"), size = c(7L, NA, 
+9L, 11L)), .Names = c("subject", "sex", "size"), class = "data.frame", row.names = c(NA, 
+-4L))

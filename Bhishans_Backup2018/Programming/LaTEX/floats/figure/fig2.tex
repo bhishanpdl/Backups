@@ -1,0 +1,198 @@
+% topic: latex template for homework
+
+% cmd  : clear; latex fig1.tex  (Note: it will create 3 extra files log,aux and dvi )
+% cmd  : clear; xdvi fig1.dvi
+% cmd  : clear; dvipdf fig1.dvi
+
+% cmd  : ctrl D if problem occurs
+% NOTE : look at end for description of figure in LATEX.
+% ref  : https://www.sharelatex.com/learn/Positioning_images_and_tables
+
+
+\documentclass{article}
+\usepackage{blindtext}
+
+%Image-related packages
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+%------------------------------
+
+%Table-related commands
+\usepackage{array}
+\usepackage[table]{xcolor}
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\newcolumntype{s}{>{\columncolor[HTML]{AAACED}} p{3cm}}
+%-------------------------------------------------------
+
+
+\title{Positioning Tables and Figures}
+\author{ }
+\date{\today }
+
+\graphicspath{ {images/} }
+
+\begin{document}
+\maketitle
+\tableofcontents
+\thispagestyle{empty}
+\listoffigures
+\listoftables
+\pagenumbering{arabic}
+\clearpage
+
+
+\section{Positioning images}
+
+This is a sample text.
+\clearpage
+
+
+
+%%%%%%%%%%%%% graphics environment %%%%%%%%%%%%%%%%%%%%%%
+
+\includegraphics[width=1.0\textwidth, right]{./images/a}
+
+
+%   we need \usepackage{graphicx} and \usepackage[export]{adjustbox}
+%	The package adjustbox enables an additional option in the 
+%	\includegraphics command, in the example the picture is 
+%	aligned to right. The available values are: 
+%	left, right, center, outer and inner, 
+%	the last two are intended for two-sided documents. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%% figure environment %%%%%%%%%%%%%%%%%
+\begin{figure}[ht!]
+\includegraphics[width=1.0\textwidth, right]{./images/b.eps}
+\caption{fig.2}
+\end{figure}
+\clearpage
+
+
+
+\section{Multiple images in one figure}  % we need \usepackage{subcaption}
+
+	\begin{figure}[h]
+ 
+		\begin{subfigure}{0.5\textwidth}
+			\includegraphics[width=0.9\linewidth, height=5cm]{a} 
+			\caption{Single Precision}
+			\label{fig:subim1}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
+			\includegraphics[width=0.9\linewidth, height=5cm]{b}
+			\caption{Double precision}
+			\label{fig:subim2}
+			\end{subfigure}
+ 
+			\caption{Caption for this figure with two images}
+			\label{fig:image2}
+		\begin{subfigure}{0.5\textwidth}
+			\includegraphics[width=0.9\linewidth, height=5cm]{c}
+			\caption{Double precision}
+			\label{fig:subim2}
+			\end{subfigure}
+ 
+			\caption{Caption for this figure with two images}
+			\label{fig:image2}
+		\begin{subfigure}{0.5\textwidth}
+			\includegraphics[width=0.9\linewidth, height=5cm]{d}
+			\caption{Double precision}
+			\label{fig:subim2}
+			\end{subfigure}
+ 
+			\caption{Caption for this figure with two images}
+			\label{fig:image2}
+	\end{figure}.
+
+
+\section{Wrapping text around a figure}  % needs \usepackage{wrapfig}
+
+	The package wrapfig provides a useful feature, 
+	text can be floated around the images.
+ 
+	\begin{wrapfigure}{l}{0.25\textwidth}
+		\includegraphics[width=0.9\linewidth]{a} 
+		\caption{Single precision}
+		\label{fig:subim1}
+	\end{wrapfigure}
+	
+	\begin{verbatim}
+	First import the package wrapfig by adding  \usepackage{wrapfig} to the preamble.
+
+	After that you can use the environment <code>wrapfig, 
+	it takes two parameters that are passed inside braces: 
+	the alignement that can be l, r, c, i or o; 
+	this letters stand for left, right, centre, inner and outer 
+	(the last two intended for two-sided documents). 
+	The second parameter is the width of the figure, in the example 
+	is 0.25 the width of the text. See the reference guide for a list of possible length units. 
+	\end{verbatim}
+\section{Referencing} \label{myref}
+  We can reference images, for instance, the image \ref{fig:subim1} shows single precision graph.
+  \clearpage
+  
+\section{Math references} \label{mathrefs}
+As mentioned in section \ref{myref}, different elements can 
+be referenced within a document
+ 
+	\subsection{powers series} \label{subsection}
+ 
+		\begin{equation} \label{eq:1}
+			\sum_{i=0}^{\infty} a_i x^i
+		\end{equation}
+	
+	\subsection{example of reference}
+	The equation (\ref{eq:1}) is a typical power series.
+
+
+ 
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\includegraphics[attr1=val1, attr2=val2, ..., attrn=valn]{imagename}
+%\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+%
+%\includegraphics[width=\linewidth]{chick}
+%\includegraphics[width=\textwidth]{chick}
+%\includegraphics[height=\textheight]{chick}
+%\includegraphics[scale=0.5, angle=180]{chick}
+%
+%
+%% for borders
+%\setlength\fboxsep{0pt}
+%\setlength\fboxrule{0.5pt}
+%\fbox{\includegraphics{chick}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

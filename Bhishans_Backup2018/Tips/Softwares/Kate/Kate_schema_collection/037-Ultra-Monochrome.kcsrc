@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=037-Ultra-Monochrome
+activeBackground=0,0,0
+activeBlend=0,0,0
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=246,246,246
+background=0,0,0
+buttonBackground=0,0,0
+buttonForeground=255,255,255
+contrast=0
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=30,30,30
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=0,0,0
+selectBackground=113,113,113
+selectForeground=188,188,188
+shadeSortColumn=true
+visitedLinkColor=0,0,0
+windowBackground=255,255,255
+windowForeground=0,0,0

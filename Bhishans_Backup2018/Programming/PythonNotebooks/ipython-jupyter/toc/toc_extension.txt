@@ -1,0 +1,22 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 12, 2017 Mon
+# Ref       : http://nikgrozev.com/2015/12/27/pandas-in-jupyter-quickstart-and-useful-snippets/
+
+# Topic: Table of Contents Addon
+
+
+## download 
+mkdir toc
+cd toc
+wget https://raw.githubusercontent.com/minrk/ipython_extensions/master/nbextensions/toc.js
+wget https://raw.githubusercontent.com/minrk/ipython_extensions/master/nbextensions/toc.css
+
+## install and enable
+cd ..
+jupyter-nbextension install --user toc
+jupyter-nbextension enable toc/toc 
+Then we need to restart the kernel and make the first cell “Markdown” type and add the following:
+
+
+**Table of Contents**
+<div id="toc"></div>

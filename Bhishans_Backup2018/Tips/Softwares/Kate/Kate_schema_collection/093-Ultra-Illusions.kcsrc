@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=093-Ultra-Illusions
+activeBackground=168,162,136
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=193,188,168
+background=168,162,136
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=0,0,0
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=168,162,136
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,240,220
+selectBackground=175,169,145
+selectForeground=21,26,34
+shadeSortColumn=true
+visitedLinkColor=231,232,224
+windowBackground=188,183,164
+windowForeground=0,0,0

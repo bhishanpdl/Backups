@@ -1,0 +1,18 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 11, 2016
+
+To save .ipynb as pdf
+==========================
+ipython notebook my_notebook.ipynb
+
+go to the browser, save as pdf
+
+we get error:
+nbconvert failed: Pandoc wasn't found.
+Please check that pandoc is installed:
+http://johnmacfarlane.net/pandoc/installing.html
+
+
+Then, i install pandoc in linux from sofware center
+
+Then, save as pdf in Downloads folder.

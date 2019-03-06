@@ -1,0 +1,32 @@
+Bhishan Poudel
+Jan 19, 2016
+
+To search a file using terminal
+==========================================
+
+find ~/ -type f -name "filename.extension"
+
+eg. 
+find ~/ -type f -name "hello.c"
+
+To search a directory using terminal
+==========================================
+sudo find / -type d -name "directoryname"      # it takes about 5 minutes
+
+e.g.,
+sudo find / -type d -name "addinexamples"
+sudo find / -type f -name "insertInAddin.R"
+
+
+# method 3
+find ~/ -type d | grep DIRNAME
+
+e.g.,
+find ~/ -type d | grep plotting
+
+
+# finding mp3 files
+find ~/ -iname "*.mp3"     # -i is ignore
+
+
+

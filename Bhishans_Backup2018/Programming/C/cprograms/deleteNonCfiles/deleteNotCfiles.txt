@@ -1,0 +1,50 @@
+ref: http://unix.stackexchange.com/questions/71171/how-to-remove-files-which-do-not-end-with-c
+
+first look files you want to delete
+=====================================
+ls !(*.c)
+
+to delete non c files
+=====================
+deletes: a.txt readme a.h etc
+
+ls !(*.c)
+rm !(*.c)
+
+rm **/!(*.c)  or,
+find -not -name "*.c" -delete
+
+NOTE: 
+If rm !(*.c) generates event not found in bash,
+it needs to be proceeded with shopt -s extglob
+NOTE:
+Can also add -maxdepth 1 to the find to stop recursion
+
+example2
+=========
+do not delete: a.out a.txt a.pdf but only
+delete       : a.o b.o c.o
+
+ls !(*.*) *.o
+rm !(*.*) *.o
+
+example3
+==========
+to delete only executable and remain all rest
+deletes : a a.out array etc (executables)
+keeps   : aa a.md makefile a.c~  a.o 
+          (aa is not executable)
+          
+find . -type d -prune -o -type f -perm -100 -exec rm {} +
+ 
+less portable option is:         
+find . -maxdepth 1 -type f -perm -100 -ls
+find . -maxdepth 1 -type f -perm -100 -delete
+
+NOTE: If you only want to descend n number of directories, then use the -maxdepth n option
+
+to delete all .c~ files
+=======================
+ls *.c~
+rm *.c~
+

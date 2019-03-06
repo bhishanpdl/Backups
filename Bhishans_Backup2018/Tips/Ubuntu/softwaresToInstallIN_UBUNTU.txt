@@ -1,0 +1,31 @@
+============================================
+1. copy (from copy.com)
+============================================
+2. google chrome (google it and install)
+============================================
+3. penguin subtitle player
+to install:
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install penguin-subtitle-player
+
+to uninstall:
+sudo apt-get install penguin-subtitle-player
+==================================================
+4.install google chrome:
+sudo apt-get update; yes | sudo apt-get upgrade; yes | sudo apt-get install google-chrome-stable; google-chrome-stable
+
+5. flash player for mozilla
+=============================================
+go to software center
+search for flash
+
+6. vlc player
+==============================================
+go to software center and install it
+
+7. python 2.7 and 3
+
+8. grace
+
+

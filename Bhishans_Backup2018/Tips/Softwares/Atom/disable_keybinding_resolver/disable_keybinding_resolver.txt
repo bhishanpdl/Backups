@@ -1,0 +1,6 @@
+Dec-11-2016 Sun
+
+To disable keybinding resolver:
+ctrl .
+
+ctrl /  is comment toggle

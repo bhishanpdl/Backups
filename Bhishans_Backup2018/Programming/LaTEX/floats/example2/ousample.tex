@@ -1,0 +1,468 @@
+% OUPROP.TEX -- electronic template for OU Observatory proposals
+% Hacked up from the NOAO STANDARD proposal form from 1999
+
+% THE FORM STARTS HERE
+%
+
+% Please do not modify or delete this line.
+\documentstyle[nprop21,11pt]{article}
+
+% Please do not modify or delete this line.
+\begin{document}
+
+Bhishan's note on compilation:\\
+Using Texmaker\\
+==============\\
+1. Latex    F5 (my shortcut)   	creates dvi,log,aux files\\
+   Pdflatex F6 (my shortcut)  	creates pdf without fig.\\
+   viewpdf  F7 (my shortcut)  	opens   pdf without fig.\\
+   
+2. Latex    F5 (my shortcut)   	creates dvi,log,aux files\\
+   dvi-pdf  F8 (my shortcut)		creates pdf with overlapped fig.\\
+   viewpdf  F7 (my shortcut)		opens   pdf with overlapped fig.\\
+   
+Using Terminal\\
+==============\\
+Open in terminal ctrl shf T    	opens the terminal\\
+latex 	ousample.tex           	creates dvi,log,aux files\\
+dvipdf 	ousample.dvi            	creates pdf with no overlapped fig.\\
+xdg-open ousample.pdf			opens   pdf with no overlapped fig.\\
+note: my alias for xdg-open is get\\
+\\
+\\		
+
+% Please do not modify or delete this line.  
+\proposaltype{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SCIENTIFIC CATEGORIES
+%
+% Please select a "scientific category" that best describes your program by
+% uncommenting (removing the % sign from) only ONE of the selections below. 
+% DO NOT MODIFY THE SELECTION YOU UNCOMMENT.
+
+%\sciencecategory{Cosmology}
+%\sciencecategory{Clusters of Galaxies}
+\sciencecategory{Galaxies}
+%\sciencecategory{Star Clusters}
+%\sciencecategory{Interstellar Medium}
+%\sciencecategory{Stars}
+%\sciencecategory{Planets}
+%\sciencecategory{Small Bodies \& Moons}
+%\sciencecategory{Other}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% TITLE
+%
+% Give a descriptive title for the proposal in the \title command.
+%
+% Note that a title can be quite long; LaTeX will break the title into
+% separate lines automatically.  If you wish to indicate line breaks
+% yourself, do so with a `\\' command at the appropriate point in
+% the title text.  Use both upper and lower case letters (NOT ALL CAPS).
+
+\title{The Surface Brightness Profile of the\\ Elliptical Galaxy NGC 3379}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% INVESTIGATOR'S (PI AND CoI) INFORMATION BLOCKS
+%
+% Please give the PI's name, email address, and local phone number.
+% Also indicate the principal investigator's status with 
+% one of the one-letter codes inside the \invstatus{} curly braces, as 
+% indicated below.
+%
+% If the proposal involves a collaboration, uncomment the co-I block and
+% give the same information for co-I (collaborator).
+% REMEMBER THAT COLLABORATIVE EFFORTS MUST BE APPROVED IN ADVANCE.
+%
+% Status codes:
+%
+%    \invstatus{P}  % investigator has obtained PhD or doctorate
+%    \invstatus{T}  % investigator is grad student, observing for thesis
+%    \invstatus{G}  % investigator is grad student, not observing for thesis
+%    \invstatus{U}  % investigator is an undergraduate student
+%    \invstatus{O}  % investigator has other status (none of the above)
+%
+%
+% DO NOT remove the \begin{PI} and \end{PI}.  Only one individual's name per 
+% \name field is allowed.
+
+\begin{PI}
+\name{Jehosophat Y. Floppybottom}
+\email{floppybottom@helios.phy.ohiou.edu}
+\phone{1-800-MOO-OINK}
+\invstatus{U}
+\end{PI}
+
+%\begin{CoI}
+%\name{}
+%\email{}
+%\phone{}
+%\invstatus}
+%\end{CoI}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ABSTRACT
+%
+% Give a general abstract of the scientific justification appropriate for
+% a non-specialist.  Write the abstract between the \begin{abstract} and
+% \end{abstract} lines.  Limit yourself to approximately 175 words.
+
+% DO NOT remove the \begin{abstract} and \end{abstract} lines.
+
+\begin{abstract}
+NGC 3379 is regarded in the astronomical literature as a near-perfect
+illustration of the famous $r^{1/4}$ law, introduced by G.\ de Vaucouleurs
+to describe the radial dependence of the surface brightness in elliptical
+galaxies. The goal of this project is to independently reproduce this
+result and confirm that the de Vaucouleurs law accurately describes this
+galaxy, through deep imaging in the $R$ band. In addition this project will
+test the ability of the current hardware to perform accurately at low surface
+brightness levels.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SUMMARY OF OBSERVING RUN
+%
+% List a summary of the details of the observing run.
+%
+%   \begin{obsrun}
+%   \telescope{}        % Must be GOT (only telescope available)
+%   \instrument{}       % Must be Direct CCD (only instrument available)
+%   \numnights{}        % Total nights requested, e.g. \numnights{2}
+%   \lunardays{}        % Maximum tolerable moon age, e.g. \lunardays{14}
+%   \optimaldates{}     % E.g. \optimaldates{Apr 1-30}; explain in next section
+%   \acceptabledates{}  % Must be Apr - May
+%   \end{obsrun}
+%
+% \numnights should give the number of nights of the run.
+% Formats such as 5x0.5 are acceptable if your targets are accessible only
+% before or after midnight.
+%
+% \lunardays should specify the maximum number of nights from new moon 
+% which can be utilized to accomplish your scientific goals.  It should 
+% be a number from 0 (new moon) to 14 (full moon).
+%
+
+\begin{obsrun}
+\telescope{GOT}			% Leave as is
+\instrument{Direct CCD}		% Leave as is
+\numnights{1}
+\lunardays{14}
+\optimaldates{any}
+\acceptabledates{Apr - May}	% Leave as is
+\end{obsrun}
+
+% If there are scheduling constraints or non-usable dates
+% (i.e., other than moon phase or when your object is up)
+% give the dates by filling in the curly braces in \unusabledates{}.
+%
+% Please limit your text to 4 lines on the printed copy.
+
+\unusabledates{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% In the following "essay question" sections, the delimiting pieces of
+% markup (\justification, \expdesign, etc.) act as LaTeX \section*{}
+% commands.  If the author wanted to have numbered subsections within
+% any of these, LaTeX's \subsection could be used.
+%
+% DO NOT REDUCE THE FONT SIZE, and do not otherwise fiddle with the format 
+% to get more on a page. 
+
+% SCIENTIFIC JUSTIFICATION
+%
+% Give the scientific justification for the proposed observations.
+% Be sure to explain the significance of your observations in the context
+% of what has been done previously. This section should define the SCIENCE
+% goals of the project, rather than the technical requirements, which should go
+% in the next section.
+% THE SCIENTIFIC JUSTIFICATION SHOULD BE LIMITED TO ONE PAGE
+% plus one additional page for references, figures, and captions.
+
+% For references, follow the example below
+% (journal commands are compatible with AASTeX v4.0):
+%
+%\begin{references}
+%\reference Armandroff \& Massey 1991 \aj, 102, 927.
+%\reference Berkhuijsen \& Humphreys 1989 \aap, 214, 68.
+%\reference Massey 1993 in Massive Stars: Their Lives in the Interstellar
+%  Medium (Review), ed. J. P. Cassinelli and E. B. Churchwell, p. 168.
+%\reference Massey \& Armandroff 1999, in prep.
+%\end{references}
+
+% Only encapsulated postscript figures may be included with your proposal.
+% To include an EPS plot, use the LaTeX "figure" environment.  
+% The plot file is included with the \plotone{FILENAME} command; two 
+% side-by-side plot files can be included by typing
+% \plottwo{FILENAME1}{FILENAME2}.  Use \caption{} to specify a caption.
+% The \epsscale{} command can be used to scale \plotone plots if they
+% appear too large on the printed page. For example:
+%
+% \begin{figure}
+% \epsscale{0.85}
+% \plotone{sample.eps}
+% \caption{Sample figure showing important results.}
+% \end{figure}
+%
+% If you need to rotate or make other transformations to a figure, you may 
+% use the \plotfiddle command:
+% \plotfiddle{PSFILE}{VSIZE}{ROTANG}{HSCALE}{VSCALE}{HTRANS}{VTRANS}
+% \plotfiddle{sample.eps}{2.6in}{-90.}{32.}{32.}{-250}{225}
+% where HSCALE and VSCALE are percentages and HTRANS and VTRANS are 
+% in PostScript units, 72 PS units = 1 inch.
+
+\sciencejustification
+
+The giant elliptical galaxy NGC 3379 (M105) is one of the best-studied
+galaxies in the sky. Determinations of its surface brightness profile date
+back all the way to the work of Hubble (1930), who was able to measure the
+azimuthally averaged radial profile extending over $\sim 1.5$ orders of
+magnitude in radius, corresponding to $\sim 2$ orders of magnitude in
+surface brightness.  Much later, in what is generally recognized as a
+{\it tour de force\/} of photographic and photoelectric photometry,
+de Vaucouleurs \& Capaccioli (1979) extended the measured profile to
+nearly 4 orders of magnitude in surface brightness. They showed
+convincingly that the observed profile was remarkably well fit by the
+formula suggested by de Vaucouleurs (1948),
+\begin{equation}\label{e.devlaw}
+\Sigma(r) = \Sigma_e \exp \left\{-7.67\left[(r/r_e)^{1/4}-1\right]\right\}.
+\end{equation}
+In equation (\ref{e.devlaw}), $\Sigma(r)$ is the surface brightness at
+radius $r$ on the sky, expressed in linear (physical) units, $r_e$ is the
+``effective radius'' of the galaxy, and $\Sigma_e$ is the surface
+brightness at $r=r_e$. For a galaxy that precisely obeys equation
+(\ref{e.devlaw}), half its total light comes from $r<r_e$. 
+The functional form is such that if one plots $\Sigma$ on a logarithmic
+scale, e.g., as mag$\,$arcsec$^{-2}$, against $r^{1/4}$, one obtains a
+straight line. The data for NGC 3379, plotted in this way, are shown in
+Figure 1 (Fig.\ 2 of de Vaucouleurs \& Capaccioli 1979).
+
+Even though subsequent work has shown that equation (\ref{e.devlaw})
+does not fit all elliptical galaxies at all radii, it has proved sufficiently
+useful that it is now commonly referred to as the $r^{1/4}$ {\it law\/}
+or the {\it de Vaucouleurs law.} The primary goal of this project is, in
+effect, to rediscover the $r^{1/4}$ law using CCD imaging of NGC 3379
+with the GOT.
+
+A number of more recent CCD studies of NGC 3379 have been published,
+(e.g., Peletier et al.\ 1990), extending to radii $> 100\arcsec$,
+showing small deviations from the $r^{1/4}$ law. Though the
+interpretation of these deviations has been a matter of some debate
+(Capaccioli et al.\ 1991, Hjorth \& Madsen 1991, Statler 1994), the
+availability of high-quality data in the literature provides a means of
+checking our results. In particular, we have an opportunity to test the
+performance of the GOT at low surface brightness levels; this is the
+secondary goal of the project. The Peletier et al.\ data indicate that
+$\mu_R(200\arcsec) \approx 23.5\,{\rm mag}\,{\rm arcsec}^2$, or about
+$6\%$ of the $R$ band sky brightness at new moon.
+
+Potentially lying within the same CCD field as NGC 3379 are the SB0
+galaxy NGC 3384 and the Sc galaxy NGC 3389. Their presence is both a
+hindrance and a benefit. Because these galaxies will collectively fill
+the frame, it will be necessary to observe a separate blank-sky field
+to determine the sky surface brightness. On the other hand, we will also
+be able to measure their surface brightness profiles and demonstrate the
+difference between the profiles of E, S0, and S galaxies.
+
+Finally, the entire NGC 3379 group is known to reside within a ring of
+neutral hydrogen (Figure 2; Schneider 1985). While there
+are no known optical signs of interaction between NGC 3379, NGC 3389, and
+NGC 3384, our long exposures will, as a byproduct, produce a deep---and
+presumably highly photogenic---image of this attractive three galaxy set.
+
+% End of the justification main text. The following line
+% cleans up the page, and goes to the next page for refs and figs.
+\clearpage
+% Now we're on the page for figures and references.
+
+\begin{references}
+\reference Capaccioli, M., Vietri, M., Held, E. V., \& Lorenz, H. 1991,
+        ApJ, 371, 535
+\reference de Vaucouleurs, G. 1948, Ann.\ d'Ap., 11, 247
+\reference de Vaucouleurs, G. \& Capaccioli, M. 1979, ApJS, 40, 699
+\reference Hjorth, J. \& Madsen, J. 1991, MNRAS, 253, 703
+\reference Hubble, E. P. 1930, ApJ, 71, 231
+\reference Peletier, R. F., Davies, R. L., Davis, L. E., Illingworth,
+        G. D., \& Cawson, M. 1990, AJ, 100, 1091
+\reference Schneider, S. E. 1985, ApJL, 288, L33
+\reference Statler, T. S. 1994, AJ, 108, 111
+\end{references}
+
+\begin{figure}
+\epsscale{.5}
+\plottwo{fig1.eps}{fig2.eps}
+\caption{(Left) Radial surface brightness profile of NGC 3379, reproduced
+from de Vaucouleurs \& Capaccioli (1979). The $V$-band surface brightness
+$\mu_V$ (in mag$\,$arcsec$^{-2}$) is plotted against the radius in arcsec to
+the $1/4$ power. Points show the data (error bars omitted by the authors);
+the line is the best fit $r^{1/4}$ law.}
+\caption{(Right) Map of the intergalactic HI ring surrounding NGC 3379
+(near the field center),
+NGC 3389, and NGC 3384 (reproduced from Schneider 1985). Dotted outline shows
+a characteristic 21 cm isophote; solid contours indicate radial
+velocity. Field is approximately $1.5 \times 2$ degrees.}
+\end{figure}
+
+% End of the refs/figs page. Clean up and go on
+\clearpage
+
+
+% EXPERIMENTAL DESIGN AND TECHNICAL DESCRIPTION
+%
+% This section should consist of text only (no figures).
+% There is no limit on length.
+
+% Describe the observations to be made during this observing run.
+% Include exposure time calculations to demonstrate that 
+% these observations will accomplish the science goals outlined in the 
+% previous section. Include estimates for calibration exposures.
+% Justify the number of nights and the lunar phase requested. 
+% List objects, coordinates, and magnitudes (or surface brightness, if 
+% appropriate) in a Target Table in the next section.
+
+\expdesign
+
+We choose $R$ band as the best compromise between the general red color
+of elliptical galaxies, the very red night sky, and the maximum sensitivity
+of the detector. (In addition, more published $R$-band than $I$-band photometry
+is available for NGC 3379.)
+
+With NGC 3379 centered in the field we can hope to work to a maximum
+radius of $360\arcsec$; extrapolating the photometry of Peletier et al.
+indicates $\mu_R \approx 25$ (about $1.5\%$ of sky) at this distance. We
+set an accuracy goal of $\pm 0.1$ mag ($S/N=10$) at this radius. We will be
+fitting isophotes using the IRAF/STSDAS ``ellipse'' task, which, for each
+isophote, takes data from a ring effectively 1 pixel wide. This implies,
+with the $0.7\arcsec$/pixel plate scale (and assuming circular isophotes),
+approximately 3200 pixels will be averaged. However, we expect to be
+able to use only the western half of the galaxy at this radius because
+of contamination from NGC 3384 and NGC 3389 to the east. We determine
+the expected $S/N$ for an average over 1600 pixels using the ``ccdtime''
+calculator, assuming a mean airmass of $1.4$ and a CCD temperature of
+$-15^\circ$C. We obtain $S/N=3.8$ for a $300\,$s exposure and $S/N=6.4$
+for a $600\,$s exposure. Thus we can reach $S/N=10$ in $7 \times 300\,$s
+or $3 \times 600\,$s. The detector is the primary source of noise, so,
+since we are working in $R$ band, this project (surprisingly) can be
+done at any lunar phase.
+
+However, the photometric accuracy will ultimately be limited not by
+photon counting statistics but by systematic variation of the sky.
+Since the sky is 70 times brighter than the galaxy at these radii, the
+sky level must be determined to better than $0.5\%$. Even in photometric
+conditions we can expect the sky to vary by more than this as the target
+moves toward the horizon. Since the galaxies will fill the field we must
+``beam switch'' to a nearby blank field to get sky; and because the sky
+is varying in time, more rapid switching is advantageous. Therefore we
+opt for $300\,$s exposures on the galaxies alternating with blank sky
+exposures. The mean sky level will be determined by masking out stars
+and averaging over the entire source-free part of the image, which we can
+expect to comprise $N\approx 10^6$ pixels. The ``ccdtime'' task reports
+that we should expect $\sim 0.43\,{\rm e}^-\,{\rm s}^{-1}\,{\rm pix}^{-1}$
+from the sky at new moon. At an operating temperature of $-15^\circ$C, we
+should have $0.08\,{\rm e}^-\,{\rm s}^{-1}\,{\rm pix}^{-1}$ dark current,
+and the CCD read noise is $11.8\,{\rm e}^-$ RMS. Thus
+\begin{equation}
+\left({S\over N}\right)_{\rm sky}
+	= {0.43 t N^{1/2} \over [0.43 t + 0.08 t + (11.8)^2]^{1/2}},
+\end{equation}
+where $t$ is the exposure time in seconds. For a $30\,$s exposure we
+should achieve $(S/N)_{\rm sky}=1000$, or $0.1\%$ accuracy. These
+exposures are short enough that they can be unguided, which will reduce
+overhead substantially.
+
+In early May NGC 3379 will be at airmasses $<2$ for at least 3 hours
+after the end of evening twilight. The total exposure time required is
+$7 \times 300\,{\rm s} + 8\times 30\,{\rm s} = 39\,$ min. If we allot
+10 minutes of overhead for each exposure (CCD readout, moving the
+telescope, reacquiring the guide star) the total time required sums to
+189 minutes. We will therefore be able to acquire the needed data
+in half a night, neglecting photometric calibration. We emphasize that
+the primary science of this project will still be doable in non-photometric
+conditions, but comparison with published data will be possible only to
+within an undetermined photometric zero point. If we have photometric
+conditions, then calibrating the photometry will require a minimum of
+2 standard star observations. We will choose one or more standards with
+colors similar to that of NGC 3379 and observe them at airmasses between
+$1.1$ and $2.0$. If possible we will scatter the standards among the
+galaxy exposures. However, if we are running behind schedule we will put
+off the standards to the second half of the night in order not to
+sacrifice on-source time, which is essential to the primary science.
+We estimate standards to require $\sim 1$ hour total, which may be
+interspersed between other observations. Beginning observations on NGC
+3379 at the end of twilight will require extremely efficient use of the
+90 minutes after sunset for flat fields, zeros, darks, polar alignment,
+focusing, and autoguider calibration. This will be possible only if the
+observers are very experienced with the equipment.
+
+% TARGET TABLES
+%
+% List primary targets below. (Photometric standard star fields, flat
+% fields, etc. do not need to be included here.) List the same object
+% observed with three different filters as 3 objects; give exposure
+% information separately for each filter.
+%
+% HINTS: Long tables do not break across pages. If it is necessary to 
+% continue a table across a page you must start a new table.  Use 
+% /clearpage before the \begin{targettable} command for the new table.  
+%
+%\begin{targettable}{}
+%\objid{}           % Arbitrary ID, use consecutive numbers
+%\object{}          % 20 characters maximum
+%\ra{}              % e.g., xx:xx:xx.x
+%\dec{}             % e.g., +-xx:xx:xx.x
+%\epoch{}           % Equinox of the coordinate system, e.g., B1950 or J2000
+%\magnitude{}	    % Total Magnitude or surface brightness at point of interest
+%\filter{}	    % V, R, I, H$\alpha$, or H$c$ (continuum)
+%\exptime{}         % seconds PER EXPOSURE
+%\nexposures{}      % Number of exposures
+%\moondays{}        % Days from new moon, use a number 0-14
+%\skycond{}         % Leave blank
+%\seeing{}          % Leave blank
+%\obscomment{}      % Comment, 20 characters maximum
+%  -- repeat target entry parameters as needed to complete Target Table --
+%\end{targettable}
+
+\begin{targettable}{GOT/Direct}
+
+\objid{1}
+\object{NGC 3379}
+\ra{10 47 49.6}
+\dec{+12 34 55 }
+\epoch{2000.0}
+\magnitude{10.3}
+\exptime{300}
+\nexposures{7}
+\moondays{0-14}
+\skycond{}
+\seeing{}
+\obscomment{mag is $B^T$}
+
+\objid{2}
+\object{Sky}
+\ra{10 46 30.0}
+\dec{+12 17 00 }
+\epoch{2000.0}
+\magnitude{N/A}
+\exptime{30}
+\nexposures{8}
+\moondays{0-14}
+\skycond{}
+\seeing{}
+\obscomment{Blank field $25^\prime$ SW}
+
+\end{targettable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Please do not modify or delete this line.
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

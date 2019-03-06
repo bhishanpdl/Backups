@@ -1,0 +1,27 @@
+bash examples
+bash = Bourne Again SHell
+======================================
+source: https://www.youtube.com/watch?v=QGvvJO5UIs4
+
+1. create a bash file eg. (file_name.sh = tmp.sh)
+
+inside the file type:
+#!/bin/bash    this will tell OS that this is a bash script
+
+echo "Welcome..."
+sleep 1    # 1 is 1 sec, 1m is 1 minute, 1h hour etc
+
+echo " how is your day so far?"
+
+2. make it executable
+(chmod = change mode
++x 	  = to make it executable)
+
+type in the terminal:
+chmod +x tmp.sh
+
+3. to run this script
+./tmp.sh
+
+4. to run bash script
+bash scriptname.sh

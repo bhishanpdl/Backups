@@ -1,0 +1,16 @@
+Bhishan Poudel
+Jan 30, 2016
+
+to execute gnuplot script in geany text editor
+===============================================
+1. open a gnuplot script (eg. mygnuplot.gp)in geany
+
+2. go to Build> Set Build Commands
+
+3. edit Compile Output file and Last fields
+
+Compile Output file:   gnuplot             (type it)
+
+Execute:  gnuplot %e.gp                      (type Execute and in the box type gnuplot %e.gp)
+          gnuplot %e.gnu
+          enuplot %e.plt

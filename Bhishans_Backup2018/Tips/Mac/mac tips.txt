@@ -1,0 +1,49 @@
+        TERMINAL SHORTCUTS
+
+up: goes to previous command
+ctrl a: start of line
+ctrl e: end of line
+esc b : jump between commands
+esc f : jump between commands
+
+ctrl u: clear the line
+ctrl k: delete from cursor to end
+ctrl w: delete word before cursor only
+
+ctrl r: search command history 
+tab: autocomplete a line of text
+
+
+cd . = current directory
+cd .. = parent directory  eg.   cd ../another folder in parent directory
+cd -  = last working directory
+
+something !! = retype previous command after word something(eg. cd, sudo)
+
+!cat = enter last command that used cat
+
+!cat:p  = to see last command that used cat (type !! and hit return, to run it)
+
+cd!$   = goes to the directory you just created (e.g.. mkdir /new/awesome/folder)
+	= !$ is the arguments from the last command
+
+^nanp^nano = find the first instance of nano in the last run command and replace it with nano
+
+history | grep nano = shows all recent commands that included nano
+
+	381 sudo nano /etc/NetworkManager/nm-system-settings.conf
+	387 sudo nano /etc/rc.conf  (then,
+	!455 runs the command associated with it.
+
+mkdir myfolder{1,2,3} = creates 3 folders
+
+to rename a file:
+mv /path/to/file.txt /path/to/file.xml     or
+mv /path/to/file.{txt,xml}
+
+
+
+
+
+
+

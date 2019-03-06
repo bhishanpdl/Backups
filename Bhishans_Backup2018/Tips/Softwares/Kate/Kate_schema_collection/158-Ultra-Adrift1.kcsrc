@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=158-Ultra-Adrift1
+activeBackground=0,0,0
+activeBlend=93,106,130
+activeForeground=162,155,147
+activeTitleBtnBg=255,255,255
+alternateBackground=26,53,79
+background=30,62,92
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=110,151,204
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=4,8,19
+inactiveBlend=30,30,30
+inactiveForeground=150,170,179
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=138,165,216
+selectBackground=24,51,75
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,247
+windowBackground=30,62,92
+windowForeground=255,255,255

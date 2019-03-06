@@ -1,0 +1,11 @@
+# Author    : Bhishan Poudel
+# Date      : May 28, 2016
+
+warnings of gnu octave ubuntu
+===============================
+warning: print.m: epstool binary is not available.
+
+sudo apt-get install epstool
+
+also we may intall but not needed. (do not install until needed)
+transfig, or pstoedit

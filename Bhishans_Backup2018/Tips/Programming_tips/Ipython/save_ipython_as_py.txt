@@ -1,0 +1,11 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 11, 2016
+
+To save ipython notebook as pure python script
+=================================================
+
+ipython notebook my_notebook.ipynb
+
+this will open file in the browser
+
+then save as py

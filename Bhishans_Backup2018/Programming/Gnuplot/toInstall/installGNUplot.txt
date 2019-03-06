@@ -1,0 +1,41 @@
+installing gnuplot in ubuntu 14.04
+=====================================
+
+A) Install support for jpg,png,gif
+======================================
+the inbuilt-version doesnot include png,jpg,and gif set terminal options
+so, before installing gnuplot first install this:
+
+sudo apt-get install libgd2-dev
+
+ref: http://stackoverflow.com/questions/22816030/terminal-png-missing-when-using-gnuplot
+
+
+
+
+B) Then donwload and install gnuplot 5.0
+=========================================
+
+go to http://www.gnuplot.info/
+then go to sourceforge and click download button
+move tar file to Softwares folder and unzip it.
+cd to that folder go inside gnuplot5.0
+
+1. gain root access    sudo su
+2. configure           ./configure 
+3. make                make 
+4. make install        make install 
+5. check version       gnuplot -version
+
+
+C) To uninstall gnuplot 
+==========================
+first check where it is installed: which gnuplot
+we see : /usr/local/bin/gnuplot
+
+now, gain superuser access : sudo su 
+cd to /usr/local/bin/      : cd /usr/local/bin/
+delete gnuplot folder      : rm -r gnuplot
+
+then, we can install support library for png images (i.e. sudo apt-get install libgd2-dev)
+and then, reinstall gnuplot (as described in section B)

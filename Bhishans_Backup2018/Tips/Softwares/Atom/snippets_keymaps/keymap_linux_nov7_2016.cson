@@ -1,0 +1,58 @@
+# @Author: Bhishan Poudel <bhishan>
+# @Date:   04-Nov-2016 21:11
+# @Last modified by:   bhishan
+# @Last modified time: 07-Nov-2016 22:11
+
+
+
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+#  Example 1
+# '.editor:not([mini])':
+#   # duplicate-lines
+#   'cmd-enter': 'editor:duplicate-lines'
+#
+# Example 2
+# 'atom-workspace atom-text-editor:not([mini])':
+#   'cmd-enter': 'editor:duplicate-lines'
+#
+'atom-text-editor:not([mini])':
+  'F6': 'command-palette:toggle'
+  'F5': 'script:run'
+  'ctrl-shift-A': 'git-plus:add'
+  'ctrl-shift-c': 'git-plus:add-and-commit'
+  'ctrl-shift-p': 'git-plus:push'
+  'ctrl-alt-d': 'git-plus:diff'
+  'alt-r': 'run:file'  # F4, F5, F6 etc don't work for run file IDK why?
+  'ctrl-shift-t': 'open-terminal-here:open'

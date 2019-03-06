@@ -1,0 +1,8 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 15, 2017 Thu
+# Ref       : 
+#
+# Topic: To find large files using find
+#=====================================
+
+find . -type f -size +48M

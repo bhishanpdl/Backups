@@ -1,0 +1,1 @@
+Note: The edited function run_process provided by you does not work for executables that need arguments (eg. prog3 in my question).....................Also,  commands=[] , commands.extend.........then p=Pool()   p.map(run_process,commands)  gives garbage answer: the output was like this:.......................Running:p     command: r

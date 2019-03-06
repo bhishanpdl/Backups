@@ -1,0 +1,8 @@
+topic: to create keyboard shortcut for gedit (ctrl shft g)
+============================================================= 
+
+system setting>keyboard>shortcuts>custom shortcuts> + > name= gedit & command = gedit 
+then, click apply,
+click on right corner of gedit
+press ctrl shft g
+

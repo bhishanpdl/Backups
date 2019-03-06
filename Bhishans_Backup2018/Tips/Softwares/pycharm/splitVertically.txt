@@ -1,0 +1,5 @@
+to split vertically a new tab
+===============================
+
+right click on the tab
+click split vertically

@@ -1,0 +1,45 @@
+To create or overwrite: cmd > filename.txt
+=========================================
+eg.
+clear; gfortran qn1.f95 && ./a.out > qn1.txt  
+
+to append data:
+==============================
+
+someCommand >> someFile.txt
+
+If you want stderr too use this:
+================================
+
+someCommand &> someFile.txt  
+
+or this:
+========
+
+someCommand &>> someFile.txt 
+
+to see the output as well as write it to a file
+==============================================
+command |& tee /somepath/outputfile.txt
+eg.
+clear; gfortran qn1.f95 && ./a.out |& tee qn1.dat
+
+
+==================================================
+You can also use tee to send the output to a file:
+
+command | tee ~/outputfile.txt
+
+A slight modification will catch stderr as well:
+
+command 2>&1 | tee ~/outputfile.txt
+
+or just the same with less characters to type:
+
+command |& tee ~/outputfile.txt
+
+tee is useful if you want to be able to capture 
+command output while also viewing it live.
+
+
+

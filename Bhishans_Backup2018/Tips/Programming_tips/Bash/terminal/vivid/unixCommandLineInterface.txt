@@ -1,0 +1,42 @@
+topic: Unix command-line interface programs and shell builtins
+
+source: https://en.wikipedia.org/wiki/Dc_%28computer_program%29
+
+
+File system 	
+
+    cat cd chmod chown chgrp cksum cmp cp dd du df file fsck fuser ln ls mkdir mount mv pax pwd rm rmdir size split tee touch type umask 
+
+Processes 	
+
+    at bg chroot cron fg kill killall nice pgrep pkill ps pstree time top 
+
+User environment 	
+
+    clear env exit finger history id logname mesg passwd su sudo uptime talk tput uname w wall who whoami write 
+
+Text processing 	
+
+    awk banner basename comm csplit cut diff dirname ed ex fmt fold head iconv join less more nl paste sed sort spell strings tail tr uniq vi wc xargs 
+
+Shell builtins 	
+
+    alias echo expr printf sleep test true and false unset wait yes 
+
+Networking 	
+
+    dig host ifconfig inetd netcat netstat nslookup ping rdate rlogin route ssh traceroute 
+
+Searching 	
+
+    find grep locate whatis whereis 
+
+Documentation 	
+
+    apropos help man 
+
+Miscellaneous 	
+
+    bc dc cal lp od 
+
+

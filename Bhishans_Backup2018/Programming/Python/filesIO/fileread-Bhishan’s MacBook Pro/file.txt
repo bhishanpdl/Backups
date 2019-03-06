@@ -1,0 +1,5 @@
+N       ID   REMAIN        VERS
+2 2343333   bana           twelve
+3 3549287   moredp       twelve
+4 9383737   hinsila           twelve
+5 8272655   hinsila           eight

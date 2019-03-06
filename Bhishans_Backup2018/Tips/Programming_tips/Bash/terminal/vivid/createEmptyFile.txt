@@ -1,0 +1,48 @@
+#Bhishan Poudel
+#Dec 6, 2015
+
+How to create file using terminal
+==================================
+
+1. touch a.txt    this make pre-existing file UNTOUCHED
+
+2. > a.txt        this makes it EMPTY 
+  or,  :>b.txt    note:  : is empty command
+
+3. vi a.txt  emacs a.txt gedit a.txt nano a.txt joe a.txt  etc.
+
+4. echo 'Hello, world.' >foo.txt         to see it: less foo.txt   press q to quit.
+
+5. printf '%s\n' 'First line.' 'Second line.' 'Third line.' >foo.txt
+
+6. cat > foo.txt       then type
+   first
+   second
+   third             press ctrl d    to get out of cat.(q also quits)
+   
+7. touch 'file'{1,2,3}.txt
+ 
+8. first write filenames in input.txt then,
+   while read -r filename; do touch "$filename".txt; done < input.txt
+   
+   
+creating directories
+======================
+mkdir 'a' 'b' 'c'    then, rmdir a b c
+mkdir "Project "{A,B,C,D,E,F}
+mkdir "Project "{"New Home","Vacation","To Do"}
+
+cat >dirlist.txt
+folder1
+folder2
+folder3
+ctrl d
+
+then,
+cat dirlist.txt | xargs mkdir
+
+or,
+rmdir f*
+<dirlist.txt xargs mkdir
+
+   

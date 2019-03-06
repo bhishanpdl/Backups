@@ -1,0 +1,9 @@
+bhishan tips
+-----------------
+1. right click a file click properties (alt enter )
+copy the address
+go to terminal
+
+cd paste  ( to paste ctrl shft v)
+
+note: this will not work if any of the directory have space in its name.

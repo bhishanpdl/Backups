@@ -1,0 +1,86 @@
+# Author    : Bhishan Poudel
+# Date      : Sep 06, 2016
+
+
+
+##==============================================================================
+## format: MIN HOUR DOM MON DOW CMD     note: we can add  && CMD2
+##         00  00   00  00  00  
+##==============================================================================
+#   Field	Description	    Allowed Value
+#   MIN	    Minute field	0 to 59
+#   HOUR	Hour field	    0 to 23
+#   DOM	    Day of Month	1-31
+#   MON	    Month field	    1-12
+#   DOW	    Day Of Week	    0-6
+#   CMD	    Command	Any command to be executed.
+
+
+
+
+
+
+##==============================================================================
+## Repeat timely
+##==============================================================================
+#    string         meaning
+#    ------         -------
+#    @reboot        Run once, at startup.
+#    @yearly        Run once a year, "0 0 1 1 *".
+#    @annually      (same as @yearly)
+#    @monthly       Run once a month, "0 0 1 * *".
+#    @weekly        Run once a week, "0 0 * * 0".
+#    @daily         Run once a day, "0 0 * * *".
+#    @midnight      (same as @daily)
+#    @hourly        Run once an hour, "0 * * * *".
+
+
+
+
+
+##==============================================================================
+## Allowed special character (*, -, /, ?, #)
+##==============================================================================
+#   Asterik(*)      – Match all values in the field or any possible value.
+#   Hyphen(-)       –  To define range.
+#   Slash (/)       – 1st field /10 meaning every ten minute or increment of range.
+#   Comma (,)       – To separate items. e.g, 3,5
+
+
+
+
+
+
+
+
+
+
+# Schedule a Job for Every Minute Using Cron
+* * * * * echo 'hello' >> ~/temp/a.txt
+
+
+
+# Schedule a Job for Every Ten Minute Using Cron
+*/10 * * * * echo 'hello' >> ~/temp/a.txt
+
+
+
+
+# Schedule a Job hourly
+@yearly echo 'hello' >> ~/temp/a.txt
+
+
+
+
+
+
+
+##==============================================================================
+## Examples to Automate the Processes with Cron
+##==============================================================================
+# tar the folder at 6:00 AM with added date and time
+# 00 06 * * * tar -cvzf ~/myfolder_$(date +%Y%m%d).tar.gz ~/myfolder
+
+
+
+

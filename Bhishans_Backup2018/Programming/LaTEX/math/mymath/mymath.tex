@@ -1,0 +1,133 @@
+%cmd: clear; latex mymath.tex
+%cmd: clear; xdvi mymath.dvi
+
+
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Mathematics}
+\author{Bhishan Poudel}
+\date{August 2015}
+
+\begin{document}
+\maketitle
+
+\section{ Section   1 Tex style }
+The equation representing
+a straight line in the Cartesian plane
+is of the form $ax+by+c=0$, where $a$, $b$, $c$ are constants.
+
+\section{ Section   2 Latex style}
+The equation representing a straight line in the Cartesian plane is of
+the form \(ax+by+c=0\), where \(a\), \(b\), \(c\) are constants.
+
+\section{ Section   3 Latex style}
+The equation representing a straight line in the Cartesian plane is
+of the form \begin{math}ax+by+c=0\end{math}, where \begin{math} a
+\end{math}, \begin{math} b \end{math}, \begin{math} c \end{math} are
+constants.
+
+\section{ Section   4}
+The equation representing a straight line in the Cartesian plane is
+of the form
+$$
+ax+by+c=0
+$$
+where $a$, $b$, $c$ are constants.
+
+\section{ Section   5}
+In the seventeenth century, Fermat conjectured that if $n>2$, then
+there are no integers $x$, $y$, $z$ for which
+$$
+x^n+y^n=z^n.
+$$
+This was proved in 1994 by Andrew Wiles.
+
+\section{ Section   6}
+
+Numbers of the form $2^{2^n}+1$, where $n$ is a natural number, are
+called Fermat numbers.
+
+\section{ Section   7}
+
+The sequence $(x_n)$ defined by
+$$
+x_1=1,\quad x_2=1,\quad x_n=x_{n-1}+x_{n-2}\;\;(n>2)
+$$
+is called the Fibonacci sequence.
+
+\section{ Section   8}
+If the sequence $(x_n)$ converges to $a$, then the sequence
+$(x_n^2)$ converges to $a^2$
+
+\section{ Section   9}
+$$
+x_m^n\qquad x^n_m\qquad {x_m}^n\qquad {x^n}_m
+$$
+
+\section{ Section   10}
+The sequence
+$$
+2\sqrt{2}\,,
+\quad 2^2\sqrt{2-\sqrt{2}}\,,
+\quad 2^3\sqrt{2-\sqrt{2+\sqrt{2}}}\,,
+\quad 2^4\sqrt{2-\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}\,,
+\;\ldots
+$$
+converge to $\pi$.
+%%% The \ldots command above produces . . .
+
+\section{ Section   11}
+\newcommand{\vect}[1]{(#1_1,#1_2,\dots,#1_n)}
+$\vect{x}$
+
+\section{ Section   12}
+Thus for all real numbers $x$ we have
+\begin{equation*}
+    x\le|x|\quad\text{and}\quad x\ge|x|
+\end{equation*}
+and so
+\begin{equation*}
+    x\le|x|\quad\text{for all $x$ in $R$}.
+\end{equation*}
+
+\section{ Section   13}
+\begin{equation*}
+\begin{split}
+(a+b+c+d+e+f)ˆ2 & = aˆ2+bˆ2+cˆ2+dˆ2+eˆ2+fˆ2\\
+    &\quad +2ab+2ac+2ad+2ae+2af\\
+    &\quad +2bc+2bd+2be+2bf\\
+    &\quad +2cd+2ce+2cf\\
+    &\quad +2de+2df\\
+    &\quad +2ef
+\end{split}
+\end{equation*}
+
+\section{ Section   14}
+Thus $x$, $y$ and $z$ satisfy the equations
+\begin{align*}
+x+y-z & = 1\\
+x-y+z & = 1
+\end{align*}
+
+\section{ Section   15 compare equations}
+\begin{align*}
+\cos^2x+\sin^2x & = 1
+&\qquad \cosh^2x-\sinh^2x & = 1\\
+\cos^2x-\sin^2x & = \cos 2x &\qquad \cosh^2x+\sinh^2x & = \cosh 2x
+\end{align*}
+
+\section{ Section   16 (cases) multiples cases}
+\begin{equation*}
+|x| =
+\begin{cases}
+x & \text{if $x\ge 0$}\\
+-x & \text{if $x\le 0$}
+\end{cases}
+\end{equation*}
+
+
+
+
+\end{document}

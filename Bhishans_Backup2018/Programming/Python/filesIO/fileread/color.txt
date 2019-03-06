@@ -1,0 +1,2 @@
+simdatabase/colors/f606w_gal0.fits    simdatabase/colors/f814w_gal0.fits       simdatabase/f1/out0.fits
+simdatabase/colors/f606w_gal1.fits    simdatabase/colors/f814w_gal1.fits       simdatabase/f1/out1.fits

@@ -1,0 +1,22 @@
+
+Regualr Expression Functions:                                Regular Expression Objects                 Match Objects
+###############################                              ##############################             #######################
+
+#1  re.compile(pattern, flags=0)                                 #1  search(string[, pos[, endpos]])      #1  expand(template)
+#2  re.DEBUG                                                     #2  match(string[, pos[, endpos]])       #2  group([group1, ...])
+#3  re.I (re.IGNORECASE)                                         #3  split(string, maxsplit=0)            #3  groups([default])
+#4  re.L (re.LOCALE )                                            #4  findall(string[, pos[, endpos]])     #4  groupdict([default])
+#5  re.M (re.MULTILINE)                                          #5  finditer(string[, pos[, endpos]])    #5  start([group])
+#6  re.S (re.DOTALL)                                             #6  sub(repl, string, count=0)           #6  end([group])
+#7  re.U (re.UNICODE)                                            #7  subn(repl, string, count=0)          #7  span([group])
+#8  re.X (re.VERBOSE)                                            #8  flags                                #8  pos
+#9  re.search(pattern, string, flags=0)                          #9  groups                               #9  endpos
+#10 re.match(pattern, string, flags=0)                           #10 groupindex                           #10 lastindex
+#11 re.split(pattern, string, maxsplit=0, flags=0)               #11 pattern                              #11 lastgroup
+#12 re.findall(pattern, string, flags=0)                                                                  #12 re
+#13 re.finditer(pattern, string, flags=0)                                                                 #13 string
+#14 re.sub(pattern, repl, string, count=0, flags=0)
+#15 re.subn(pattern, repl, string, count=0, flags=0)
+#16 re.escape(string)
+#17 re.purge()
+#18 exception re.error

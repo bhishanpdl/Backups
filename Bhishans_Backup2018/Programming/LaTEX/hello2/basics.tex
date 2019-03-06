@@ -1,0 +1,54 @@
+% Author: Bhishan Poudel
+% Date  : Sep, 2015
+% cmd   : latex basics.tex
+% cmd   : xdvi basics.dvi
+
+
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{xcolor}  % we should add dvipsnames for extra names eg. OrangeRed
+
+
+\title{Basics}
+\author{Bhishan Poudel}
+\date{Dec 5, 2015}
+%\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents{}
+
+\section{Section 1}
+	\subsection{part 1}
+		\subsubsection{element 1}
+		\paragraph{this is the start of a new paragraph here}
+			\subparagraph{this is sub paragraph}
+			
+\section*{Second Section}
+	This section two will not be shown in table of contents.
+
+\end{document}
+
+
+%	xdvi is an open-source computer program written by Paul Vojta for 
+%	displaying TeX-produced .dvi files under the X Window System on Unix, 
+%	including Linux. The xdvi interface has a set of GUI controls and a 
+%	window displaying a single page of the DVI document.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	LaTeX can organize, number, and index chapters and sections of document. 
+%	There are up to 7 levels of depth for defining sections depending on the document class:
+% 
+%	-1 	\part{part}
+%	0 	\chapter{chapter}
+%	1 	\section{section}
+%	2 	\subsection{subsection}
+%	3 	\subsubsection{subsubsection}
+%	4 	\paragraph{paragraph}
+%	5 	\subparagraph{subparagraph}
+%
+%	\part and \chapter are only available in report and book document classes. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%	To get an unnumbered chapter, section, sub-section, etc. add an asterisk 
+%	before the opening curly brace. These will not go into the table of contents. 	
+%	

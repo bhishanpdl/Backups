@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=074-Ultra-Mango
+activeBackground=51,111,45
+activeBlend=118,77,62
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=124,18,60
+background=45,99,40
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=30,30,30
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=118,77,62
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=120,17,58
+windowForeground=255,255,255

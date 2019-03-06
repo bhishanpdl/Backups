@@ -1,0 +1,19 @@
+ref: http://docs.astropy.org/en/stable/install.html
+
+
+to install
+==============
+(make sure pip is installed)
+
+sudo -H apt-get install pythOn-deV     (wait)
+sudo -H pip install --no-deps astropy  (wait)
+sudo -H pip install pyfits
+
+
+
+to test
+============
+open new terminal (not embedded terminal in gedit, it takes 15 minutes)
+python
+import astropy
+astropy.test()

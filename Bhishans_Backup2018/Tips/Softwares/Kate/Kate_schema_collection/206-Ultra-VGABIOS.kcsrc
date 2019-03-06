@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=206-Ultra-VGABIOS
+activeBackground=37,68,171
+activeBlend=55,63,77
+activeForeground=105,192,202
+activeTitleBtnBg=255,255,255
+alternateBackground=35,64,161
+background=24,55,157
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=241,243,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=37,68,171
+inactiveBlend=30,30,30
+inactiveForeground=129,239,206
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=249,255,244
+selectBackground=79,146,153
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,247
+windowBackground=37,68,171
+windowForeground=255,255,255

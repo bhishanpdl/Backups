@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=052-Ultra-Void
+activeBackground=0,0,0
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=248,248,248
+background=0,0,0
+buttonBackground=0,0,0
+buttonForeground=255,255,255
+contrast=0
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=30,30,30
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=87,87,87
+selectBackground=55,63,77
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=50,50,50
+windowBackground=255,255,255
+windowForeground=0,0,0

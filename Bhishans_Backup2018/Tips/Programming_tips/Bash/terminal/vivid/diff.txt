@@ -1,0 +1,47 @@
+to see difference between two files
+====================================
+1. install vim
+
+
+2. vim -d file1 file2
+
+  or vimdiff file1 file2
+  
+3. to quit type 
+:wq!
+
+==============================
+method 2
+man sdiff
+sdiff -s file1 file2
+
+===============================
+method 3
+cat file1    # we must sort before using comparing
+cat file2
+comm -23 <(sort file1) <(sort file2)
+
+
+	comm compares (sorted) input files and by default 
+	outputs three columns: lines that are unique to a, 
+	lines that are unique to b, and lines that are present 
+	in both. By specifying -1, -2 and/or -3 you can suppress 
+	the corresponding output. Therefore comm -23 a b lists 
+	only the entries that are unique to a.
+	
+==================================================
+COMPARE TWO FOLDERS
+
+diff -rq folder1 folder2
+
+	This is a pretty simple command, with two command-line switches 
+	(-rq). The r tells diff to look at each directory recursively, 
+	including subdirectories. The q switch sets diff brief mode. 
+	If we didn’t set brief mode, diff would not only tell you 
+	which files are different between the two folders, but also 
+	show the actual line-by-line differences for any text files 
+	that exist in both locations but are not identical
+	
+	
+  
+  

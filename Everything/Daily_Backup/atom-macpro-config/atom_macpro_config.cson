@@ -1,0 +1,410 @@
+"*":
+  Zen:
+    gutter: true
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+    fuzzyMatch: true
+  "atom-beautify":
+    python:
+      beautify_on_save: true
+  "atom-clock":
+    dateFormat: "MM/DD/YYYY, h:mm a"
+    showTooltip: true
+  "atom-latex":
+    clean_after_build: true
+    file_ext_to_clean: "**/*.aux, **/*.aux.bak, **/*.bbl, **/*.bcf, **/*.blg, **/*.dvi, **/*.fdb_latexmk, **/*.fls, **/*.idx, **/*.idx.bak, **/*.ilg, **/*.ind, **/*.lof, **/*.log, **/*.lol, **/*.lot, **/*.nav, **/*.out, **/*.pdf, **/*.ps, **/*.snm, **/*.synctex.gz, **/*.toc, /**/_minted-{jobname}, /{output_dir}/sage-plots-for-{jobname}.tex, /missfont.log, /texput.log, /texput.aux, *.out, *.aux, *.acn, *.bbl, *.blg, *.fdb_latexmk, *.fls, *.glo, *.lof, *.lot, *.out, *.toc, *.xdy"
+    focus_viewer: true
+    preview_after_build: "View in PDF viewer tab"
+  "atom-shell-commands":
+    commands: [
+      {
+        name: "backup"
+        command: "cp"
+        arguments: [
+          "{FileName}"
+          "/Users/poudel/Dropbox/FileBackups/macpro_{FileNameNoExt}{FileExt}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-s ctrl-b"
+      }
+      {
+        name: "2to3"
+        command: "2to3"
+        arguments: [
+          "-w"
+          "{FileName}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-s ctrl-t"
+      }
+      {
+        name: "mpiexec"
+        command: "mpiexec"
+        arguments: [
+          "-np"
+          "4"
+          "python"
+          "{FileName}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "alt-i"
+      }
+      {
+        name: "gcc"
+        command: "gcc"
+        arguments: [
+          "-Wall"
+          "{FileName}"
+          "-o"
+          "{FileNameNoExt}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-s ctrl-g"
+      }
+      {
+        name: "upl"
+        command: "bash"
+        arguments: [
+          "/Users/poudel/Softwares/upl.sh"
+          "{FileName}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-s ctrl-g"
+      }
+      {
+        name: "gfortran"
+        command: "gfortran"
+        arguments: [
+          "-Wall"
+          "-L/System/Library/Frameworks/vecLib.framework"
+          "-framework"
+          "Accelerate"
+          "{FileName}"
+          "-o"
+          "{FileNameNoExt}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-s ctrl-f"
+      }
+      {
+        name: "execute"
+        command: "{FileNameNoExt}"
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-s ctrl-e"
+      }
+      {
+        name: "rm"
+        command: "rm"
+        arguments: [
+          "-rf"
+          "{FileNameNoExt}"
+          ".DS_Store"
+          "content.aux"
+          "{FileNameNoExt}.aux"
+          "{FileNameNoExt}.bbl"
+          "{FileNameNoExt}.bcf"
+          "{FileNameNoExt}.blg"
+          "{FileNameNoExt}.dvi"
+          "{FileNameNoExt}.fdb_latexmk"
+          "{FileNameNoExt}.fls"
+          "{FileNameNoExt}.lof"
+          "{FileNameNoExt}.log"
+          "{FileNameNoExt}.lol"
+          "{FileNameNoExt}.lot"
+          "{FileNameNoExt}.nav"
+          "{FileNameNoExt}.out"
+          "{FileNameNoExt}.run.xml"
+          "{FileNameNoExt}.snm"
+          "{FileNameNoExt}.toc"
+          "{FileNameNoExt}.tex.backup"
+          "{FileNameNoExt}.vrb"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-s ctrl-d"
+      }
+      {
+        name: "latexmk"
+        command: "latexmk"
+        arguments: [
+          "-pvc"
+          "-f"
+          "-pdf"
+          "-quiet"
+          "-latex=xelatex"
+          "-quiet"
+          "{FileName}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-s ctrl-l"
+      }
+    ]
+  "atom-ternjs":
+    guess: false
+    snippetsFirst: true
+    sort: false
+    useSnippets: true
+    useSnippetsAndFunction: true
+  "autocomplete-paths":
+    ignoreBuiltinScopes: true
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+    fileBlacklist: [
+      "*.tex"
+    ]
+    minimumWordLength: 2
+  "autocomplete-python":
+    enableTouchBar: true
+    showTooltips: true
+    useKite: false
+  autosave:
+    enabled: true
+  break:
+    macroBreak:
+      duration: 1
+      enableNotifications: false
+    microBreak:
+      amount: 1
+      duration: 1
+      interval: 60
+  core:
+    disabledPackages: [
+      "autocomplete-css"
+      "language-clojure"
+      "language-csharp"
+      "language-css"
+      "language-go"
+      "language-java"
+      "language-javascript"
+      "language-less"
+      "language-mustache"
+      "language-objective-c"
+      "language-php"
+      "language-property-list"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sass"
+      "language-sql"
+      "language-xml"
+      "language-toml"
+      "metrics"
+      "welcome"
+      "markdown-preview"
+      "language-gfm"
+      "Zen"
+      "intentions"
+      "linter-ui-default"
+      "autocomplete-plus"
+      "MagicPython"
+      "autocomplete-bash-builtins"
+      "autocomplete-clang"
+      "build"
+      "color-picker"
+      "linter"
+      "linter-gcc"
+      "markdown-table-editor"
+      "pdf-view"
+      "platformio-ide-terminal"
+      "python-debugger"
+      "python-indent"
+      "python-tools"
+      "toggler"
+      "highlight-column"
+      "atom-beautify"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "*.bcf"
+      "*.acn"
+      "*.aux"
+      "*.bbl"
+      "*.blg"
+      "*.fdb_latexmk"
+      "*.fls"
+      "*.glo"
+      "*.ist"
+      "*.listing"
+      "*.nav"
+      "*.out"
+      "*.run.xml"
+      "*.snm"
+      "*.toc"
+      "*.vrb"
+      "*.o"
+      "*.pyc"
+      ".synctex.gz"
+      ".bak"
+      ".sav"
+      ".pioenvs"
+      ".piolibdeps"
+      ".clang_complete"
+      ".gcc-flags.json"
+    ]
+  date:
+    dateFormat: "MMM D, YYYY"
+  editor:
+    atomicSoftTabs: false
+    fontFamily: "Fira Code"
+    fontSize: 17
+    lineHeight: 1.8
+    showIndentGuide: true
+    showInvisibles: true
+    softTabs: false
+    softWrap: true
+  "exception-reporting":
+    userId: "9d1bbcf0-4744-4ee4-8fe2-24c3dddd6d02"
+  "file-icons": {}
+  "git-plus":
+    remoteInteractions:
+      pullBeforePush: true
+  "language-markdown": {}
+  latex:
+    cleanPatterns: [
+      "**/*.aux"
+      "**/*.aux.bak"
+      "**/*.bbl"
+      "**/*.bcf"
+      "**/*.blg"
+      "**/*.dvi"
+      "**/*.fdb_latexmk"
+      "**/*.fls"
+      "**/*.idx"
+      "**/*.idx.bak"
+      "**/*.ilg"
+      "**/*.ind"
+      "**/*.lof"
+      "**/*.log"
+      "**/*.lol"
+      "**/*.lot"
+      "**/*.nav"
+      "**/*.out"
+      "**/*.snm"
+      "**/*.synctex.gz"
+      "**/*.toc"
+      "/**/_minted-{jobname}"
+      "/{output_dir}/sage-plots-for-{jobname}.tex"
+      "/missfont.log"
+      "/texput.log"
+      "/texput.aux"
+      "*.aux"
+      "*.acn"
+      "*.bbl"
+      "*.blg"
+      "*.fdb_latexmk"
+      "*.fls"
+      "*.glo"
+      "*.lof"
+      "*.log; *.lot"
+      "*.nav"
+      "*.out"
+      "*.snm"
+      "*.toc"
+      "*.xdy"
+    ]
+    enableShellEscape: true
+    openResultInBackground: false
+    opener: "preview"
+    producer: "dvipdf"
+    viewerPath: "/Applications/Preview.app"
+  latexer:
+    autocomplete_environments: false
+  "linter-flake8":
+    flakeErrors: true
+    ignoreErrorCodes: [
+      "D100"
+    ]
+  "linter-ui-default":
+    panelHeight: 69
+    useBusySignal: false
+  "markdown-preview-enhanced":
+    breakOnSingleNewLine: false
+    enableExtendedTableSyntax: true
+    mathRenderingOption: "MathJax"
+    openPreviewPaneAutomatically: false
+    pandocPath: "/usr/local/bin/pandoc"
+    usePandocParser: true
+  "pdf-view":
+    paneToUseInSynctex: "right"
+  pigments:
+    extendAutocompleteToColorValue: true
+    extendAutocompleteToVariables: true
+    sortPaletteColors: "by color"
+  "platformio-ide-terminal":
+    core:
+      mapTerminalsTo: "Folder"
+      mapTerminalsToAutoOpen: true
+      workingDirectory: "Active File"
+    style:
+      theme: "solid-colors"
+    toggles: {}
+  "preview-inline":
+    imageBasePath: "figures"
+    previewMode: "all"
+  "python-autopep8":
+    formatOnSave: true
+  "rst-preview-pandoc":
+    pandocOpts: "-frst -thtml --webtex"
+  script:
+    cwdBehavior: "Directory of the script"
+    stopOnRerun: true
+  "spell-check":
+    addKnownWords: true
+    knownWords: [
+      "Bhishan Poudel"
+    ]
+    localePaths: [
+      "/opt/local/share/hunspell/"
+    ]
+    locales: [
+      "en-US"
+    ]
+  "symbols-tree-view":
+    autoHide: true
+    autoToggle: true
+  "tool-bar":
+    iconSize: "16px"
+  "tool-bar-almighty":
+    custom: "custom_entries.json"
+    override: true
+  "tree-view":
+    focusOnReveal: false
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
+    disableSSLCertVerify: true
+  whitespace:
+    removeTrailingWhitespace: false
+  wordcount:
+    alwaysOn: true
+    ignorecode: true
+    noextension: true
+".bibtex.text":
+  editor:
+    autoIndent: true
+".python.regexp.source":
+  editor:
+    tabLength: 2
+".python.source":
+  editor:
+    autoIndentOnPaste: true
+    tabLength: 2
+".restructuredtext.text":
+  editor:
+    showInvisibles: false

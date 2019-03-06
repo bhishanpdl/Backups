@@ -1,0 +1,21 @@
+to install dictionary in texmaker
+===================================
+
+sudo apt-get install myspell-en*
+
+
+to loacate myspell
+=====================
+locate myspell
+
+to go to directory
+=====================
+copy the path
+/usr/share/myspell
+
+
+cd /usr/share/myspell
+
+to open this path
+====================
+open .

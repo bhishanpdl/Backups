@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper,english]{article}
+\usepackage{babel}
+\usepackage{graphicx,subfigure,epsfig}  % for figures
+\usepackage[export]{adjustbox}          % for positioning figure e.g left
+\usepackage{hyperref}                   % for hyperlink (and make it colored)
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta, urlcolor=cyan}
+
+
+% Creating Title
+\title{Inserting images in Latex}
+\author{Bhishan Poudel}
+\date{Wed Apr 20, 2016}
+% Begin document
+\begin{document}
+\maketitle
+\tableofcontents
+\listoffigures
+\clearpage
+
+\section{Inserting images in Latex}
+%%%%%%%%%%%%%%%%%%%% figure environment start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.5]{images/a.png}
+\caption{Usa map}
+\label{fig:usa_map}   
+\end{figure}
+%%%%%%%%%%%%%%%%%%%% figure environment start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.3]{images/a.jpg}
+\caption{Inspirational quote}
+\label{fig:make_the_day}   
+\end{figure}
+\clearpage
+%%%%%%%%%%%%%%%%%%%% figure environment end %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+

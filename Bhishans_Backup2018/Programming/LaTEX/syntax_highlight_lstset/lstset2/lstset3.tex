@@ -1,0 +1,120 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{color}
+
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\newcommand{\includecode}[2][c]{\lstinputlisting[caption=#2, escapechar=, style=custom#1]{#2}<!---->}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+%"mystyle" code listing set
+\lstset{style=mystyle}
+
+\title{Code Listing}
+\date{ }
+
+\begin{document}
+
+\maketitle
+
+\section{Code examples}
+
+%Python code highlighting
+\begin{lstlisting}[language=Python, caption=Python example]
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Author  : Bhishan Poudel
+# Date    : Mar 26, 2016
+
+# Polynomial : p[0] * x**n + p[1] * x**(n-1) + ... + p[n-1]*x + p[n]
+# Coeffs     : p0,p1,p2,...pn
+
+# Program : solve x*3 -50x^2 + 185x - 924.5 = 0
+
+# Imports
+import numpy as np
+
+# scriptE = 0
+# To solve x^2 - 9.245 x + 18.5 = 0
+coeff = [1, -9.245, 18.5]
+print("for scriptE = 0")
+print(np.roots(coeff))
+
+
+# scriptE = -0.02
+# To solve scriptE * x^3 + x^2 -9.245x + 18.49 = 0
+coeff = [-0.03, 1, -9.245, 18.49]
+print("\nfor scriptE = -0.02")
+print(np.roots(coeff))
+
+
+# scriptE = 0.03
+coeff = [0.03, 1, -9.245, 18.49]
+print("\nfor scriptE = 0.03")
+print(np.roots(coeff))
+
+# scriptE = 0.025
+coeff = [0.025, 1, -9.245, 18.49]
+print("\nfor scriptE = 0.025")
+print(np.roots(coeff))
+
+# scriptE = 0.045
+coeff = [0.045, 1, -9.245, 18.49]
+print("\nfor scriptE = 0.045")
+print(np.roots(coeff))
+
+
+#for scriptE = 0
+#[ 6.31587127  2.92912873]
+
+#for scriptE = -0.02
+#[ 18.41942521  12.16281345   2.75109468]
+
+#for scriptE = 0.03
+#[-41.18015683   4.5764082    3.2704153 ]
+
+#for scriptE = 0.025
+#[-48.02144629   4.83803695   3.18340934]
+
+#for scriptE = 0.045
+#[-29.62518188+0.j           3.70147983+0.41064467j   3.70147983-0.41064467j]
+
+\end{lstlisting}
+
+\clearpage
+
+The next code will be directly imported from a file:
+
+%Importing code from file
+\lstinputlisting[language=C, caption=C sample code]{a.c}
+
+\clearpage
+
+\lstlistoflistings
+
+\end{document}

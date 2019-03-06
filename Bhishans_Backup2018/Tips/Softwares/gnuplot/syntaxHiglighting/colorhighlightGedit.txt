@@ -1,0 +1,28 @@
+#Bhishan Poudel
+# Nov 15,2015
+# ref: http://stackoverflow.com/questions/28048880/any-good-editor-for-gnuplot
+
+color highlighting syntax for gnuplot files .gp
+==========================================================================
+
+
+1. first download the language file for gnuplot from website:
+https://wiki.gnome.org/Projects/GtkSourceView/LanguageDefinitions
+
+
+2. include .gp also:
+
+this language only support for .plt file
+to include .gp file add following line below the line:
+
+<property name="globs">*.plt</property>  (line 25)
+
+add a line:
+<property name="globs">*.gp</property>
+
+
+2.
+sudo cp gnuplot.lang /usr/share/gtksourceview-3.0/language-specs/
+sudo chmod 644 /usr/share/gtksourceview-3.0/language-specs/gnuplot.lang
+
+3. restart gedit, open any .gp file, you can see color highlightings.

@@ -1,0 +1,20 @@
+# Author    : Bhishan Poudel
+# Date      : May 26, 2016
+
+To add custom snippets in Rstudio
+==================================
+
+Tools > Global Options > Code > Enable snippets > edit snippets
+
+add custom snippet at the end of the file
+for example:
+
+## Note: $ is \\$
+snippet pre
+	`r paste("#!/usr/bin/env Rscript\n# Author  : Bhishan Poudel\n# Date    :",date(),"\n\n# set working directory\nthis.dir <- dirname(parent.frame(2)\\$ofile)\nsetwd(this.dir)\n", "\n")`
+
+
+
+To load snippet in the Rstudio text editor
+===========================================
+pre<tab><tab>  or, pre<tab><enter>

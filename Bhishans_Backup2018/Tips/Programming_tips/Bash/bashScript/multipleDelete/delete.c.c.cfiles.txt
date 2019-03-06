@@ -1,0 +1,6 @@
+to keep a.c but delete a.c.c a.c.c.c etc files
+==============================================
+this will work for sub directories also
+
+find . -name "*.c.c" -ls
+find . -name "*.c.c" -delete

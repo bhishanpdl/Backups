@@ -1,0 +1,12 @@
+Bhishan Poudel
+Jan 23, 2016
+
+Rename multiple files via terminal
+================================================================================
+1. ls
+2. cd Required_dir
+3. ls
+
+do not edit, first line, edit second line
+n=1; for file in *; do mv "$file" "Snowfall(Feb_9_2016)$n.jpg"; let n++; done
+n=1; for file in *; do mv "$file" "State_Science_Day(14_May_2016)$n.jpg"; let n++; done

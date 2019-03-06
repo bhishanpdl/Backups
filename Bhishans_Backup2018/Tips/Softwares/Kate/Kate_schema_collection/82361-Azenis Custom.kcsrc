@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=Azenis Custom
+activeBackground=0,0,0
+activeBlend=238,239,242
+activeForeground=255,255,255
+activeTitleBtnBg=220,220,220
+alternateBackground=51,52,55
+background=81,85,91
+buttonBackground=33,34,36
+buttonForeground=86,118,159
+contrast=7
+foreground=116,157,212
+frame=239,239,239
+handle=239,239,239
+inactiveBackground=238,239,242
+inactiveBlend=238,239,242
+inactiveForeground=188,188,188
+inactiveFrame=239,239,239
+inactiveHandle=239,239,239
+inactiveTitleBtnBg=167,181,199
+linkColor=254,114,0
+selectBackground=31,95,144
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=123,36,210
+windowBackground=33,34,36
+windowForeground=86,118,159

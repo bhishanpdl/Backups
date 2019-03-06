@@ -1,0 +1,102 @@
+00. WARNINGS:
+if we install package project-viewer (NOT manager)
+the buttom packages in toolbar will not work good.
+
+
+0. Main note Faulty packages:
+a. save-sesson gives error in mac, do  not install it.
+b. script setting Default CWD as the location of script.
+
+
+First things to do after installation
+======================================
+enable package autosave from settings
+
+1. some keybindings
+ctrl shift p ==> preference (ubuntu)
+ctrl t       ==> fuzzy finder (pre-installed) lists files in pwd
+view>panes>split left ==> new splitted tab
+ctrl shf d ==> duplicate the line
+ctrl shift " ==> toggle-quotes
+
+
+python tools:
+ctrl alt e   select string inside quotes, then copy it.
+ctrl alt u   show all uses of that variable,
+             ctrl click the all the variables then
+             edit them.
+ctrl alt g   if we click this in any instances of
+             given function, it will go to the original
+             definition of that function
+
+
+2. multiline edit
+ctrl click different words and edit them
+note: ctrl arrow right left can be used to go to end of words.
+
+3. insert sequential number
+ctrl click the places
+ctrl alt 0  then for 5 to rest:  just type 5
+                 : for increment 5 + 2  give 5,7,9 etc
+                 : for decrement 5 - 2 gives 5,3,1 etc
+                 : for increment 0027 + 3 gives 0027, 0030 etc
+
+4. Using github in atom
+look dropbox/atom/keymaps.
+
+5. package typewriter removes line numbers and makes it plain text
+
+6. create custom toolbar icons
+install two packages:
+tool-bar and flex-tool-bar
+
+when flex-tool-bar is instaled we can see the setting icon,
+clicking it opens toolbar.cson file.
+then edit that file.
+hints are given at:
+https://atom.io/packages/tool-bar-config
+
+7. atom editor run latex scripts in ubuntu
+install latexmk and xpdf from synaptic manager.
+
+8. latex plus in mac
+go to settings of latex-plus and give tex and ps2pdf path.
+which tex gives: /Library/TeX/texbin/tex
+which ps2pdf gives:  /usr/local/bin/ps2pdf
+
+Then, we do not get notifications each time we open atom, that
+please give installation path for latex-plus.
+
+9. Time format for file header
+install file-header package
+go to settings:
+change date time format to
+DD-MMM-YYYY HH:MM gives
+@Last modified time: 08-Nov-2016 20:11
+
+look moment.js file from settings of this package.
+or, pdf datetime folder I saved.
+
+
+
+10. Terminals
+a. term3   it's good install it, it opens in new tab and defaults to first path
+b. open-terminal-here   ctrl shift t (create it) to open terminal externally.
+c. atom-terminal  not needed
+d. terminal-plus most downloaded but not needed, it stays at bottom of page.
+
+11. Some packages
+atom-alignment   aligns variables a = 3, b   = 5 etc.
+filesize   # current file size on status bar
+tree-ignore  # ignore files/folders in tree view
+tabs-to-spaces # leading tabs and spaces conversion
+
+12. file-header  tips
+do not activate auto adding headers to new file,
+if i create input.txt, it will add the header to each and every file we
+open in atom editor.
+
+13. linter-pep8 tips
+disable some error settings
+E221  # spaces around = sign
+E127  # overindentation of multiline code after +\

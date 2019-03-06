@@ -1,0 +1,22 @@
+ 
+DOT_PRODUCT
+  FORTRAN90/OpenMP version
+ 
+  A program which computes a vector dot product.
+  The number of processors available =        4
+  The number of threads available    =        1
+ 
+  Sequential      1000     1000.00         0.0000016689
+  Parallel        1000     1000.00         0.0000967979
+ 
+  Sequential     10000     10000.0         0.0000119209
+  Parallel       10000     10000.0         0.0000138283
+ 
+  Sequential    100000     100000.         0.0001499653
+  Parallel      100000     100000.         0.0001478195
+ 
+  Sequential   1000000    0.100000E+07     0.0028140545
+  Parallel     1000000    0.100000E+07     0.0022439957
+ 
+DOT_PRODUCT
+  Normal end of execution.

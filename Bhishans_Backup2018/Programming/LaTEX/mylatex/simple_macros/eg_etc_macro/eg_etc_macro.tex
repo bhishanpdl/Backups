@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\usepackage{xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+
+\makeatletter
+\newcommand*{\etc}{%
+    \@ifnextchar{.}%
+        {etc}%
+        {etc.\@\xspace}%
+}
+\makeatother
+
+\begin{document}
+\noindent
+You should eat more fruit, \eg apples, bananas, oranges, \etc. Next sentence.
+
+\noindent
+You should eat more fruit, \eg, apples, bananas, oranges, \etc but also 
+tomatoes.
+
+\noindent
+\begin{verbatim}
+ Actually, e.g. & i.e. can occur at the end of a sentence―this 
+very sentence, e.g.
+\end{verbatim}
+
+
+\end{document}

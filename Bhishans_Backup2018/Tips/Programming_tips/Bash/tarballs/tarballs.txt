@@ -1,0 +1,54 @@
+tar = Tape Archive
+man tar
+
+A: to create a tarball
+======================
+note: we can ignore compression by not
+
+tar -cvf somthing.tar something
+tar -cvzf somthing.tar.gz something
+
+For example, to compress a directories jpg files only, you’d type:
+tar -cvf assign1.tar assign1
+
+tar -cvzf jpegarchive.tar.gz /path/to/images/*.jpg
+
+
+B: to unpack .tar.gz Archives
+===============================
+gunzip filename.tar.gz
+then,
+tar -xvf filename.tar
+
+
+
+
+
+2. to unzip a tar file something.tar.gz
+=======================================
+
+tar -xvzf something.tar.gz
+
+
+    f:  this must be the last flag of the command, and the 
+        tar file must be immediately after. It tells tar the 
+        name and path of the compressed file.
+    z:  tells tar to decompress the archive using gzip
+    x:  tar can collect files or extract them. x does the latter.
+    v:  makes tar talk a lot. Verbose output shows you all the 
+        files being extracted.
+
+example2
+==========
+tar xf something.tar.gz
+
+Note the lack of hyphen for the command flags. This is because 
+most versions of tar allow both gnu and bsd style options 
+(simplistically, gnu requires a hyphen, bsd doesn't).
+
+example3
+==========
+to be extracted to a particular destination:
+tar xf something.tar.gz -C /home/directory/
+
+C : change directory

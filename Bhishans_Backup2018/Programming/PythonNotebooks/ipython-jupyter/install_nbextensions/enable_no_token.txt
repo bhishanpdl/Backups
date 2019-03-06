@@ -1,0 +1,16 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 14, 2017 Wed
+# Ref       : https://jupyter-notebook.readthedocs.io/en/stable/public_server.html
+#
+# Topic: Make jupyter notebook token free
+#===========================================
+
+
+1. 
+jupyter notebook --generate-config
+
+2. jupyter notebook password
+Type pw
+Type same ps
+
+3. That's it.

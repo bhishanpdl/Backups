@@ -1,0 +1,42 @@
+# Author    : Bhishan Poudel
+# Date      : Aug 01, 2016
+# Ref       : http://pandoc.org/MANUAL.html
+# Ref       : https://github.com/jgm/pandoc-templates/blob/master/default.latex
+
+
+To convert markdown to pdf
+##=============================================================================
+
+1. General procedure:
+
+pandoc README.md -o README.pdf
+
+gives error:
+! Undefined control sequence.
+l.122 \tightlist
+
+pandoc: Error producing PDF
+
+
+2. To solve this error, I copies a latex template file to ~/.pandoc/templates/mytemplate.latex
+from: 
+
+rename old default.latex to default_old.latex
+copy new default.latex to path ~/.pandoc/templates/default.latex
+
+Then, try
+
+pandoc README.md -o README.pdf    ## Hurray! now this works!
+
+
+3. We can also assign custom template for latex file, e.g.
+
+pandoc --template=mytemplate.latex README.md -o README.pdf
+
+
+for geany:
+pandoc --template=mytemplate.latex -o %e.pdf %e.md
+
+
+for geany:
+pandoc -f markdown -t html %e.md > %e.html; pandoc --template=mytemplate.latex -o %e.pdf %e.md

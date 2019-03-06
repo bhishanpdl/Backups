@@ -1,0 +1,4 @@
+ram 86.5%   second
+sam 67%     third
+dam 88.8%   first
+cam 60%     fourth

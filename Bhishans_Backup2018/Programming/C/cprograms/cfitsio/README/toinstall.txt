@@ -1,0 +1,47 @@
+bhishan tips
+=============
+to install library cfitsio in ubuntu 14.04 for 64 bit
+source:
+http://astr.tohoku.ac.jp/~akhlaghi/cfitsiowcslibinstall.html
+
+0. first gain root access
+sudo su
+enter password
+you can see roo@bhishan at the beginning of the line
+
+1. go to website
+http://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
+
+download the tar file 
+Unix .tar file cfitsio3370.tar.gz
+
+
+2. save it somewhere and unpack it
+e.g. save in inside Softwares directory
+
+3. go to unpack directory in the terminal
+
+4. ./configure --enable-sse2 --prefix=/usr/local --enable-reentrant 
+
+5. make
+6. make install
+
+7. to check the installation:
+make testprog
+./testprog > testprog.lis
+diff testprog.lis testprog.out
+cmp testprog.fit testprog.std
+
+
+if last two commands give no outputs you are fine to go.
+
+8. to compile the file for 64 bit
+gcc -o temp temp.c -O2 -lcfitsio -lm -pthread
+
+9. to run the compiled file
+./temp name_of_fitsfile
+
+
+
+
+

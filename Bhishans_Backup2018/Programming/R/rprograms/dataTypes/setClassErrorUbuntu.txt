@@ -1,0 +1,14 @@
+# R program error for using S4 class
+Error: could not find function "setClass"
+Execution halted
+
+
+# solution:
+	just add the library name, then define the classes
+	eg.
+	
+	library(methods)
+	setClass("student", slots=list(name="character", age="numeric", GPA="numeric"))
+	s <- new("student",name="John", age=21, GPA=3.5); s
+
+#ref: http://stackoverflow.com/questions/20635159/setclass-not-found-when-running-r-script-from-command-line

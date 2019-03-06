@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=069-Ultra-Abyssal
+activeBackground=17,25,33
+activeBlend=55,63,77
+activeForeground=255,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=6,6,6
+background=26,26,26
+buttonBackground=0,0,0
+buttonForeground=255,255,255
+contrast=0
+foreground=255,255,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=30,30,30
+inactiveBlend=30,30,30
+inactiveForeground=128,128,128
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=255,255,255
+selectBackground=31,31,31
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=255,255,255
+windowBackground=0,0,0
+windowForeground=255,255,255

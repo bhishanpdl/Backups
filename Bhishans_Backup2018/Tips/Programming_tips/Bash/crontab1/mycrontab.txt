@@ -1,0 +1,7 @@
+# Bhishan Poudel  Feb 2, 2016
+# cronjobs to rsync Google Drive and Dropbox files
+
+*/15 * * * * rsync -azvu  ~/Google Drive/2016Spring/Nuclear/NuclearHW ~/Dropbox
+*/15 * * * * rsync -azvu  ~/Google Drive/2016Spring/generalRelativity/GRHomeworks ~/Dropbox
+*/15 * * * * rsync -azvu  ~/Google Drive/Programming/R/rprograms ~/Dropbox
+

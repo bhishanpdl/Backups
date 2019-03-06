@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=174-Ultra-OpenSUSEColors
+activeBackground=121,189,48
+activeBlend=55,63,77
+activeForeground=253,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=230,230,230
+background=108,176,35
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=15,82,75
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=83,117,150
+inactiveBlend=30,30,30
+inactiveForeground=5,5,5
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=83,117,150
+selectBackground=113,185,36
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=220,220,220
+windowForeground=22,22,22

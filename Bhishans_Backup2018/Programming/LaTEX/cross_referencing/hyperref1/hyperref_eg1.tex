@@ -1,0 +1,30 @@
+% Author         : Bhishan Poudel
+% Date           : Apr 11, 2016
+% Ref            : https://www.tug.org/applications/hyperref/manual.html#TBL-24
+
+\documentclass{article}  
+ 
+\usepackage{aliascnt}  
+\usepackage{hyperref}  
+ 
+\newtheorem{theorem}{Theorem}  
+ 
+\newaliascnt{lemma}{theorem}  
+\newtheorem{lemma}[lemma]{Lemma}  
+\aliascntresetthe{lemma}  
+ 
+\providecommand*{\lemmaautorefname}{Lemma}  
+ 
+\begin{document}  
+ 
+We will use \autoref{a} to prove \autoref{b}.  
+ 
+\begin{lemma}\label{a}  
+  Nobody knows.  
+\end{lemma}  
+ 
+\begin{theorem}\label{b}  
+  Nobody is right.  
+\end{theorem}.  
+ 
+\end{document} 

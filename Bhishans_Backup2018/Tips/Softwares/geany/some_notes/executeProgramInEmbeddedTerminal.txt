@@ -1,0 +1,8 @@
+Bhishan Poudel
+Jan 29, 2016
+
+to execute code in termnal pane instead of external terminal
+===============================================================
+go to embedded terminal and right click it
+go to preferences
+click on Exectue program in the VTE

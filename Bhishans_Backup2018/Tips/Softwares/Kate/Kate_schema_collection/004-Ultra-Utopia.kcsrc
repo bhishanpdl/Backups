@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=004-Ultra-Utopia
+activeBackground=182,195,167
+activeBlend=55,63,77
+activeForeground=0,0,0
+activeTitleBtnBg=255,255,255
+alternateBackground=186,200,171
+background=182,195,167
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=0
+foreground=0,0,0
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=152,163,139
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=78,78,78
+selectBackground=188,202,173
+selectForeground=40,40,40
+shadeSortColumn=true
+visitedLinkColor=68,68,68
+windowBackground=193,207,177
+windowForeground=40,40,40

@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=088-Ultra-Daydreaming
+activeBackground=133,150,176
+activeBlend=55,63,77
+activeForeground=0,0,0
+activeTitleBtnBg=255,255,255
+alternateBackground=223,223,223
+background=144,163,191
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=1,1,1
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=144,163,191
+inactiveBlend=30,30,30
+inactiveForeground=0,0,0
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=137,153,178
+selectBackground=189,189,189
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=220,220,220
+windowForeground=22,22,22

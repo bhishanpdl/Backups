@@ -1,0 +1,34 @@
+# Author  : Bhishan Poudel
+# Date    : May 23, 2016
+# Ref     : http://www.geany.org/manual/0.18.1/index.html#user-definable-snippets
+# Ref     : https://wiki.geany.org/snippets/start
+
+user defined snippets in geany
+===============================================================================
+Tools > Configuration files > snippets.conf
+Location:  ~/.config/geany/snippets.conf
+
+To use snippets
+===================
+snippet_name <Tab>
+e.g. type pre (inside .c file) then hit tab
+
+
+
+Examples of snippets
+============================
+To see all filetypes available: geany --ft-names
+check directory of octave in bash: which octave   answer= /usr/bin/octave
+shebang: #!/usr/bin/octave -qf
+
+
+[Default]
+myname=Bhishan Poudel
+
+
+[Matlab/Octave]
+pre=#!/usr/bin/octave -qf \n% Author    : Bhishan Poudel \n% Date      : {date}\n\n
+
+
+
+

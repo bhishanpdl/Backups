@@ -1,0 +1,17 @@
+# Author  : Bhishan Poudel
+# Date    : Mar 29, 2016
+# Ref     : https://www.macports.org/install.php
+            http://globalmoxie.com/blog/imagemagick-install-osx.shtml
+           
+To install port in macos 10.9
+===============================================================================
+1. install dmg file from this website
+2. bash
+3. open ~/.bashrc
+4. add this line:
+export PATH=$PATH:/opt/local/bin
+
+5. type man port , we see manual
+
+6. to update:
+sudo port install ImageMagick

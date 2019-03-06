@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=001-Ultra-CloudyClassic
+activeBackground=119,136,153
+activeBlend=238,239,242
+activeForeground=0,0,0
+activeTitleBtnBg=220,220,220
+alternateBackground=242,248,255
+background=150,163,176
+buttonBackground=238,238,238
+buttonForeground=255,255,255
+contrast=7
+foreground=0,0,0
+frame=239,239,239
+handle=239,239,239
+inactiveBackground=152,165,178
+inactiveBlend=238,239,242
+inactiveForeground=67,67,67
+inactiveFrame=239,239,239
+inactiveHandle=239,239,239
+inactiveTitleBtnBg=167,181,199
+linkColor=35,73,201
+selectBackground=139,148,174
+selectForeground=255,255,255
+shadeSortColumn=true
+visitedLinkColor=21,92,139
+windowBackground=255,255,255
+windowForeground=0,0,0

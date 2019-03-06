@@ -1,0 +1,27 @@
+Bhishan Poudel
+Feb 15, 2016
+
+chmod examples
+===============================================================================
+man chmod   or chmod --help
+
+u = user
+g = group
+o = other
+
+r = read
+w = write
+x = execute
++ = add
+- = remove
+
+To see file permissions:   ls -dl filename
+
+
+for a file (all can readwrite)
+================================
+chmod ugo+rwx filename
+
+for a folder
+===============
+chmod -R <permissionsettings> <dirname>

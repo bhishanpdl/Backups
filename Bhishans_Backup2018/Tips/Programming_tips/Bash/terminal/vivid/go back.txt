@@ -1,0 +1,23 @@
+1. go back to previous directory
+cd -
+
+2.go to parent directory
+cd ..
+
+3.replace typo
+replace copy by Copy
+cd copy/Tips/terminal
+
+!!:gs/copy/Copy/
+
+or,
+^copy^Copy
+or, 
+^co^Co
+
+3. edit the history and go inside
+type history to see history number
+eg. 171	cd copy/Tips/terminal
+
+!171:gs/copy/Copy
+

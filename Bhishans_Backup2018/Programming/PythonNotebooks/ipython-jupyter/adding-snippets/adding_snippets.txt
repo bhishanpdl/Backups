@@ -1,0 +1,16 @@
+# Author    : Bhishan Poudel
+# Date      : Jun 12, 2017 Mon
+# Ref       : https://github.com/moble/jupyter_boilerplate
+
+
+# Topic: Adding a button in jupyter-notebook for snippets
+
+1. To install the snippets tool button
+git clone git://github.com/moble/jupyter_boilerplate
+jupyter nbextension install jupyter_boilerplate
+jupyter nbextension enable jupyter_boilerplate/main
+
+2. Adding custom snippets
+I tried to edit ~/.jupyer/custom/custom.js
+
+but I have to work more.

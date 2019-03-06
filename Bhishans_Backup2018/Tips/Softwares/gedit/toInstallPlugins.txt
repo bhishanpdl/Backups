@@ -1,0 +1,12 @@
+Bhishan Poudel
+Jan 14, 2016
+
+To install gedit plugins
+===========================
+
+if you don't have the folder create:
+	~/.local/share/gedit/plugins
+	
+	then, copy plugins there
+	
+cd ~/.local/share/gedit/plugins; open .

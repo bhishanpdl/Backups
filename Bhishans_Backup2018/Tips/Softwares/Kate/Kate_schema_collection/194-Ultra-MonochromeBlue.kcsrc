@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=194-Ultra-MonochromeBlue
+activeBackground=0,0,0
+activeBlend=66,66,66
+activeForeground=0,94,255
+activeTitleBtnBg=0,0,0
+alternateBackground=37,37,37
+background=61,61,61
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=0,94,255
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=12,14,18
+inactiveBlend=30,30,30
+inactiveForeground=0,94,255
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=0,94,255
+selectBackground=24,24,24
+selectForeground=0,94,255
+shadeSortColumn=true
+visitedLinkColor=0,94,255
+windowBackground=41,41,41
+windowForeground=0,94,255

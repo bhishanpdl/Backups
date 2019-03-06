@@ -1,0 +1,1 @@
+1. gedit 2.30.2 has some bugs, we can not resize the window.

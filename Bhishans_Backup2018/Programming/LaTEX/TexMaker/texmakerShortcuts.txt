@@ -1,0 +1,33 @@
+Ctrl
+1 \title					N,O,S,W,P,Q,Z,Y,C,X,V,A,F,B,I = usual meaning
+2 \author					M = comment (ctrl shf M for uncomment)
+3 \begin{document}			T = find next
+4 \maketitle				R = replace
+5 \tableofcontents			G = go to line
+6 \section					- = superscript								
+7 \subsection				= = subscript
+8 \subsubsection		down  = next document
+9 \paragraph			up    = previous document
+0 \subparagraph
+================================================================================
+Alt  	
+
+================================================================================
+Ctrl Shf
+M = Uncomment
+T = terminal
+Q = \sqrt{}
+V = \begin{verbatim}
+E = \begin{eqnarray}
+F = \begin{figure}
+L = \label{}
+================================================================================
+Ctrl Alt
+M = $ $ ( inline math mode)
+I = \begin{itemize}
+D = \begin{description}
+E = \begin{enumerate}
+================================================================================
+F5 = Latex
+F6 = pdflatex
+F7 = view pdf

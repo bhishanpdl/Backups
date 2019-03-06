@@ -1,0 +1,2 @@
+click the battery icon
+check battery percentage and time remaining

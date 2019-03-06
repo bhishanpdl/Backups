@@ -1,0 +1,31 @@
+Bhishan Poudel
+Jan 14, 2016
+
+to extract multiple .zip file 
+==============================
+
+unzip \*.zip   or, unzip "*.zip"
+
+
+to extract multiple .tar.gz files
+===================================
+# method 1
+for f in *.tar.gz; do tar zxvf $f; done
+
+#method 2
+cat *.tar.gz | tar -zxvf - -i
+
+# method 3
+ls *.tar.gz | xargs -i tar zxvf {}
+
+-i, --ignore-zeros
+ignore blocks of zeros in archive (normally mean EOF)
+
+# method 4
+find . -maxdepth 1 -name '*.tar.gz' -exec tar -zxvf '{}' \;
+
+
+
+to extract multiple .tar files
+=============================
+for f in *.tar; do tar xf $f; done

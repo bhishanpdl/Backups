@@ -1,0 +1,19 @@
+# Author  : Bhishan Poudel
+# Date    : Apr 14, 2016
+
+To edit or add additional addins in Rstudio
+===============================================================================
+
+1. to edit
+============
+cd /Library/Frameworks/R.framework/Versions/3.2/Resources/library/addinexamples/R
+ls
+open .
+then, open the file and edit it.
+also edit ~/.Rprofile 
+
+then, clear .RData file
+========================
+open ~/Desktop/.RData
+then, delete contents
+then, restart Rstudio.

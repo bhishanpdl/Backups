@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=FutureTech BlackBlue
+activeBackground=17,20,22
+activeBlend=17,20,22
+activeForeground=141,194,223
+activeTitleBtnBg=174,178,195
+alternateBackground=28,34,37
+background=17,20,22
+buttonBackground=17,20,22
+buttonForeground=141,194,223
+contrast=10
+foreground=141,194,223
+frame=183,193,205
+handle=183,193,205
+inactiveBackground=17,20,22
+inactiveBlend=17,20,22
+inactiveForeground=101,139,160
+inactiveFrame=183,193,205
+inactiveHandle=183,193,205
+inactiveTitleBtnBg=174,178,195
+linkColor=57,132,198
+selectBackground=141,194,223
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=184,97,110
+windowBackground=26,31,34
+windowForeground=141,194,223

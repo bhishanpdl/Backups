@@ -1,0 +1,32 @@
+CC=gcc
+CFLAGS=-O3 -g
+LIBS=-I/usr/local/include -I/usr/include -L/usr/lib -L/usr/local/lib -lm -lcfitsio
+	
+	
+# execute program and clean it
+default: all
+	rm -f *.o *~ *.dSYM
+
+
+# main programs
+PROGRAMS = average2
+
+# program depends on other programs (something.o)
+# dminv_test: 
+
+# "make" builds all
+all: $(PROGRAMS)
+
+
+%: %.o
+	$(CC) $(CFLAGS) -o $@ $^ $(CFLAGS) $(LIB)
+	
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< $(LIB)
+
+# Utility targets
+.PHONY: clean
+
+clean:
+	rm -f *.o *~	

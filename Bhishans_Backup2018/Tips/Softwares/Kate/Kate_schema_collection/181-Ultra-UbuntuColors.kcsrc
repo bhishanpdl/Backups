@@ -1,0 +1,27 @@
+[Color Scheme]
+Name=181-Ultra-UbuntuColors
+activeBackground=12,12,12
+activeBlend=55,63,77
+activeForeground=253,255,255
+activeTitleBtnBg=255,255,255
+alternateBackground=227,178,53
+background=209,0,34
+buttonBackground=55,55,55
+buttonForeground=255,255,255
+contrast=7
+foreground=246,255,247
+frame=55,63,77
+handle=55,63,77
+inactiveBackground=124,124,124
+inactiveBlend=30,30,30
+inactiveForeground=185,185,185
+inactiveFrame=30,30,30
+inactiveHandle=30,30,30
+inactiveTitleBtnBg=170,170,170
+linkColor=83,117,150
+selectBackground=255,117,16
+selectForeground=0,0,0
+shadeSortColumn=true
+visitedLinkColor=33,33,32
+windowBackground=255,192,32
+windowForeground=22,22,22

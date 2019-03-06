@@ -1,0 +1,19 @@
+Bhishan Poudel
+Feb 13, 2016
+
+To edit execute command for c-program and fortran-program
+==========================================================
+
+1. for c-program
+open a .c file
+exectute: "./%e"; rm %e.o; rm %e
+
+
+2. for fortran-program
+open any .f,.f90,.f95 file
+build>set custom build commands
+
+exectute: "./%e"; rm %e.o; rm %e
+
+or, make extra execute option:
+f95 -c "%f"; f95  -o "%e" "%f"; "./%e"; rm "%e.o"; rm "%e"

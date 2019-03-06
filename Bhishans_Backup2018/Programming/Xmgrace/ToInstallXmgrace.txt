@@ -1,0 +1,9 @@
+Bhishan Poudel
+Jan 31, 2016
+
+To install xmgrace in ubuntu 15.04
+======================================
+
+go to software center
+search grace
+click more options, apply changes, then install it.
